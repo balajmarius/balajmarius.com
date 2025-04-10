@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         blue: {
-          DEFAULT: "#0091FF",
+          DEFAULT: "#0070F3",
         },
         red: {
           DEFAULT: "#FF2E00",

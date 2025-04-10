@@ -1,7 +1,6 @@
 [
   { "href": "https://bsky.app/profile/balajmarius.com", "text": "Bsky" },
-  { "href": "https://medium.com/@balaj_marius", "text": "Medium" },
   { "href": "https://github.com/balajmarius", "text": "GitHub" },
   { "href": "https://www.goodreads.com/user/show/47935304-marius-balaj", "text": "Goodreads" },
-  { "href": "https://twitter.com/balajmarius", "text": "Twitter", "strike": true }
+  { "href": "https://medium.com/@balaj_marius", "text": "Medium" }
 ]
