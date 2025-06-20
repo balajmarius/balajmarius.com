@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import cx from "classnames";
 import localFont from "next/font/local";
 
-const sans = localFont({
+const body = localFont({
   src: [
     {
       path: "../static/fonts/GeneralSans-Regular.woff2",
@@ -27,9 +27,10 @@ const sans = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-body",
 });
 
-const serif = localFont({
+const display = localFont({
   src: [
     {
       path: "../static/fonts/Gambetta-Regular.woff2",
@@ -52,13 +53,14 @@ const serif = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-display",
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className={cx("w-2xl", sans.className, serif.className)}>
+    <main className={cx(body.variable, display.variable)}>
       <Component {...pageProps} />
-    </div>
+    </main>
   );
 };
 
