@@ -10,6 +10,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "husky": "^9.1.7",
     "next": "15.3.4",
     "react": "^19.0.0",

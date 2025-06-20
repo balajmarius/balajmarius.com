@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Marius Bălaj",
+    "description": "UI engineer turned founder"
+  },
+  "appBar": {
+    "menu": "Menu",
+    "close": "Close",
+    "intro": "Intro",
+    "experiences": "Experiences",
+    "writing": "Writing",
+    "hobbies": "Hobbies",
+    "contact": "Contact"
+  }
+}
