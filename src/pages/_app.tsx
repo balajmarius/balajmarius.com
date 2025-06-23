@@ -58,7 +58,7 @@ const display = localFont({
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <main className={cx(body.variable, display.variable)}>
+    <main className={cx(body.variable, display.variable, "bg-white")}>
       <Component {...pageProps} />
     </main>
   );

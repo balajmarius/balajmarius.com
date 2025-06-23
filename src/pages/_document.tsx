@@ -18,7 +18,7 @@ const Document = () => {
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
       </Head>
 
-      <body className="antialiased bg-white text-gray-600">
+      <body className="antialiased bg-blue-500 text-gray-600">
         <Main />
         <NextScript />
       </body>
