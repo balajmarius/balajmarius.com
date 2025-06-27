@@ -3,3 +3,5 @@ import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
 
 export { Card, CardContent, CardFooter };
+
+export * from "./types";

@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
+import type { ReactNode, HTMLAttributes } from "react";
 
-interface CardFooterProps {
+export type CardFooterProps = {
   children: ReactNode;
-}
+} & HTMLAttributes<HTMLDivElement>;
 
 const CardFooter = ({ children }: CardFooterProps) => {
   return <div>{children}</div>;
