@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   --color-purple-100: #f0dcff;
   --color-yellow-100: #fff6d3;
   --color-green-100: #e4f7d3;
