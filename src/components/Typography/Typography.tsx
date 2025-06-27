@@ -1,13 +1,11 @@
 import React, { type HtmlHTMLAttributes, ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
 
 import type { TypographyVariant, TypographyVariantMapping } from "@/components/Typography";
 
-export interface TypographyProps extends HtmlHTMLAttributes<HTMLSpanElement> {
+export type TypographyProps = {
   children: ReactNode;
   variant?: TypographyVariant;
-  cx?: React.ComponentProps<"h1" | "h2" | "h3" | "h4" | "p" | "span">["className"];
-}
+} & HtmlHTMLAttributes<HTMLSpanElement>;
 
 const defaultTypographyVariantMapping: TypographyVariantMapping = {
   h1: "h1",
@@ -17,24 +15,24 @@ const defaultTypographyVariantMapping: TypographyVariantMapping = {
   body1: "p",
   body2: "p",
   overline: "span",
-  caption: "span",
+  caption: "small",
 };
 
-const defaultTypographyClassNames: TypographyVariantMapping = {
+const defaultTypographyVariantClassNames: TypographyVariantMapping = {
   h1: "text-3xl leading-12",
-  h2: "text-2xl leading-8 italic font-medium font-serif",
-  subtitle1: "text-base leading-6 italic font-medium font-serif",
+  h2: "text-2xl leading-8 italic font-serif",
+  subtitle1: "text-base leading-6 italic font-serif",
   subtitle2: "text-base leading-6",
   body1: "text-base leading-6",
   body2: "text-sm leading-5",
-  overline: "text-sm leading-5 italic font-medium font-serif",
-  caption: "text-xs leading-4 italic font-medium font-serif",
+  overline: "text-sm leading-5 italic font-serif",
+  caption: "text-xs leading-4 italic font-serif",
 };
 
-const Typography = ({ variant = "body1", cx, ...props }: TypographyProps) => {
+const Typography = ({ variant = "body1", ...props }: TypographyProps) => {
   const Component = defaultTypographyVariantMapping[variant];
 
-  return <Component className={twMerge(defaultTypographyClassNames[variant], cx)} {...props} />;
+  return <Component className={defaultTypographyVariantClassNames[variant]} {...props} />;
 };
 
 export default Typography;
