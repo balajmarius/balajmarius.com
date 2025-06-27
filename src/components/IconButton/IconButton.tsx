@@ -5,7 +5,7 @@ export type IconButtonProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 const IconButton = ({ children }: IconButtonProps) => {
-  return <button className="bg-white rounded-full flex items-center justify-center">{children}</button>;
+  return <button className="bg-white  rounded-full flex items-center justify-center px-1 py-1">{children}</button>;
 };
 
 export default IconButton;

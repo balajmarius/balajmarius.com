@@ -1,7 +1,7 @@
 import { Chip } from "@/components/Chip";
+import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
-import { IconButton } from "@/components/IconButton";
 import { Card, CardContent, CardFooter } from "@/components/Card";
 
 const Home = () => {
@@ -9,9 +9,7 @@ const Home = () => {
     <Section>
       <div className="flex flex-col gap-16 py-20">
         <div className="flex flex-col items-start gap-4">
-          <IconButton>1</IconButton>
-          <IconButton>2</IconButton>
-          <IconButton>3</IconButton>
+          <Link href="/">View on GitHub</Link>
         </div>
 
         <div className="flex flex-col items-start gap-4">
