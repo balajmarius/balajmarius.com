@@ -3,13 +3,7 @@
     "title": "Marius Bălaj",
     "description": "UI engineer turned founder"
   },
-  "appBar": {
-    "menu": "Menu",
-    "close": "Close",
-    "intro": "Intro",
-    "experiences": "Experiences",
-    "writing": "Writing",
-    "hobbies": "Hobbies",
-    "contact": "Contact"
+  "about": {
+    "title": "<serif><ui>UI</ui> engineer</serif> turned <serif>founder</serif>. One exit behind me, <serif>now building in <ai>AI</ai></serif>"
   }
 }

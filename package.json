@@ -13,6 +13,7 @@
     "classnames": "^2.5.1",
     "husky": "^9.1.7",
     "next": "15.3.4",
+    "next-intl": "^4.3.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.1"
