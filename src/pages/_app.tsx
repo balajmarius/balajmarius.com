@@ -1,6 +1,7 @@
 import "@/static/css/globals.css";
 
 import type { AppProps } from "next/app";
+import { NextIntlClientProvider } from "next-intl";
 import cx from "classnames";
 import localFont from "next/font/local";
 
@@ -58,9 +59,11 @@ const serif = localFont({
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <main className={cx(sans.variable, serif.variable, "bg-white")}>
-      <Component {...pageProps} />
-    </main>
+    <NextIntlClientProvider locale="en-EN" messages={pageProps.messages}>
+      <main className={cx(sans.variable, serif.variable, "bg-white")}>
+        <Component {...pageProps} />
+      </main>
+    </NextIntlClientProvider>
   );
 };
 
