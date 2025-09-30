@@ -1,10 +1,17 @@
 import React, { type HtmlHTMLAttributes, ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
-import type { TypographyVariant, TypographyVariantMapping } from "@/components/Typography";
+import type {
+  TypographyFontWeight,
+  TypographyFontWeightMapping,
+  TypographyVariant,
+  TypographyVariantMapping,
+} from "@/components/Typography";
 
 export type TypographyProps = {
   children: ReactNode;
   variant?: TypographyVariant;
+  fontWeight?: TypographyFontWeight;
 } & HtmlHTMLAttributes<HTMLSpanElement>;
 
 const defaultTypographyVariantMapping: TypographyVariantMapping = {
@@ -29,10 +36,24 @@ const defaultTypographyVariantClassNames: TypographyVariantMapping = {
   caption: "text-xs leading-4 italic font-serif",
 };
 
-const Typography = ({ variant = "body1", ...props }: TypographyProps) => {
+const defaultTypographyFontWeightClassNames: TypographyFontWeightMapping = {
+  normal: "font-normal",
+  medium: "font-medium",
+  bold: "font-bold",
+};
+
+const Typography = ({ variant = "body1", fontWeight = "normal", ...props }: TypographyProps) => {
   const Component = defaultTypographyVariantMapping[variant];
 
-  return <Component className={defaultTypographyVariantClassNames[variant]} {...props} />;
+  return (
+    <Component
+      className={twMerge(
+        defaultTypographyVariantClassNames[variant],
+        defaultTypographyFontWeightClassNames[fontWeight]
+      )}
+      {...props}
+    />
+  );
 };
 
 export default Typography;

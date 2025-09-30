@@ -11,7 +11,17 @@
       "2": "Now, I’m focused on building in AI."
     }
   },
-  "experiences": {
-    "title": "Experiences"
+  "experience": {
+    "today": "Today",
+    "title": "Experience",
+    "jobs": {
+      "0": { "title": "The Sandbox", "role": "Country Manager & Tech Lead" },
+      "1": { "title": "QED (acquired by The Sandbox)", "role": "Co-Founder", "duration": "2022 ~ 2025" },
+      "2": { "title": "stake.fish / f2pool.io", "role": "Senior Software Engineer", "duration": "2019 ~ 2022" },
+      "3": { "title": "Alacritylaw", "role": "Lead Software Engineer", "duration": "2017 ~ 2019" }
+    }
+  },
+  "writings": {
+    "title": "Writings"
   }
 }

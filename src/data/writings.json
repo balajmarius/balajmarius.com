@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1",
+    "title": "Article Title",
+    "description": "Brief description of the article",
+    "date": "2024-01",
+    "url": "https://example.com/article",
+    "tags": ["React", "TypeScript"]
+  }
+]

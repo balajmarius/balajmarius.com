@@ -2,7 +2,8 @@ import Head from "next/head";
 import { useTranslations } from "next-intl";
 
 import { About } from "@/sections/About";
-import { Experiences } from "@/sections/Experiences";
+import { Experience } from "@/sections/Experience";
+import { Writings } from "@/sections/Writings";
 
 const Home = () => {
   const t = useTranslations();
@@ -14,7 +15,8 @@ const Home = () => {
       </Head>
 
       <About />
-      <Experiences />
+      <Experience />
+      <Writings />
     </>
   );
 };

@@ -1,7 +1,5 @@
-import Card from "./Card";
-import CardContent from "./CardContent";
-import CardFooter from "./CardFooter";
-
-export { Card, CardContent, CardFooter };
+export { default as Card } from "./Card";
+export { default as CardContent } from "./CardContent";
+export { default as CardFooter } from "./CardFooter";
 
 export * from "./types";

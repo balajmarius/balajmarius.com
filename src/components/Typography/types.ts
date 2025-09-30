@@ -11,3 +11,8 @@ export const TypographyVariants = [
 
 export type TypographyVariant = (typeof TypographyVariants)[number];
 export type TypographyVariantMapping = Record<TypographyVariant, string>;
+
+export const TypographyFontWeights = ["normal", "medium", "bold"] as const;
+
+export type TypographyFontWeight = (typeof TypographyFontWeights)[number];
+export type TypographyFontWeightMapping = Record<TypographyFontWeight, string>;

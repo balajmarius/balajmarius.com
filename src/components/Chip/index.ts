@@ -1,5 +1,3 @@
-import Chip from "./Chip";
-
-export { Chip };
+export { default as Chip } from "./Chip";
 
 export * from "./types";

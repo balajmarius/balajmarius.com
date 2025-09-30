@@ -1,5 +1,3 @@
-import Typography from "./Typography";
-
-export { Typography };
+export { default as Typography } from "./Typography";
 
 export * from "./types";
