@@ -16,6 +16,7 @@
     "next-intl": "^4.3.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-github-calendar": "^4.5.10",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
+import { Commits } from "@/sections/Commits";
 import { Writings } from "@/sections/Writings";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
 
       <About />
       <Experience />
+      <Commits />
       <Writings />
     </>
   );
