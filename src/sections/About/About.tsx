@@ -20,7 +20,9 @@ const About = () => {
   return (
     <Section>
       <div className="space-y-8">
-        <Typography variant="h1">{t.rich("about.title", renderers)}</Typography>
+        <Typography variant="h1">
+          <span className="whitespace-break-spaces">{t.rich("about.title", renderers)}</span>
+        </Typography>
 
         <div className="space-y-4">
           <Typography variant="body1">{t.rich("about.description.0", renderers)}</Typography>

@@ -15,10 +15,11 @@
     "today": "Today",
     "title": "Experience",
     "jobs": {
-      "0": { "title": "The Sandbox", "role": "Country Manager & Tech Lead" },
-      "1": { "title": "QED (acquired by The Sandbox)", "role": "Co-Founder", "duration": "2022 ~ 2025" },
-      "2": { "title": "stake.fish / f2pool.io", "role": "Senior Software Engineer", "duration": "2019 ~ 2022" },
-      "3": { "title": "Alacritylaw", "role": "Lead Software Engineer", "duration": "2017 ~ 2019" }
+      "0": { "title": "VOID2", "role": "Philosophy & Concept Developer" },
+      "1": { "title": "The Sandbox", "role": "Country Manager & Tech Lead" },
+      "2": { "title": "QED (acquired by The Sandbox)", "role": "Co-Founder", "duration": "2022 ~ 2025" },
+      "3": { "title": "stake.fish / f2pool.io", "role": "Senior Software Engineer", "duration": "2019 ~ 2022" },
+      "4": { "title": "Alacritylaw", "role": "Lead Software Engineer", "duration": "2017 ~ 2019" }
     }
   },
   "writings": {

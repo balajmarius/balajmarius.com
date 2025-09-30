@@ -17,12 +17,8 @@ const Experience = () => {
 
         <div className="col-span-9 space-y-6">
           <ExperienceListItem title={t("experience.jobs.0.title")} role={t("experience.jobs.0.role")} />
+          <ExperienceListItem title={t("experience.jobs.1.title")} role={t("experience.jobs.1.role")} />
 
-          <ExperienceListItem
-            title={t("experience.jobs.1.title")}
-            role={t("experience.jobs.1.role")}
-            duration={t("experience.jobs.1.duration")}
-          />
           <ExperienceListItem
             title={t("experience.jobs.2.title")}
             role={t("experience.jobs.2.role")}
@@ -32,6 +28,11 @@ const Experience = () => {
             title={t("experience.jobs.3.title")}
             role={t("experience.jobs.3.role")}
             duration={t("experience.jobs.3.duration")}
+          />
+          <ExperienceListItem
+            title={t("experience.jobs.4.title")}
+            role={t("experience.jobs.4.role")}
+            duration={t("experience.jobs.4.duration")}
           />
         </div>
       </div>
