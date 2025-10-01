@@ -1,5 +1,5 @@
 import type { ReactNode, HTMLAttributes } from "react";
-import cx from "classnames";
+import { twMerge } from "tailwind-merge";
 
 import type { CardColor, CardColorMapping } from "@/components/Card";
 
@@ -17,7 +17,9 @@ const defaultCardColorClassNames: CardColorMapping = {
 
 const Card = ({ children, color }: CardProps) => {
   return (
-    <div className={cx("flex flex-col gap-3 py-3 px-3 rounded-3xl", defaultCardColorClassNames[color])}>{children}</div>
+    <div className={twMerge("flex flex-col gap-3 py-3 px-3 rounded-3xl", defaultCardColorClassNames[color])}>
+      {children}
+    </div>
   );
 };
 

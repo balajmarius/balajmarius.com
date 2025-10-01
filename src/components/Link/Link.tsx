@@ -15,7 +15,6 @@ const Link = ({ children, href, target = "_self", ...props }: LinkProps) => {
       <Typography variant="body1" className="whitespace-nowrap">
         {children}
       </Typography>
-
       <SvgIconArrow size="small" className="text-blue-500" />
     </a>
   );

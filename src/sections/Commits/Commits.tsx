@@ -33,8 +33,8 @@ const Commits = () => {
     <Section spacing="small">
       <div className="space-y-3">
         <GithubCalendar
-          hideMonthLabels
           hideTotalCount
+          hideMonthLabels
           hideColorLegend
           username="balajmarius"
           theme={theme}
@@ -43,8 +43,7 @@ const Commits = () => {
 
         <div className="flex items-start justify-between gap-x-3">
           <SvgIconBranch className="text-blue-500" />
-
-          <Link href="https://github.com/balajmarius" target="_blank">
+          <Link href="https://github.com/balajmarius" rel="noopener noreferrer" target="_blank">
             {t("commits.viewOnGitHub")}
           </Link>
         </div>

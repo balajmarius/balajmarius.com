@@ -11,10 +11,26 @@ const About = () => {
     ui: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
     ai: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
     serif: (chunks: ReactNode) => <span className="font-serif italic">{chunks}</span>,
-    url1: (chunks: ReactNode) => <a className="text-blue-500">{chunks}</a>,
-    url2: (chunks: ReactNode) => <a className="text-blue-500">{chunks}</a>,
-    url3: (chunks: ReactNode) => <a className="text-blue-500">{chunks}</a>,
-    url4: (chunks: ReactNode) => <a className="text-blue-500">{chunks}</a>,
+    url1: (chunks: ReactNode) => (
+      <a href="#" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+        {chunks}
+      </a>
+    ),
+    url2: (chunks: ReactNode) => (
+      <a href="#" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+        {chunks}
+      </a>
+    ),
+    url3: (chunks: ReactNode) => (
+      <a href="#" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+        {chunks}
+      </a>
+    ),
+    url4: (chunks: ReactNode) => (
+      <a href="#" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+        {chunks}
+      </a>
+    ),
   };
 
   return (

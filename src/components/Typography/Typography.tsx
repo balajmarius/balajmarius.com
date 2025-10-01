@@ -1,4 +1,4 @@
-import React, { type HtmlHTMLAttributes, ReactNode } from "react";
+import React, { type HTMLAttributes, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 import type {
@@ -12,7 +12,7 @@ export type TypographyProps = {
   children: ReactNode;
   variant?: TypographyVariant;
   fontWeight?: TypographyFontWeight;
-} & HtmlHTMLAttributes<HTMLSpanElement>;
+} & HTMLAttributes<HTMLElement>;
 
 const defaultTypographyVariantMapping: TypographyVariantMapping = {
   h1: "h1",
