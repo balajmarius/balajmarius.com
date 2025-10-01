@@ -12,7 +12,10 @@ export type LinkProps = {
 const Link = ({ children, href, target = "_self", ...props }: LinkProps) => {
   return (
     <a href={href} target={target} className="flex items-center gap-1" {...props}>
-      <Typography variant="body1">{children}</Typography>
+      <Typography variant="body1" className="whitespace-nowrap">
+        {children}
+      </Typography>
+
       <SvgIconArrow size="small" className="text-blue-500" />
     </a>
   );

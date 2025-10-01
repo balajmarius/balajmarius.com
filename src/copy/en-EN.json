@@ -22,6 +22,9 @@
       "4": { "title": "Alacritylaw", "role": "Lead Software Engineer", "duration": "2017 ~ 2019" }
     }
   },
+  "commits": {
+    "viewOnGitHub": "View on GitHub"
+  },
   "writings": {
     "title": "Writings"
   }
