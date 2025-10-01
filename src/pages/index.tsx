@@ -5,6 +5,7 @@ import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
 import { Commits } from "@/sections/Commits";
 import { Writings } from "@/sections/Writings";
+import { Passions } from "@/sections/Passions";
 
 const Home = () => {
   const t = useTranslations();
@@ -19,6 +20,7 @@ const Home = () => {
       <Experience />
       <Commits />
       <Writings />
+      <Passions />
     </>
   );
 };

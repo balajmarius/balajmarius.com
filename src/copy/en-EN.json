@@ -26,6 +26,10 @@
     "viewOnGitHub": "View on GitHub"
   },
   "writings": {
-    "title": "Writings"
+    "title": "Writings",
+    "moreWritings": "More writings"
+  },
+  "passions": {
+    "title": "Passions"
   }
 }

@@ -6,10 +6,13 @@ import type {
   TypographyFontWeightMapping,
   TypographyVariant,
   TypographyVariantMapping,
+  TypographyColor,
+  TypographyColorMapping,
 } from "@/components/Typography";
 
 export type TypographyProps = {
   children: ReactNode;
+  color?: TypographyColor;
   variant?: TypographyVariant;
   fontWeight?: TypographyFontWeight;
 } & HTMLAttributes<HTMLElement>;
@@ -42,14 +45,20 @@ const defaultTypographyFontWeightClassNames: TypographyFontWeightMapping = {
   bold: "font-bold",
 };
 
-const Typography = ({ variant = "body1", fontWeight = "normal", ...props }: TypographyProps) => {
+const defaultTypographyColorClassNames: TypographyColorMapping = {
+  default: "text-gray-600",
+  muted: "text-gray-500",
+};
+
+const Typography = ({ variant = "body1", fontWeight = "normal", color = "default", ...props }: TypographyProps) => {
   const Component = defaultTypographyVariantMapping[variant];
 
   return (
     <Component
       className={twMerge(
         defaultTypographyVariantClassNames[variant],
-        defaultTypographyFontWeightClassNames[fontWeight]
+        defaultTypographyFontWeightClassNames[fontWeight],
+        defaultTypographyColorClassNames[color]
       )}
       {...props}
     />
