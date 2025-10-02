@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { useTranslations } from "next-intl";
 
+import fetchPosts from "@/lib/fetchPosts";
+
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
 import { Commits } from "@/sections/Commits";
@@ -25,10 +27,13 @@ const Home = () => {
   );
 };
 
-export const getStaticProps = async () => ({
-  props: {
-    messages: (await import("@/copy/en-EN.json")).default,
-  },
-});
+export const getStaticProps = async () => {
+  return {
+    props: {
+      posts: fetchPosts(),
+      messages: (await import("@/copy/en-EN.json")).default,
+    },
+  };
+};
 
 export default Home;

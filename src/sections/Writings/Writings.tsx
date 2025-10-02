@@ -4,8 +4,6 @@ import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
 
-import { WritingsListItem } from "@/sections/Writings";
-
 const Writings = () => {
   const t = useTranslations();
 
@@ -15,14 +13,10 @@ const Writings = () => {
         <Typography variant="subtitle1">{t("writings.title")}</Typography>
 
         <div className="space-y-6">
-          <div className="border-t border-gray-100">
-            <WritingsListItem />
-            <WritingsListItem />
-            <WritingsListItem />
-          </div>
+          <div className="border-b border-gray-100"></div>
 
           <div className="flex justify-end">
-            <Link href="/writings" target="_self">
+            <Link href="/" target="_self">
               {t("writings.moreWritings")}
             </Link>
           </div>
