@@ -5,7 +5,7 @@ export type CardFooterProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 const CardFooter = ({ children }: CardFooterProps) => {
-  return <div>{children}</div>;
+  return <div className="flex items-center gap-1">{children}</div>;
 };
 
 export default CardFooter;
