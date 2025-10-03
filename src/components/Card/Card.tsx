@@ -8,7 +8,7 @@ export type CardProps = {
   color: CardColor;
 } & HTMLAttributes<HTMLDivElement>;
 
-const defaultCardColorClassNames: CardColorMapping = {
+const cardColorClassNames: CardColorMapping = {
   primary: "bg-blue-100",
   secondary: "bg-purple-100",
   success: "bg-green-100",
@@ -17,9 +17,7 @@ const defaultCardColorClassNames: CardColorMapping = {
 
 const Card = ({ children, color }: CardProps) => {
   return (
-    <div className={twMerge("flex flex-col gap-3 py-3 px-3 rounded-3xl", defaultCardColorClassNames[color])}>
-      {children}
-    </div>
+    <div className={twMerge("flex flex-col gap-3 py-3 px-3 rounded-3xl", cardColorClassNames[color])}>{children}</div>
   );
 };
 

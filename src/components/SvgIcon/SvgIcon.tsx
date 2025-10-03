@@ -9,7 +9,7 @@ export type SvgIconProps = {
   className?: HTMLAttributes<SVGSVGElement>["className"];
 } & HTMLAttributes<SVGSVGElement>;
 
-const defaultSvgIconSizeClassNames: SvgIconSizeMapping = {
+const svgIconSizeClassNames: SvgIconSizeMapping = {
   inherit: "size-auto",
   small: "w-4 h-4",
   medium: "w-6 h-6",
@@ -18,7 +18,7 @@ const defaultSvgIconSizeClassNames: SvgIconSizeMapping = {
 
 const SvgIcon = ({ children, className, size = "inherit" }: SvgIconProps) => {
   return (
-    <svg viewBox="0 0 16 16" fill="currentColor" className={twMerge(className, defaultSvgIconSizeClassNames[size])}>
+    <svg viewBox="0 0 16 16" fill="currentColor" className={twMerge(className, svgIconSizeClassNames[size])}>
       {children}
     </svg>
   );

@@ -19,12 +19,12 @@ type ChipOutlinedProps = ChipBaseProps & {
 
 export type ChipProps = ChipDefaultProps | ChipOutlinedProps;
 
-const defaultChipVariantClassNames: ChipVariantMapping = {
+const chipVariantClassNames: ChipVariantMapping = {
   default: "outline-0",
   outlined: "bg-transparent outline outline-gray-100",
 };
 
-const defaultChipColorClassNames: ChipColorMapping = {
+const chipColorClassNames: ChipColorMapping = {
   default: "bg-white",
   success: "bg-green-100",
   primary: "bg-blue-100",
@@ -37,8 +37,8 @@ const Chip = ({ children, variant = "default", color = "info" }: ChipProps) => {
     <div
       className={twMerge(
         "text-sm text-gray-600 rounded-3xl py-0.5 px-3",
-        defaultChipColorClassNames[color],
-        defaultChipVariantClassNames[variant]
+        chipColorClassNames[color],
+        chipVariantClassNames[variant]
       )}
     >
       {children}
