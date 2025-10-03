@@ -13,9 +13,9 @@ const sectionSpacingClassNames: SectionSpacingMapping = {
   small: "pt-24",
 };
 
-const Section = ({ children, spacing = "default", ...props }: SectionProps) => {
+const Section = ({ children, spacing = "default", className, ...props }: SectionProps) => {
   return (
-    <section className={twMerge("max-w-2xl px-12", sectionSpacingClassNames[spacing])} {...props}>
+    <section className={twMerge("max-w-2xl px-12", className, sectionSpacingClassNames[spacing])} {...props}>
       {children}
     </section>
   );
