@@ -36,14 +36,14 @@ const Commits = () => {
           hideTotalCount
           hideMonthLabels
           hideColorLegend
-          username="balajmarius"
           theme={theme}
+          username={process.env.NEXT_PUBLIC_GITHUB_USERNAME}
           transformData={renderers.data}
         />
 
         <div className="flex items-start justify-between gap-3">
           <SvgIconBranch className="text-blue-500" />
-          <Link href="https://github.com/balajmarius" rel="noopener noreferrer" target="_blank">
+          <Link href={process.env.NEXT_PUBLIC_GITHUB_URL} rel="noopener noreferrer" target="_blank">
             {t("commits.viewOnGitHub")}
           </Link>
         </div>
