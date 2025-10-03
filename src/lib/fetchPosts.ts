@@ -1,43 +1,43 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import groupBy from "lodash.groupby";
+import { getYear } from "date-fns/getYear";
+
+export type PostLabel = "Book" | "LLMs" | "Dev" | "TIL";
 
 export type Post = {
   slug: string;
   title: string;
-  createdAt: Date;
   author?: string;
-  content: string;
+  createdAt: Date;
+  label: PostLabel;
 };
-
-export type Posts = Record<string, ReadonlyArray<Post>>;
 
 const postsDir = path.join(process.cwd(), "src/content/posts");
 
-const formatPosts = (): Posts => {
-  return {};
-};
-
-const fetchPosts = (): Posts => {
+const fetchPosts = () => {
   const fileNames = fs.readdirSync(postsDir);
 
-  fileNames.map((fileName) => {
-    const fullPath = path.join(postsDir, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+  const posts = fileNames.map((fileName) => {
     const fileSlug = path.parse(fileName).name;
+    const filePath = path.join(postsDir, fileName);
+    const fileContents = fs.readFileSync(filePath, "utf8");
 
-    const { data, content } = matter(fileContents);
+    const {
+      data: { title, createdAt, author, label },
+    } = matter(fileContents);
 
     return {
-      content,
+      title,
+      createdAt,
+      author,
+      label,
       slug: fileSlug,
-      title: data.title,
-      createdAt: data.createdAt,
-      author: data.author,
     };
   });
 
-  return formatPosts();
+  return groupBy<Post>(posts, (post) => getYear(post.createdAt));
 };
 
 export default fetchPosts;
