@@ -30,6 +30,10 @@
     "moreWritings": "More writings"
   },
   "passions": {
-    "title": "Passions"
+    "title": "Passions",
+    "outsidePerf": {
+      "title": "Latest outside perf’",
+      "hours": "{hours} hours"
+    }
   }
 }
