@@ -13,6 +13,7 @@ const cardColorClassNames: CardColorMapping = {
   secondary: "bg-purple-100",
   success: "bg-green-100",
   info: "bg-yellow-100",
+  danger: "bg-orange-100",
 };
 
 const Card = ({ children, color }: CardProps) => {

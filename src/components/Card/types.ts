@@ -1,5 +1,5 @@
 export const CardVariants = [] as const;
-export const CardColors = ["primary", "secondary", "info", "success"] as const;
+export const CardColors = ["primary", "secondary", "info", "success", "danger"] as const;
 
 export type CardVariant = (typeof CardVariants)[number];
 export type CardColor = (typeof CardColors)[number];
