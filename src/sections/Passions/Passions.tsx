@@ -1,7 +1,11 @@
 import { useTranslations } from "next-intl";
 
+import { Chip } from "@/components/Chip";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
+import { IconButton } from "@/components/IconButton";
+import { SvgIconStrava, SvgIconBike } from "@/components/SvgIcon";
+import { Card, CardContent, CardFooter } from "@/components/Card";
 
 const Passions = () => {
   const t = useTranslations();
@@ -13,16 +17,21 @@ const Passions = () => {
 
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12">
-            <div className="bg-blue-100 size-full h-36" />
-          </div>
-          <div className="col-span-6">
-            <div className="bg-blue-100 size-full h-36" />
-          </div>
-          <div className="col-span-6">
-            <div className="bg-blue-100 size-full h-36" />
-          </div>
-          <div className="col-span-12">
-            <div className="bg-blue-100 size-full h-36" />
+            <Card color="danger">
+              <CardContent>
+                <Typography variant="h2">{t("passions.outsidePerf.title")}</Typography>
+              </CardContent>
+
+              <CardFooter>
+                <IconButton>
+                  <SvgIconStrava size="small" />
+                </IconButton>
+
+                <Chip color="default">
+                  <SvgIconBike size="small" />
+                </Chip>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </div>
