@@ -41,7 +41,7 @@ const Commits = () => {
           transformData={renderers.data}
         />
 
-        <div className="flex items-start justify-between gap-x-3">
+        <div className="flex items-start justify-between gap-3">
           <SvgIconBranch className="text-blue-500" />
           <Link href="https://github.com/balajmarius" rel="noopener noreferrer" target="_blank">
             {t("commits.viewOnGitHub")}

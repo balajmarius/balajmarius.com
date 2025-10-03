@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useTranslations } from "next-intl";
+import type { Dictionary } from "lodash";
 
-import fetchPosts from "@/lib/fetchPosts";
+import fetchPosts, { type Post } from "@/lib/fetchPosts";
 
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
@@ -9,7 +10,11 @@ import { Commits } from "@/sections/Commits";
 import { Writings } from "@/sections/Writings";
 import { Passions } from "@/sections/Passions";
 
-const Home = () => {
+type HomeProps = {
+  posts: Dictionary<Post[]>;
+};
+
+const Home = ({ posts }: HomeProps) => {
   const t = useTranslations();
 
   return (
@@ -21,7 +26,7 @@ const Home = () => {
       <About />
       <Experience />
       <Commits />
-      <Writings />
+      <Writings posts={posts} />
       <Passions />
     </>
   );
