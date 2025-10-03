@@ -1,6 +1,6 @@
 import { format } from "date-fns";
 
-import type { Post, PostLabel } from "@/lib/fetchPosts";
+import type { Post, PostLabel } from "@/lib/posts";
 
 import { Chip, type ChipColor } from "@/components/Chip";
 import { Typography } from "@/components/Typography";

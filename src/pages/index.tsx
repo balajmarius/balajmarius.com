@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useTranslations } from "next-intl";
 import type { Dictionary } from "lodash";
 
-import fetchPosts, { type Post } from "@/lib/fetchPosts";
+import getPosts, { type Post } from "@/lib/posts";
 
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
@@ -35,7 +35,7 @@ const Home = ({ posts }: HomeProps) => {
 export const getStaticProps = async () => {
   return {
     props: {
-      posts: fetchPosts(),
+      posts: getPosts(),
       messages: (await import("@/copy/en-EN.json")).default,
     },
   };

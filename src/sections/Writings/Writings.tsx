@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import type { Dictionary } from "lodash";
 
-import type { Post } from "@/lib/fetchPosts";
+import type { Post } from "@/lib/posts";
 
 import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
