@@ -8,16 +8,19 @@ import type {
   TypographyVariantMapping,
   TypographyColor,
   TypographyColorMapping,
+  TypographyDisplay,
+  TypographyDisplayMapping,
 } from "@/components/Typography";
 
 export type TypographyProps = {
   children: ReactNode;
   color?: TypographyColor;
   variant?: TypographyVariant;
+  display?: TypographyDisplay;
   fontWeight?: TypographyFontWeight;
 } & HTMLAttributes<HTMLElement>;
 
-const defaultTypographyVariantMapping: TypographyVariantMapping = {
+const typographyVariantMapping: TypographyVariantMapping = {
   h1: "h1",
   h2: "h2",
   subtitle1: "h3",
@@ -28,7 +31,7 @@ const defaultTypographyVariantMapping: TypographyVariantMapping = {
   caption: "small",
 };
 
-const defaultTypographyVariantClassNames: TypographyVariantMapping = {
+const typographyVariantClassNames: TypographyVariantMapping = {
   h1: "text-3xl leading-12",
   h2: "text-2xl leading-8 italic font-serif",
   subtitle1: "text-base leading-6 italic font-serif",
@@ -39,26 +42,39 @@ const defaultTypographyVariantClassNames: TypographyVariantMapping = {
   caption: "text-xs leading-4 italic font-serif",
 };
 
-const defaultTypographyFontWeightClassNames: TypographyFontWeightMapping = {
+const typographyFontWeightClassNames: TypographyFontWeightMapping = {
   normal: "font-normal",
   medium: "font-medium",
   bold: "font-bold",
 };
 
-const defaultTypographyColorClassNames: TypographyColorMapping = {
+const typographyColorClassNames: TypographyColorMapping = {
   default: "text-gray-600",
   muted: "text-gray-500",
 };
 
-const Typography = ({ variant = "body1", fontWeight = "normal", color = "default", ...props }: TypographyProps) => {
-  const Component = defaultTypographyVariantMapping[variant];
+const typographyDisplayClassNames: TypographyDisplayMapping = {
+  inline: "inline",
+  "inline-block": "inline-block",
+  block: "block",
+};
+
+const Typography = ({
+  variant = "body1",
+  fontWeight = "normal",
+  color = "default",
+  display = "inline-block",
+  ...props
+}: TypographyProps) => {
+  const Component = typographyVariantMapping[variant];
 
   return (
     <Component
       className={twMerge(
-        defaultTypographyVariantClassNames[variant],
-        defaultTypographyFontWeightClassNames[fontWeight],
-        defaultTypographyColorClassNames[color]
+        typographyVariantClassNames[variant],
+        typographyFontWeightClassNames[fontWeight],
+        typographyColorClassNames[color],
+        typographyDisplayClassNames[display]
       )}
       {...props}
     />

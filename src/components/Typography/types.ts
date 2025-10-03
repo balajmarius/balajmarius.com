@@ -21,3 +21,8 @@ export const TypographyColors = ["default", "muted"] as const;
 
 export type TypographyColor = (typeof TypographyColors)[number];
 export type TypographyColorMapping = Record<TypographyColor, string>;
+
+export const TypographyDisplays = ["inline", "inline-block", "block"] as const;
+
+export type TypographyDisplay = (typeof TypographyDisplays)[number];
+export type TypographyDisplayMapping = Record<TypographyDisplay, string>;
