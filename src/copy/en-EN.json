@@ -3,6 +3,14 @@
     "title": "Marius Bălaj",
     "description": "UI engineer turned founder"
   },
+  "appBar": {
+    "menu": "Menu",
+    "close": "Close",
+    "intro": "Intro",
+    "experiences": "Experiences",
+    "writings": "Writings",
+    "contact": "Contact"
+  },
   "about": {
     "title": "<serif><ui>UI</ui> engineer</serif> turned <serif>founder</serif>.\nOne exit behind me, <serif>now building in <ai>AI</ai></serif>",
     "description": {
@@ -26,14 +34,12 @@
     "viewOnGitHub": "View on GitHub"
   },
   "posts": {
-    "title": "Posts",
-    "morePosts": "More posts"
+    "title": "Writings",
+    "moreWritings": "More writings"
   },
-  "passions": {
-    "title": "Passions",
-    "outsidePerf": {
-      "title": "Latest outside perf’",
-      "hours": "{hours} hours"
-    }
+  "footer": {
+    "contact": "Contact",
+    "copyright": "© 2025 Marius Balaj",
+    "quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
   }
 }
