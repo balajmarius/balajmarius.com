@@ -17,14 +17,14 @@
     "classnames": "^2.5.1",
     "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
-    "husky": "^9.1.7",
     "lodash.groupby": "^4.6.0",
     "next": "15.3.4",
     "next-intl": "^4.3.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-github-calendar": "^4.5.10",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -37,6 +37,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
+    "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "tailwindcss": "^4",
     "typescript": "^5"
