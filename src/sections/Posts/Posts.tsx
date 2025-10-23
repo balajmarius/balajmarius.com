@@ -18,7 +18,7 @@ const Posts = ({ posts }: PostsProps) => {
   const years = Object.keys(posts).sort().reverse();
 
   return (
-    <Section className="pb-48">
+    <Section>
       <div className="space-y-16">
         <Typography variant="subtitle1">{t("posts.title")}</Typography>
 
@@ -31,7 +31,7 @@ const Posts = ({ posts }: PostsProps) => {
 
           <div className="flex justify-end">
             <Link href="/" target="_self">
-              {t("posts.morePosts")}
+              {t("posts.moreWritings")}
             </Link>
           </div>
         </div>

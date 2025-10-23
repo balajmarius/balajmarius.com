@@ -5,6 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import cx from "classnames";
 import localFont from "next/font/local";
 
+import { Footer } from "@/sections/Footer";
+
 const sans = localFont({
   src: [
     {
@@ -63,6 +65,8 @@ const App = ({ Component, pageProps }: AppProps) => {
       <main className={cx(sans.variable, serif.variable, "bg-white")}>
         <Component {...pageProps} />
       </main>
+
+      <Footer />
     </NextIntlClientProvider>
   );
 };
