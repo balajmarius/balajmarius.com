@@ -1,12 +1,22 @@
 import type { HTMLAttributes, ReactNode } from "react";
+import isNil from "lodash.isnil";
 import { useTranslations } from "next-intl";
 
 import { Typography } from "@/components/Typography";
+import { SvgIconArrow } from "@/components/SvgIcon";
 
 export type FooterProps = {} & HTMLAttributes<HTMLElement>;
 
 const Footer = ({ ...props }: FooterProps) => {
   const t = useTranslations();
+
+  const socials = [
+    { label: t("footer.email"), username: "balajmarius@gmail.com" },
+    { label: t("footer.linkedin") },
+    { label: t("footer.github") },
+    { label: t("footer.bluesky") },
+    { label: t("footer.goodreads") },
+  ];
 
   const renderers = {
     serif: (chunks: ReactNode) => <span className="font-serif italic">{chunks}</span>,
@@ -21,7 +31,27 @@ const Footer = ({ ...props }: FooterProps) => {
               {t("footer.contact")}
             </Typography>
           </div>
-          <div className="col-span-9">xxx</div>
+
+          <div className="col-span-9 space-y-3">
+            {socials.map((social) => (
+              <div className="flex items-center gap-3" key={social.label}>
+                <div className="flex items-center gap-1">
+                  <Typography variant="body1" color="inherit">
+                    {social.label}
+                  </Typography>
+                  {isNil(social.username) ? <SvgIconArrow size="small" /> : null}
+                </div>
+
+                <div className="flex-grow border-t border-blue-100" />
+
+                {social.username ? (
+                  <Typography variant="body1" color="inherit">
+                    {social.username}
+                  </Typography>
+                ) : null}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="space-y-6">
