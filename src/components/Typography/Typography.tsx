@@ -29,6 +29,7 @@ const typographyVariantMapping: TypographyVariantMapping = {
   body2: "p",
   overline: "span",
   caption: "small",
+  small: "small",
 };
 
 const typographyVariantClassNames: TypographyVariantMapping = {
@@ -40,6 +41,7 @@ const typographyVariantClassNames: TypographyVariantMapping = {
   body2: "text-sm leading-5",
   overline: "text-sm leading-5 italic font-serif",
   caption: "text-xs leading-4 italic font-serif",
+  small: "text-xs leading-4",
 };
 
 const typographyFontWeightClassNames: TypographyFontWeightMapping = {
@@ -51,6 +53,7 @@ const typographyFontWeightClassNames: TypographyFontWeightMapping = {
 const typographyColorClassNames: TypographyColorMapping = {
   default: "text-gray-600",
   muted: "text-gray-500",
+  inherit: "text-inherit",
 };
 
 const typographyDisplayClassNames: TypographyDisplayMapping = {

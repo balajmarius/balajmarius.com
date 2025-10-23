@@ -7,6 +7,7 @@ export const TypographyVariants = [
   "body2",
   "overline",
   "caption",
+  "small",
 ] as const;
 
 export type TypographyVariant = (typeof TypographyVariants)[number];
@@ -17,7 +18,7 @@ export const TypographyFontWeights = ["normal", "medium", "bold"] as const;
 export type TypographyFontWeight = (typeof TypographyFontWeights)[number];
 export type TypographyFontWeightMapping = Record<TypographyFontWeight, string>;
 
-export const TypographyColors = ["default", "muted"] as const;
+export const TypographyColors = ["default", "muted", "inherit"] as const;
 
 export type TypographyColor = (typeof TypographyColors)[number];
 export type TypographyColorMapping = Record<TypographyColor, string>;
