@@ -7,31 +7,31 @@ import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
 
-import { WritingsListItem } from "@/sections/Writings";
+import { PostsListItem } from "@/sections/Posts";
 
-type WritingsProps = {
+type PostsProps = {
   posts: Dictionary<Post[]>;
 };
 
-const Writings = ({ posts }: WritingsProps) => {
+const Posts = ({ posts }: PostsProps) => {
   const t = useTranslations();
   const years = Object.keys(posts).sort().reverse();
 
   return (
-    <Section>
+    <Section className="pb-48">
       <div className="space-y-16">
-        <Typography variant="subtitle1">{t("writings.title")}</Typography>
+        <Typography variant="subtitle1">{t("posts.title")}</Typography>
 
         <div className="space-y-6">
           <div className="border-b border-gray-100">
             {years.map((year) => (
-              <WritingsListItem key={year} year={year} posts={posts[year]} />
+              <PostsListItem key={year} year={year} posts={posts[year]} />
             ))}
           </div>
 
           <div className="flex justify-end">
             <Link href="/" target="_self">
-              {t("writings.moreWritings")}
+              {t("posts.morePosts")}
             </Link>
           </div>
         </div>
@@ -40,4 +40,4 @@ const Writings = ({ posts }: WritingsProps) => {
   );
 };
 
-export default Writings;
+export default Posts;

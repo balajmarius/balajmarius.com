@@ -7,8 +7,7 @@ import getPosts, { type Post } from "@/lib/posts";
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
 import { Commits } from "@/sections/Commits";
-import { Writings } from "@/sections/Writings";
-import { Passions } from "@/sections/Passions";
+import { Posts } from "@/sections/Posts";
 
 type HomeProps = {
   posts: Dictionary<Post[]>;
@@ -26,8 +25,7 @@ const Home = ({ posts }: HomeProps) => {
       <About />
       <Experience />
       <Commits />
-      <Writings posts={posts} />
-      <Passions />
+      <Posts posts={posts} />
     </>
   );
 };

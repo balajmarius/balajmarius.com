@@ -7,7 +7,7 @@ import { Typography } from "@/components/Typography";
 
 type ChipColorLabelMapping = Record<PostLabel, ChipColor>;
 
-type WritingsListItemProps = {
+type PostsListItemProps = {
   year: string;
   posts: Post[];
 };
@@ -19,7 +19,7 @@ const chipColorLabel: ChipColorLabelMapping = {
   TIL: "secondary",
 };
 
-const WritingsListItem = ({ year, posts }: WritingsListItemProps) => {
+const PostsListItem = ({ year, posts }: PostsListItemProps) => {
   return (
     <div className="grid grid-cols-12 gap-6 border-t border-gray-100">
       <div className="col-span-2 py-3">
@@ -55,4 +55,4 @@ const WritingsListItem = ({ year, posts }: WritingsListItemProps) => {
   );
 };
 
-export default WritingsListItem;
+export default PostsListItem;

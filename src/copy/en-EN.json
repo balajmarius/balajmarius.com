@@ -25,9 +25,9 @@
   "commits": {
     "viewOnGitHub": "View on GitHub"
   },
-  "writings": {
-    "title": "Writings",
-    "moreWritings": "More writings"
+  "posts": {
+    "title": "Posts",
+    "morePosts": "More posts"
   },
   "passions": {
     "title": "Passions",
