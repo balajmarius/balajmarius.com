@@ -1,6 +1,7 @@
 import React, { useRef, HTMLAttributes } from "react";
 import { useTranslations } from "next-intl";
 import { useOnClickOutside, useBoolean } from "usehooks-ts";
+import { twMerge } from "tailwind-merge";
 
 import { SvgIconM, SvgIconHouse, SvgIconTrophy, SvgIconNotepad, SvgIconGlobe } from "@/components/SvgIcon";
 
@@ -25,8 +26,14 @@ const AppBar = ({ ...props }: AppBarProps) => {
   useOnClickOutside(ref, setFalse);
 
   return (
-    <header className="fixed top-3 left-3 w-xs bg-gray-400/40 backdrop-blur px-3 py-3 space-y-3 rounded-lg" ref={ref}>
-      <div className="flex items-center justify-between" {...props}>
+    <header
+      className={twMerge(
+        "fixed top-3 left-3 bg-gray-400/40 backdrop-blur rounded-lg px-3 py-3 space-y-3",
+        value ? "min-w-xs" : "min-w-auto"
+      )}
+      ref={ref}
+    >
+      <div className={twMerge("flex items-center justify-between", value ? "gap-0" : "gap-24")} {...props}>
         <SvgIconM size="medium" />
         <Button onClick={value ? setFalse : setTrue}>
           <Typography variant="body1" color="inherit">
