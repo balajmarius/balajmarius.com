@@ -2,6 +2,7 @@ import "@/static/css/globals.css";
 
 import type { AppProps } from "next/app";
 import { NextIntlClientProvider } from "next-intl";
+import { useRouter } from "next/router";
 import cx from "classnames";
 import localFont from "next/font/local";
 
@@ -62,15 +63,20 @@ const serif = localFont({
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+
   return (
-    <NextIntlClientProvider locale="en-EN" messages={pageProps.messages}>
+    <NextIntlClientProvider
+      locale={router.locale || "en-EN"}
+      messages={pageProps.messages || {}}
+      timeZone="America/New_York"
+    >
       <main className={cx(sans.variable, serif.variable, "bg-white")}>
         <AppBar />
         <div className="pb-48">
           <Component {...pageProps} />
         </div>
       </main>
-
       <Footer />
     </NextIntlClientProvider>
   );

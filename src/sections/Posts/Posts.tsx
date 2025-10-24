@@ -30,7 +30,7 @@ const Posts = ({ posts }: PostsProps) => {
           </div>
 
           <div className="flex justify-end">
-            <Link href="/" target="_self">
+            <Link href="/writings" target="_self">
               {t("posts.moreWritings")}
             </Link>
           </div>

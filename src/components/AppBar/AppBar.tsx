@@ -1,4 +1,5 @@
 import React, { useRef, HTMLAttributes } from "react";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useOnClickOutside, useBoolean } from "usehooks-ts";
 import { twMerge } from "tailwind-merge";
@@ -28,13 +29,15 @@ const AppBar = ({ ...props }: AppBarProps) => {
   return (
     <header
       className={twMerge(
-        "fixed top-3 left-3 bg-gray-400/40 backdrop-blur rounded-lg px-3 py-3 space-y-3",
+        "fixed top-3 left-3 bg-gray-400/40 backdrop-blur rounded-lg px-4 py-3 space-y-3",
         value ? "min-w-xs" : "min-w-auto"
       )}
       ref={ref}
     >
-      <div className={twMerge("flex items-center justify-between", value ? "gap-0" : "gap-24")} {...props}>
-        <SvgIconM size="medium" />
+      <div className={twMerge("flex items-center justify-between", value ? "gap-0" : "gap-16")} {...props}>
+        <Link href="/" target="_self">
+          <SvgIconM size="medium" />
+        </Link>
         <Button onClick={value ? setFalse : setTrue}>
           <Typography variant="body1" color="inherit">
             {value ? t("appBar.close") : t("appBar.menu")}

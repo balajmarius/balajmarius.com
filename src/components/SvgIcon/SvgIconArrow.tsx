@@ -1,5 +1,3 @@
-// ABOUTME: This file contains the SvgIconArrow component.
-// ABOUTME: A diagonal arrow icon pointing to the upper-right direction.
 import { SvgIcon, type SvgIconProps } from "@/components/SvgIcon";
 
 const SvgIconArrow = (props: Omit<SvgIconProps, "children">) => {
