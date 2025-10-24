@@ -11,10 +11,10 @@ const Footer = ({ ...props }: FooterProps) => {
   const t = useTranslations();
 
   const socials = [
-    { label: t("footer.email"), email: process.env.NEXT_PUBLIC_EMAIL_ADDRESS },
-    { label: t("footer.linkedin"), href: process.env.NEXT_PUBLIC_LINKEDIN_URL },
-    { label: t("footer.github"), href: process.env.NEXT_PUBLIC_GITHUB_URL },
-    { label: t("footer.bluesky"), href: process.env.NEXT_PUBLIC_BLUESKY_URL },
+    { label: t("footer.email"), value: process.env.NEXT_PUBLIC_EMAIL_ADDRESS! },
+    { label: t("footer.linkedin"), href: process.env.NEXT_PUBLIC_LINKEDIN_URL! },
+    { label: t("footer.github"), href: process.env.NEXT_PUBLIC_GITHUB_URL! },
+    { label: t("footer.bluesky"), href: process.env.NEXT_PUBLIC_BLUESKY_URL! },
   ];
 
   const renderers = {
@@ -33,7 +33,7 @@ const Footer = ({ ...props }: FooterProps) => {
 
           <div className="col-span-9 space-y-3">
             {socials.map((social) => (
-              <FooterListItem key={social.label} label={social.label} value={social.email} href={social.href} />
+              <FooterListItem key={social.label} {...social} />
             ))}
           </div>
         </div>
