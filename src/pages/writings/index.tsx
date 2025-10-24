@@ -5,6 +5,7 @@ import type { Dictionary } from "lodash";
 import getPosts, { type Post } from "@/lib/posts";
 
 import { AppBar } from "@/components/AppBar";
+
 import { Posts } from "@/sections/Posts";
 
 type WritingsProps = {
@@ -18,15 +19,12 @@ const Writings = ({ posts }: WritingsProps) => {
     <>
       <Head>
         <title>
-          {t("posts.title")} - {t("metadata.title")}
+          <title>{t("metadata.title")}</title>
         </title>
       </Head>
 
       <AppBar />
-
-      <div className="pb-48">
-        <Posts posts={posts} />
-      </div>
+      <Posts posts={posts} />
     </>
   );
 };
