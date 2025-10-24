@@ -1,16 +1,25 @@
 import type { HTMLAttributes } from "react";
 import { useCopyToClipboard } from "usehooks-ts";
 
-import { SvgIconArrow, SvgIconCheckmark, SvgIconClipboard } from "@/components/SvgIcon";
+import { SvgIconCheckmark, SvgIconClipboard } from "@/components/SvgIcon";
 
+import { Link } from "@/components/Link";
 import { Button } from "@/components/Button";
 import { Typography } from "@/components/Typography";
 
-export type FooterListItemProps = {
+type FooterListItemSocialProps = {
   label: string;
-  href?: string;
-  value?: string;
+  href: string;
+  value?: never;
 } & HTMLAttributes<HTMLElement>;
+
+type FooterListItemContactProps = {
+  label: string;
+  value: string;
+  href?: never;
+} & HTMLAttributes<HTMLElement>;
+
+export type FooterListItemProps = FooterListItemSocialProps | FooterListItemContactProps;
 
 const FooterListItem = ({ label, value, href, ...props }: FooterListItemProps) => {
   const [copiedText, setCopiedText] = useCopyToClipboard();
@@ -21,40 +30,31 @@ const FooterListItem = ({ label, value, href, ...props }: FooterListItemProps) =
     }
   };
 
-  if (href) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3" {...props}>
-        <div className="flex items-center gap-1">
-          <Typography variant="body1" color="inherit">
-            {label}
-          </Typography>
-          <SvgIconArrow size="small" />
-        </div>
-
-        <div className="flex-grow border-t border-blue-100" />
-      </a>
-    );
-  }
-
   return (
     <div className="flex items-center gap-3" {...props}>
-      <div className="flex items-center gap-1">
+      {href ? (
+        <Link href={href} target="_blank" variant="inherit">
+          {label}
+        </Link>
+      ) : (
         <Typography variant="body1" color="inherit">
           {label}
         </Typography>
-      </div>
+      )}
 
       <div className="flex-grow border-t border-blue-100" />
 
-      <div className="flex items-center gap-1">
-        <Typography variant="body1" color="inherit">
-          {value}
-        </Typography>
+      {value ? (
+        <div className="flex items-center gap-1">
+          <Typography variant="body1" color="inherit">
+            {value}
+          </Typography>
 
-        <Button variant="transparent" onClick={handleCopy}>
-          {copiedText ? <SvgIconCheckmark size="small" /> : <SvgIconClipboard size="small" />}
-        </Button>
-      </div>
+          <Button variant="transparent" onClick={handleCopy}>
+            {copiedText ? <SvgIconCheckmark size="small" /> : <SvgIconClipboard size="small" />}
+          </Button>
+        </div>
+      ) : null}
     </div>
   );
 };
