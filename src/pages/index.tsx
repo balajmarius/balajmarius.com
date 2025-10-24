@@ -4,8 +4,6 @@ import type { Dictionary } from "lodash";
 
 import getPosts, { type Post } from "@/lib/posts";
 
-import { AppBar } from "@/components/AppBar";
-
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
 import { Commits } from "@/sections/Commits";
@@ -24,14 +22,10 @@ const Home = ({ posts }: HomeProps) => {
         <title>{t("metadata.title")}</title>
       </Head>
 
-      <AppBar />
-
-      <div className="pb-48">
-        <About />
-        <Experience />
-        <Commits />
-        <Posts posts={posts} />
-      </div>
+      <About />
+      <Experience />
+      <Commits />
+      <Posts posts={posts} />
     </>
   );
 };
