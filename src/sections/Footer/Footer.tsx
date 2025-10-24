@@ -1,9 +1,9 @@
 import type { HTMLAttributes, ReactNode } from "react";
-import isNil from "lodash.isnil";
 import { useTranslations } from "next-intl";
 
 import { Typography } from "@/components/Typography";
-import { SvgIconArrow } from "@/components/SvgIcon";
+
+import { FooterListItem } from "@/sections/Footer";
 
 export type FooterProps = {} & HTMLAttributes<HTMLElement>;
 
@@ -11,11 +11,10 @@ const Footer = ({ ...props }: FooterProps) => {
   const t = useTranslations();
 
   const socials = [
-    { label: t("footer.email"), username: "balajmarius@gmail.com" },
-    { label: t("footer.linkedin") },
-    { label: t("footer.github") },
-    { label: t("footer.bluesky") },
-    { label: t("footer.goodreads") },
+    { label: t("footer.email"), email: process.env.NEXT_PUBLIC_EMAIL_ADDRESS },
+    { label: t("footer.linkedin"), href: process.env.NEXT_PUBLIC_LINKEDIN_URL },
+    { label: t("footer.github"), href: process.env.NEXT_PUBLIC_GITHUB_URL },
+    { label: t("footer.bluesky"), href: process.env.NEXT_PUBLIC_BLUESKY_URL },
   ];
 
   const renderers = {
@@ -34,22 +33,7 @@ const Footer = ({ ...props }: FooterProps) => {
 
           <div className="col-span-9 space-y-3">
             {socials.map((social) => (
-              <div className="flex items-center gap-3" key={social.label}>
-                <div className="flex items-center gap-1">
-                  <Typography variant="body1" color="inherit">
-                    {social.label}
-                  </Typography>
-                  {isNil(social.username) ? <SvgIconArrow size="small" /> : null}
-                </div>
-
-                <div className="flex-grow border-t border-blue-100" />
-
-                {social.username ? (
-                  <Typography variant="body1" color="inherit">
-                    {social.username}
-                  </Typography>
-                ) : null}
-              </div>
+              <FooterListItem key={social.label} label={social.label} value={social.email} href={social.href} />
             ))}
           </div>
         </div>
