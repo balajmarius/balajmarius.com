@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Dictionary } from "lodash";
 import { useTranslations } from "next-intl";
@@ -8,11 +9,9 @@ import getPosts, { type Post } from "@/lib/posts";
 import { SvgIconBack } from "@/components/SvgIcon";
 
 import { Button } from "@/components/Button";
-import { Typography } from "@/components/Typography";
-
+import { PostsList } from "@/components/PostsList";
 import { Section } from "@/components/Section";
-import { PostsListItem } from "@/sections/Posts";
-import Link from "next/link";
+import { Typography } from "@/components/Typography";
 
 type WritingsProps = {
   posts: Dictionary<Post[]>;
@@ -20,7 +19,6 @@ type WritingsProps = {
 
 const Writings = ({ posts }: WritingsProps) => {
   const t = useTranslations();
-  const years = Object.keys(posts).sort().reverse();
 
   const renderers = {
     serif: (chunks: ReactNode) => <span className="text-blue-500 font-serif italic">{chunks}</span>,
@@ -48,13 +46,7 @@ const Writings = ({ posts }: WritingsProps) => {
             </Typography>
           </div>
 
-          <div className="space-y-6">
-            <div className="border-b border-gray-100">
-              {years.map((year) => (
-                <PostsListItem key={year} year={year} posts={posts[year]} />
-              ))}
-            </div>
-          </div>
+          <PostsList posts={posts} />
         </div>
       </Section>
     </>

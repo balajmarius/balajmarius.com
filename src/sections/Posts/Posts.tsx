@@ -4,10 +4,9 @@ import type { Dictionary } from "lodash";
 import type { Post } from "@/lib/posts";
 
 import { Link } from "@/components/Link";
+import { PostsList } from "@/components/PostsList";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
-
-import { PostsListItem } from "@/sections/Posts";
 
 type PostsProps = {
   posts: Dictionary<Post[]>;
@@ -15,7 +14,6 @@ type PostsProps = {
 
 const Posts = ({ posts }: PostsProps) => {
   const t = useTranslations();
-  const years = Object.keys(posts).sort().reverse();
 
   return (
     <Section>
@@ -23,11 +21,7 @@ const Posts = ({ posts }: PostsProps) => {
         <Typography variant="subtitle1">{t("posts.title")}</Typography>
 
         <div className="space-y-6">
-          <div className="border-b border-gray-100">
-            {years.map((year) => (
-              <PostsListItem key={year} year={year} posts={posts[year]} />
-            ))}
-          </div>
+          <PostsList posts={posts} />
 
           <div className="flex justify-end">
             <Link href="/writings" target="_self">
