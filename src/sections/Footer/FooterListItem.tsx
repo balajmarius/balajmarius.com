@@ -13,11 +13,11 @@ export type FooterListItemProps = {
 } & HTMLAttributes<HTMLElement>;
 
 const FooterListItem = ({ label, value, href, ...props }: FooterListItemProps) => {
-  const [copiedText, copy] = useCopyToClipboard();
+  const [copiedText, setCopiedText] = useCopyToClipboard();
 
   const handleCopy = async () => {
     if (value) {
-      await copy(value);
+      await setCopiedText(value);
     }
   };
 
