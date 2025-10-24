@@ -35,7 +35,7 @@ const PostsList = ({ posts }: PostsListProps) => {
 
           <div className="col-span-10 divide-y divide-gray-100">
             {posts[year].map((post) => (
-              <Link key={post.slug} href={`/writings/${post.slug}`} target="_self" className="flex justify-between py-3">
+              <Link key={post.slug} href={`/writings/${post.slug}`} className="flex justify-between py-3">
                 <div className="space-x-1">
                   <Typography variant="body1" display="inline">
                     {post.title}

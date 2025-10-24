@@ -33,7 +33,7 @@ const Writings = ({ posts }: WritingsProps) => {
       <Section>
         <div className="space-y-16">
           <div className="space-y-8">
-            <Link href="/" target="_self" className="block">
+            <Link href="/" className="block">
               <Button startIcon={<SvgIconBack size="small" />}>
                 <Typography variant="body1" color="inherit">
                   {t("posts.backToHome")}

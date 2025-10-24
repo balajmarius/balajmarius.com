@@ -35,7 +35,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
       ref={ref}
     >
       <div className={twMerge("flex items-center justify-between", value ? "gap-0" : "gap-16")} {...props}>
-        <Link href="/" target="_self">
+        <Link href="/">
           <SvgIconM size="medium" />
         </Link>
         <Button onClick={value ? setFalse : setTrue}>

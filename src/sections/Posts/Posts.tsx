@@ -24,9 +24,7 @@ const Posts = ({ posts }: PostsProps) => {
           <PostsList posts={posts} />
 
           <div className="flex justify-end">
-            <Link href="/writings" target="_self">
-              {t("posts.moreWritings")}
-            </Link>
+            <Link href="/writings">{t("posts.moreWritings")}</Link>
           </div>
         </div>
       </div>

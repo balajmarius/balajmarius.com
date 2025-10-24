@@ -48,7 +48,7 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
 
       <Section>
         <div className="space-y-16">
-          <Link href="/writings" target="_self" className="inline-block">
+          <Link href="/writings" className="inline-block">
             <Button startIcon={<SvgIconBack size="small" />}>
               <Typography variant="body1" color="inherit">
                 {t("posts.backToWritings")}
@@ -71,7 +71,7 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
             </div>
           </div>
 
-          <Link href="/writings" target="_self" className="inline-block">
+          <Link href="/writings" className="inline-block">
             <Button startIcon={<SvgIconBack size="small" />}>
               <Typography variant="body1" color="inherit">
                 {t("posts.backToWritings")}
@@ -84,12 +84,13 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
   );
 };
 
-export const getStaticPaths: Omit<GetStaticPaths, "fallback"> = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = getPostSlugs();
   const paths = slugs.map((slug) => ({ params: { slug } }));
 
   return {
     paths,
+    fallback: false,
   };
 };
 
