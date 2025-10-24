@@ -62,6 +62,17 @@ const serif = localFont({
   variable: "--font-serif",
 });
 
+const mono = localFont({
+  src: [
+    {
+      path: "../static/fonts/RobotoMono-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-mono",
+});
+
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
@@ -71,7 +82,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       messages={pageProps.messages || {}}
       timeZone="America/New_York"
     >
-      <main className={cx(sans.variable, serif.variable, "bg-white")}>
+      <main className={cx(sans.variable, serif.variable, mono.variable, "bg-white")}>
         <AppBar />
         <div className="pb-48">
           <Component {...pageProps} />

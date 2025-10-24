@@ -1,5 +1,6 @@
-import { format } from "date-fns";
+import Link from "next/link";
 import type { Dictionary } from "lodash";
+import { format } from "date-fns";
 
 import type { Post, PostLabel } from "@/lib/posts";
 
@@ -34,7 +35,7 @@ const PostsList = ({ posts }: PostsListProps) => {
 
           <div className="col-span-10 divide-y divide-gray-100">
             {posts[year].map((post) => (
-              <div key={post.slug} className="flex justify-between py-3">
+              <Link key={post.slug} href={`/writings/${post.slug}`} target="_self" className="flex justify-between py-3">
                 <div className="space-x-1">
                   <Typography variant="body1" display="inline">
                     {post.title}
@@ -53,7 +54,7 @@ const PostsList = ({ posts }: PostsListProps) => {
 
                   <Chip color={chipColorLabel[post.label]}>{post.label}</Chip>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

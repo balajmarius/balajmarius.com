@@ -40,4 +40,30 @@ const getPosts = () => {
   return groupBy<Post>(posts, (post) => getYear(post.createdAt));
 };
 
+export const getPostSlugs = () => {
+  const fileNames = fs.readdirSync(postsDir);
+  const fileSlugs = fileNames.map((fileName) => path.parse(fileName).name);
+
+  return fileSlugs;
+};
+
+export const getPost = (slug: string) => {
+  const filePath = path.join(postsDir, `${slug}.md`);
+  const fileContents = fs.readFileSync(filePath, "utf8");
+
+  const {
+    data: { title, createdAt, author, label },
+    content,
+  } = matter(fileContents);
+
+  return {
+    title,
+    createdAt,
+    author,
+    label,
+    slug,
+    content,
+  };
+};
+
 export default getPosts;
