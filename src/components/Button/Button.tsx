@@ -10,6 +10,7 @@ export type ButtonProps = {
 
 const buttonVariantClassNames: ButtonVariantMapping = {
   default: "py-1 px-2 rounded-sm text-gray-600 hover:bg-blue-500 hover:text-white cursor-pointer",
+  transparent: "cursor-pointer",
 };
 
 const Button = ({ children, variant = "default", className, ...props }: ButtonProps) => {
