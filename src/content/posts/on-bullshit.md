@@ -13,7 +13,7 @@ Here are some key ideas:
 
 A liar knows the truth but chooses to hide it. That’s bad, of course. But at least the liar still respects the truth in some strange way, because they have to know it.
 
-![alt text](https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000 "Title")
+![A beautiful blue door.](/images/posts/on-bullshit/famara-marmiesse.png)
 
 On the other hand the bullshiters don’t care at all if what they say is true or false. The only thing that matters to them is how they sound, if they impress, if they influence, if they win the moment. Truth is not even on the table.
 
