@@ -14,7 +14,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
   const { value, setTrue, setFalse } = useBoolean();
 
   const t = useTranslations();
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLElement>(null!);
 
   const sections = [
     { label: t("appBar.intro"), icon: <SvgIconHouse size="small" /> },
