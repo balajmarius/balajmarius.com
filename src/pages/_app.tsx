@@ -77,11 +77,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   return (
-    <NextIntlClientProvider
-      locale={router.locale || "en-EN"}
-      messages={pageProps.messages || {}}
-      timeZone="America/New_York"
-    >
+    <NextIntlClientProvider locale={router.locale ?? "en-EN"} messages={pageProps.messages}>
       <main className={cx(sans.variable, serif.variable, mono.variable, "bg-white")}>
         <AppBar />
         <div className="pb-48">

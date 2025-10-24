@@ -84,22 +84,17 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: Omit<GetStaticPaths, "fallback"> = async () => {
   const slugs = getPostSlugs();
-  const paths = slugs.map((slug) => ({
-    params: { slug },
-  }));
+  const paths = slugs.map((slug) => ({ params: { slug } }));
 
   return {
     paths,
-    fallback: false,
   };
 };
 
 export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) => {
-  const slug = params?.slug as string;
-  const post = getPost(slug);
-
+  const post = getPost(params?.slug as string);
   const mdxSource = await serialize(post.content);
 
   return {
@@ -107,6 +102,7 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) 
       mdxSource,
       title: post.title,
       author: post.author,
+      label: post.label,
       createdAt: post.createdAt,
       messages: (await import("@/copy/en-EN.json")).default,
     },
