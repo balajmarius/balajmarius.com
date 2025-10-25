@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import type { ComponentProps } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
@@ -25,17 +26,15 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
   const t = useTranslations();
 
   const renderers = {
-    p: (props: React.ComponentProps<"p">) => <p {...props} />,
-    a: (props: React.ComponentProps<"a">) => <a className="border-b text-blue-500 hover:text-blue-400" {...props} />,
-    h2: (props: React.ComponentProps<"h2">) => <h2 className="text-xl font-medium" {...props} />,
-    h3: (props: React.ComponentProps<"h3">) => <h3 className="font-medium" {...props} />,
-    em: (props: React.ComponentProps<"em">) => <em className="italic font-serif" {...props} />,
-    code: (props: React.Component<"code">) => <code className="text-blue-500 font-roboto-mono" {...props} />,
-    pre: (props: React.ComponentProps<"pre">) => <pre className="rounded-lg bg-gray-200 px-3 py-3" {...props} />,
-    ul: (props: React.ComponentProps<"ul">) => (
-      <ul className="list-disc space-y-3 px-4 marker:text-blue-500" {...props} />
-    ),
-    ol: (props: React.ComponentProps<"ol">) => (
+    p: (props: ComponentProps<"p">) => <p {...props} />,
+    a: (props: ComponentProps<"a">) => <a className="border-b text-blue-500 hover:text-blue-400" {...props} />,
+    h2: (props: ComponentProps<"h2">) => <h2 className="text-xl font-medium" {...props} />,
+    h3: (props: ComponentProps<"h3">) => <h3 className="font-medium" {...props} />,
+    em: (props: ComponentProps<"em">) => <em className="italic font-serif" {...props} />,
+    code: (props: ComponentProps<"code">) => <code className="text-blue-500 font-roboto-mono" {...props} />,
+    pre: (props: ComponentProps<"pre">) => <pre className="rounded-lg bg-gray-200 px-3 py-3" {...props} />,
+    ul: (props: ComponentProps<"ul">) => <ul className="list-disc space-y-3 px-4 marker:text-blue-500" {...props} />,
+    ol: (props: ComponentProps<"ol">) => (
       <ol className="list-decimal space-y-3 px-4 marker:text-blue-500 marker:italic marker:font-serif" {...props} />
     ),
   };
