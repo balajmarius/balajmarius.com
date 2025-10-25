@@ -1,7 +1,7 @@
 import GithubCalendar, { type Activity } from "react-github-calendar";
 import { useTranslations } from "next-intl";
 
-import { account, links } from "@/config";
+import { accounts, links } from "@/config";
 import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
 
 import { Link } from "@/components/Link";
@@ -38,7 +38,7 @@ const Commits = () => {
           hideMonthLabels
           hideColorLegend
           theme={theme}
-          username={account.githubUsername}
+          username={accounts.githubUsername}
           transformData={renderers.data}
         />
 

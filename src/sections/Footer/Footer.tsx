@@ -1,7 +1,7 @@
 import type { HTMLAttributes, ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
-import { account, links } from "@/config";
+import { accounts, links } from "@/config";
 
 import { Typography } from "@/components/Typography";
 
@@ -13,7 +13,7 @@ const Footer = ({ ...props }: FooterProps) => {
   const t = useTranslations();
 
   const socials = [
-    { label: t("footer.email"), value: account.email },
+    { label: t("footer.email"), value: accounts.emailAddress },
     { label: t("footer.linkedin"), href: links.linkedin },
     { label: t("footer.github"), href: links.github },
     { label: t("footer.bluesky"), href: links.bluesky },

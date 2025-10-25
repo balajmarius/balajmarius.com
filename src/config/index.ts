@@ -1,6 +1,3 @@
-// ABOUTME: Application configuration including external links and account information
-// ABOUTME: Centralized configuration to prevent hardcoded values throughout the application
-
 export const links = {
   github: "https://github.com/balajmarius",
   linkedin: "https://www.linkedin.com/in/marius-balaj",
@@ -11,7 +8,7 @@ export const links = {
   viitorul: "https://instagram.com/cs_viitorul_timisoara",
 } as const;
 
-export const account = {
+export const accounts = {
   githubUsername: "balajmarius",
-  email: "balajmarius@gmail.com",
+  emailAddress: "balajmarius@gmail.com",
 } as const;
