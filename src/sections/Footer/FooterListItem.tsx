@@ -49,7 +49,6 @@ const FooterListItem = ({ label, value, href, ...props }: FooterListItemProps) =
           <Typography variant="body1" color="inherit">
             {value}
           </Typography>
-
           <Button variant="transparent" onClick={handleCopy}>
             {copiedText ? <SvgIconCheckmark size="small" /> : <SvgIconClipboard size="small" />}
           </Button>
