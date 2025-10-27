@@ -1,4 +1,5 @@
 import type { HTMLAttributes, ReactNode } from "react";
+import { forwardRef } from "react";
 import { useTranslations } from "next-intl";
 
 import { accounts, links } from "@/config";
@@ -9,7 +10,7 @@ import { FooterListItem } from "@/sections/Footer";
 
 export type FooterProps = {} & HTMLAttributes<HTMLElement>;
 
-const Footer = ({ ...props }: FooterProps) => {
+const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
   const t = useTranslations();
 
   const socials = [
@@ -24,7 +25,7 @@ const Footer = ({ ...props }: FooterProps) => {
   };
 
   return (
-    <footer className="bg-blue-500 text-blue-100 py-16" {...props}>
+    <footer className="bg-blue-500 text-blue-100 py-16" {...props} ref={ref}>
       <div className="w-xl mx-auto space-y-24">
         <div className="grid grid-cols-12">
           <div className="col-span-3">
@@ -44,7 +45,6 @@ const Footer = ({ ...props }: FooterProps) => {
           <Typography variant="body1" color="inherit">
             {t.rich("footer.quote", renderers)}
           </Typography>
-
           <div className="text-right border-t border-blue-100 pt-1">
             <Typography variant="small" color="inherit">
               {t("footer.copyright")}
@@ -54,6 +54,8 @@ const Footer = ({ ...props }: FooterProps) => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;

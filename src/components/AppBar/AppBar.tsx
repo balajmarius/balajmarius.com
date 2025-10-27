@@ -29,7 +29,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
   return (
     <header
       className={twMerge(
-        "fixed top-3 left-3 bg-gray-400/40 backdrop-blur rounded-lg px-4 py-3 space-y-3",
+        "fixed z-50 top-3 left-3 bg-gray-400/40 backdrop-blur rounded-lg px-4 py-3 space-y-3",
         value ? "min-w-xs" : "min-w-auto"
       )}
       ref={ref}

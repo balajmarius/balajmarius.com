@@ -1,8 +1,10 @@
 import "@/static/css/globals.css";
 
 import type { AppProps } from "next/app";
-import { NextIntlClientProvider } from "next-intl";
+import { useRef } from "react";
 import { useRouter } from "next/router";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { NextIntlClientProvider } from "next-intl";
 import cx from "classnames";
 import localFont from "next/font/local";
 
@@ -76,15 +78,34 @@ const mono = localFont({
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
+  const mainRef = useRef<HTMLElement>(null);
+  const footerRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: footerRef,
+    offset: ["start end", "end end"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
+  const borderRadius = useTransform(scrollYProgress, [0, 1], [0, 24]);
+
   return (
     <NextIntlClientProvider locale={router.locale ?? "en-EN"} messages={pageProps.messages}>
-      <main className={cx(sans.variable, serif.variable, mono.variable, "bg-white")}>
-        <AppBar />
-        <div className="pb-48">
-          <Component {...pageProps} />
-        </div>
-      </main>
-      <Footer />
+      <AppBar />
+
+      <motion.main
+        ref={mainRef}
+        className={cx(sans.variable, serif.variable, mono.variable, "bg-white pb-48 overflow-hidden")}
+        style={{
+          scale,
+          borderBottomLeftRadius: borderRadius,
+          borderBottomRightRadius: borderRadius,
+        }}
+      >
+        <Component {...pageProps} />
+      </motion.main>
+
+      <Footer ref={footerRef} />
     </NextIntlClientProvider>
   );
 };
