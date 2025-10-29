@@ -1,27 +1,20 @@
-import Link from "next/link";
+import isNil from "lodash.isnil";
+import { useState } from "react";
 import type { Dictionary } from "lodash";
-import { format } from "date-fns";
 
-import type { Post, PostLabel } from "@/lib/posts";
+import type { Post } from "@/lib/posts";
 
-import { Chip, type ChipColor } from "@/components/Chip";
 import { Typography } from "@/components/Typography";
-
-type ChipColorLabelMapping = Record<PostLabel, ChipColor>;
+import { PostListItem } from "@/components/PostsList";
 
 type PostsListProps = {
   posts: Dictionary<Post[]>;
 };
 
-const chipColorLabel: ChipColorLabelMapping = {
-  Book: "info",
-  LLMs: "success",
-  Dev: "primary",
-  TIL: "secondary",
-};
-
 const PostsList = ({ posts }: PostsListProps) => {
   const years = Object.keys(posts).sort().reverse();
+
+  const [slug, setSlug] = useState<string | null>(null);
 
   return (
     <div className="border-b border-gray-100">
@@ -35,26 +28,17 @@ const PostsList = ({ posts }: PostsListProps) => {
 
           <div className="col-span-10 divide-y divide-gray-100">
             {posts[year].map((post) => (
-              <Link key={post.slug} href={`/writings/${post.slug}`} className="flex justify-between py-3">
-                <div className="space-x-1">
-                  <Typography variant="body1" display="inline">
-                    {post.title}
-                  </Typography>
-                  {post.author ? (
-                    <Typography variant="subtitle1" display="inline">
-                      {post.author}
-                    </Typography>
-                  ) : null}
-                </div>
-
-                <div className="flex items-center gap-x-3">
-                  <Typography variant="body2" color="muted">
-                    {format(post.createdAt, "dd/MM")}
-                  </Typography>
-
-                  <Chip color={chipColorLabel[post.label]}>{post.label}</Chip>
-                </div>
-              </Link>
+              <PostListItem
+                key={post.slug}
+                slug={post.slug}
+                title={post.title}
+                label={post.label}
+                author={post.author}
+                createdAt={post.createdAt}
+                active={isNil(slug) || slug === post.slug}
+                onMouseLeave={() => setSlug(null)}
+                onMouseEnter={() => setSlug(post.slug)}
+              />
             ))}
           </div>
         </div>

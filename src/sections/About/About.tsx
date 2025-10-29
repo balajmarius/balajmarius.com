@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
@@ -14,24 +15,24 @@ const About = () => {
     ai: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
     serif: (chunks: ReactNode) => <span className="font-serif italic">{chunks}</span>,
     url1: (chunks: ReactNode) => (
-      <a href={links.github} className="text-blue-500" target="_blank" rel="noopener noreferrer">
+      <Link href={links.github} className="text-blue-500" target="_blank" rel="noopener noreferrer">
         {chunks}
-      </a>
+      </Link>
     ),
     url2: (chunks: ReactNode) => (
-      <a href={links.sandbox} className="text-blue-500" target="_blank" rel="noopener noreferrer">
+      <Link href={links.sandbox} className="text-blue-500" target="_blank" rel="noopener noreferrer">
         {chunks}
-      </a>
+      </Link>
     ),
     url3: (chunks: ReactNode) => (
-      <a href={links.viitorul} className="text-blue-500" target="_blank" rel="noopener noreferrer">
+      <Link href={links.viitorul} className="text-blue-500" target="_blank" rel="noopener noreferrer">
         {chunks}
-      </a>
+      </Link>
     ),
     url4: (chunks: ReactNode) => (
-      <a href={links.goodreads} className="text-blue-500" target="_blank" rel="noopener noreferrer">
+      <Link href={links.goodreads} className="text-blue-500" target="_blank" rel="noopener noreferrer">
         {chunks}
-      </a>
+      </Link>
     ),
   };
 
