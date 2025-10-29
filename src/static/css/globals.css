@@ -20,5 +20,5 @@
   --color-gray-500: #6e7394;
   --color-gray-600: #34384c;
 
-  --ease-expo: cubic-bezier(0.33, 1, 0.68, 1);
+  --ease-out-exponential: cubic-bezier(0.33, 1, 0.68, 1);
 }
