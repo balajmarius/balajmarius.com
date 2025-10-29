@@ -1,3 +1,5 @@
+// ABOUTME: External links and social media URLs for the site
+// ABOUTME: Account identifiers for various services
 export const links = {
   github: "https://github.com/balajmarius",
   linkedin: "https://www.linkedin.com/in/marius-balaj",

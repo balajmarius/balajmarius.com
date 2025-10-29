@@ -1,7 +1,7 @@
 import GithubCalendar, { type Activity } from "react-github-calendar";
 import { useTranslations } from "next-intl";
 
-import { accounts, links } from "@/config";
+import { accounts, links } from "@/utils/links";
 import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
 
 import { Link } from "@/components/Link";

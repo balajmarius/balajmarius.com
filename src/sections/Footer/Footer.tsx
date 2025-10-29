@@ -2,7 +2,7 @@ import type { HTMLAttributes, ReactNode } from "react";
 import { forwardRef } from "react";
 import { useTranslations } from "next-intl";
 
-import { accounts, links } from "@/config";
+import { accounts, links } from "@/utils/links";
 
 import { Typography } from "@/components/Typography";
 

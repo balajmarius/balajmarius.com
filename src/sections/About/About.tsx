@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
-import { links } from "@/config";
+import { links } from "@/utils/links";
 
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
