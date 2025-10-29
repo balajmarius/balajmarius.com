@@ -51,7 +51,7 @@ const Link = ({
       <SvgIconArrow
         size="small"
         className={cn(
-          "transition-transform duration-300 group-hover:-translate-y-1",
+          "transition-transform duration-300 will-change-transform group-hover:-translate-y-1",
           linkSvgIconVariantClassNames[variant]
         )}
       />
