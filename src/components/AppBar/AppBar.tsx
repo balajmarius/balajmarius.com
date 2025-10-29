@@ -1,9 +1,11 @@
-import React, { useRef, HTMLAttributes } from "react";
+import { useRef, HTMLAttributes } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useOnClickOutside, useBoolean } from "usehooks-ts";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { cn } from "@/lib/utils";
+import { appBarAnimation } from "@/utils/keyframes";
 
 import {
   SvgIconM,
@@ -36,8 +38,8 @@ const AppBar = ({ ...props }: AppBarProps) => {
   return (
     <header
       className={cn(
-        "fixed top-3 left-3 z-50 space-y-3 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur",
-        value ? "w-84" : "w-44"
+        "fixed top-3 left-3 z-50 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all duration-400 ease-expo",
+        value ? "w-84 space-y-3" : "w-44"
       )}
       ref={ref}
     >
@@ -58,21 +60,34 @@ const AppBar = ({ ...props }: AppBarProps) => {
         </Button>
       </div>
 
-      {value ? (
-        <div className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3">
-          {sections.map((section) => (
-            <div
-              key={section.label}
-              className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+      <AnimatePresence>
+        {value ? (
+          <motion.div
+            {...appBarAnimation.container}
+            className="overflow-hidden"
+          >
+            <motion.div
+              {...appBarAnimation.innerContainer}
+              className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3"
             >
-              {section.icon}
-              <Typography variant="body1" color="inherit">
-                {section.label}
-              </Typography>
-            </div>
-          ))}
-        </div>
-      ) : null}
+              {sections.map((section, index) => (
+                <motion.div
+                  key={section.label}
+                  initial={appBarAnimation.item.initial}
+                  animate={appBarAnimation.item.animate}
+                  transition={appBarAnimation.item.transition(index)}
+                  className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+                >
+                  {section.icon}
+                  <Typography variant="body1" color="inherit">
+                    {section.label}
+                  </Typography>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </header>
   );
 };

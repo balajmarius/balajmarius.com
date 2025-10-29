@@ -2,9 +2,9 @@ import { ReactNode, HTMLAttributes } from "react";
 
 import { cn } from "@/lib/utils";
 
-import type { LinkVariant, LinkVariantMapping } from "@/components/Link";
 import { Typography } from "@/components/Typography";
 import { SvgIconArrow } from "@/components/SvgIcon";
+import type { LinkVariant, LinkVariantMapping } from "@/components/Link";
 
 export type LinkProps = {
   href: string;
@@ -51,7 +51,7 @@ const Link = ({
       <SvgIconArrow
         size="small"
         className={cn(
-          "transition-transform group-hover:-translate-y-1",
+          "transition-transform duration-300 group-hover:-translate-y-1",
           linkSvgIconVariantClassNames[variant]
         )}
       />

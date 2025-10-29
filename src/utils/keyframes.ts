@@ -8,3 +8,26 @@ export const scrollTransforms = {
     exit: [0, 24],
   },
 };
+
+export const appBarAnimation = {
+  container: {
+    initial: { opacity: 0, height: 0 },
+    animate: { opacity: 1, height: "auto" as const },
+    exit: { opacity: 0, height: 0 },
+    transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] as const },
+  },
+  innerContainer: {
+    initial: { opacity: 0, y: 10 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] as const },
+  },
+  item: {
+    initial: { opacity: 0, y: 10 },
+    animate: { opacity: 1, y: 0 },
+    transition: (index: number) => ({
+      duration: 0.5,
+      delay: index * 0.1,
+      ease: [0.33, 1, 0.68, 1] as const,
+    }),
+  },
+};

@@ -19,4 +19,6 @@
   --color-gray-400: #e6eef6;
   --color-gray-500: #6e7394;
   --color-gray-600: #34384c;
+
+  --ease-expo: cubic-bezier(0.33, 1, 0.68, 1);
 }
