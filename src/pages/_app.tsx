@@ -10,9 +10,8 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { scrollTransforms } from "@/utils/keyframes";
 
-import { AppBar } from "@/components/AppBar";
-
 import { Footer } from "@/sections/Footer";
+import { AppBar } from "@/components/AppBar";
 
 const sans = localFont({
   src: [

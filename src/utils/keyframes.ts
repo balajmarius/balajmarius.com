@@ -7,4 +7,4 @@ export const scrollTransforms = {
     enter: [0, 1],
     exit: [0, 24],
   },
-} as const;
+};
