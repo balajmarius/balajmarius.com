@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import React, { type HTMLAttributes, ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -19,7 +19,8 @@ export type TypographyProps = {
   variant?: TypographyVariant;
   display?: TypographyDisplay;
   fontWeight?: TypographyFontWeight;
-};
+  className?: string;
+} & Omit<HTMLAttributes<HTMLElement>, "className">;
 
 const typographyVariantMapping: TypographyVariantMapping = {
   h1: "h1",

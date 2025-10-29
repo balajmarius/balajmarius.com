@@ -25,8 +25,8 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
   };
 
   return (
-    <footer className="bg-blue-500 text-blue-100 py-16" {...props} ref={ref}>
-      <div className="w-xl mx-auto space-y-24">
+    <footer className="py-16 bg-blue-500 text-blue-100" {...props} ref={ref}>
+      <div className="mx-auto w-xl space-y-24">
         <div className="grid grid-cols-12">
           <div className="col-span-3">
             <Typography variant="subtitle1" color="inherit">
@@ -45,7 +45,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
           <Typography variant="body1" color="inherit">
             {t.rich("footer.quote", renderers)}
           </Typography>
-          <div className="text-right border-t border-blue-100 pt-1">
+          <div className="border-t border-blue-100 pt-1 text-right">
             <Typography variant="small" color="inherit">
               {t("footer.copyright")}
             </Typography>
