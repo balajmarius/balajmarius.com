@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 
 import { cn } from "@/lib/utils";
+import { scrollTransforms } from "@/utils/keyframes";
 
 import { AppBar } from "@/components/AppBar";
 
@@ -87,8 +88,16 @@ const App = ({ Component, pageProps }: AppProps) => {
     offset: ["start end", "end end"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
-  const borderRadius = useTransform(scrollYProgress, [0, 1], [0, 24]);
+  const scale = useTransform(
+    scrollYProgress,
+    scrollTransforms.scale.enter,
+    scrollTransforms.scale.exit
+  );
+  const borderRadius = useTransform(
+    scrollYProgress,
+    scrollTransforms.borderRadius.enter,
+    scrollTransforms.borderRadius.exit
+  );
 
   return (
     <NextIntlClientProvider
