@@ -25,7 +25,7 @@ const Button = ({
   return (
     <button
       className={cn(
-        "transition-colors",
+        "transition-colors ease-in",
         buttonVariantClassNames[variant],
         startIcon ? "group flex items-center gap-1" : null
       )}
