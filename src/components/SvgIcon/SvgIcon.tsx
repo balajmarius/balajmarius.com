@@ -1,5 +1,6 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+
+import { cn } from "@/lib/utils";
 
 import type { SvgIconSize, SvgIconSizeMapping } from "@/components/SvgIcon";
 
@@ -18,7 +19,7 @@ const svgIconSizeClassNames: SvgIconSizeMapping = {
 
 const SvgIcon = ({ children, className, size = "inherit" }: SvgIconProps) => {
   return (
-    <svg viewBox="0 0 16 16" fill="currentColor" className={twMerge(className, svgIconSizeClassNames[size])}>
+    <svg viewBox="0 0 16 16" fill="currentColor" className={cn(className, svgIconSizeClassNames[size])}>
       {children}
     </svg>
   );

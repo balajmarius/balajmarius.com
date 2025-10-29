@@ -1,5 +1,6 @@
-import React, { type HTMLAttributes, ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+import React, { type ReactNode } from "react";
+
+import { cn } from "@/lib/utils";
 
 import type {
   TypographyFontWeight,
@@ -18,7 +19,7 @@ export type TypographyProps = {
   variant?: TypographyVariant;
   display?: TypographyDisplay;
   fontWeight?: TypographyFontWeight;
-} & HTMLAttributes<HTMLElement>;
+};
 
 const typographyVariantMapping: TypographyVariantMapping = {
   h1: "h1",
@@ -73,7 +74,7 @@ const Typography = ({
 
   return (
     <Component
-      className={twMerge(
+      className={cn(
         typographyVariantClassNames[variant],
         typographyFontWeightClassNames[fontWeight],
         typographyColorClassNames[color],

@@ -2,7 +2,8 @@ import React, { useRef, HTMLAttributes } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useOnClickOutside, useBoolean } from "usehooks-ts";
-import { twMerge } from "tailwind-merge";
+
+import { cn } from "@/lib/utils";
 
 import { SvgIconM, SvgIconHouse, SvgIconTrophy, SvgIconNotepad, SvgIconGlobe } from "@/components/SvgIcon";
 
@@ -28,13 +29,13 @@ const AppBar = ({ ...props }: AppBarProps) => {
 
   return (
     <header
-      className={twMerge(
-        "fixed z-50 top-3 left-3 bg-gray-400/40 backdrop-blur rounded-lg px-4 py-3 space-y-3",
-        value ? "min-w-xs" : "min-w-auto"
+      className={cn(
+        "fixed top-3 left-3 z-50 space-y-3 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all ease-in-out",
+        value ? "w-84" : "w-44"
       )}
       ref={ref}
     >
-      <div className={twMerge("flex items-center justify-between", value ? "gap-0" : "gap-16")} {...props}>
+      <div className={cn("flex items-center justify-between", value ? "gap-0" : "gap-16")} {...props}>
         <Link href="/">
           <SvgIconM size="medium" />
         </Link>
@@ -46,11 +47,11 @@ const AppBar = ({ ...props }: AppBarProps) => {
       </div>
 
       {value ? (
-        <div className="bg-gray-400/40 space-y-3 px-3 py-3 rounded-sm">
+        <div className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3">
           {sections.map((section) => (
             <div
               key={section.label}
-              className="hover:bg-blue-500 text-gray-600 hover:text-white flex items-center gap-2 py-1 px-3 rounded-sm cursor-pointer"
+              className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
             >
               {section.icon}
               <Typography variant="body1" color="inherit">

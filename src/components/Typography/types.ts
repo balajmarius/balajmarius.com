@@ -11,7 +11,8 @@ export const TypographyVariants = [
 ] as const;
 
 export type TypographyVariant = (typeof TypographyVariants)[number];
-export type TypographyVariantMapping = Record<TypographyVariant, string>;
+type IntrinsicTextElement = "h1" | "h2" | "h3" | "h4" | "p" | "span" | "small";
+export type TypographyVariantMapping = Record<TypographyVariant, IntrinsicTextElement>;
 
 export const TypographyFontWeights = ["normal", "medium", "bold"] as const;
 

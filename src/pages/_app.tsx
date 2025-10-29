@@ -5,8 +5,9 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { NextIntlClientProvider } from "next-intl";
-import cx from "classnames";
 import localFont from "next/font/local";
+
+import { cn } from "@/lib/utils";
 
 import { AppBar } from "@/components/AppBar";
 
@@ -95,7 +96,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
       <motion.main
         ref={mainRef}
-        className={cx(sans.variable, serif.variable, mono.variable, "bg-white pb-48 overflow-hidden")}
+        className={cn(sans.variable, serif.variable, mono.variable, "min-h-screen overflow-hidden bg-white pb-48")}
         style={{
           scale,
           borderBottomLeftRadius: borderRadius,

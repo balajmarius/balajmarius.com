@@ -1,5 +1,6 @@
 import type { HTMLAttributes, ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+
+import { cn } from "@/lib/utils";
 
 import type { ChipVariantMapping, ChipColor, ChipColorMapping } from "@/components/Chip";
 
@@ -35,8 +36,8 @@ const chipColorClassNames: ChipColorMapping = {
 const Chip = ({ children, variant = "default", color = "info" }: ChipProps) => {
   return (
     <div
-      className={twMerge(
-        "text-sm text-gray-600 rounded-3xl py-0.5 px-3",
+      className={cn(
+        "rounded-3xl px-3 py-0.5 text-sm text-gray-600",
         chipColorClassNames[color],
         chipVariantClassNames[variant]
       )}

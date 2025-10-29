@@ -1,5 +1,6 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+
+import { cn } from "@/lib/utils";
 
 import type { SectionSpacing, SectionSpacingMapping } from "@/components/Section";
 
@@ -15,7 +16,7 @@ const sectionSpacingClassNames: SectionSpacingMapping = {
 
 const Section = ({ children, spacing = "default", ...props }: SectionProps) => {
   return (
-    <section className={twMerge("max-w-2xl px-12", sectionSpacingClassNames[spacing])} {...props}>
+    <section className={cn("max-w-2xl px-12", sectionSpacingClassNames[spacing])} {...props}>
       {children}
     </section>
   );
