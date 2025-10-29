@@ -103,7 +103,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           sans.variable,
           serif.variable,
           mono.variable,
-          "min-h-screen overflow-hidden bg-white pb-48"
+          "min-h-screen overflow-hidden bg-white selection:bg-blue-500 selection:text-white pb-48"
         )}
         style={{
           scale,
