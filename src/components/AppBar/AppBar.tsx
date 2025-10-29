@@ -38,7 +38,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
   return (
     <header
       className={cn(
-        "fixed top-3 left-3 z-50 space-y-3 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all duration-400 ease-out-exponential",
+        "fixed top-3 left-3 z-50 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all duration-400 ease-out-exponential",
         value ? "w-84" : "w-44"
       )}
       ref={ref}

@@ -11,9 +11,9 @@ export const scrollTransforms = {
 
 export const appBarAnimation = {
   container: {
-    initial: { opacity: 0, height: 0 },
-    animate: { opacity: 1, height: "auto" as const },
-    exit: { opacity: 0, height: 0 },
+    initial: { opacity: 0, height: 0, marginTop: 0 },
+    animate: { opacity: 1, height: "auto" as const, marginTop: 12 },
+    exit: { opacity: 0, height: 0, marginTop: 0 },
     transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] as const },
   },
   innerContainer: {
