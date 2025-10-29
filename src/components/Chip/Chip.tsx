@@ -2,7 +2,11 @@ import type { HTMLAttributes, ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 
-import type { ChipVariantMapping, ChipColor, ChipColorMapping } from "@/components/Chip";
+import type {
+  ChipVariantMapping,
+  ChipColor,
+  ChipColorMapping,
+} from "@/components/Chip";
 
 type ChipBaseProps = {
   children: ReactNode;

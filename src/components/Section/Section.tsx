@@ -2,7 +2,10 @@ import { ReactNode, HTMLAttributes } from "react";
 
 import { cn } from "@/lib/utils";
 
-import type { SectionSpacing, SectionSpacingMapping } from "@/components/Section";
+import type {
+  SectionSpacing,
+  SectionSpacingMapping,
+} from "@/components/Section";
 
 export type SectionProps = {
   children: ReactNode;
@@ -16,7 +19,10 @@ const sectionSpacingClassNames: SectionSpacingMapping = {
 
 const Section = ({ children, spacing = "default", ...props }: SectionProps) => {
   return (
-    <section className={cn("max-w-2xl px-12", sectionSpacingClassNames[spacing])} {...props}>
+    <section
+      className={cn("max-w-2xl px-12", sectionSpacingClassNames[spacing])}
+      {...props}
+    >
       {children}
     </section>
   );

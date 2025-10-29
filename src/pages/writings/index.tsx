@@ -21,7 +21,9 @@ const Writings = ({ posts }: WritingsProps) => {
   const t = useTranslations();
 
   const renderers = {
-    serif: (chunks: ReactNode) => <span className="text-blue-500 font-serif italic">{chunks}</span>,
+    serif: (chunks: ReactNode) => (
+      <span className="text-blue-500 font-serif italic">{chunks}</span>
+    ),
   };
 
   return (

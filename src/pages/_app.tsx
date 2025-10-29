@@ -91,12 +91,20 @@ const App = ({ Component, pageProps }: AppProps) => {
   const borderRadius = useTransform(scrollYProgress, [0, 1], [0, 24]);
 
   return (
-    <NextIntlClientProvider locale={router.locale ?? "en-EN"} messages={pageProps.messages}>
+    <NextIntlClientProvider
+      locale={router.locale ?? "en-EN"}
+      messages={pageProps.messages}
+    >
       <AppBar />
 
       <motion.main
         ref={mainRef}
-        className={cn(sans.variable, serif.variable, mono.variable, "min-h-screen overflow-hidden bg-white pb-48")}
+        className={cn(
+          sans.variable,
+          serif.variable,
+          mono.variable,
+          "min-h-screen overflow-hidden bg-white pb-48"
+        )}
         style={{
           scale,
           borderBottomLeftRadius: borderRadius,

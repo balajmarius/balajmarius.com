@@ -23,20 +23,37 @@ const linkTypographyVariantClassNames: LinkVariantMapping = {
   default: "transition-colors group-hover:text-blue-500",
 };
 
-const Link = ({ children, href, target = "_self", variant = "default", ...props }: LinkProps) => {
+const Link = ({
+  children,
+  href,
+  target = "_self",
+  variant = "default",
+  ...props
+}: LinkProps) => {
   return (
-    <a href={href} target={target} className="group flex items-center gap-1" {...props}>
+    <a
+      href={href}
+      target={target}
+      className="group flex items-center gap-1"
+      {...props}
+    >
       <Typography
         variant="body1"
         color="inherit"
-        className={cn("whitespace-nowrap", linkTypographyVariantClassNames[variant])}
+        className={cn(
+          "whitespace-nowrap",
+          linkTypographyVariantClassNames[variant]
+        )}
       >
         {children}
       </Typography>
 
       <SvgIconArrow
         size="small"
-        className={cn("transition-transform group-hover:-translate-y-1", linkSvgIconVariantClassNames[variant])}
+        className={cn(
+          "transition-transform group-hover:-translate-y-1",
+          linkSvgIconVariantClassNames[variant]
+        )}
       />
     </a>
   );

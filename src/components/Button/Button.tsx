@@ -12,10 +12,16 @@ export type ButtonProps = {
 
 const buttonVariantClassNames: ButtonVariantMapping = {
   transparent: "cursor-pointer",
-  default: "cursor-pointer rounded-sm px-2 py-1 text-gray-600 hover:bg-blue-500 hover:text-white",
+  default:
+    "cursor-pointer rounded-sm px-2 py-1 text-gray-600 hover:bg-blue-500 hover:text-white",
 };
 
-const Button = ({ children, variant = "default", startIcon, ...props }: ButtonProps) => {
+const Button = ({
+  children,
+  variant = "default",
+  startIcon,
+  ...props
+}: ButtonProps) => {
   return (
     <button
       className={cn(

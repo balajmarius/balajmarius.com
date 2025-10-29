@@ -19,9 +19,16 @@ type FooterListItemContactProps = {
   href?: never;
 } & HTMLAttributes<HTMLElement>;
 
-export type FooterListItemProps = FooterListItemSocialProps | FooterListItemContactProps;
+export type FooterListItemProps =
+  | FooterListItemSocialProps
+  | FooterListItemContactProps;
 
-const FooterListItem = ({ label, value, href, ...props }: FooterListItemProps) => {
+const FooterListItem = ({
+  label,
+  value,
+  href,
+  ...props
+}: FooterListItemProps) => {
   const [copiedText, setCopiedText] = useCopyToClipboard();
 
   const handleCopy = async () => {
@@ -50,7 +57,11 @@ const FooterListItem = ({ label, value, href, ...props }: FooterListItemProps) =
             {value}
           </Typography>
           <Button variant="transparent" onClick={handleCopy}>
-            {copiedText ? <SvgIconCheckmark size="small" /> : <SvgIconClipboard size="small" />}
+            {copiedText ? (
+              <SvgIconCheckmark size="small" />
+            ) : (
+              <SvgIconClipboard size="small" />
+            )}
           </Button>
         </div>
       ) : null}

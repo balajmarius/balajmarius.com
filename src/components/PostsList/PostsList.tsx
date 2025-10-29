@@ -19,7 +19,10 @@ const PostsList = ({ posts }: PostsListProps) => {
   return (
     <div className="border-b border-gray-100">
       {years.map((year) => (
-        <div key={year} className="grid grid-cols-12 gap-6 border-t border-gray-100">
+        <div
+          key={year}
+          className="grid grid-cols-12 gap-6 border-t border-gray-100"
+        >
           <div className="col-span-2 py-3">
             <Typography variant="body2" color="muted">
               {year}

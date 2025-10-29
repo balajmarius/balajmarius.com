@@ -26,7 +26,9 @@ const Commits = () => {
       const today = new Date().getTime();
       const thirtySixWeeksAgo = new Date(today - THIRTY_FIVE_WEEKS_IN_MS);
 
-      return activity.filter((day: Activity) => new Date(day.date) >= thirtySixWeeksAgo);
+      return activity.filter(
+        (day: Activity) => new Date(day.date) >= thirtySixWeeksAgo
+      );
     },
   };
 

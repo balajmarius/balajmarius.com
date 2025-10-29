@@ -21,7 +21,9 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
   ];
 
   const renderers = {
-    serif: (chunks: ReactNode) => <span className="font-serif italic">{chunks}</span>,
+    serif: (chunks: ReactNode) => (
+      <span className="font-serif italic">{chunks}</span>
+    ),
   };
 
   return (

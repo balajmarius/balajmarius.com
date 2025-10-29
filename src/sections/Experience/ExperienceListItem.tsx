@@ -11,7 +11,11 @@ export type ExperienceListItemProps = {
   duration?: string;
 };
 
-const ExperienceListItem = ({ title, role, duration }: ExperienceListItemProps) => {
+const ExperienceListItem = ({
+  title,
+  role,
+  duration,
+}: ExperienceListItemProps) => {
   const t = useTranslations();
 
   return (

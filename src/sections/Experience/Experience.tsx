@@ -16,8 +16,14 @@ const Experience = () => {
         </div>
 
         <div className="col-span-9 space-y-6">
-          <ExperienceListItem title={t("experience.jobs.0.title")} role={t("experience.jobs.0.role")} />
-          <ExperienceListItem title={t("experience.jobs.1.title")} role={t("experience.jobs.1.role")} />
+          <ExperienceListItem
+            title={t("experience.jobs.0.title")}
+            role={t("experience.jobs.0.role")}
+          />
+          <ExperienceListItem
+            title={t("experience.jobs.1.title")}
+            role={t("experience.jobs.1.role")}
+          />
 
           <ExperienceListItem
             title={t("experience.jobs.2.title")}

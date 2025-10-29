@@ -17,7 +17,9 @@ export type Post = {
 const postsDir = path.join(process.cwd(), "src/content/posts");
 
 const getPosts = () => {
-  const fileNames = fs.readdirSync(postsDir).filter((fileName) => fileName.endsWith(".md"));
+  const fileNames = fs
+    .readdirSync(postsDir)
+    .filter((fileName) => fileName.endsWith(".md"));
 
   const posts = fileNames.map((fileName) => {
     const fileSlug = path.parse(fileName).name;
@@ -41,7 +43,9 @@ const getPosts = () => {
 };
 
 export const getPostSlugs = () => {
-  const fileNames = fs.readdirSync(postsDir).filter((fileName) => fileName.endsWith(".md"));
+  const fileNames = fs
+    .readdirSync(postsDir)
+    .filter((fileName) => fileName.endsWith(".md"));
   const fileSlugs = fileNames.map((fileName) => path.parse(fileName).name);
 
   return fileSlugs;

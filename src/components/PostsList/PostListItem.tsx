@@ -41,7 +41,10 @@ const PostListItem = ({
   return (
     <Link
       href={`/writings/${slug}`}
-      className={cn("group flex justify-between py-3 transition-opacity", active ? "opacity-100" : "opacity-50")}
+      className={cn(
+        "group flex justify-between py-3 transition-opacity",
+        active ? "opacity-100" : "opacity-50"
+      )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >

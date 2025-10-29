@@ -5,7 +5,13 @@ import { useOnClickOutside, useBoolean } from "usehooks-ts";
 
 import { cn } from "@/lib/utils";
 
-import { SvgIconM, SvgIconHouse, SvgIconTrophy, SvgIconNotepad, SvgIconGlobe } from "@/components/SvgIcon";
+import {
+  SvgIconM,
+  SvgIconHouse,
+  SvgIconTrophy,
+  SvgIconNotepad,
+  SvgIconGlobe,
+} from "@/components/SvgIcon";
 
 import { Button } from "@/components/Button";
 import { Typography } from "@/components/Typography";
@@ -35,7 +41,13 @@ const AppBar = ({ ...props }: AppBarProps) => {
       )}
       ref={ref}
     >
-      <div className={cn("flex items-center justify-between", value ? "gap-0" : "gap-16")} {...props}>
+      <div
+        className={cn(
+          "flex items-center justify-between",
+          value ? "gap-0" : "gap-16"
+        )}
+        {...props}
+      >
         <Link href="/">
           <SvgIconM size="medium" />
         </Link>
