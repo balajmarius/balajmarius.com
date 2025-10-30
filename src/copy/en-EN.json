@@ -23,8 +23,14 @@
     "today": "Today",
     "title": "Experience",
     "jobs": {
-      "0": { "title": "VOID2", "role": "Philosophy & Concept Developer" },
-      "1": { "title": "The Sandbox", "role": "Country Manager & Tech Lead" },
+      "0": {
+        "title": "VOID2",
+        "role": "Philosophy & Concept Developer"
+      },
+      "1": {
+        "title": "The Sandbox",
+        "role": "Managing Director (Romania)"
+      },
       "2": {
         "title": "QED (acquired by The Sandbox)",
         "role": "Co-Founder",
