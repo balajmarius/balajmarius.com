@@ -20,7 +20,7 @@ const linkSvgIconVariantClassNames: LinkVariantMapping = {
 
 const linkTypographyVariantClassNames: LinkVariantMapping = {
   inherit: "group-hover:text-inherit",
-  default: "transition-colors group-hover:text-blue-500",
+  default: "transition-colors duration-300 group-hover:text-blue-500",
 };
 
 const Link = ({
@@ -51,7 +51,7 @@ const Link = ({
       <SvgIconArrow
         size="small"
         className={cn(
-          "transition-transform duration-300 will-change-transform group-hover:-translate-y-1",
+          "transition-transform duration-300 group-hover:-translate-y-1",
           linkSvgIconVariantClassNames[variant]
         )}
       />

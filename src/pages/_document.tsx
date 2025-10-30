@@ -4,7 +4,7 @@ import copy from "@/copy/en-EN.json";
 
 const Document = () => {
   return (
-    <Html lang="en">
+    <Html lang="en" className="scroll-smooth">
       <Head>
         <meta name="description" content={copy.metadata.description} />
         <meta name="twitter:title" content={copy.metadata.title} />
