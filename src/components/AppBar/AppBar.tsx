@@ -1,10 +1,11 @@
-import { useRef, HTMLAttributes } from "react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { useOnClickOutside, useBoolean } from "usehooks-ts";
+import { useRef, HTMLAttributes } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { useOnClickOutside, useEventListener, useBoolean } from "usehooks-ts";
 
 import { cn } from "@/lib/utils";
+import { Keys } from "@/utils/keyboard";
 import { appBarAnimation } from "@/utils/keyframes";
 
 import {
@@ -33,7 +34,14 @@ const AppBar = ({ ...props }: AppBarProps) => {
     { label: t("appBar.contact"), icon: <SvgIconGlobe size="small" /> },
   ];
 
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === Keys.ESCAPE) {
+      setFalse();
+    }
+  };
+
   useOnClickOutside(ref, setFalse);
+  useEventListener("keydown", handleKeyDown);
 
   return (
     <header
