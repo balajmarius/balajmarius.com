@@ -53,6 +53,7 @@
   },
   "posts": {
     "title": "Writings",
+    "author": " - {author}",
     "moreWritings": "More writings",
     "backToHome": "Back to home",
     "backToWritings": "Back to writings",

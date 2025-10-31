@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import type { ComponentProps } from "react";
+import { Fragment, type ComponentProps } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
@@ -71,7 +71,9 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
           <Typography variant="h1" display="block">
             {title}
             {author ? (
-              <span className="text-blue-500 font-serif italic">{author}</span>
+              <span className="font-serif italic text-blue-500">
+                {t("posts.author", { author })}
+              </span>
             ) : null}
           </Typography>
 
