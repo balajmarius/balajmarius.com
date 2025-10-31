@@ -50,4 +50,6 @@ const PostsList = ({ posts }: PostsListProps) => {
   );
 };
 
+PostsList.displayName = "PostsList";
+
 export default PostsList;

@@ -8,4 +8,6 @@ const SvgIconTrophy = (props: Omit<SvgIconProps, "children">) => {
   );
 };
 
+SvgIconTrophy.displayName = "SvgIconTrophy";
+
 export default SvgIconTrophy;

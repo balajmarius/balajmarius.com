@@ -32,4 +32,6 @@ const Posts = ({ posts }: PostsProps) => {
   );
 };
 
+Posts.displayName = "Posts";
+
 export default Posts;

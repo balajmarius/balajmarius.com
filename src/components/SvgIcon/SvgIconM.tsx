@@ -8,4 +8,6 @@ const SvgIconM = (props: Omit<SvgIconProps, "children">) => {
   );
 };
 
+SvgIconM.displayName = "SvgIconM";
+
 export default SvgIconM;

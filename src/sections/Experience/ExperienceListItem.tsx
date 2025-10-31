@@ -42,4 +42,6 @@ const ExperienceListItem = ({
   );
 };
 
+ExperienceListItem.displayName = "ExperienceListItem";
+
 export default ExperienceListItem;

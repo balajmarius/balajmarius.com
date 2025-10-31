@@ -26,4 +26,6 @@ const SvgIconBranch = (props: Omit<SvgIconProps, "children">) => {
   );
 };
 
+SvgIconBranch.displayName = "SvgIconBranch";
+
 export default SvgIconBranch;

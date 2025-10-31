@@ -70,4 +70,6 @@ const PostListItem = ({
   );
 };
 
+PostListItem.displayName = "PostListItem";
+
 export default PostListItem;

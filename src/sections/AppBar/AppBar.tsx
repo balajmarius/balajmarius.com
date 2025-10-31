@@ -100,4 +100,6 @@ const AppBar = ({ ...props }: AppBarProps) => {
   );
 };
 
+AppBar.displayName = "AppBar";
+
 export default AppBar;

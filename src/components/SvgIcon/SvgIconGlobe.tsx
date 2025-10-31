@@ -10,4 +10,6 @@ const SvgIconGlobe = (props: Omit<SvgIconProps, "children">) => {
   );
 };
 
+SvgIconGlobe.displayName = "SvgIconGlobe";
+
 export default SvgIconGlobe;

@@ -51,4 +51,6 @@ const Chip = ({ children, variant = "default", color = "info" }: ChipProps) => {
   );
 };
 
+Chip.displayName = "Chip";
+
 export default Chip;
