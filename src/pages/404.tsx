@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { GetStaticProps } from "next";
@@ -7,7 +8,6 @@ import { useTranslations } from "next-intl";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
 import { Button } from "@/components/Button";
-import { Link } from "@/components/Link";
 import { SvgIconBack } from "@/components/SvgIcon";
 
 const Error404 = () => {
@@ -32,11 +32,9 @@ const Error404 = () => {
           </Typography>
 
           <Image
-            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXRvdWU4ODVoem9lcW5qZW5wczhnajJyYng5eXdsaG5jeHpnNzZ6YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iGpkO05xWTl17Vhq6Y/giphy.gif"
+            src="/404.gif"
             alt="404"
-            width={480}
-            height={480}
-            className="w-full h-auto"
+            className="h-auto w-full"
           />
 
           <Link href="/" className="block">
