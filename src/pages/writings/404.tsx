@@ -31,7 +31,12 @@ const WritingsError404 = () => {
             {t.rich("error404.thePageYouSeekDoesNotExist", renderers)}
           </Typography>
 
-          <Image src="/404.gif" alt="404" className="h-auto w-full" />
+          <Image
+            src="/404.gif"
+            width={336}
+            height={252}
+            alt={t("error404.title")}
+          />
 
           <Link href="/writings" className="block">
             <Button startIcon={<SvgIconBack size="small" />}>
