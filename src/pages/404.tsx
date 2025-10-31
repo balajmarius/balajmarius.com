@@ -33,15 +33,15 @@ const Error404 = () => {
 
           <Image
             src="/404.gif"
-            width={336}
-            height={252}
             alt={t("error404.title")}
+            className="h-auto w-full"
+            unoptimized
           />
 
           <Link href="/" className="block">
             <Button startIcon={<SvgIconBack size="small" />}>
               <Typography variant="body1" color="inherit">
-                {t("posts.backToHome")}
+                {t("error404.backToHome")}
               </Typography>
             </Button>
           </Link>

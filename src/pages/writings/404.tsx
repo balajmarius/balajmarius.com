@@ -33,9 +33,9 @@ const WritingsError404 = () => {
 
           <Image
             src="/404.gif"
-            width={336}
-            height={252}
             alt={t("error404.title")}
+            className="h-auto w-full"
+            unoptimized
           />
 
           <Link href="/writings" className="block">
