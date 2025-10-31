@@ -67,5 +67,9 @@
     "bluesky": "Bluesky",
     "copyright": "© 2025 Marius Balaj",
     "quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
+  },
+  "error404": {
+    "title": "404 - Page Not Found",
+    "thePageYouSeekDoesNotExist": "The page you seek does <serif>not exist</serif>."
   }
 }
