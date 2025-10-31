@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import falsey from "falsey";
 import groupBy from "lodash.groupby";
+import matter from "gray-matter";
 import { getYear } from "date-fns/getYear";
 
 export type PostLabel = "Book" | "LLMs" | "Dev" | "TIL";
@@ -54,25 +55,25 @@ export const getPostSlugs = () => {
 export const getPost = (slug: string) => {
   const filePath = path.join(postsDir, `${slug}.md`);
 
-  if (fs.existsSync(filePath)) {
-    const fileContents = fs.readFileSync(filePath, "utf8");
-
-    const {
-      data: { title, createdAt, author, label },
-      content,
-    } = matter(fileContents);
-
-    return {
-      title,
-      createdAt,
-      author,
-      label,
-      slug,
-      content,
-    };
+  if (falsey(fs.existsSync(filePath))) {
+    return null;
   }
 
-  return null;
+  const fileContents = fs.readFileSync(filePath, "utf8");
+
+  const {
+    data: { title, createdAt, author, label },
+    content,
+  } = matter(fileContents);
+
+  return {
+    title,
+    createdAt,
+    author,
+    label,
+    slug,
+    content,
+  };
 };
 
 export default getPosts;

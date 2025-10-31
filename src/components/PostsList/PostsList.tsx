@@ -1,4 +1,4 @@
-import isNil from "lodash.isnil";
+import falsey from "falsey";
 import { useState } from "react";
 import type { Dictionary } from "lodash";
 
@@ -38,7 +38,7 @@ const PostsList = ({ posts }: PostsListProps) => {
                 label={post.label}
                 author={post.author}
                 createdAt={post.createdAt}
-                active={isNil(slug) || slug === post.slug}
+                active={falsey(slug) || slug === post.slug}
                 onMouseLeave={() => setSlug(null)}
                 onMouseEnter={() => setSlug(post.slug)}
               />

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import isNil from "lodash.isnil";
+import falsey from "falsey";
 import type { ComponentProps } from "react";
 import type { GetStaticPaths, GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
@@ -115,7 +115,7 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({
 }) => {
   const post = getPost(params?.slug as string);
 
-  if (isNil(post)) {
+  if (falsey(post)) {
     return {
       notFound: true,
     };
