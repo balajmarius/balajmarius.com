@@ -39,23 +39,17 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
     em: (props: ComponentProps<"em">) => (
       <em className="italic font-serif" {...props} />
     ),
-    code: (props: ComponentProps<"code">) => (
-      <code className="text-blue-500 font-roboto-mono" {...props} />
-    ),
     pre: (props: ComponentProps<"pre">) => (
-      <pre className="rounded-lg bg-gray-200 px-3 py-3" {...props} />
+      <pre className="rounded-lg bg-gray-200 p-3 overflow-auto" {...props} />
+    ),
+    code: (props: ComponentProps<"code">) => (
+      <code className="text-blue-500 text-md font-roboto-mono" {...props} />
     ),
     ul: (props: ComponentProps<"ul">) => (
-      <ul
-        className="list-disc space-y-3 px-4 marker:text-blue-500"
-        {...props}
-      />
+      <ul className="list-none space-y-3 pl-6" {...props} />
     ),
-    ol: (props: ComponentProps<"ol">) => (
-      <ol
-        className="list-decimal space-y-3 px-4 marker:text-blue-500 marker:italic marker:font-serif"
-        {...props}
-      />
+    li: (props: ComponentProps<"li">) => (
+      <li className="list-disc pl-2 marker:text-blue-500" {...props} />
     ),
   };
 
@@ -76,7 +70,7 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
           </Link>
 
           <Typography variant="h1" display="block">
-            {title}{" "}
+            {title}
             <span className="text-blue-500 font-serif italic">{author}</span>
           </Typography>
 
