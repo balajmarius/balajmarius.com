@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Fragment, type ComponentProps } from "react";
+import { type ComponentProps } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
