@@ -53,6 +53,11 @@ export const getPostSlugs = () => {
 
 export const getPost = (slug: string) => {
   const filePath = path.join(postsDir, `${slug}.md`);
+
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
   const fileContents = fs.readFileSync(filePath, "utf8");
 
   const {

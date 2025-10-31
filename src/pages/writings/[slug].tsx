@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import { type ComponentProps } from "react";
-import { GetStaticPaths, GetStaticProps } from "next";
+import isNil from "lodash.isnil";
+import type { ComponentProps } from "react";
+import type { GetStaticPaths, GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
@@ -105,7 +106,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: true,
   };
 };
 
@@ -113,6 +114,13 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({
   params,
 }) => {
   const post = getPost(params?.slug as string);
+
+  if (isNil(post)) {
+    return {
+      notFound: true,
+    };
+  }
+
   const mdxSource = await serialize(post.content);
 
   return {
