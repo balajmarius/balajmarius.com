@@ -36,8 +36,8 @@ const PostsList = ({ posts }: PostsListProps) => {
                 slug={post.slug}
                 title={post.title}
                 label={post.label}
-                author={post.author}
                 createdAt={post.createdAt}
+                author={post.author}
                 active={falsey(slug) || slug === post.slug}
                 onMouseLeave={() => setSlug(null)}
                 onMouseEnter={() => setSlug(post.slug)}

@@ -26,11 +26,11 @@ const Error404 = () => {
 
       <Section>
         <div className="space-y-8">
-          <Typography variant="h1">
+          <Typography variant="h1" display="block">
             {t.rich("error404.thePageYouSeekDoesNotExist", renderers)}
           </Typography>
 
-          <Link href="/" className="block">
+          <Link href="/" className="inline-block">
             <Button startIcon={<SvgIconBack size="small" />}>
               <Typography variant="body1" color="inherit">
                 {t("error404.backToHome")}
