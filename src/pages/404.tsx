@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import type { ReactNode } from "react";
-import { GetStaticProps } from "next";
+import type { GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 
 import { Section } from "@/components/Section";
@@ -30,13 +29,6 @@ const Error404 = () => {
           <Typography variant="h1">
             {t.rich("error404.thePageYouSeekDoesNotExist", renderers)}
           </Typography>
-
-          <Image
-            src="/404.gif"
-            alt={t("error404.title")}
-            className="h-auto w-full"
-            unoptimized
-          />
 
           <Link href="/" className="block">
             <Button startIcon={<SvgIconBack size="small" />}>

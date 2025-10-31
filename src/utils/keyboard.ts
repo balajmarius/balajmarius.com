@@ -1,5 +1,3 @@
-// ABOUTME: Keyboard key constants for event handling
-// ABOUTME: Provides type-safe key codes for keyboard interactions
 export const Keys = {
   ESCAPE: "Escape",
   ENTER: "Enter",
