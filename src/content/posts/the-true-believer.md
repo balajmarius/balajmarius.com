@@ -10,6 +10,11 @@ learned about him, the more curious I became. He wasn't a professor or an
 academic. In fact, he was a self-taught philosopher who spent most of his life
 working odd jobs (and somehow I related to him).
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img src="/images/the-true-believer/crowd.jpg" alt="Photo by Adi Goldstein on Unsplash" />
+  <figcaption>Photo by Adi Goldstein on Unsplash</figcaption>
+</figure>
+
 For many years, he was a part-time dock worker, because it gave him enough
 free time to read and write.
 
@@ -21,11 +26,6 @@ might lose it again, he began reading compulsively, and never stopped.
 _The True Believer_ is one of his most known works, and it explores how mass
 movements are formed and why people get pulled into them. Here are some notes
 and thoughts I had while reading:
-
-<figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/the-true-believer/crowd.jpg" alt="Photo by Adi Goldstein on Unsplash" />
-  <figcaption>Photo by Adi Goldstein on Unsplash</figcaption>
-</figure>
 
 ### It's me, it's you
 
