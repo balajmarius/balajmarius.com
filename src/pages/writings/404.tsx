@@ -10,7 +10,7 @@ import { Button } from "@/components/Button";
 import { Link } from "@/components/Link";
 import { SvgIconBack } from "@/components/SvgIcon";
 
-const Error404 = () => {
+const WritingsError404 = () => {
   const t = useTranslations();
 
   const renderers = {
@@ -39,10 +39,10 @@ const Error404 = () => {
             className="w-full h-auto"
           />
 
-          <Link href="/" className="block">
+          <Link href="/writings" className="block">
             <Button startIcon={<SvgIconBack size="small" />}>
               <Typography variant="body1" color="inherit">
-                {t("posts.backToHome")}
+                {t("posts.backToWritings")}
               </Typography>
             </Button>
           </Link>
@@ -52,7 +52,7 @@ const Error404 = () => {
   );
 };
 
-Error404.displayName = "Error404";
+WritingsError404.displayName = "WritingsError404";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -62,4 +62,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default Error404;
+export default WritingsError404;
