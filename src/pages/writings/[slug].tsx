@@ -8,11 +8,10 @@ import { serialize } from "next-mdx-remote/serialize";
 
 import { getPost, getPostSlugs } from "@/lib/posts";
 
-import { SvgIconBack } from "@/components/SvgIcon";
-
 import { Button } from "@/components/Button";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
+import { SvgIconBack } from "@/components/SvgIcon";
 
 type PostPageProps = {
   title: string;
@@ -28,22 +27,22 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
   const renderers = {
     p: (props: ComponentProps<"p">) => <p {...props} />,
     a: (props: ComponentProps<"a">) => (
-      <a className="border-b text-blue-500 hover:text-blue-400" {...props} />
+      <a className="text-blue-500 border-b hover:text-blue-400" {...props} />
     ),
     h2: (props: ComponentProps<"h2">) => (
-      <h2 className="text-xl font-medium" {...props} />
+      <h2 className="pt-8 text-xl font-medium" {...props} />
     ),
     h3: (props: ComponentProps<"h3">) => (
-      <h3 className="font-medium" {...props} />
+      <h3 className="pt-4 font-medium" {...props} />
     ),
     em: (props: ComponentProps<"em">) => (
-      <em className="italic font-serif" {...props} />
+      <em className="font-serif italic" {...props} />
     ),
     pre: (props: ComponentProps<"pre">) => (
-      <pre className="rounded-lg bg-gray-200 p-3 overflow-auto" {...props} />
+      <pre className="overflow-auto rounded-lg bg-gray-200 p-3" {...props} />
     ),
     code: (props: ComponentProps<"code">) => (
-      <code className="text-blue-500 text-md font-roboto-mono" {...props} />
+      <code className="font-roboto-mono text-md text-blue-500" {...props} />
     ),
     ul: (props: ComponentProps<"ul">) => (
       <ul className="list-none space-y-3 pl-6" {...props} />
@@ -71,18 +70,18 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
 
           <Typography variant="h1" display="block">
             {title}
-            <span className="text-blue-500 font-serif italic">{author}</span>
+            {author ? (
+              <span className="text-blue-500 font-serif italic">{author}</span>
+            ) : null}
           </Typography>
 
           <div className="grid grid-cols-12">
             <div className="col-span-3">
               <Typography variant="subtitle1">{createdAt}</Typography>
             </div>
-            <div className="col-span-9">
-              <article className="space-y-6">
-                <MDXRemote {...mdxSource} components={renderers} />
-              </article>
-            </div>
+            <article className="col-span-9 space-y-6">
+              <MDXRemote {...mdxSource} components={renderers} />
+            </article>
           </div>
 
           <Link href="/writings" className="inline-block">

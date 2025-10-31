@@ -9,10 +9,15 @@ I recently came across _Technopoly: The Surrender of Culture to Technology_ by
 Neil Postman, and it really gave me a new perspective on technology and
 society.
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img src="/images/technopoly/building.jpg" alt="Photo by Mateusz Sieradzan-Sobolewski on Unsplash" />
+  <figcaption>Photo by Mateusz Sieradzan-Sobolewski on Unsplash</figcaption>
+</figure>
+
 Ironically, I found the book while doom-scrolling through Instagram reels,
 here are a few ideas that really made me think:
 
-## Technopoly
+### Technopoly
 
 Neil Postman uses the word technopoly to describe a kind of society where
 technology doesn't just help us, it rules us. In a technopoly, technology
@@ -24,7 +29,7 @@ a place where technology still plays an important role, but only as a tool. In
 these societies, people define their own values and goals, and technology
 exists to support them, not to replace them.
 
-## Technology as the New God
+### Technology as the New God
 
 Postman argues that in modern society, people no longer see technology as just
 a helpful tool. Instead, it has become a kind of deity, something we trust
@@ -36,7 +41,7 @@ always right, always the answer.
 We worship efficiency, speed, and convenience, but rarely stop to think about
 the cost.
 
-## We Are Not Just Numbers
+### We Are Not Just Numbers
 
 Postman warns that in a society ruled by technology, we begin to believe that
 only numbers and data are real. If something can't be measured, we start to

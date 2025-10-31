@@ -21,9 +21,6 @@ Given our positive experiences with _Tailwind_ and its extensive ecosystem, we
 built a proof of concept using variant-driven components with
 [cva](https://cva.style/docs).
 
-> _cva_ is a compact JavaScript library designed for creating variant-driven
-> components using traditional CSS classes.
-
 <figure className="space-y-2 text-center text-gray-500 text-xs">
   <img src="/images/building-the-sandbox-design-system/research-development.jpg" alt="Photo by Mohammad Rahmani on Unsplash" />
   <figcaption>Photo by Mohammad Rahmani on Unsplash</figcaption>
