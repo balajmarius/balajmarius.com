@@ -54,25 +54,25 @@ export const getPostSlugs = () => {
 export const getPost = (slug: string) => {
   const filePath = path.join(postsDir, `${slug}.md`);
 
-  if (!fs.existsSync(filePath)) {
-    return null;
+  if (fs.existsSync(filePath)) {
+    const fileContents = fs.readFileSync(filePath, "utf8");
+
+    const {
+      data: { title, createdAt, author, label },
+      content,
+    } = matter(fileContents);
+
+    return {
+      title,
+      createdAt,
+      author,
+      label,
+      slug,
+      content,
+    };
   }
 
-  const fileContents = fs.readFileSync(filePath, "utf8");
-
-  const {
-    data: { title, createdAt, author, label },
-    content,
-  } = matter(fileContents);
-
-  return {
-    title,
-    createdAt,
-    author,
-    label,
-    slug,
-    content,
-  };
+  return null;
 };
 
 export default getPosts;
