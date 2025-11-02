@@ -43,8 +43,6 @@ const Error404 = () => {
   );
 };
 
-Error404.displayName = "Error404";
-
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {

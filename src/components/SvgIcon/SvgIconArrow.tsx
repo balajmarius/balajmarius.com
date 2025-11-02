@@ -7,7 +7,4 @@ const SvgIconArrow = (props: Omit<SvgIconProps, "children">) => {
     </SvgIcon>
   );
 };
-
-SvgIconArrow.displayName = "SvgIconArrow";
-
 export default SvgIconArrow;

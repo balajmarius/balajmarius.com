@@ -55,6 +55,4 @@ const Commits = () => {
   );
 };
 
-Commits.displayName = "Commits";
-
 export default Commits;

@@ -7,7 +7,4 @@ const SvgIconCheckmark = (props: Omit<SvgIconProps, "children">) => {
     </SvgIcon>
   );
 };
-
-SvgIconCheckmark.displayName = "SvgIconCheckmark";
-
 export default SvgIconCheckmark;

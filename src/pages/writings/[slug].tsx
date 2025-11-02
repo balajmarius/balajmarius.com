@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import falsey from "falsey";
 import type { ComponentProps } from "react";
 import type { GetStaticPaths, GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
@@ -115,7 +114,7 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({
 }) => {
   const post = getPost(params?.slug as string);
 
-  if (falsey(post)) {
+  if (typeof post === null) {
     return {
       notFound: true,
     };

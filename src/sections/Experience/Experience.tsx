@@ -56,6 +56,4 @@ const Experience = () => {
   );
 };
 
-Experience.displayName = "Experience";
-
 export default Experience;

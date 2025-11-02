@@ -7,7 +7,4 @@ const SvgIconHouse = (props: Omit<SvgIconProps, "children">) => {
     </SvgIcon>
   );
 };
-
-SvgIconHouse.displayName = "SvgIconHouse";
-
 export default SvgIconHouse;

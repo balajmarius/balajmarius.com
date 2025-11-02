@@ -28,6 +28,4 @@ const Section = ({ children, spacing = "default", ...props }: SectionProps) => {
   );
 };
 
-Section.displayName = "Section";
-
 export default Section;

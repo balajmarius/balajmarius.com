@@ -7,7 +7,4 @@ const SvgIconClipboard = (props: Omit<SvgIconProps, "children">) => {
     </SvgIcon>
   );
 };
-
-SvgIconClipboard.displayName = "SvgIconClipboard";
-
 export default SvgIconClipboard;

@@ -1,4 +1,3 @@
-import falsey from "falsey";
 import { useState } from "react";
 import type { Dictionary } from "lodash";
 
@@ -38,7 +37,7 @@ const PostsList = ({ posts }: PostsListProps) => {
                 label={post.label}
                 createdAt={post.createdAt}
                 author={post.author}
-                active={falsey(slug) || slug === post.slug}
+                active={slug === null || slug === post.slug}
                 onMouseLeave={() => setSlug(null)}
                 onMouseEnter={() => setSlug(post.slug)}
               />
@@ -49,7 +48,5 @@ const PostsList = ({ posts }: PostsListProps) => {
     </div>
   );
 };
-
-PostsList.displayName = "PostsList";
 
 export default PostsList;

@@ -29,6 +29,4 @@ const SvgIcon = ({ children, className, size = "inherit" }: SvgIconProps) => {
   );
 };
 
-SvgIcon.displayName = "SvgIcon";
-
 export default SvgIcon;

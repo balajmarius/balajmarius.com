@@ -10,7 +10,4 @@ const SvgIconNotepad = (props: Omit<SvgIconProps, "children">) => {
     </SvgIcon>
   );
 };
-
-SvgIconNotepad.displayName = "SvgIconNotepad";
-
 export default SvgIconNotepad;

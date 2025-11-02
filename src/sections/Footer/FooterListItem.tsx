@@ -69,6 +69,4 @@ const FooterListItem = ({
   );
 };
 
-FooterListItem.displayName = "FooterListItem";
-
 export default FooterListItem;

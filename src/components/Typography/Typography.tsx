@@ -86,6 +86,4 @@ const Typography = ({
   );
 };
 
-Typography.displayName = "Typography";
-
 export default Typography;

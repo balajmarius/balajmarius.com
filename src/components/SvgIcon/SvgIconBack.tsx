@@ -7,7 +7,4 @@ const SvgIconBack = (props: Omit<SvgIconProps, "children">) => {
     </SvgIcon>
   );
 };
-
-SvgIconBack.displayName = "SvgIconBack";
-
 export default SvgIconBack;
