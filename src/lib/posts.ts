@@ -71,6 +71,8 @@ export const getPost = (slug: string) => {
       content,
     };
   }
+
+  return null;
 };
 
 export default getPosts;
