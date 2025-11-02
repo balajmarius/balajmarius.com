@@ -114,7 +114,7 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({
 }) => {
   const post = getPost(params?.slug as string);
 
-  if (typeof post === null) {
+  if (post === null) {
     return {
       notFound: true,
     };
