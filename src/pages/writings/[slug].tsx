@@ -78,11 +78,11 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
             ) : null}
           </Typography>
 
-          <div className="grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-6">
-            <div className="col-span-1 md:col-span-3">
+          <div className="grid grid-cols-1 gap-16 sm:grid-cols-12 sm:gap-6">
+            <div className="col-span-1 sm:col-span-3">
               <Typography variant="subtitle1">{createdAt}</Typography>
             </div>
-            <article className="col-span-1 space-y-6 md:col-span-9">
+            <article className="col-span-1 space-y-6 sm:col-span-9">
               <MDXRemote {...mdxSource} components={renderers} />
             </article>
           </div>
