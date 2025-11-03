@@ -1,7 +1,7 @@
 export const links = {
   github: "https://github.com/balajmarius",
   linkedin: "https://www.linkedin.com/in/marius-balaj",
-  bluesky: "https://bsky.app/profile/balajmarius.com",
+  x: "https://x.com/balajmarius",
   goodreads: "https://www.goodreads.com/user/show/47935304-marius-balaj",
   qed: "https://qed.builders",
   sandbox: "https://sandbox.game",

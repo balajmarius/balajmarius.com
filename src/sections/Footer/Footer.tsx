@@ -17,7 +17,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
     { label: t("footer.email"), value: accounts.emailAddress },
     { label: t("footer.linkedin"), href: links.linkedin },
     { label: t("footer.github"), href: links.github },
-    { label: t("footer.bluesky"), href: links.bluesky },
+    { label: t("footer.x"), href: links.x },
   ];
 
   const renderers = {
