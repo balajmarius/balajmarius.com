@@ -42,7 +42,7 @@ const PostListItem = ({
     <Link
       href={`/writings/${slug}`}
       className={cn(
-        "group flex flex-col sm:flex-row gap-3 sm:justify-between py-3 transition-opacity ease-out-exponential",
+        "group flex flex-col sm:flex-row gap-1.5 sm:justify-between py-3 transition-opacity ease-out-exponential",
         active ? "opacity-100" : "opacity-50"
       )}
       onMouseEnter={onMouseEnter}
