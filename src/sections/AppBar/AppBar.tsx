@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useOnClickOutside, useEventListener, useBoolean } from "usehooks-ts";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/helpers";
 import { Keys } from "@/utils/keyboard";
 import { appBarAnimation } from "@/utils/keyframes";
 

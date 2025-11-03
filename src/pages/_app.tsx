@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/helpers";
 import { scrollTransforms } from "@/utils/keyframes";
 
 import { AppBar } from "@/sections/AppBar";

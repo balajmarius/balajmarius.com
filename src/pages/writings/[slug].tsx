@@ -7,6 +7,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 
 import { getPost, getPostSlugs } from "@/lib/posts";
+import { isNullOrUndefined } from "@/utils/helpers";
 
 import { Button } from "@/components/Button";
 import { Section } from "@/components/Section";
@@ -105,16 +106,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
 export const getStaticProps: GetStaticProps<PostPageProps> = async ({
   params,
 }) => {
-  const post = getPost(params?.slug as string);
+  const post = getPost(params?.slug);
 
-  if (post === null) {
+  if (isNullOrUndefined(post)) {
     return {
       notFound: true,
     };

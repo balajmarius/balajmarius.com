@@ -2,7 +2,7 @@ import Link from "next/link";
 import { format } from "date-fns";
 import type { MouseEventHandler } from "react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/helpers";
 import type { PostLabel } from "@/lib/posts";
 
 import { Chip, type ChipColor } from "@/components/Chip";

@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Dictionary } from "lodash";
 
 import type { Post } from "@/lib/posts";
+import { isNullOrUndefined } from "@/utils/helpers";
 
 import { Typography } from "@/components/Typography";
 import { PostListItem } from "@/components/PostsList";
@@ -37,7 +38,7 @@ const PostsList = ({ posts }: PostsListProps) => {
                 label={post.label}
                 createdAt={post.createdAt}
                 author={post.author}
-                active={slug === null || slug === post.slug}
+                active={isNullOrUndefined(slug) || slug === post.slug}
                 onMouseLeave={() => setSlug(null)}
                 onMouseEnter={() => setSlug(post.slug)}
               />

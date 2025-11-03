@@ -4,6 +4,8 @@ import groupBy from "lodash.groupby";
 import matter from "gray-matter";
 import { getYear } from "date-fns/getYear";
 
+import { isNullOrUndefined } from "@/utils/helpers";
+
 export type PostLabel = "Book" | "LLMs" | "Dev" | "TIL";
 
 export type Post = {
@@ -51,10 +53,13 @@ export const getPostSlugs = () => {
   return fileSlugs;
 };
 
-export const getPost = (slug: string) => {
-  const filePath = path.join(postsDir, `${slug}.md`);
+export const getPost = (slug?: string | string[]) => {
+  if (isNullOrUndefined(slug)) {
+    return null;
+  }
 
-  if (fs.existsSync(filePath)) {
+  try {
+    const filePath = path.join(postsDir, `${slug}.md`);
     const fileContents = fs.readFileSync(filePath, "utf8");
 
     const {
@@ -70,9 +75,9 @@ export const getPost = (slug: string) => {
       slug,
       content,
     };
+  } catch {
+    return null;
   }
-
-  return null;
 };
 
 export default getPosts;
