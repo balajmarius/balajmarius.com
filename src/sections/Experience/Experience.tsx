@@ -36,12 +36,12 @@ const Experience = () => {
 
   return (
     <Section>
-      <div className="grid grid-cols-12">
-        <div className="col-span-3">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-6">
+        <div className="col-span-1 md:col-span-3">
           <Typography variant="subtitle1">{t("experience.title")}</Typography>
         </div>
 
-        <div className="col-span-9 space-y-6">
+        <div className="col-span-1 md:col-span-9 space-y-6">
           {jobs.map((job, index) => (
             <ExperienceListItem
               key={index}

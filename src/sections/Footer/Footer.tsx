@@ -32,15 +32,15 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
       className="py-16 bg-blue-500 text-blue-100 selection:bg-blue-100 selection:text-blue-500"
       {...props}
     >
-      <div className="mx-auto w-xl space-y-24">
-        <div className="grid grid-cols-12">
-          <div className="col-span-3">
+      <div className="mx-auto w-full max-w-xl space-y-24">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-6">
+          <div className="col-span-1 md:col-span-3">
             <Typography variant="subtitle1" color="inherit">
               {t("footer.contact")}
             </Typography>
           </div>
 
-          <div className="col-span-9 space-y-3">
+          <div className="col-span-1 md:col-span-9 space-y-3">
             {socials.map((social) => (
               <FooterListItem key={social.label} {...social} />
             ))}
