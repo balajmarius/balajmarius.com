@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useTranslations } from "next-intl";
+import { useMediaQuery } from "usehooks-ts";
 import type { Dictionary } from "lodash";
 
 import getPosts, { type Post } from "@/lib/posts";
@@ -15,6 +16,7 @@ type HomeProps = {
 
 const Home = ({ posts }: HomeProps) => {
   const t = useTranslations();
+  const sm = useMediaQuery("(min-width: 640px)");
 
   return (
     <>
@@ -24,7 +26,7 @@ const Home = ({ posts }: HomeProps) => {
 
       <About />
       <Experience />
-      <Commits />
+      {sm ? <Commits /> : null}
       <Posts posts={posts} />
     </>
   );
