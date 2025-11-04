@@ -28,6 +28,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
 
   return (
     <footer
+      id="contact"
       ref={ref}
       className="py-16 bg-blue-500 text-blue-100 selection:bg-blue-100 selection:text-blue-500"
       {...props}

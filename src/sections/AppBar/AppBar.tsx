@@ -28,10 +28,26 @@ const AppBar = ({ ...props }: AppBarProps) => {
   const ref = useRef<HTMLElement>(null!);
 
   const sections = [
-    { label: t("appBar.intro"), icon: <SvgIconHouse size="small" /> },
-    { label: t("appBar.experiences"), icon: <SvgIconTrophy size="small" /> },
-    { label: t("appBar.writings"), icon: <SvgIconNotepad size="small" /> },
-    { label: t("appBar.contact"), icon: <SvgIconGlobe size="small" /> },
+    {
+      href: "/#about",
+      label: t("appBar.intro"),
+      icon: <SvgIconHouse size="small" />,
+    },
+    {
+      href: "/#experience",
+      label: t("appBar.experiences"),
+      icon: <SvgIconTrophy size="small" />,
+    },
+    {
+      href: "/#posts",
+      label: t("appBar.writings"),
+      icon: <SvgIconNotepad size="small" />,
+    },
+    {
+      href: "#contact",
+      label: t("appBar.contact"),
+      icon: <SvgIconGlobe size="small" />,
+    },
   ];
 
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -79,18 +95,23 @@ const AppBar = ({ ...props }: AppBarProps) => {
               className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3"
             >
               {sections.map((section, index) => (
-                <motion.div
+                <Link
                   key={section.label}
-                  initial={appBarAnimation.item.initial}
-                  animate={appBarAnimation.item.animate}
-                  transition={appBarAnimation.item.transition(index)}
-                  className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+                  href={section.href}
+                  onClick={setFalse}
                 >
-                  {section.icon}
-                  <Typography variant="body1" color="inherit">
-                    {section.label}
-                  </Typography>
-                </motion.div>
+                  <motion.div
+                    initial={appBarAnimation.item.initial}
+                    animate={appBarAnimation.item.animate}
+                    transition={appBarAnimation.item.transition(index)}
+                    className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+                  >
+                    {section.icon}
+                    <Typography variant="body1" color="inherit">
+                      {section.label}
+                    </Typography>
+                  </motion.div>
+                </Link>
               ))}
             </motion.div>
           </motion.div>
