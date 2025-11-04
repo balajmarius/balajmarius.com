@@ -16,7 +16,7 @@ const Posts = ({ posts }: PostsProps) => {
   const t = useTranslations();
 
   return (
-    <Section>
+    <Section id="posts">
       <div className="space-y-16">
         <Typography variant="subtitle1">{t("posts.title")}</Typography>
 

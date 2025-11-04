@@ -59,7 +59,7 @@ const About = () => {
   };
 
   return (
-    <Section>
+    <Section id="about">
       <div className="space-y-8">
         <Typography variant="h1">
           <span className="whitespace-break-spaces">
