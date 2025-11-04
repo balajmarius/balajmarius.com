@@ -35,7 +35,7 @@ const typographyVariantMapping: TypographyVariantMapping = {
 };
 
 const typographyVariantClassNames: TypographyVariantMapping = {
-  h1: "text-2xl sm:text-3xl leading-8 sm:leading-12",
+  h1: "text-3xl leading-12",
   h2: "text-2xl leading-8 italic font-serif",
   subtitle1: "text-base leading-6 italic font-serif",
   subtitle2: "text-base leading-6",

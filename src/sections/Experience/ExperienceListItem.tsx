@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { useMediaQuery } from "usehooks-ts";
 
 import { SvgIconDot } from "@/components/SvgIcon";
 
@@ -17,6 +18,7 @@ const ExperienceListItem = ({
   duration,
 }: ExperienceListItemProps) => {
   const t = useTranslations();
+  const sm = useMediaQuery("(min-width: 640px)");
 
   return (
     <div className="space-y-1">
@@ -27,7 +29,7 @@ const ExperienceListItem = ({
       <div className="flex flex-col items-start sm:flex-row sm:items-center gap-3">
         <Typography variant="body1">{role}</Typography>
 
-        <div className="hidden sm:flex sm:flex-grow border-t border-gray-100" />
+        {sm ? <div className="flex-grow border-t border-gray-100" /> : null}
 
         {duration ? (
           <Chip variant="outlined">{duration}</Chip>
