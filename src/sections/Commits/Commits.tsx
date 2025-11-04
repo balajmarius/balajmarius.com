@@ -1,5 +1,6 @@
 import GithubCalendar, { type Activity } from "react-github-calendar";
 import { useTranslations } from "next-intl";
+import { useMediaQuery } from "usehooks-ts";
 
 import { accounts, links } from "@/utils/links";
 import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
@@ -20,6 +21,7 @@ const theme = {
 
 const Commits = () => {
   const t = useTranslations();
+  const sm = useMediaQuery("(min-width: 640px)");
 
   const renderers = {
     data: (activity: ReadonlyArray<Activity>) => {
@@ -44,8 +46,8 @@ const Commits = () => {
           transformData={renderers.data}
         />
 
-        <div className="flex items-start justify-between gap-3">
-          <SvgIconBranch className="text-blue-500" />
+        <div className="flex items-start justify-end sm:justify-between sm:gap-3">
+          {sm ? <SvgIconBranch className="text-blue-500" /> : null}
           <Link href={links.github} rel="noopener noreferrer" target="_blank">
             {t("commits.viewOnGitHub")}
           </Link>
