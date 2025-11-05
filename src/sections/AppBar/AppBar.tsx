@@ -74,7 +74,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
         )}
         {...props}
       >
-        <Link href="/">
+        <Link href="/" aria-label={t("appBar.home")}>
           <SvgIconM size="medium" />
         </Link>
         <Button onClick={value ? setFalse : setTrue}>

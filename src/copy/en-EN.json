@@ -4,6 +4,7 @@
     "description": "I’m a UI engineer turned founder with a background in startups. I co-founded QED in 2021, grew it, and eventually sold it to The Sandbox. Now, I’m focused on building in AI."
   },
   "appBar": {
+    "home": "Home",
     "menu": "Menu",
     "close": "Close",
     "intro": "Intro",
@@ -65,6 +66,7 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "x": "X",
+    "copyToClipboard": "Copy to clipboard",
     "copyright": "© 2025 Marius Balaj",
     "quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
   },

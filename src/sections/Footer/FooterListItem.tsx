@@ -1,4 +1,5 @@
 import type { HTMLAttributes } from "react";
+import { useTranslations } from "next-intl";
 import { useCopyToClipboard } from "usehooks-ts";
 
 import { SvgIconCheckmark, SvgIconClipboard } from "@/components/SvgIcon";
@@ -29,6 +30,7 @@ const FooterListItem = ({
   href,
   ...props
 }: FooterListItemProps) => {
+  const t = useTranslations();
   const [copiedText, setCopiedText] = useCopyToClipboard();
 
   const handleCopy = async () => {
@@ -56,7 +58,11 @@ const FooterListItem = ({
           <Typography variant="body1" color="inherit">
             {value}
           </Typography>
-          <Button variant="transparent" onClick={handleCopy}>
+          <Button
+            variant="transparent"
+            aria-label={t("footer.copyToClipboard")}
+            onClick={handleCopy}
+          >
             {copiedText ? (
               <SvgIconCheckmark size="small" />
             ) : (
