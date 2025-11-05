@@ -89,12 +89,12 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   const scale = useTransform(
     scrollYProgress,
-    scrollTransforms.scale.enter,
+    scrollTransforms.scale.exit,
     scrollTransforms.scale.exit
   );
   const borderRadius = useTransform(
     scrollYProgress,
-    scrollTransforms.borderRadius.enter,
+    scrollTransforms.borderRadius.exit,
     scrollTransforms.borderRadius.exit
   );
 

@@ -11,6 +11,7 @@ const Document = () => {
         <meta name="twitter:description" content={copy.metadata.description} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/og-image.png" />
+        <meta property="og:author" content="Marius Bălaj" />
         <meta property="og:title" content={copy.metadata.title} />
         <meta property="og:description" content={copy.metadata.description} />
         <meta property="og:type" content="website" />
