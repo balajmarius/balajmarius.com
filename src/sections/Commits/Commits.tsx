@@ -45,7 +45,7 @@ const Commits = () => {
         />
 
         <div className="flex items-start justify-end sm:justify-between sm:gap-3">
-          <SvgIconBranch className="text-blue-500" />
+          <SvgIconBranch className="text-blue-500 hidden sm:block" />
           <Link href={links.github} rel="noopener noreferrer" target="_blank">
             {t("commits.viewOnGitHub")}
           </Link>
