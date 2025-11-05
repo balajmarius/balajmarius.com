@@ -1,5 +1,5 @@
-import GithubCalendar, { type Activity } from "react-github-calendar";
 import { useTranslations } from "next-intl";
+import GithubCalendar, { type Activity } from "react-github-calendar";
 
 import { accounts, links } from "@/utils/links";
 
@@ -8,6 +8,7 @@ import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
 import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
 import { SvgIconBranch } from "@/components/SvgIcon";
+import { useRef } from "react";
 
 const theme = {
   dark: [
@@ -21,6 +22,7 @@ const theme = {
 
 const Commits = () => {
   const t = useTranslations();
+  const calendarRef = useRef<HTMLDivElement>(null);
 
   const renderers = {
     data: (activity: ReadonlyArray<Activity>) => {
@@ -36,14 +38,16 @@ const Commits = () => {
   return (
     <Section spacing="small">
       <div className="space-y-3">
-        <GithubCalendar
-          hideTotalCount
-          hideMonthLabels
-          hideColorLegend
-          theme={theme}
-          username={accounts.githubUsername}
-          transformData={renderers.data}
-        />
+        <div ref={calendarRef}>
+          <GithubCalendar
+            hideTotalCount
+            hideMonthLabels
+            hideColorLegend
+            theme={theme}
+            username={accounts.githubUsername}
+            transformData={renderers.data}
+          />
+        </div>
 
         <div className="flex items-start justify-end sm:justify-between sm:gap-3">
           <SvgIconBranch className="text-blue-500 hidden sm:block" />
