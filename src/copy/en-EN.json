@@ -12,7 +12,7 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "<serif><ui>UI</ui> engineer</serif> turned <serif>founder</serif>.\nOne exit behind me, <serif>now building in <ai>AI</ai></serif>",
+    "title": "<serif><ui>UI</ui> engineer</serif> turned <serif>founder</serif>.\nOne exit behind me, <serif>now building in <ai>AI</ai></serif>.",
     "description": {
       "0": "I’m a UI engineer turned founder with a background in startups — from crypto pioneers to larger tech companies. I co-founded <url1><serif>QED</serif></url1> in 2021, grew it, and eventually sold it to <url2><serif>Sandbox</serif></url2>.",
       "1": "Outside of work, I box. I’m the president of <url3><serif>Viitorul Boxing Club</serif></url3>, where I train and help others do the same. I also <url4><serif>read</serif></url4> a lot — it keeps me sharp.",
@@ -25,7 +25,7 @@
     "jobs": {
       "0": {
         "title": "VOID2",
-        "role": "Philosophy & Concept Developer"
+        "role": "Concept Developer"
       },
       "1": {
         "title": "The Sandbox",
