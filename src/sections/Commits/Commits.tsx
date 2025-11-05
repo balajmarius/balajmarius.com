@@ -28,9 +28,11 @@ const Commits = () => {
     data: (activity: ReadonlyArray<Activity>) => {
       const today = new Date().getTime();
       const weeksInMs = sm ? THIRTY_FIVE_WEEKS_IN_MS : NINE_TEEN_WEEKS_IN_MS;
-      const date = new Date(today - weeksInMs);
+      const weeksInMsAgo = new Date(today - weeksInMs);
 
-      return activity.filter((day: Activity) => new Date(day.date) >= date);
+      return activity.filter(
+        (day: Activity) => new Date(day.date) >= weeksInMsAgo
+      );
     },
   };
 
