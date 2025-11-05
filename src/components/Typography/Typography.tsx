@@ -25,7 +25,7 @@ export type TypographyProps = {
 const typographyVariantMapping: TypographyVariantMapping = {
   h1: "h1",
   h2: "h2",
-  subtitle1: "h3",
+  subtitle1: "h2",
   subtitle2: "h4",
   body1: "p",
   body2: "p",
