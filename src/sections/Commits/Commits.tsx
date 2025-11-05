@@ -1,8 +1,10 @@
 import GithubCalendar, { type Activity } from "react-github-calendar";
 import { useTranslations } from "next-intl";
+import { useMediaQuery } from "usehooks-ts";
 
 import { accounts, links } from "@/utils/links";
-import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
+
+import { THIRTY_FIVE_WEEKS_IN_MS, NINE_TEEN_WEEKS_IN_MS } from "@/utils/const";
 
 import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
@@ -20,15 +22,15 @@ const theme = {
 
 const Commits = () => {
   const t = useTranslations();
+  const sm = useMediaQuery("(min-width: 640px)");
 
   const renderers = {
     data: (activity: ReadonlyArray<Activity>) => {
       const today = new Date().getTime();
-      const thirtySixWeeksAgo = new Date(today - THIRTY_FIVE_WEEKS_IN_MS);
+      const weeksInMs = sm ? THIRTY_FIVE_WEEKS_IN_MS : NINE_TEEN_WEEKS_IN_MS;
+      const date = new Date(today - weeksInMs);
 
-      return activity.filter(
-        (day: Activity) => new Date(day.date) >= thirtySixWeeksAgo
-      );
+      return activity.filter((day: Activity) => new Date(day.date) >= date);
     },
   };
 
