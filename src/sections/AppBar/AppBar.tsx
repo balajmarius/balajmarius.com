@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useRef, HTMLAttributes, type RefObject } from "react";
+import { useRef, HTMLAttributes } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useOnClickOutside, useEventListener, useBoolean } from "usehooks-ts";
@@ -25,7 +25,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
   const { value, setTrue, setFalse } = useBoolean();
 
   const t = useTranslations();
-  const ref = useRef<HTMLElement | null>(null);
+  const ref = useRef<HTMLElement>(null as never as HTMLElement);
 
   const sections = [
     {
@@ -57,7 +57,7 @@ const AppBar = ({ ...props }: AppBarProps) => {
   };
 
   useEventListener("keydown", handleKeyDown);
-  useOnClickOutside(ref as RefObject<HTMLElement>, setFalse);
+  useOnClickOutside(ref, setFalse);
 
   return (
     <header
