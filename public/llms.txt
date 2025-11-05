@@ -1,0 +1,55 @@
+# Marius Balaj
+
+> UI engineer turned founder with a background in startups. Co-founded QED in 2021 (acquired by The Sandbox). Now building in AI.
+
+This is the personal website and blog of Marius Balaj, a software engineer and entrepreneur based in Romania. The site showcases professional experience, technical writings, and open source contributions.
+
+## About
+
+Marius is a UI engineer turned founder with experience across crypto pioneers and larger tech companies. He co-founded QED in 2021, grew it, and eventually sold it to The Sandbox. Currently serving as Managing Director (Romania) at The Sandbox and developing concepts at VOID2.
+
+Outside of work, he's the president of Viitorul Boxing Club where he trains and helps others. He's also an avid reader.
+
+## Experience
+
+- **VOID2** - Concept Developer (Current)
+- **The Sandbox** - Managing Director (Romania) (Current)
+- **QED** - Co-Founder (2022-2025, acquired by The Sandbox)
+- **stake.fish / f2pool.io** - Senior Software Engineer (2019-2022)
+- **Alacritylaw** - Lead Software Engineer (2017-2019)
+
+## Writings
+
+Technical and philosophical writings on software engineering, design systems, and books:
+
+- [Building The Sandbox Design System](/writings/building-the-sandbox-design-system): Deep dive into building a design system supporting 20+ product teams and 100+ developers using Vue, Nuxt, Tailwind, and CVA
+- [Technopoly](/writings/technopoly): Reflections on Neil Postman's critique of technology's role in society
+- [On Bullshit](/writings/on-bullshit): Analysis of Harry Frankfurt's philosophical examination of bullshit vs lying
+- [The True Believer](/writings/the-true-believer): Thoughts on Eric Hoffer's study of mass movements and fanaticism
+
+## Technical Stack
+
+This website is built with:
+
+- **Framework**: Next.js (React)
+- **Styling**: Tailwind CSS
+- **Content**: MDX for blog posts
+- **Internationalization**: next-intl
+- **Animations**: Framer Motion
+- **Language**: TypeScript
+
+## Contact
+
+- **Email**: Available on website
+- **GitHub**: [github.com/balajmarius](https://github.com/balajmarius)
+- **LinkedIn**: Available on website
+- **X (Twitter)**: Available on website
+
+## Optional
+
+Additional resources and metadata:
+
+- **Source Code**: The website is open source and built with modern web technologies
+- **GitHub Activity**: Active contributions visible through GitHub calendar integration
+- **Design Philosophy**: Focus on clean, maintainable code and user experience
+- **Location**: Based in Romania
