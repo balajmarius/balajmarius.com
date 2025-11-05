@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import GithubCalendar, { type Activity } from "react-github-calendar";
 
@@ -8,7 +9,6 @@ import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
 import { Link } from "@/components/Link";
 import { Section } from "@/components/Section";
 import { SvgIconBranch } from "@/components/SvgIcon";
-import { useRef } from "react";
 
 const theme = {
   dark: [

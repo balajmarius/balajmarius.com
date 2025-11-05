@@ -18,7 +18,7 @@ const About = () => {
     ),
     url1: (chunks: ReactNode) => (
       <Link
-        href={links.github}
+        href={links.qed}
         className="text-blue-500"
         target="_blank"
         rel="noopener noreferrer"
