@@ -13,11 +13,15 @@ const About = () => {
   const t = useTranslations();
 
   const renderers = {
+    ai: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
     ui: (chunks: ReactNode) => (
       <span className="relative inline-block text-blue-500">{chunks}</span>
     ),
     animation: (chunks: ReactNode) => (
       <span className="relative inline-block">{chunks}</span>
+    ),
+    serif: (chunks: ReactNode) => (
+      <span className="font-serif italic">{chunks}</span>
     ),
     letterDown: (chunks: ReactNode) => (
       <motion.span
@@ -37,10 +41,7 @@ const About = () => {
         {chunks}
       </motion.span>
     ),
-    ai: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
-    serif: (chunks: ReactNode) => (
-      <span className="font-serif italic">{chunks}</span>
-    ),
+
     url1: (chunks: ReactNode) => (
       <Link
         href={links.qed}
