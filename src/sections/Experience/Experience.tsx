@@ -42,9 +42,9 @@ const Experience = () => {
         </div>
 
         <div className="col-span-1 sm:col-span-9 space-y-6">
-          {jobs.map((job, index) => (
+          {jobs.map((job) => (
             <ExperienceListItem
-              key={index}
+              key={job.title}
               title={job.title}
               role={job.role}
               duration={job?.duration}

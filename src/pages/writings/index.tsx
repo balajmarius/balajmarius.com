@@ -9,9 +9,9 @@ import getPosts, { type Post } from "@/lib/posts";
 import { SvgIconBack } from "@/components/SvgIcon";
 
 import { Button } from "@/components/Button";
-import { PostsList } from "@/components/PostsList";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
+import { PostsList } from "@/components/PostsList";
 
 type WritingsProps = {
   posts: Dictionary<Post[]>;
@@ -29,7 +29,7 @@ const Writings = ({ posts }: WritingsProps) => {
   return (
     <>
       <Head>
-        <title>{t("metadata.title")}</title>
+        <title>{t("posts.title")}</title>
       </Head>
 
       <Section>

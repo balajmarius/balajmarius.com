@@ -4,10 +4,11 @@ import type { ReactNode } from "react";
 import type { GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 
+import { SvgIconBack } from "@/components/SvgIcon";
+
+import { Button } from "@/components/Button";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
-import { Button } from "@/components/Button";
-import { SvgIconBack } from "@/components/SvgIcon";
 
 const Error404 = () => {
   const t = useTranslations();
