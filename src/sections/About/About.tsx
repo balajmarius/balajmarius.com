@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 import { links } from "@/utils/links";
+import { titleAnimation } from "@/utils/keyframes";
 
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
@@ -11,7 +13,30 @@ const About = () => {
   const t = useTranslations();
 
   const renderers = {
-    ui: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
+    ui: (chunks: ReactNode) => (
+      <span className="relative inline-block text-blue-500">{chunks}</span>
+    ),
+    animation: (chunks: ReactNode) => (
+      <span className="relative inline-block">{chunks}</span>
+    ),
+    letterDown: (chunks: ReactNode) => (
+      <motion.span
+        variants={titleAnimation.letterDown}
+        transition={titleAnimation.transition}
+        className="absolute left-0 top-0 inline-block"
+      >
+        {chunks}
+      </motion.span>
+    ),
+    letterUp: (chunks: ReactNode) => (
+      <motion.span
+        variants={titleAnimation.letterUp}
+        transition={titleAnimation.transition}
+        className="inline-block"
+      >
+        {chunks}
+      </motion.span>
+    ),
     ai: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
     serif: (chunks: ReactNode) => (
       <span className="font-serif italic">{chunks}</span>
@@ -60,11 +85,11 @@ const About = () => {
 
   return (
     <Section id="about">
-      <div className="space-y-8">
+      <motion.div className="space-y-8" initial="rest" whileHover="hover">
         <Typography variant="h1">
-          <span className="whitespace-break-spaces">
+          <motion.span className="whitespace-break-spaces">
             {t.rich("about.title", renderers)}
-          </span>
+          </motion.span>
         </Typography>
 
         <div className="space-y-4">
@@ -78,7 +103,7 @@ const About = () => {
             {t.rich("about.description.2", renderers)}
           </Typography>
         </div>
-      </div>
+      </motion.div>
     </Section>
   );
 };
