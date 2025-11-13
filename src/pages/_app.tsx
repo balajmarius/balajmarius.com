@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { NextIntlClientProvider } from "next-intl";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 
 import { cn } from "@/utils/helpers";
@@ -123,6 +124,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       </motion.main>
 
       <Footer ref={footerRef} />
+      <GoogleAnalytics gaId="G-TKEZZNZ9RP" />
     </NextIntlClientProvider>
   );
 };
