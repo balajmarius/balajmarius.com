@@ -5,7 +5,8 @@ export const links = {
   goodreads: "https://www.goodreads.com/user/show/47935304-marius-balaj",
   qed: "https://qed.builders",
   sandbox: "https://sandbox.game",
-  viitorul: "https://instagram.com/cs_viitorul_timisoara",
+  viitorul:
+    "https://povestidinsport.substack.com/p/cum-imbina-un-antreprenor-timisorean",
 } as const;
 
 export const accounts = {
