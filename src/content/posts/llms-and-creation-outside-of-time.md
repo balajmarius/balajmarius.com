@@ -32,11 +32,6 @@ In a way, they're a perfect symptom of a culture where historical frames collaps
 
 And perhaps this is why, for me, the abandoned mall metaphor feels so precise: we're surrounded by echoes of meaning, but the temporal scaffolding that once held novelty together has thinned. LLMs are the speakers left for a culture trying to avoid the silence. They show us what creation looks like once historicity evaporates, once the past can no longer be interpreted, only sampled. What they reflect back to us isn't their own limitation, but our own drift away from temporal depth and a deep sense that we've lost hope for the future.
 
-<figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/llms-and-creation-outside-of-time/mark-fisher.png" alt="Mark Fisher" />
-  <figcaption>Mark Fisher</figcaption>
-</figure>
-
 ## Facing the Future
 
 Novelty is a response to history. Without history, we're left only with the archive. The danger isn't that LLMs will replace human artists, it's that a culture content with ghostly productions may forget how to exit the mall and how to make something that genuinely faces the future.
