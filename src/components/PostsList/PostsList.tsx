@@ -1,6 +1,4 @@
 import { useState } from "react";
-import type { Dictionary } from "lodash";
-
 import type { Post } from "@/lib/posts";
 import { isNullOrUndefined } from "@/utils/helpers";
 
@@ -8,7 +6,7 @@ import { Typography } from "@/components/Typography";
 import { PostListItem } from "@/components/PostsList";
 
 type PostsListProps = {
-  posts: Dictionary<Post[]>;
+  posts: Record<string, Post[]>;
 };
 
 const PostsList = ({ posts }: PostsListProps) => {

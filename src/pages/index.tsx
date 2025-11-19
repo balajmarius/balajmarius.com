@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useTranslations } from "next-intl";
-import type { Dictionary } from "lodash";
 
 import getPosts, { type Post } from "@/lib/posts";
 
@@ -10,7 +9,7 @@ import { Commits } from "@/sections/Commits";
 import { Posts } from "@/sections/Posts";
 
 type HomeProps = {
-  posts: Dictionary<Post[]>;
+  posts: Record<string, Post[]>;
 };
 
 const Home = ({ posts }: HomeProps) => {

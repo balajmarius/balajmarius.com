@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import type { Dictionary } from "lodash";
 import { useTranslations } from "next-intl";
 
 import getPosts, { type Post } from "@/lib/posts";
@@ -14,7 +13,7 @@ import { Typography } from "@/components/Typography";
 import { PostsList } from "@/components/PostsList";
 
 type WritingsProps = {
-  posts: Dictionary<Post[]>;
+  posts: Record<string, Post[]>;
 };
 
 const Writings = ({ posts }: WritingsProps) => {

@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import type { Dictionary } from "lodash";
 
 import type { Post } from "@/lib/posts";
 
@@ -9,7 +8,7 @@ import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
 
 type PostsProps = {
-  posts: Dictionary<Post[]>;
+  posts: Record<string, Post[]>;
 };
 
 const Posts = ({ posts }: PostsProps) => {
