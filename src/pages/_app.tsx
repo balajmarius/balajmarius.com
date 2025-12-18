@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 
 import { cn } from "@/utils/helpers";
+import { GOOGLE_ANALYTICS_ID } from "@/utils/const";
 import { scrollTransforms } from "@/utils/keyframes";
 
 import { AppBar } from "@/sections/AppBar";
@@ -124,7 +125,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       </motion.main>
 
       <Footer ref={footerRef} />
-      <GoogleAnalytics gaId="G-TKEZZNZ9RP" />
+      <GoogleAnalytics gaId={GOOGLE_ANALYTICS_ID} />
     </NextIntlClientProvider>
   );
 };
