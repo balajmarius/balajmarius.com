@@ -3,19 +3,19 @@ import { format } from "date-fns";
 import type { MouseEventHandler } from "react";
 
 import { cn } from "@/utils/helpers";
-import type { PostLabel } from "@/lib/posts";
+import type { Post } from "@/lib/posts";
 
 import { Chip, type ChipColor } from "@/components/Chip";
 import { Typography } from "@/components/Typography";
 
-type ChipColorLabelMapping = Record<PostLabel, ChipColor>;
+type ChipColorLabelMapping = Record<Post["label"], ChipColor>;
 
 type PostListItemProps = {
   slug: string;
   title: string;
   author?: string;
   createdAt: Date;
-  label: PostLabel;
+  label: Post["label"];
   active: boolean;
   onMouseEnter: MouseEventHandler<HTMLAnchorElement>;
   onMouseLeave: MouseEventHandler<HTMLAnchorElement>;

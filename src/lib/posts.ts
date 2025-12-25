@@ -6,14 +6,12 @@ import { getYear } from "date-fns/getYear";
 
 import { isNullOrUndefined } from "@/utils/helpers";
 
-export type PostLabel = "Book" | "LLMs" | "Dev" | "TIL";
-
 export type Post = {
   slug: string;
   title: string;
   author?: string;
   createdAt: Date;
-  label: PostLabel;
+  label: "Book" | "LLMs" | "Dev" | "TIL";
 };
 
 const postsDir = path.join(process.cwd(), "src/content/posts");
