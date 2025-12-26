@@ -167,7 +167,7 @@
   {
     "id": "XQ2NoEjDuwNECbVX99pHp",
     "title": "Cealalta revolutie",
-    "author": null,
+    "author": "Judit Berg",
     "src": "/images/bookshelf/cealalta-revolutie@2x.webp",
     "backgroundColor": "#f0f0f0",
     "color": "#262626",
@@ -1355,7 +1355,7 @@
   {
     "id": "kHxttCOw7vSkUBM6wqTMP",
     "title": "Arhipelagul mitocanilor",
-    "author": "Antonio",
+    "author": "San Antonio",
     "src": "/images/bookshelf/arhipelagul-mitocanilor@2x.webp",
     "backgroundColor": "#f0f0f0",
     "color": "#262626",
@@ -1542,7 +1542,7 @@
   {
     "id": "O2qtf6juSl7Jsoo0_ogCW",
     "title": "Un elefant... te-ar putea insela",
-    "author": "Antonio San",
+    "author": "San Antonio",
     "src": "/images/bookshelf/un-elefant-te-ar-putea-insela@2x.webp",
     "backgroundColor": "#806040",
     "color": "#edebe9",
@@ -1916,7 +1916,7 @@
   {
     "id": "3TgCGwMtF0iBoxidl5sgb",
     "title": "Wabi-Sabi for Artists, Designers, Poets & Philosophers",
-    "author": null,
+    "author": "Leonard Koren",
     "src": "/images/bookshelf/wabi-sabi-for-artists-designers-poets-philosophers@2x.webp",
     "backgroundColor": "#d09010",
     "color": "#eeece8",
@@ -2015,7 +2015,7 @@
   {
     "id": "0iR3OzE5gAjEgjm8J4IWN",
     "title": "Fidel & Religion",
-    "author": null,
+    "author": "Fidel Castro",
     "src": "/images/bookshelf/fidel-religion@2x.webp",
     "backgroundColor": "#f0f0f0",
     "color": "#262626",
@@ -2026,7 +2026,7 @@
   {
     "id": "x4Q3S-gNAyv77sCTP01KP",
     "title": "The Thought Of Che",
-    "author": null,
+    "author": "Fidel Castro",
     "src": "/images/bookshelf/the-thought-of-che@2x.webp",
     "backgroundColor": "#202020",
     "color": "#ebebeb",
@@ -4775,8 +4775,8 @@
   },
   {
     "id": "5dUgKWDY9izeMbonMg4nx",
-    "title": "Platon: Banchetul sau despre iubire",
-    "author": null,
+    "title": "Banchetul sau despre iubire",
+    "author": "Platon",
     "src": "/images/bookshelf/platon-banchetul-sau-despre-iubire@2x.webp",
     "backgroundColor": "#001000",
     "color": "#e8eee8",
