@@ -25,10 +25,13 @@
 
 @layer utilities {
   .scrollbar-w-none {
+    /* Hides scrollbar in Firefox */
     scrollbar-width: none;
+    /* Hides scrollbar in IE and Edge */
     -ms-overflow-style: none;
   }
   .scrollbar-w-none::-webkit-scrollbar {
+    /* Hides scrollbar in Chrome, Safari, and Opera */
     display: none;
   }
   .writing-sideways-lr {

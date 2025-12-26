@@ -42,7 +42,7 @@ const BooksListItem = ({
       <Image
         src={src}
         alt={title}
-        className="rounded-md"
+        className="rounded-md w-16 h-auto"
         width={BOOKSHELF_COVER_SIZE}
         height={BOOKSHELF_COVER_SIZE}
       />
