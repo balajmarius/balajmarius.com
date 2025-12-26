@@ -28,7 +28,7 @@ const Bookshelf = ({ books }: BookshelfProps) => {
   };
 
   return (
-    <div className="space-y-16">
+    <>
       <Head>
         <title>{t("bookshelf.title")}</title>
       </Head>
@@ -44,8 +44,16 @@ const Bookshelf = ({ books }: BookshelfProps) => {
         </div>
       </Section>
 
-      <BooksList books={books} />
-    </div>
+      <div className="space-y-8">
+        <Section spacing="small">
+          <Typography variant="subtitle1" display="block">
+            {t("bookshelf.booksOnMyShelf", { count: books.length })}
+          </Typography>
+        </Section>
+
+        <BooksList books={books} />
+      </div>
+    </>
   );
 };
 

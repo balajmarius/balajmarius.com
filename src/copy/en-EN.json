@@ -68,7 +68,8 @@
     "title": "Bookshelf",
     "books": "Books",
     "onMyBookshelf": "On my <serif>Bookshelf</serif>",
-    "personalCollectionOfBooks": "This is a personal collection of books I physically own. I’m always happy to exchange books or lend them out, feel free to <serif><url>reach out</url></serif>."
+    "personalCollectionOfBooks": "This is a personal collection of books I physically own. I’m always happy to exchange books or lend them out, feel free to <serif><url>reach out</url></serif>.",
+    "booksOnMyShelf": "{count} books"
   },
   "common": {
     "backToHome": "Back to home"
