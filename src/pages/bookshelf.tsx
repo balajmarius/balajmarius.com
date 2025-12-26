@@ -18,6 +18,7 @@ type BookshelfProps = {
 const Bookshelf = ({ books }: BookshelfProps) => {
   const t = useTranslations();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const visibleBooksRef = useRef<Set<Element>>(new Set());
 
   useEffect(() => {
     if (isNullOrUndefined(scrollContainerRef.current)) {
@@ -34,9 +35,24 @@ const Bookshelf = ({ books }: BookshelfProps) => {
     const bookElements =
       scrollContainerRef.current.querySelectorAll("[data-book]");
 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleBooksRef.current.add(entry.target);
+          } else {
+            visibleBooksRef.current.delete(entry.target);
+          }
+        });
+      },
+      { root: scrollContainerRef.current, threshold: 0 }
+    );
+
+    bookElements.forEach((book) => observer.observe(book));
+
     lenis.on("scroll", ({ velocity }: { velocity: number }) => {
       const angle = Math.max(-3, Math.min(3, velocity * 0.5));
-      bookElements.forEach((book) => {
+      visibleBooksRef.current.forEach((book) => {
         (book as HTMLElement).style.transform = `rotate(${angle}deg)`;
       });
     });
@@ -48,7 +64,10 @@ const Bookshelf = ({ books }: BookshelfProps) => {
 
     requestAnimationFrame(raf);
 
-    return () => lenis.destroy();
+    return () => {
+      observer.disconnect();
+      lenis.destroy();
+    };
   }, []);
 
   return (
