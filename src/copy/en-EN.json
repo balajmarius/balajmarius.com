@@ -65,6 +65,7 @@
   },
   "bookshelf": {
     "title": "Bookshelf",
+    "books": "Books",
     "onMyBookshelf": "On my <serif>Bookshelf</serif>",
     "personalCollectionOfBooks": "A personal collection of books I physically own."
   },
