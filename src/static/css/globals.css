@@ -24,11 +24,11 @@
 }
 
 @layer utilities {
-  .scrollbar-hide {
+  .scrollbar-w-none {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  .scrollbar-hide::-webkit-scrollbar {
+  .scrollbar-w-none::-webkit-scrollbar {
     display: none;
   }
   .writing-sideways-lr {

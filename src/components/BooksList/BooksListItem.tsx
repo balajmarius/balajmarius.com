@@ -19,7 +19,7 @@ const BooksListItem = ({
 }: BooksListItemProps) => {
   return (
     <div
-      className="flex items-center justify-between gap-8 py-8 rounded-sm writing-sideways-lr"
+      className="flex items-center justify-between gap-8 pt-8 pb-8 rounded-sm writing-sideways-lr"
       style={{
         color,
         backgroundColor,

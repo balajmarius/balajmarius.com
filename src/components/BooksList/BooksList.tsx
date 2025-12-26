@@ -1,5 +1,5 @@
 import type { Book } from "@/lib/books";
-import { useHijackScroll } from "@/hooks/useHijackScroll";
+import { useScrollSmooth } from "@/hooks/useScrollSmooth";
 
 import { BooksListItem } from "@/components/BooksList";
 
@@ -8,12 +8,12 @@ type BooksListProps = {
 };
 
 const BooksList = ({ books }: BooksListProps) => {
-  const ref = useHijackScroll<HTMLDivElement>();
+  const ref = useScrollSmooth<HTMLDivElement>();
 
   return (
     <div
       ref={ref}
-      className="flex items-end gap-1 overflow-x-auto scrollbar-hide"
+      className="flex items-end gap-1 overflow-x-auto scrollbar-w-none"
     >
       {books.map((book) => (
         <BooksListItem

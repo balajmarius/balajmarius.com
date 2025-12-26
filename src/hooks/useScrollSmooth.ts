@@ -3,7 +3,7 @@ import Lenis from "lenis";
 
 import { isNullOrUndefined } from "@/utils/helpers";
 
-export const useHijackScroll = <T extends HTMLElement>() => {
+export const useScrollSmooth = <T extends HTMLElement>() => {
   const ref = useRef<T>(null);
 
   useEffect(() => {
