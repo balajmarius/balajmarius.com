@@ -1,6 +1,6 @@
-import type { HTMLAttributes, ReactNode } from "react";
+import { useEffect, useRef, type HTMLAttributes, type ReactNode } from "react";
+import Lenis from "lenis";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -8,9 +8,8 @@ import { getBooks, type Book } from "@/lib/books";
 import { BOOKSHELF_COVER_SIZE } from "@/utils/const";
 
 import { Section } from "@/components/Section";
-import { Button } from "@/components/Button";
 import { Typography } from "@/components/Typography";
-import { SvgIconBack } from "@/components/SvgIcon";
+import { isNullOrUndefined } from "@/utils/helpers";
 
 type BookshelfProps = {
   books: Book[];
@@ -18,6 +17,39 @@ type BookshelfProps = {
 
 const Bookshelf = ({ books }: BookshelfProps) => {
   const t = useTranslations();
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isNullOrUndefined(scrollContainerRef.current)) {
+      return undefined;
+    }
+
+    const lenis = new Lenis({
+      wrapper: scrollContainerRef.current,
+      content: scrollContainerRef.current,
+      orientation: "horizontal",
+      gestureOrientation: "both",
+    });
+
+    const bookElements =
+      scrollContainerRef.current.querySelectorAll("[data-book]");
+
+    lenis.on("scroll", ({ velocity }: { velocity: number }) => {
+      const angle = Math.max(-3, Math.min(3, velocity * 0.5));
+      bookElements.forEach((book) => {
+        (book as HTMLElement).style.transform = `rotate(${angle}deg)`;
+      });
+    });
+
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
 
   return (
     <>
@@ -44,15 +76,21 @@ const Bookshelf = ({ books }: BookshelfProps) => {
       </Section>
 
       <div className="space-y-16">
-        <Typography variant="subtitle1" display="block">
-          {t("bookshelf.books")}
-        </Typography>
+        <div className="px-6 sm:px-12 pt-24">
+          <Typography variant="subtitle1" display="block">
+            {t("bookshelf.books")}
+          </Typography>
+        </div>
 
-        <div className="flex flex-wrap items-end gap-x-1 gap-y-16">
+        <div
+          ref={scrollContainerRef}
+          className="flex items-end gap-x-1 overflow-x-auto px-6 sm:px-12 scrollbar-hide"
+        >
           {books.map((book) => (
             <div
               key={book.id}
-              className="flex justify-between items-center rounded-sm gap-8 pt-8 pb-8 [writing-mode:sideways-lr]"
+              data-book
+              className="flex justify-between items-center rounded-sm gap-8 pt-8 pb-8 [writing-mode:sideways-lr] transition-transform duration-300 ease-out"
               style={{
                 backgroundColor: book.backgroundColor,
                 color: book.color,
@@ -82,14 +120,6 @@ const Bookshelf = ({ books }: BookshelfProps) => {
             </div>
           ))}
         </div>
-
-        <Link href="/" className="inline-block">
-          <Button startIcon={<SvgIconBack size="small" />}>
-            <Typography variant="body1" color="inherit">
-              {t("common.backToHome")}
-            </Typography>
-          </Button>
-        </Link>
       </div>
     </>
   );

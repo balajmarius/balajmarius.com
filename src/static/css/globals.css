@@ -22,3 +22,12 @@
 
   --ease-out-exponential: cubic-bezier(0.33, 1, 0.68, 1);
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
