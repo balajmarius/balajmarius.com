@@ -23,7 +23,9 @@ const Error404 = () => {
           <Typography variant="h1" display="block">
             {t.rich("error404.doesNotExist", {
               serif: (chunks: ReactNode) => (
-                <span className="font-serif italic text-blue-500">{chunks}</span>
+                <span className="font-serif italic text-blue-500">
+                  {chunks}
+                </span>
               ),
             })}
           </Typography>

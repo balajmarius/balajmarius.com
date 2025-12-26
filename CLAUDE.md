@@ -52,7 +52,10 @@ export type ButtonVariantMapping = Record<ButtonVariant, string>;
 Use discriminated unions when variant affects required props:
 
 ```typescript
-type ChipDefaultProps = ChipBaseProps & { variant?: "default"; color: ChipColor };
+type ChipDefaultProps = ChipBaseProps & {
+  variant?: "default";
+  color: ChipColor;
+};
 type ChipOutlinedProps = ChipBaseProps & { variant: "outlined"; color?: never };
 export type ChipProps = ChipDefaultProps | ChipOutlinedProps;
 ```
