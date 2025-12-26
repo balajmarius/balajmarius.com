@@ -2,8 +2,15 @@
 // ABOUTME: Provides typed access to the book collection for static generation.
 
 export type Book = {
-  id: number;
+  id: string;
   title: string;
+  author?: string;
+  src: string;
+  color: string;
+  backgroundColor: string;
+  height: number;
+  paddingLeft: number;
+  paddingRight: number;
 };
 
 export const getBooks = async () => {

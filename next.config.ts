@@ -6,4 +6,5 @@ export default mdxConfig({
   output: "export",
   trailingSlash: true,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  images: { unoptimized: true },
 });

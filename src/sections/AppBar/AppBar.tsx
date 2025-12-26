@@ -14,6 +14,7 @@ import {
   SvgIconTrophy,
   SvgIconNotepad,
   SvgIconGlobe,
+  SvgIconBookshelf,
 } from "@/components/SvgIcon";
 
 import { Button } from "@/components/Button";
@@ -42,6 +43,11 @@ const AppBar = ({ ...props }: AppBarProps) => {
       href: "/#posts",
       label: t("appBar.writings"),
       icon: <SvgIconNotepad size="small" />,
+    },
+    {
+      href: "/bookshelf",
+      label: t("appBar.bookshelf"),
+      icon: <SvgIconBookshelf size="small" />,
     },
     {
       href: "#contact",

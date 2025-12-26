@@ -5,37 +5,23 @@ import { cn } from "@/utils/helpers";
 import type {
   SectionSpacing,
   SectionSpacingMapping,
-  SectionSize,
-  SectionSizeMapping,
 } from "@/components/Section";
 
 export type SectionProps = {
   children: ReactNode;
   spacing?: SectionSpacing;
-  size?: SectionSize;
 } & HTMLAttributes<HTMLDivElement>;
-
-const sectionSizeClassNames: SectionSizeMapping = {
-  medium: "max-w-2xl",
-  large: "max-w-7xl",
-};
 
 const sectionSpacingClassNames: SectionSpacingMapping = {
   small: "pt-24",
   default: "pt-48",
 };
 
-const Section = ({
-  children,
-  spacing = "default",
-  size = "medium",
-  ...props
-}: SectionProps) => {
+const Section = ({ children, spacing = "default", ...props }: SectionProps) => {
   return (
     <section
       className={cn(
-        "px-6 sm:px-12",
-        sectionSizeClassNames[size],
+        "max-w-2xl px-6 sm:px-12",
         sectionSpacingClassNames[spacing]
       )}
       {...props}

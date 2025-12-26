@@ -1,11 +1,11 @@
+import type { HTMLAttributes, ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { useEffect, type HTMLAttributes, type ReactNode } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useCounter, useIntersectionObserver } from "usehooks-ts";
 
-import { BOOKS_BATCH_SIZE } from "@/utils/const";
 import { getBooks, type Book } from "@/lib/books";
+import { BOOKSHELF_COVER_SIZE } from "@/utils/const";
 
 import { Section } from "@/components/Section";
 import { Button } from "@/components/Button";
@@ -18,15 +18,6 @@ type BookshelfProps = {
 
 const Bookshelf = ({ books }: BookshelfProps) => {
   const t = useTranslations();
-
-  const { count, increment } = useCounter();
-  const { isIntersecting, ref } = useIntersectionObserver();
-
-  useEffect(() => {
-    if (isIntersecting) {
-      increment();
-    }
-  }, [isIntersecting, increment]);
 
   return (
     <>
@@ -52,29 +43,54 @@ const Bookshelf = ({ books }: BookshelfProps) => {
         </div>
       </Section>
 
-      <Section size="large">
-        <div className="space-y-16">
-          <Typography variant="subtitle1" display="block">
-            {t("bookshelf.books")}
-          </Typography>
+      <div className="space-y-16">
+        <Typography variant="subtitle1" display="block">
+          {t("bookshelf.books")}
+        </Typography>
 
-          <div className="grid grid-cols-4 gap-x-4 gap-y-16 px-12">
-            {books.slice(0, count * BOOKS_BATCH_SIZE).map((book) => (
-              <div key={book.id} className="rounded-3xl">
-                {book.title}
+        <div className="flex flex-wrap items-end gap-x-1 gap-y-16">
+          {books.map((book) => (
+            <div
+              key={book.id}
+              className="flex justify-between items-center rounded-sm gap-8 pt-8 pb-8 [writing-mode:sideways-lr]"
+              style={{
+                backgroundColor: book.backgroundColor,
+                color: book.color,
+                height: book.height,
+                paddingLeft: book.paddingLeft,
+                paddingRight: book.paddingRight,
+              }}
+            >
+              <div className="flex flex-col">
+                {book.author ? (
+                  <Typography variant="caption" color="inherit">
+                    {book.author}
+                  </Typography>
+                ) : null}
+                <Typography variant="body1" color="inherit">
+                  {book.title}
+                </Typography>
               </div>
-            ))}
-          </div>
 
-          <Link href="/" className="inline-block" ref={ref}>
-            <Button startIcon={<SvgIconBack size="small" />}>
-              <Typography variant="body1" color="inherit">
-                {t("common.backToHome")}
-              </Typography>
-            </Button>
-          </Link>
+              <Image
+                src={book.src}
+                alt={book.title}
+                className="rounded-md"
+                width={BOOKSHELF_COVER_SIZE}
+                height={BOOKSHELF_COVER_SIZE}
+              />
+            </div>
+          ))}
         </div>
-      </Section>
+
+        <Link href="/" className="inline-block">
+          <Button startIcon={<SvgIconBack size="small" />}>
+            <Typography variant="body1" color="inherit">
+              {t("common.backToHome")}
+            </Typography>
+          </Button>
+        </Link>
+      </div>
     </>
   );
 };
