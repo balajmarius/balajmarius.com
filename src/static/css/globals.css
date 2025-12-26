@@ -23,11 +23,15 @@
   --ease-out-exponential: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .writing-sideways-lr {
+    writing-mode: sideways-lr;
+  }
 }
