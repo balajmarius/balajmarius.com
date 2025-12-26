@@ -44,12 +44,6 @@ const Bookshelf = ({ books }: BookshelfProps) => {
         </div>
       </Section>
 
-      <Section spacing="small">
-        <Typography variant="subtitle1" display="block">
-          {t("bookshelf.currentlyReading")}
-        </Typography>
-      </Section>
-
       <div className="space-y-16">
         <Section spacing="small">
           <Typography variant="subtitle1" display="block">
