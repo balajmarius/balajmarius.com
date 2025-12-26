@@ -2,6 +2,8 @@ import type { HTMLAttributes } from "react";
 import { useTranslations } from "next-intl";
 import { useCopyToClipboard } from "usehooks-ts";
 
+import { isNullOrUndefined } from "@/utils/helpers";
+
 import { SvgIconCheckmark, SvgIconClipboard } from "@/components/SvgIcon";
 
 import { Link } from "@/components/Link";
@@ -34,9 +36,13 @@ const FooterListItem = ({
   const [copiedText, setCopiedText] = useCopyToClipboard();
 
   const handleCopy = async () => {
-    if (value) {
-      await setCopiedText(value);
+    if (isNullOrUndefined(value)) {
+      return null;
     }
+
+    try {
+      await setCopiedText(value);
+    } catch {}
   };
 
   return (
@@ -51,7 +57,7 @@ const FooterListItem = ({
         </Typography>
       )}
 
-      <div className="flex-grow border-t border-blue-100" />
+      <div className="grow border-t border-blue-100" />
 
       {value ? (
         <div className="flex items-center gap-1">

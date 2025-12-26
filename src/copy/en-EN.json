@@ -56,9 +56,20 @@
     "title": "Writings",
     "author": " - {author}",
     "moreWritings": "More writings",
-    "backToHome": "Back to home",
     "backToWritings": "Back to writings",
     "itIsTimeToWrite": "Sometimes it’s time to <serif>write</serif>."
+  },
+  "error404": {
+    "title": "Page Not Found",
+    "doesNotExist": "The page you are looking for does <serif>not exist</serif>."
+  },
+  "bookshelf": {
+    "title": "Bookshelf",
+    "onMyBookshelf": "On my <serif>Bookshelf</serif>",
+    "personalCollectionOfBooks": "A personal collection of books I physically own."
+  },
+  "common": {
+    "backToHome": "Back to home"
   },
   "footer": {
     "contact": "Contact",
@@ -69,10 +80,5 @@
     "copyToClipboard": "Copy to clipboard",
     "copyright": "© 2025 Marius Balaj",
     "quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
-  },
-  "error404": {
-    "title": "Page Not Found",
-    "thePageYouSeekDoesNotExist": "The page you are looking for does <serif>not exist</serif>.",
-    "backToHome": "Back to home"
   }
 }

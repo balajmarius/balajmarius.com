@@ -1,0 +1,3968 @@
+[
+  {
+    "id": 1,
+    "title": "Conversații despre Dumnezeu",
+    "author": "Byung-Chul Han",
+    "publisher": "CONTRASENS",
+    "source": "dataset/1.jpg",
+    "title_en": "Conversations on God",
+    "cover": "covers/1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Drumul către servitute",
+    "author": "Friedrich A. Hayek",
+    "publisher": "Humanitas",
+    "source": "dataset/2.jpg",
+    "title_en": "The Road to Serfdom",
+    "cover": "covers/2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Agonie și extaz",
+    "author": "Irving Stone",
+    "publisher": "Polirom",
+    "source": "dataset/3.jpg",
+    "title_en": "The Agony and the Ecstasy",
+    "cover": "covers/3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Despre fericire",
+    "author": "Blaise Pascal",
+    "publisher": "Vellant",
+    "source": "dataset/4.jpg",
+    "title_en": "On Happiness",
+    "cover": "covers/4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Construction of Social Reality",
+    "author": "John R. Searle",
+    "publisher": "Penguin",
+    "source": "dataset/5.jpg",
+    "cover": "covers/5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Denationalizarea Banilor",
+    "author": "F.A. Hayek",
+    "publisher": null,
+    "source": "dataset/6.jpg",
+    "title_en": "Denationalisation of Money",
+    "cover": "covers/6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Tropicul Capricornului",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/7.jpg",
+    "title_en": "Tropic of Capricorn",
+    "cover": "covers/7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Welcome to the Desert of the Real",
+    "author": "Slavoj Žižek",
+    "publisher": "Verso",
+    "source": "dataset/8.jpg",
+    "cover": "covers/8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Irrational Ape",
+    "author": "David Robert Grimes",
+    "publisher": null,
+    "source": "dataset/9.jpg",
+    "cover": "covers/9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Revolta împotriva lumii moderne",
+    "author": "Julius Evola",
+    "publisher": "Antet",
+    "source": "dataset/10.jpg",
+    "title_en": "Revolt Against the Modern World",
+    "cover": "covers/10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Tratat De Istorie A Religiilor",
+    "author": "Mircea Eliade",
+    "publisher": "HUMANITAS",
+    "source": "dataset/11.jpg",
+    "title_en": "Patterns in Comparative Religion",
+    "cover": "covers/11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Ruperea Blestemului",
+    "author": "Cătălin Ranco Pițu",
+    "publisher": "Litera",
+    "source": "dataset/12.jpg",
+    "cover": "covers/12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "For a Quantum Theory of History",
+    "author": "Slavoj Žižek",
+    "publisher": "Collana dei Tre Oci",
+    "source": "dataset/13.jpg",
+    "cover": "covers/13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Natură, Cultură Şi Inegalități",
+    "author": "Thomas Piketty",
+    "publisher": "LITERA",
+    "source": "dataset/14.jpg",
+    "title_en": "Nature, Culture, and Inequality",
+    "cover": "covers/14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Criza narațiunii",
+    "author": "Byung-Chul Han",
+    "publisher": "Contrasens",
+    "source": "dataset/15.jpg",
+    "title_en": "The Crisis of Narration",
+    "cover": "covers/15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Cealaltă Revoluție",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/16.jpg",
+    "cover": "covers/16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Revolta lui Atlas",
+    "author": "Ayn Rand",
+    "publisher": "Cartier Popular",
+    "source": "dataset/17.jpg",
+    "title_en": "Atlas Shrugged",
+    "cover": "covers/17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Comentarii asupra societății spectacolului",
+    "author": "Guy Debord",
+    "publisher": null,
+    "source": "dataset/18.jpg",
+    "title_en": "Comments on the Society of the Spectacle",
+    "cover": "covers/18.jpg"
+  },
+  {
+    "id": 19,
+    "title": "De ce sunt atât de înțelept",
+    "author": "Friedrich Nietzsche",
+    "publisher": "Vellant",
+    "source": "dataset/19.jpg",
+    "title_en": "Why I Am So Wise",
+    "cover": "covers/19.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Despre scris: Autobiografia unui mestesug",
+    "author": "Stephen King",
+    "publisher": "Orion",
+    "source": "dataset/20.jpg",
+    "title_en": "On Writing: A Memoir of the Craft",
+    "cover": "covers/20.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Spin Dictators",
+    "author": "Sergei Guriev & Daniel Treisman",
+    "publisher": "The Atlantic",
+    "source": "dataset/21.jpg",
+    "cover": "covers/21.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Metoda Ikigai",
+    "author": "Héctor García (Kirai), Francesc Miralles",
+    "publisher": "Humanitas Practic",
+    "source": "dataset/22.jpg",
+    "title_en": "The Ikigai Method",
+    "cover": "covers/22.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Venture Deals",
+    "author": "Brad Feld, Jason Mendelson",
+    "publisher": "Wiley",
+    "source": "dataset/23.jpg",
+    "cover": "covers/23.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Serverless Development on AWS",
+    "author": "Sheen Brisals & Luke Hedger",
+    "publisher": "O'Reilly",
+    "source": "dataset/24.jpg",
+    "cover": "covers/24.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Tapul Ispășitor",
+    "author": "René Girard",
+    "publisher": "NEMIRA",
+    "source": "dataset/25.jpg",
+    "title_en": "The Scapegoat",
+    "cover": "covers/25.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Vara",
+    "author": "Albert Camus",
+    "publisher": "Polirom",
+    "source": "dataset/26.jpg",
+    "title_en": "Summer",
+    "cover": "covers/26.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Ficțiuni politice în societatea globalizată",
+    "author": "Horea George Băcanu",
+    "publisher": "Tritonic",
+    "source": "dataset/27.jpg",
+    "cover": "covers/27.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Societatea spectacolului",
+    "author": "Guy Debord",
+    "publisher": "Editura EST",
+    "source": "dataset/28.jpg",
+    "title_en": "The Society of the Spectacle",
+    "cover": "covers/28.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Don't Make Me Think Revisited",
+    "author": "Steve Krug",
+    "publisher": null,
+    "source": "dataset/29.jpg",
+    "cover": "covers/29.jpg"
+  },
+  {
+    "id": 30,
+    "title": "What Lies Ahead When There Is No Future?",
+    "author": "Slavoj Žižek",
+    "publisher": "Penguin",
+    "source": "dataset/30.jpg",
+    "cover": "covers/30.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Splendida cetate a celor o mie de sori",
+    "author": "Khaled Hosseini",
+    "publisher": "Niculescu",
+    "source": "dataset/31.jpg",
+    "title_en": "A Thousand Splendid Suns",
+    "cover": "covers/31.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Ultimele Zile din Viata lui John Lennon",
+    "author": "James Patterson",
+    "publisher": null,
+    "source": "dataset/32.jpg",
+    "title_en": "The Last Days of John Lennon",
+    "cover": "covers/32.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Noțiunea de Autoritate",
+    "author": "Alexandre Kojève",
+    "publisher": "act",
+    "source": "dataset/33.jpg",
+    "title_en": "The Notion of Authority",
+    "cover": "covers/33.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Manipulator",
+    "author": "David Unger",
+    "publisher": "INTEGRAL",
+    "source": "dataset/34.jpg",
+    "cover": "covers/34.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Ce vrem de la președintele țării?",
+    "author": "Cristian Preda, Ciprian Mihali, Sorin Ioniță",
+    "publisher": "Humanitas",
+    "source": "dataset/35.jpg",
+    "cover": "covers/35.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Oscar și Tanti Roz",
+    "author": "Eric-Emmanuel Schmitt",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/36.jpg",
+    "title_en": "Oscar and the Lady in Pink",
+    "cover": "covers/36.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Fântâna de la răscruce",
+    "author": "Tiberiu Ciortuz",
+    "publisher": null,
+    "source": "dataset/37.jpg",
+    "cover": "covers/37.jpg"
+  },
+  {
+    "id": 38,
+    "title": "Exalare",
+    "author": "Ted Chiang",
+    "publisher": "ARMADA",
+    "source": "dataset/38.jpg",
+    "title_en": "Exhalation",
+    "cover": "covers/38.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Devenirea Peisajului",
+    "author": "Angelica Stan",
+    "publisher": "Editura Universitatii Ion Mincu",
+    "source": "dataset/39.jpg",
+    "cover": "covers/39.jpg"
+  },
+  {
+    "id": 40,
+    "title": "What Is ChatGPT Doing... and Why Does It Work?",
+    "author": "Stephen Wolfram",
+    "publisher": null,
+    "source": "dataset/40.jpg",
+    "cover": "covers/40.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Matrix Știință, filozofie și religie",
+    "author": "Glenn Yeffeth",
+    "publisher": "Editura Amaltea",
+    "source": "dataset/41.jpg",
+    "title_en": "The Matrix: Science, Philosophy and Religion",
+    "cover": "covers/41.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Biserica de Stat sau Biserica in Stat? O Istorie a Bisericii Ortodoxe Române 1918-2023",
+    "author": "Oliver Jens Schmitt",
+    "publisher": "Humanitas",
+    "source": "dataset/42.jpg",
+    "cover": "covers/42.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Dementa Digitala",
+    "author": "Manfred Spitzer",
+    "publisher": "Humanitas",
+    "source": "dataset/43.jpg",
+    "title_en": "Digital Dementia",
+    "cover": "covers/43.jpg"
+  },
+  {
+    "id": 44,
+    "title": "Secolul Singurătății",
+    "author": "Noreena Hertz",
+    "publisher": "Humanitas",
+    "source": "dataset/44.jpg",
+    "title_en": "The Lonely Century",
+    "cover": "covers/44.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Despre Libertate",
+    "author": "John Stuart Mill",
+    "publisher": "HUMANITAS",
+    "source": "dataset/45.jpg",
+    "title_en": "On Liberty",
+    "cover": "covers/45.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Sacrul și profanul",
+    "author": "Mircea Eliade",
+    "publisher": "Humanitas",
+    "source": "dataset/46.jpg",
+    "title_en": "The Sacred and the Profane",
+    "cover": "covers/46.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Tuesdays with Morrie",
+    "author": "Mitch Albom",
+    "publisher": null,
+    "source": "dataset/47.jpg",
+    "cover": "covers/47.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Întreabă un filosof",
+    "author": "Ian Olasov",
+    "publisher": "Niculescu",
+    "source": "dataset/48.jpg",
+    "title_en": "Ask a Philosopher",
+    "cover": "covers/48.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Un om sfârșit",
+    "author": "Giovanni Papini",
+    "publisher": "Polirom",
+    "source": "dataset/49.jpg",
+    "title_en": "A Finished Man",
+    "cover": "covers/49.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Ways of Seeing",
+    "author": "John Berger",
+    "publisher": "Penguin",
+    "source": "dataset/50.jpg",
+    "cover": "covers/50.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Mánasteinn",
+    "author": "Sjón",
+    "publisher": "Polirom",
+    "source": "dataset/51.jpg",
+    "cover": "covers/51.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Societatea paliativă",
+    "author": "Byung-Chul Han",
+    "publisher": "Contrasens",
+    "source": "dataset/52.jpg",
+    "title_en": "The Palliative Society",
+    "cover": "covers/52.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Ecce Homo",
+    "author": "Friedrich Nietzsche",
+    "publisher": "Idea European",
+    "source": "dataset/53.jpg",
+    "cover": "covers/53.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Zbor deasupra unui cuib de cuci",
+    "author": "Ken Kesey",
+    "publisher": "Polirom",
+    "source": "dataset/54.jpg",
+    "title_en": "One Flew Over the Cuckoo's Nest",
+    "cover": "covers/54.jpg"
+  },
+  {
+    "id": 55,
+    "title": "Înrădăcinarea",
+    "author": "Simone Weil",
+    "publisher": "Polirom",
+    "source": "dataset/55.jpg",
+    "title_en": "The Need for Roots",
+    "cover": "covers/55.jpg"
+  },
+  {
+    "id": 56,
+    "title": "La cafeneaua existențialiștilor",
+    "author": "Sarah Bakewell",
+    "publisher": null,
+    "source": "dataset/56.jpg",
+    "title_en": "At the Existentialist Cafe",
+    "cover": "covers/56.jpg"
+  },
+  {
+    "id": 57,
+    "title": "Iubește Revoluția!",
+    "author": "Aleksandr Soljenițîn",
+    "publisher": "Nobel",
+    "source": "dataset/57.jpg",
+    "title_en": "Love the Revolution!",
+    "cover": "covers/57.jpg"
+  },
+  {
+    "id": 58,
+    "title": "Arta de a Avea Întotdeauna Dreptate",
+    "author": "Arthur Schopenhauer",
+    "publisher": "Editura Art",
+    "source": "dataset/58.jpg",
+    "title_en": "The Art of Always Being Right",
+    "cover": "covers/58.jpg"
+  },
+  {
+    "id": 59,
+    "title": "Žižek in the Clinic",
+    "author": "Eliot Rosenstock",
+    "publisher": "Zero Books",
+    "source": "dataset/59.jpg",
+    "cover": "covers/59.jpg"
+  },
+  {
+    "id": 60,
+    "title": "Arhipelagul Gulag I",
+    "author": "Alexandr Soljenițin",
+    "publisher": "UNIVERS",
+    "source": "dataset/60.jpg",
+    "title_en": "The Gulag Archipelago I",
+    "cover": "covers/60.jpg"
+  },
+  {
+    "id": 61,
+    "title": "Cinci ani în Irakului lui Saddam Hussein",
+    "author": "Emil Sîrbulescu",
+    "publisher": "Humanitas",
+    "source": "dataset/61.jpg",
+    "cover": "covers/61.jpg"
+  },
+  {
+    "id": 62,
+    "title": "Bauhaus",
+    "author": "Frank Whitford",
+    "publisher": "Thames & Hudson",
+    "source": "dataset/62.jpg",
+    "cover": "covers/62.jpg"
+  },
+  {
+    "id": 63,
+    "title": "Walden sau Viața în pădure",
+    "author": "Henry David Thoreau",
+    "publisher": "ART",
+    "source": "dataset/63.jpg",
+    "title_en": "Walden; or, Life in the Woods",
+    "cover": "covers/63.jpg"
+  },
+  {
+    "id": 64,
+    "title": "Curajul Adevărului",
+    "author": "Michel Foucault",
+    "publisher": "Colecția Panopticon",
+    "source": "dataset/64.jpg",
+    "title_en": "The Courage of Truth",
+    "cover": "covers/64.jpg"
+  },
+  {
+    "id": 65,
+    "title": "Baudrillard: A Graphic Guide",
+    "author": "Chris Horrocks & Zoran Jevtic",
+    "publisher": null,
+    "source": "dataset/65.jpg",
+    "cover": "covers/65.jpg"
+  },
+  {
+    "id": 66,
+    "title": "Mintea",
+    "author": "John R. Searle",
+    "publisher": null,
+    "source": "dataset/66.jpg",
+    "title_en": "Mind",
+    "cover": "covers/66.jpg"
+  },
+  {
+    "id": 67,
+    "title": "Fight Club",
+    "author": "Chuck Palahniuk",
+    "publisher": "Polirom",
+    "source": "dataset/67.jpg",
+    "cover": "covers/67.jpg"
+  },
+  {
+    "id": 68,
+    "title": "Sfârșitul lumii este doar începutul",
+    "author": "Peter Zeihan",
+    "publisher": "Litera",
+    "source": "dataset/68.jpg",
+    "title_en": "The End of the World Is Just the Beginning",
+    "cover": "covers/68.jpg"
+  },
+  {
+    "id": 69,
+    "title": "Ficțiunea 'woke",
+    "author": "Samuel Fitoussi",
+    "publisher": null,
+    "source": "dataset/69.jpg",
+    "title_en": "The Woke Fiction",
+    "cover": "covers/69.jpg"
+  },
+  {
+    "id": 70,
+    "title": "Maestrul și Margareta",
+    "author": "Mihail Bulgakov",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/70.jpg",
+    "title_en": "The Master and Margarita",
+    "cover": "covers/70.jpg"
+  },
+  {
+    "id": 71,
+    "title": "Things Hidden Since the Foundation of the World",
+    "author": "René Girard",
+    "publisher": "Bloomsbury",
+    "source": "dataset/71.jpg",
+    "cover": "covers/71.jpg"
+  },
+  {
+    "id": 72,
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "publisher": null,
+    "source": "dataset/72.jpg",
+    "cover": "covers/72.jpg"
+  },
+  {
+    "id": 73,
+    "title": "Regele Lumii",
+    "author": "David Remnick",
+    "publisher": null,
+    "source": "dataset/73.jpg",
+    "title_en": "King of the World",
+    "cover": "covers/73.jpg"
+  },
+  {
+    "id": 74,
+    "title": "Postmodernismul sau logica culturală a capitalismului tîrziu",
+    "author": "Fredric Jameson",
+    "publisher": null,
+    "source": "dataset/74.jpg",
+    "title_en": "Postmodernism, or, The Cultural Logic of Late Capitalism",
+    "cover": "covers/74.jpg"
+  },
+  {
+    "id": 75,
+    "title": "Agonie și extaz",
+    "author": "Irving Stone",
+    "publisher": "Polirom",
+    "source": "dataset/75.jpg",
+    "title_en": "The Agony and the Ecstasy",
+    "cover": "covers/75.jpg"
+  },
+  {
+    "id": 76,
+    "title": "Leonardo Da Vinci",
+    "author": "Walter Isaacson",
+    "publisher": null,
+    "source": "dataset/76.jpg",
+    "cover": "covers/76.jpg"
+  },
+  {
+    "id": 77,
+    "title": "How To Be Well Read",
+    "author": "John Sutherland",
+    "publisher": "Penguin",
+    "source": "dataset/77.jpg",
+    "cover": "covers/77.jpg"
+  },
+  {
+    "id": 78,
+    "title": "The Cold Start Problem",
+    "author": "Andrew Chen",
+    "publisher": "Penguin",
+    "source": "dataset/78.jpg",
+    "cover": "covers/78.jpg"
+  },
+  {
+    "id": 79,
+    "title": "Open. Autobiografie",
+    "author": "Andre Agassi",
+    "publisher": "Victoria Books",
+    "source": "dataset/79.jpg",
+    "cover": "covers/79.jpg"
+  },
+  {
+    "id": 80,
+    "title": "Datoria",
+    "author": "David Graeber",
+    "publisher": "EDITURA ART",
+    "source": "dataset/80.jpg",
+    "title_en": "Debt: The First 5,000 Years",
+    "cover": "covers/80.jpg"
+  },
+  {
+    "id": 81,
+    "title": "The StatQuest Illustrated Guide to Neural Networks and AI",
+    "author": "Josh Starmer, PhD",
+    "publisher": null,
+    "source": "dataset/81.jpg",
+    "cover": "covers/81.jpg"
+  },
+  {
+    "id": 82,
+    "title": "The StatQuest Illustrated Guide To Machine Learning",
+    "author": "Josh Starmer, PhD",
+    "publisher": null,
+    "source": "dataset/82.jpg",
+    "cover": "covers/82.jpg"
+  },
+  {
+    "id": 83,
+    "title": "Simulacre și simulare",
+    "author": "Jean Baudrillard",
+    "publisher": "Colectia Panopticon",
+    "source": "dataset/83.jpg",
+    "title_en": "Simulacra and Simulation",
+    "cover": "covers/83.jpg"
+  },
+  {
+    "id": 84,
+    "title": "Ghosts of My Life",
+    "author": "Mark Fisher",
+    "publisher": "Zero Classics",
+    "source": "dataset/84.jpg",
+    "cover": "covers/84.jpg"
+  },
+  {
+    "id": 85,
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "publisher": null,
+    "source": "dataset/85.jpg",
+    "cover": "covers/85.jpg"
+  },
+  {
+    "id": 86,
+    "title": "Masina de rasucit idei incomode",
+    "author": "Constantin Crânganu",
+    "publisher": "Integral",
+    "source": "dataset/86.jpg",
+    "cover": "covers/86.jpg"
+  },
+  {
+    "id": 87,
+    "title": "Semne bune",
+    "author": "Neil Gaiman, Terry Pratchett",
+    "publisher": "Tritonic",
+    "source": "dataset/87.jpg",
+    "title_en": "Good Omens",
+    "cover": "covers/87.jpg"
+  },
+  {
+    "id": 88,
+    "title": "Gödel, Escher, Bach",
+    "author": "Douglas R. Hofstadter",
+    "publisher": "HUMANITAS",
+    "source": "dataset/88.jpg",
+    "cover": "covers/88.jpg"
+  },
+  {
+    "id": 91,
+    "title": "The Algorithm Design Manual",
+    "author": "Steven S. Skiena",
+    "publisher": "Springer",
+    "source": "dataset/91.jpg",
+    "cover": "covers/91.jpg"
+  },
+  {
+    "id": 94,
+    "title": "Batman Volumul 1, Conclavul Bufnitelor",
+    "author": "Scott Snyder, Greg Capullo, Jonathan Glapion",
+    "publisher": "Grafic",
+    "source": "dataset/94.jpg",
+    "title_en": "Batman Vol. 1: The Court of Owls",
+    "cover": "covers/94.jpg"
+  },
+  {
+    "id": 95,
+    "title": "Batman Gluma Ucigașă",
+    "author": "Alan Moore, Brian Bolland",
+    "publisher": "DC Grafic",
+    "source": "dataset/95.jpg",
+    "title_en": "Batman: The Killing Joke",
+    "cover": "covers/95.jpg"
+  },
+  {
+    "id": 96,
+    "title": "The Hundred-Page Machine Learning Book",
+    "author": "Andriy Burkov",
+    "publisher": null,
+    "source": "dataset/96.jpg",
+    "cover": "covers/96.jpg"
+  },
+  {
+    "id": 97,
+    "title": "sed & awk",
+    "author": "Dale Dougherty & Arnold Robbins",
+    "publisher": "O'Reilly",
+    "source": "dataset/97.jpg",
+    "cover": "covers/97.jpg"
+  },
+  {
+    "id": 98,
+    "title": "Functional Thinking",
+    "author": "Neal Ford",
+    "publisher": "O'Reilly",
+    "source": "dataset/98.jpg",
+    "cover": "covers/98.jpg"
+  },
+  {
+    "id": 99,
+    "title": "Functional-Light JavaScript",
+    "author": "Kyle Simpson",
+    "publisher": null,
+    "source": "dataset/99.jpg",
+    "cover": "covers/99.jpg"
+  },
+  {
+    "id": 100,
+    "title": "23 De Lucruri Care Nu Ti Se Spun Despre Capitalism",
+    "author": "Ha-Joon Chang",
+    "publisher": "Polirom",
+    "source": "dataset/100.jpg",
+    "title_en": "23 Things They Don't Tell You About Capitalism",
+    "cover": "covers/100.jpg"
+  },
+  {
+    "id": 101,
+    "title": "Cosmosapiens",
+    "author": "John Hands",
+    "publisher": "HUMANITAS",
+    "source": "dataset/101.jpg",
+    "cover": "covers/101.jpg"
+  },
+  {
+    "id": 102,
+    "title": "Biblia",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/102.jpg",
+    "cover": "covers/102.jpg"
+  },
+  {
+    "id": 103,
+    "title": "A Avea Sau A Fi?",
+    "author": "Erich Fromm",
+    "publisher": "Trei",
+    "source": "dataset/103.jpg",
+    "title_en": "To Have or to Be?",
+    "cover": "covers/103.jpg"
+  },
+  {
+    "id": 104,
+    "title": "Șapte ani în Tibet",
+    "author": "Heinrich Harrer",
+    "publisher": "Polirom",
+    "source": "dataset/104.jpg",
+    "title_en": "Seven Years in Tibet",
+    "cover": "covers/104.jpg"
+  },
+  {
+    "id": 105,
+    "title": "Ghid de Cultura Generala",
+    "author": null,
+    "publisher": "Litera",
+    "source": "dataset/105.jpg",
+    "title_en": "General Culture Guide",
+    "cover": "covers/105.jpg"
+  },
+  {
+    "id": 106,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "publisher": "Art",
+    "source": "dataset/106.jpg",
+    "cover": "covers/106.jpg"
+  },
+  {
+    "id": 107,
+    "title": "În căutarea fericirii",
+    "author": "Bertrand Russell",
+    "publisher": "Humanitas",
+    "source": "dataset/107.jpg",
+    "title_en": "The Conquest of Happiness",
+    "cover": "covers/107.jpg"
+  },
+  {
+    "id": 108,
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "publisher": "Everyman's Library",
+    "source": "dataset/108.jpg",
+    "cover": "covers/108.jpg"
+  },
+  {
+    "id": 109,
+    "title": "Stella Maris",
+    "author": "Cormac McCarthy",
+    "publisher": "Humanitas",
+    "source": "dataset/109.jpg",
+    "cover": "covers/109.jpg"
+  },
+  {
+    "id": 110,
+    "title": "Aventuri Din Lumea Afacerilor",
+    "author": "John Brooks",
+    "publisher": "LITERA",
+    "source": "dataset/110.jpg",
+    "title_en": "Business Adventures",
+    "cover": "covers/110.jpg"
+  },
+  {
+    "id": 111,
+    "title": "Cel mai fericit om de pe pământ",
+    "author": "Eddie Jaku",
+    "publisher": "Trei",
+    "source": "dataset/111.jpg",
+    "title_en": "The Happiest Man on Earth",
+    "cover": "covers/111.jpg"
+  },
+  {
+    "id": 112,
+    "title": "Prieteni Buni, Dușmani Aprigi",
+    "author": "Michael Thompson, Catherine O'Neill Grace, Lawrence J. Cohen",
+    "publisher": "Editura Herald",
+    "source": "dataset/112.jpg",
+    "title_en": "Best Friends, Worst Enemies",
+    "cover": "covers/112.jpg"
+  },
+  {
+    "id": 113,
+    "title": "O mie nouă sute optzeci și patru",
+    "author": "George Orwell",
+    "publisher": "Polirom",
+    "source": "dataset/113.jpg",
+    "title_en": "Nineteen Eighty-Four",
+    "cover": "covers/113.jpg"
+  },
+  {
+    "id": 114,
+    "title": "Box Like the Pros",
+    "author": "Smokin' Joe Frazier with William Dettloff",
+    "publisher": null,
+    "source": "dataset/114.jpg",
+    "cover": "covers/114.jpg"
+  },
+  {
+    "id": 115,
+    "title": "Soare Și Oțel",
+    "author": "Yukio Mishima",
+    "publisher": "HUMANITAS",
+    "source": "dataset/115.jpg",
+    "title_en": "Sun and Steel",
+    "cover": "covers/115.jpg"
+  },
+  {
+    "id": 116,
+    "title": "Când nu mai înțelegem lumea",
+    "author": "Benjamín Labatut",
+    "publisher": "Pandora",
+    "source": "dataset/116.jpg",
+    "title_en": "When We Cease to Understand the World",
+    "cover": "covers/116.jpg"
+  },
+  {
+    "id": 117,
+    "title": "Slujbe De Mare Rahat",
+    "author": "David Graeber",
+    "publisher": "EDITURA ART",
+    "source": "dataset/117.jpg",
+    "title_en": "Bullshit Jobs",
+    "cover": "covers/117.jpg"
+  },
+  {
+    "id": 118,
+    "title": "Despre timp",
+    "author": "Seneca",
+    "publisher": null,
+    "source": "dataset/118.jpg",
+    "title_en": "On the Shortness of Life",
+    "cover": "covers/118.jpg"
+  },
+  {
+    "id": 119,
+    "title": "Problemele Filosofiei",
+    "author": "Bertrand Russell",
+    "publisher": null,
+    "source": "dataset/119.jpg",
+    "title_en": "The Problems of Philosophy",
+    "cover": "covers/119.jpg"
+  },
+  {
+    "id": 120,
+    "title": "Nerilka's Story & The Coelura",
+    "author": "Anne McCaffrey",
+    "publisher": null,
+    "source": "dataset/120.jpg",
+    "cover": "covers/120.jpg"
+  },
+  {
+    "id": 121,
+    "title": "Varamo",
+    "author": "César Aira",
+    "publisher": "Humanitas",
+    "source": "dataset/121.jpg",
+    "cover": "covers/121.jpg"
+  },
+  {
+    "id": 122,
+    "title": "Oare Ce Înseamnă Toate Astea?",
+    "author": "Thomas Nagel",
+    "publisher": "Editura ALL",
+    "source": "dataset/122.jpg",
+    "title_en": "What Does It All Mean?",
+    "cover": "covers/122.jpg"
+  },
+  {
+    "id": 123,
+    "title": "50 de idei pe care trebuie să le cunoști FILOSOFIE",
+    "author": "Ben Dupré",
+    "publisher": "IQ230",
+    "source": "dataset/123.jpg",
+    "title_en": "50 Philosophy Ideas You Really Need to Know",
+    "cover": "covers/123.jpg"
+  },
+  {
+    "id": 124,
+    "title": "Intrebari perfecte raspunsuri perfecte",
+    "author": "A.C. Bhaktivedanta Swami Prabhupada",
+    "publisher": null,
+    "source": "dataset/124.jpg",
+    "title_en": "Perfect Questions Perfect Answers",
+    "cover": "covers/124.jpg"
+  },
+  {
+    "id": 125,
+    "title": "Why Not Socialism?",
+    "author": "G. A. Cohen",
+    "publisher": null,
+    "source": "dataset/125.jpg",
+    "cover": "covers/125.jpg"
+  },
+  {
+    "id": 126,
+    "title": "Vivat Bertaga!",
+    "author": "San Antonio",
+    "publisher": "Univers",
+    "source": "dataset/126.jpg",
+    "cover": "covers/126.jpg"
+  },
+  {
+    "id": 127,
+    "title": "Bravo, doctore Béru!",
+    "author": null,
+    "publisher": "UNIVERS",
+    "source": "dataset/127.jpg",
+    "cover": "covers/127.jpg"
+  },
+  {
+    "id": 128,
+    "title": "Arhipelagul Mitocanilor",
+    "author": "Antonio",
+    "publisher": "Univers",
+    "source": "dataset/128.jpg",
+    "cover": "covers/128.jpg"
+  },
+  {
+    "id": 129,
+    "title": "Manifestul Partidului Comunist",
+    "author": "Karl Marx, Friedrich Engels",
+    "publisher": "Editura Vicovia",
+    "source": "dataset/129.jpg",
+    "title_en": "The Communist Manifesto",
+    "cover": "covers/129.jpg"
+  },
+  {
+    "id": 130,
+    "title": "Moartea lui Ivan Ilici și alte povestiri",
+    "author": "Lev Tolstoi",
+    "publisher": "ADP",
+    "source": "dataset/130.jpg",
+    "title_en": "The Death of Ivan Ilyich",
+    "cover": "covers/130.jpg"
+  },
+  {
+    "id": 131,
+    "title": "Străinul",
+    "author": "Albert Camus",
+    "publisher": "Polirom",
+    "source": "dataset/131.jpg",
+    "title_en": "The Stranger",
+    "cover": "covers/131.jpg"
+  },
+  {
+    "id": 132,
+    "title": "Particulele elementare",
+    "author": "Michel Houellebecq",
+    "publisher": "Polirom",
+    "source": "dataset/132.jpg",
+    "title_en": "The Elementary Particles",
+    "cover": "covers/132.jpg"
+  },
+  {
+    "id": 133,
+    "title": "Ultima variantă",
+    "author": "Maior Ion Aramă",
+    "publisher": "Editura militară",
+    "source": "dataset/133.jpg",
+    "cover": "covers/133.jpg"
+  },
+  {
+    "id": 134,
+    "title": "Make Yourself Unforgettable",
+    "author": "Dale Carnegie",
+    "publisher": null,
+    "source": "dataset/134.jpg",
+    "cover": "covers/134.jpg"
+  },
+  {
+    "id": 135,
+    "title": "The Conquest of Bread",
+    "author": "Peter Kropotkin",
+    "publisher": "Penguin Classics",
+    "source": "dataset/135.jpg",
+    "cover": "covers/135.jpg"
+  },
+  {
+    "id": 136,
+    "title": "Agonia lui Turing",
+    "author": "David Lagercrantz",
+    "publisher": "Pandora M",
+    "source": "dataset/136.jpg",
+    "title_en": "The Turing Exception",
+    "cover": "covers/136.jpg"
+  },
+  {
+    "id": 137,
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "publisher": null,
+    "source": "dataset/137.jpg",
+    "cover": "covers/137.jpg"
+  },
+  {
+    "id": 138,
+    "title": "Teorema Vie",
+    "author": "Cédric Villani",
+    "publisher": "HUMANITAS",
+    "source": "dataset/138.jpg",
+    "title_en": "Birth of a Theorem",
+    "cover": "covers/138.jpg"
+  },
+  {
+    "id": 139,
+    "title": "Ernesto Che Guevara",
+    "author": "Carlo Batà",
+    "publisher": null,
+    "source": "dataset/139.jpg",
+    "cover": "covers/139.jpg"
+  },
+  {
+    "id": 140,
+    "title": "Nouă Povestiri",
+    "author": "J.D. Salinger",
+    "publisher": "Polirom",
+    "source": "dataset/140.jpg",
+    "title_en": "Nine Stories",
+    "cover": "covers/140.jpg"
+  },
+  {
+    "id": 141,
+    "title": "Ciuma",
+    "author": "Albert Camus",
+    "publisher": "Polirom",
+    "source": "dataset/141.jpg",
+    "title_en": "The Plague",
+    "cover": "covers/141.jpg"
+  },
+  {
+    "id": 142,
+    "title": "Jurnalul bolivian",
+    "author": "Ernesto Guevara",
+    "publisher": "Polirom",
+    "source": "dataset/142.jpg",
+    "title_en": "The Bolivian Diary",
+    "cover": "covers/142.jpg"
+  },
+  {
+    "id": 143,
+    "title": "How to Lie with Statistics",
+    "author": "Darrell Huff",
+    "publisher": null,
+    "source": "dataset/143.jpg",
+    "cover": "covers/143.jpg"
+  },
+  {
+    "id": 144,
+    "title": "Aleph",
+    "author": "Jorge Luis Borges",
+    "publisher": "Polirom",
+    "source": "dataset/144.jpg",
+    "cover": "covers/144.jpg"
+  },
+  {
+    "id": 145,
+    "title": "Un elefant... te-ar putea înșela",
+    "author": "Antonio San",
+    "publisher": "Univers",
+    "source": "dataset/145.jpg",
+    "cover": "covers/145.jpg"
+  },
+  {
+    "id": 146,
+    "title": "...Să ucizi o pasăre cântătoare",
+    "author": "Harper Lee",
+    "publisher": "Polirom",
+    "source": "dataset/146.jpg",
+    "title_en": "To Kill a Mockingbird",
+    "cover": "covers/146.jpg"
+  },
+  {
+    "id": 147,
+    "title": "The Prince",
+    "author": "Machiavelli",
+    "publisher": null,
+    "source": "dataset/147.jpg",
+    "cover": "covers/147.jpg"
+  },
+  {
+    "id": 148,
+    "title": "Însemnări dintr-un bordel turcesc",
+    "author": "Philip Ó Ceallaigh",
+    "publisher": "Polirom",
+    "source": "dataset/148.jpg",
+    "title_en": "Notes from a Turkish Whorehouse",
+    "cover": "covers/148.jpg"
+  },
+  {
+    "id": 150,
+    "title": "Vânătorii de zmeie",
+    "author": "Khaled Hosseini",
+    "publisher": "Niculescu",
+    "source": "dataset/150.jpg",
+    "title_en": "The Kite Runner",
+    "cover": "covers/150.jpg"
+  },
+  {
+    "id": 151,
+    "title": "Identitatea virtuală",
+    "author": "Mihnea Măruță",
+    "publisher": "Humanitas",
+    "source": "dataset/151.jpg",
+    "cover": "covers/151.jpg"
+  },
+  {
+    "id": 152,
+    "title": "Infocrația",
+    "author": "Byung-Chul Han",
+    "publisher": "Contrasens",
+    "source": "dataset/152.jpg",
+    "title_en": "Infocracy",
+    "cover": "covers/152.jpg"
+  },
+  {
+    "id": 153,
+    "title": "Psychopolitics",
+    "author": "Byung-Chul Han",
+    "publisher": null,
+    "source": "dataset/153.jpg",
+    "cover": "covers/153.jpg"
+  },
+  {
+    "id": 154,
+    "title": "Contractul Social sau principiile dreptului politic",
+    "author": "Jean-Jacques Rousseau",
+    "publisher": "cartex",
+    "source": "dataset/154.jpg",
+    "title_en": "The Social Contract",
+    "cover": "covers/154.jpg"
+  },
+  {
+    "id": 155,
+    "title": "Capitalism Realism",
+    "author": "Mark Fisher",
+    "publisher": "TACT",
+    "source": "dataset/155.jpg",
+    "cover": "covers/155.jpg"
+  },
+  {
+    "id": 156,
+    "title": "Economia În 7 Lecții",
+    "author": "Ludwig von Mises",
+    "publisher": null,
+    "source": "dataset/156.jpg",
+    "title_en": "Economic Policy: Thoughts for Today and Tomorrow",
+    "cover": "covers/156.jpg"
+  },
+  {
+    "id": 157,
+    "title": "Permutation City",
+    "author": "Greg Egan",
+    "publisher": null,
+    "source": "dataset/157.jpg",
+    "cover": "covers/157.jpg"
+  },
+  {
+    "id": 158,
+    "title": "Pagini Din Boxul European",
+    "author": "Eustatiu Mărgărit, Florea Costin",
+    "publisher": null,
+    "source": "dataset/158.jpg",
+    "cover": "covers/158.jpg"
+  },
+  {
+    "id": 159,
+    "title": "Acei Barbati Minunati Si Manusile Lor De Box",
+    "author": "George Mihalache",
+    "publisher": null,
+    "source": "dataset/159.jpg",
+    "cover": "covers/159.jpg"
+  },
+  {
+    "id": 160,
+    "title": "Economia pe înțelesul fiicei mele",
+    "author": "Yanis Varoufakis",
+    "publisher": "Vellant",
+    "source": "dataset/160.jpg",
+    "title_en": "Talking to My Daughter About the Economy",
+    "cover": "covers/160.jpg"
+  },
+  {
+    "id": 161,
+    "title": "Pregatirea Fizica a Boxerilor",
+    "author": "Florea Costin",
+    "publisher": null,
+    "source": "dataset/161.jpg",
+    "cover": "covers/161.jpg"
+  },
+  {
+    "id": 162,
+    "title": "Mineriada S-a Născut la Revoluție",
+    "author": "Cătălin Ranco Pițu",
+    "publisher": "Litera",
+    "source": "dataset/162.jpg",
+    "cover": "covers/162.jpg"
+  },
+  {
+    "id": 163,
+    "title": "Greața",
+    "author": "Jean-Paul Sartre",
+    "publisher": "bpt",
+    "source": "dataset/163.jpg",
+    "title_en": "Nausea",
+    "cover": "covers/163.jpg"
+  },
+  {
+    "id": 164,
+    "title": "Cum Să Câștigi Un Război Informațional",
+    "author": "Peter Pomerantsev",
+    "publisher": "Cartier",
+    "source": "dataset/164.jpg",
+    "title_en": "How to Win an Information War",
+    "cover": "covers/164.jpg"
+  },
+  {
+    "id": 165,
+    "title": "Boxing On This Day",
+    "author": "Nick Parkinson",
+    "publisher": null,
+    "source": "dataset/165.jpg",
+    "cover": "covers/165.jpg"
+  },
+  {
+    "id": 166,
+    "title": "Împăratul muștelor",
+    "author": "William Golding",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/166.jpg",
+    "title_en": "Lord of the Flies",
+    "cover": "covers/166.jpg"
+  },
+  {
+    "id": 167,
+    "title": "Inside Out: O istorie personală a PINK FLOYD",
+    "author": "Nick Mason",
+    "publisher": "Victoria Books",
+    "source": "dataset/167.jpg",
+    "title_en": "Inside Out: A Personal History of Pink Floyd",
+    "cover": "covers/167.jpg"
+  },
+  {
+    "id": 168,
+    "title": "Jurnal pe motocicletă",
+    "author": "Ernesto Che Guevara",
+    "publisher": "Polirom",
+    "source": "dataset/168.jpg",
+    "title_en": "The Motorcycle Diaries",
+    "cover": "covers/168.jpg"
+  },
+  {
+    "id": 169,
+    "title": "Deșertul tătarilor",
+    "author": "Dino Buzzati",
+    "publisher": "Polirom",
+    "source": "dataset/169.jpg",
+    "title_en": "The Tartar Steppe",
+    "cover": "covers/169.jpg"
+  },
+  {
+    "id": 170,
+    "title": "Create Dangerously",
+    "author": "Albert Camus",
+    "publisher": "Penguin Modern",
+    "source": "dataset/170.jpg",
+    "cover": "covers/170.jpg"
+  },
+  {
+    "id": 171,
+    "title": "Meridianul sângelui",
+    "author": "Cormac McCarthy",
+    "publisher": "Polirom",
+    "source": "dataset/171.jpg",
+    "title_en": "Blood Meridian",
+    "cover": "covers/171.jpg"
+  },
+  {
+    "id": 172,
+    "title": "Cei Patru Cavăleşti",
+    "author": "Hitchens, Dawkins, Harris, Dennett",
+    "publisher": null,
+    "source": "dataset/172.jpg",
+    "title_en": "The Four Horsemen",
+    "cover": "covers/172.jpg"
+  },
+  {
+    "id": 173,
+    "title": "Principele",
+    "author": "Niccolò Machiavelli",
+    "publisher": "HUMANITAS",
+    "source": "dataset/173.jpg",
+    "title_en": "The Prince",
+    "cover": "covers/173.jpg"
+  },
+  {
+    "id": 174,
+    "title": "Tehnopolis",
+    "author": "Neil Postman",
+    "publisher": "Contra Mundum",
+    "source": "dataset/174.jpg",
+    "cover": "covers/174.jpg"
+  },
+  {
+    "id": 175,
+    "title": "Reality+",
+    "author": "David J. Chalmers",
+    "publisher": "Penguin",
+    "source": "dataset/175.jpg",
+    "cover": "covers/175.jpg"
+  },
+  {
+    "id": 176,
+    "title": "Principles for Dealing with The Changing World Order",
+    "author": "Ray Dalio",
+    "publisher": null,
+    "source": "dataset/176.jpg",
+    "cover": "covers/176.jpg"
+  },
+  {
+    "id": 177,
+    "title": "Polimatul",
+    "author": "Peter Burke",
+    "publisher": "Litera",
+    "source": "dataset/177.jpg",
+    "title_en": "The Polymath",
+    "cover": "covers/177.jpg"
+  },
+  {
+    "id": 178,
+    "title": "Noul Testament cu Psalmii și Proverbele",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/178.jpg",
+    "title_en": "New Testament with Psalms and Proverbs",
+    "cover": "covers/178.jpg"
+  },
+  {
+    "id": 179,
+    "title": "Un veac de singurătate",
+    "author": "Gabriel García Márquez",
+    "publisher": "Biblioteca Gabriel García Márquez",
+    "source": "dataset/179.jpg",
+    "title_en": "One Hundred Years of Solitude",
+    "cover": "covers/179.jpg"
+  },
+  {
+    "id": 180,
+    "title": "Wabi-Sabi for Artists, Designers, Poets & Philosophers",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/180.jpg",
+    "cover": "covers/180.jpg"
+  },
+  {
+    "id": 181,
+    "title": "Cum să fiu bărbatul unei singure femei?",
+    "author": "Dana Săvuică",
+    "publisher": "Cancan",
+    "source": "dataset/181.jpg",
+    "cover": "covers/181.jpg"
+  },
+  {
+    "id": 182,
+    "title": "Atlas",
+    "author": "Teddy Atlas and Peter Alson",
+    "publisher": null,
+    "source": "dataset/182.jpg",
+    "cover": "covers/182.jpg"
+  },
+  {
+    "id": 183,
+    "title": "Epoca Liderului Cu Mână de Fier",
+    "author": "Gideon Rachman",
+    "publisher": "Polirom",
+    "source": "dataset/183.jpg",
+    "title_en": "The Age of the Strongman",
+    "cover": "covers/183.jpg"
+  },
+  {
+    "id": 184,
+    "title": "Istoria Filosofiei",
+    "author": "A.C. Grayling",
+    "publisher": "TREI",
+    "source": "dataset/184.jpg",
+    "title_en": "The History of Philosophy",
+    "cover": "covers/184.jpg"
+  },
+  {
+    "id": 185,
+    "title": "Este Dumnezeu Matematician?",
+    "author": "Mario Livio",
+    "publisher": "HUMANITAS",
+    "source": "dataset/185.jpg",
+    "title_en": "Is God a Mathematician?",
+    "cover": "covers/185.jpg"
+  },
+  {
+    "id": 186,
+    "title": "Elon Musk Tesla SpaceX",
+    "author": "Ashlee Vance",
+    "publisher": "Publica",
+    "source": "dataset/186.jpg",
+    "cover": "covers/186.jpg"
+  },
+  {
+    "id": 187,
+    "title": "Căderea",
+    "author": "Albert Camus",
+    "publisher": "Polirom",
+    "source": "dataset/187.jpg",
+    "title_en": "The Fall",
+    "cover": "covers/187.jpg"
+  },
+  {
+    "id": 188,
+    "title": "20 de întrebări și răspunsuri despre Immanuel Kant",
+    "author": "Mircea Flonta",
+    "publisher": "Humanitas",
+    "source": "dataset/188.jpg",
+    "cover": "covers/188.jpg"
+  },
+  {
+    "id": 189,
+    "title": "Fidel & Religion",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/189.jpg",
+    "cover": "covers/189.jpg"
+  },
+  {
+    "id": 190,
+    "title": "The Thought Of Che",
+    "author": null,
+    "publisher": "Capitan San Luis",
+    "source": "dataset/190.jpg",
+    "cover": "covers/190.jpg"
+  },
+  {
+    "id": 191,
+    "title": "Vremea Magicienilor",
+    "author": "Wolfram Eilenberger",
+    "publisher": "Trei",
+    "source": "dataset/191.jpg",
+    "title_en": "Time of the Magicians",
+    "cover": "covers/191.jpg"
+  },
+  {
+    "id": 192,
+    "title": "Însemnări din subterană",
+    "author": "F.M. Dostoievski",
+    "publisher": "Polirom",
+    "source": "dataset/192.jpg",
+    "title_en": "Notes from Underground",
+    "cover": "covers/192.jpg"
+  },
+  {
+    "id": 194,
+    "title": "Behind the Mask",
+    "author": "Tyson Fury",
+    "publisher": null,
+    "source": "dataset/194.jpg",
+    "cover": "covers/194.jpg"
+  },
+  {
+    "id": 195,
+    "title": "Ființă Și Timp",
+    "author": "Martin Heidegger",
+    "publisher": "HUMANITAS",
+    "source": "dataset/195.jpg",
+    "title_en": "Being and Time",
+    "cover": "covers/195.jpg"
+  },
+  {
+    "id": 196,
+    "title": "Big Bang",
+    "author": "Simon Singh",
+    "publisher": "Humanitas",
+    "source": "dataset/196.jpg",
+    "cover": "covers/196.jpg"
+  },
+  {
+    "id": 197,
+    "title": "Papillon",
+    "author": "Henri Charrière",
+    "publisher": null,
+    "source": "dataset/197.jpg",
+    "cover": "covers/197.jpg"
+  },
+  {
+    "id": 198,
+    "title": "Suflare în vânt",
+    "author": "Bob Dylan",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/198.jpg",
+    "title_en": "Blowin' in the Wind",
+    "cover": "covers/198.jpg"
+  },
+  {
+    "id": 199,
+    "title": "Dezumanizat",
+    "author": "Osamu Dazai",
+    "publisher": null,
+    "source": "dataset/199.jpg",
+    "title_en": "No Longer Human",
+    "cover": "covers/199.jpg"
+  },
+  {
+    "id": 200,
+    "title": "Geniul Criminal din Spatele Silk Road",
+    "author": "Nick Bilton",
+    "publisher": "Narator",
+    "source": "dataset/200.jpg",
+    "title_en": "American Kingpin",
+    "cover": "covers/200.jpg"
+  },
+  {
+    "id": 201,
+    "title": "Scrisori Către Luciliu",
+    "author": "Seneca",
+    "publisher": "Humanitas",
+    "source": "dataset/201.jpg",
+    "title_en": "Letters from a Stoic",
+    "cover": "covers/201.jpg"
+  },
+  {
+    "id": 202,
+    "title": "Eseuri",
+    "author": "Montaigne",
+    "publisher": "Humanitas",
+    "source": "dataset/202.jpg",
+    "title_en": "Essays",
+    "cover": "covers/202.jpg"
+  },
+  {
+    "id": 203,
+    "title": "Codul Samuraiului",
+    "author": "Thomas Cleary",
+    "publisher": "HUMANITAS",
+    "source": "dataset/203.jpg",
+    "title_en": "The Code of the Samurai",
+    "cover": "covers/203.jpg"
+  },
+  {
+    "id": 204,
+    "title": "8.9.10... Out!",
+    "author": "Paul Ochialbi",
+    "publisher": null,
+    "source": "dataset/204.jpg",
+    "cover": "covers/204.jpg"
+  },
+  {
+    "id": 205,
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "publisher": "Collins Classics",
+    "source": "dataset/205.jpg",
+    "cover": "covers/205.jpg"
+  },
+  {
+    "id": 206,
+    "title": "Manualul Dictatorului",
+    "author": "Bruce Bueno de Mesquita, Alastair Smith",
+    "publisher": "Polirom",
+    "source": "dataset/206.jpg",
+    "title_en": "The Dictator's Handbook",
+    "cover": "covers/206.jpg"
+  },
+  {
+    "id": 207,
+    "title": "Fizica tristeții",
+    "author": "Gheorghi Gospodinov",
+    "publisher": "Pandora M",
+    "source": "dataset/207.jpg",
+    "title_en": "The Physics of Sorrow",
+    "cover": "covers/207.jpg"
+  },
+  {
+    "id": 208,
+    "title": "Ce spui după Bună ziua?",
+    "author": "Eric Berne",
+    "publisher": "TREI",
+    "source": "dataset/208.jpg",
+    "title_en": "What Do You Say After You Say Hello?",
+    "cover": "covers/208.jpg"
+  },
+  {
+    "id": 209,
+    "title": "O Poveste Haioasă",
+    "author": "Ned Vizzini",
+    "publisher": "youngart",
+    "source": "dataset/209.jpg",
+    "title_en": "It's Kind of a Funny Story",
+    "cover": "covers/209.jpg"
+  },
+  {
+    "id": 210,
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "publisher": null,
+    "source": "dataset/210.jpg",
+    "cover": "covers/210.jpg"
+  },
+  {
+    "id": 211,
+    "title": "Night",
+    "author": "Elie Wiesel",
+    "publisher": "Penguin Modern Classics",
+    "source": "dataset/211.jpg",
+    "cover": "covers/211.jpg"
+  },
+  {
+    "id": 212,
+    "title": "Nu putem reuși decît împreună",
+    "author": "Dan Pavel, Iulia Huiu",
+    "publisher": "Polirom",
+    "source": "dataset/212.jpg",
+    "cover": "covers/212.jpg"
+  },
+  {
+    "id": 213,
+    "title": "Viața Secretă a Lui Fidel Castro",
+    "author": "Juan Reinaldo Sánchez și Axel Gyldén",
+    "publisher": "Humanitas",
+    "source": "dataset/213.jpg",
+    "title_en": "The Double Life of Fidel Castro",
+    "cover": "covers/213.jpg"
+  },
+  {
+    "id": 214,
+    "title": "Comisarul",
+    "author": "Sven Hassel",
+    "publisher": "Suspans",
+    "source": "dataset/214.jpg",
+    "title_en": "The Commissar",
+    "cover": "covers/214.jpg"
+  },
+  {
+    "id": 215,
+    "title": "Power Systems",
+    "author": "Noam Chomsky",
+    "publisher": "Penguin",
+    "source": "dataset/215.jpg",
+    "cover": "covers/215.jpg"
+  },
+  {
+    "id": 216,
+    "title": "Range",
+    "author": "David Epstein",
+    "publisher": null,
+    "source": "dataset/216.jpg",
+    "cover": "covers/216.jpg"
+  },
+  {
+    "id": 217,
+    "title": "The Nicomachean Ethics",
+    "author": "Aristotle",
+    "publisher": null,
+    "source": "dataset/217.jpg",
+    "cover": "covers/217.jpg"
+  },
+  {
+    "id": 218,
+    "title": "Ce-Ți Pasă Ție De Părerile Altora? Alte aventuri ale unui personaj ciudat",
+    "author": "Richard P. Feynman",
+    "publisher": "Publica",
+    "source": "dataset/218.jpg",
+    "cover": "covers/218.jpg"
+  },
+  {
+    "id": 219,
+    "title": "Hopscotch",
+    "author": "Cortázar",
+    "publisher": "VINTAGE",
+    "source": "dataset/219.jpg",
+    "cover": "covers/219.jpg"
+  },
+  {
+    "id": 220,
+    "title": "Identitate",
+    "author": "Francis Fukuyama",
+    "publisher": "Humanitas",
+    "source": "dataset/220.jpg",
+    "title_en": "Identity",
+    "cover": "covers/220.jpg"
+  },
+  {
+    "id": 221,
+    "title": "Invențiile Mele",
+    "author": "Nikola Tesla",
+    "publisher": null,
+    "source": "dataset/221.jpg",
+    "title_en": "My Inventions",
+    "cover": "covers/221.jpg"
+  },
+  {
+    "id": 222,
+    "title": "Idiotul",
+    "author": "Fiodor M. Dostoievski",
+    "publisher": "Adevărul",
+    "source": "dataset/222.jpg",
+    "title_en": "The Idiot",
+    "cover": "covers/222.jpg"
+  },
+  {
+    "id": 223,
+    "title": "Băiatul cu Pijamale în Dungi",
+    "author": "John Boyne",
+    "publisher": null,
+    "source": "dataset/223.jpg",
+    "title_en": "The Boy in the Striped Pyjamas",
+    "cover": "covers/223.jpg"
+  },
+  {
+    "id": 224,
+    "title": "Alchimistul",
+    "author": "Paulo Coelho",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/224.jpg",
+    "title_en": "The Alchemist",
+    "cover": "covers/224.jpg"
+  },
+  {
+    "id": 225,
+    "title": "Despre omul frumos",
+    "author": "Dan Puric",
+    "publisher": null,
+    "source": "dataset/225.jpg",
+    "cover": "covers/225.jpg"
+  },
+  {
+    "id": 226,
+    "title": "Marele Plan",
+    "author": "Stephen Hawking, Leonard Mlodinow",
+    "publisher": "Humanitas",
+    "source": "dataset/226.jpg",
+    "title_en": "The Grand Design",
+    "cover": "covers/226.jpg"
+  },
+  {
+    "id": 227,
+    "title": "Frica de boală",
+    "author": "Hans Morschitzky, Thomas Hartl",
+    "publisher": "TREI",
+    "source": "dataset/227.jpg",
+    "title_en": "Fear of Illness",
+    "cover": "covers/227.jpg"
+  },
+  {
+    "id": 228,
+    "title": "V de Vendetta",
+    "author": "Alan Moore, David Lloyd",
+    "publisher": "Vertigo",
+    "source": "dataset/228.jpg",
+    "title_en": "V for Vendetta",
+    "cover": "covers/228.jpg"
+  },
+  {
+    "id": 229,
+    "title": "Watchmen",
+    "author": "Alan Moore, Dave Gibbons",
+    "publisher": "GRAFIC",
+    "source": "dataset/229.jpg",
+    "cover": "covers/229.jpg"
+  },
+  {
+    "id": 230,
+    "title": "Moartea într-o gaură neagră și alte dileme cosmice",
+    "author": "Neil deGrasse Tyson",
+    "publisher": "TREI",
+    "source": "dataset/230.jpg",
+    "title_en": "Death by Black Hole",
+    "cover": "covers/230.jpg"
+  },
+  {
+    "id": 231,
+    "title": "Dialoguri Socratice",
+    "author": "Platon",
+    "publisher": "Humanitas",
+    "source": "dataset/231.jpg",
+    "title_en": "Socratic Dialogues",
+    "cover": "covers/231.jpg"
+  },
+  {
+    "id": 232,
+    "title": "Un tramvai numit dorință Trandafirul tatuat",
+    "author": "Tennessee Williams",
+    "publisher": "Editura Art",
+    "source": "dataset/232.jpg",
+    "title_en": "A Streetcar Named Desire / The Rose Tattoo",
+    "cover": "covers/232.jpg"
+  },
+  {
+    "id": 233,
+    "title": "Primăvara La Roma A Doamnei Stone",
+    "author": "Tennessee Williams",
+    "publisher": "EDITURA ART",
+    "source": "dataset/233.jpg",
+    "title_en": "The Roman Spring of Mrs. Stone",
+    "cover": "covers/233.jpg"
+  },
+  {
+    "id": 234,
+    "title": "Pisica Pe Acoperișul Fierbinte",
+    "author": "Tennessee Williams",
+    "publisher": "Arta Grafică",
+    "source": "dataset/234.jpg",
+    "title_en": "Cat on a Hot Tin Roof",
+    "cover": "covers/234.jpg"
+  },
+  {
+    "id": 235,
+    "title": "Recursul la metodă",
+    "author": "Alejo Carpentier",
+    "publisher": "Curtea Veche",
+    "source": "dataset/235.jpg",
+    "title_en": "Reasons of State",
+    "cover": "covers/235.jpg"
+  },
+  {
+    "id": 236,
+    "title": "Toți Suntem Ciudați",
+    "author": "Seth Godin",
+    "publisher": null,
+    "source": "dataset/236.jpg",
+    "title_en": "We Are All Weird",
+    "cover": "covers/236.jpg"
+  },
+  {
+    "id": 237,
+    "title": "Dosar permanent",
+    "author": "Edward Snowden",
+    "publisher": "NEMIRA",
+    "source": "dataset/237.jpg",
+    "title_en": "Permanent Record",
+    "cover": "covers/237.jpg"
+  },
+  {
+    "id": 238,
+    "title": "Exilul și împărăția",
+    "author": "Albert Camus",
+    "publisher": "Polirom",
+    "source": "dataset/238.jpg",
+    "title_en": "Exile and the Kingdom",
+    "cover": "covers/238.jpg"
+  },
+  {
+    "id": 239,
+    "title": "Dumnezei Și Statul",
+    "author": "Mihail Bakunin",
+    "publisher": null,
+    "source": "dataset/239.jpg",
+    "title_en": "God and the State",
+    "cover": "covers/239.jpg"
+  },
+  {
+    "id": 240,
+    "title": "Metamorfoza şi alte povestiri",
+    "author": "Franz Kafka",
+    "publisher": "Polirom",
+    "source": "dataset/240.jpg",
+    "title_en": "The Metamorphosis and Other Stories",
+    "cover": "covers/240.jpg"
+  },
+  {
+    "id": 241,
+    "title": "Oameni din Dublin",
+    "author": "James Joyce",
+    "publisher": "null",
+    "source": "dataset/241.jpg",
+    "title_en": "Dubliners",
+    "cover": "covers/241.jpg"
+  },
+  {
+    "id": 242,
+    "title": "Che Guevara: Viata Unui Mit",
+    "author": "Reginaldo Ustariz",
+    "publisher": "Litera International",
+    "source": "dataset/242.jpg",
+    "title_en": "Che Guevara: Life of a Myth",
+    "cover": "covers/242.jpg"
+  },
+  {
+    "id": 243,
+    "title": "Noul Țar",
+    "author": "Steven Lee Myers",
+    "publisher": "Corint",
+    "source": "dataset/243.jpg",
+    "title_en": "The New Tsar",
+    "cover": "covers/243.jpg"
+  },
+  {
+    "id": 244,
+    "title": "Devenirea lui Che",
+    "author": "Carlos \"Calica\" Ferrer",
+    "publisher": "Editura Minerva",
+    "source": "dataset/244.jpg",
+    "title_en": "Becoming Che",
+    "cover": "covers/244.jpg"
+  },
+  {
+    "id": 245,
+    "title": "Stoicismul azi",
+    "author": "Patrick Ussher",
+    "publisher": null,
+    "source": "dataset/245.jpg",
+    "title_en": "Stoicism Today",
+    "cover": "covers/245.jpg"
+  },
+  {
+    "id": 246,
+    "title": "Mărturisiri: Viața mea alături de Che",
+    "author": "Aleida March",
+    "publisher": "Editura Art",
+    "source": "dataset/246.jpg",
+    "title_en": "Remembering Che: My Life with Che Guevara",
+    "cover": "covers/246.jpg"
+  },
+  {
+    "id": 247,
+    "title": "Procesul",
+    "author": "Franz Kafka",
+    "publisher": "Polirom",
+    "source": "dataset/247.jpg",
+    "title_en": "The Trial",
+    "cover": "covers/247.jpg"
+  },
+  {
+    "id": 248,
+    "title": "Așa Grăit-a Zarathustra",
+    "author": "Nietzsche",
+    "publisher": "Humanitas",
+    "source": "dataset/248.jpg",
+    "title_en": "Thus Spoke Zarathustra",
+    "cover": "covers/248.jpg"
+  },
+  {
+    "id": 249,
+    "title": "Splendida Cetate A Celor O Mie De Sori",
+    "author": "Khaled Hosseini",
+    "publisher": "NICULESCU",
+    "source": "dataset/249.jpg",
+    "title_en": "A Thousand Splendid Suns",
+    "cover": "covers/249.jpg"
+  },
+  {
+    "id": 250,
+    "title": "Mai este oare acesta un om?",
+    "author": "Primo Levi",
+    "publisher": "Editura Art",
+    "source": "dataset/250.jpg",
+    "title_en": "If This Is a Man",
+    "cover": "covers/250.jpg"
+  },
+  {
+    "id": 251,
+    "title": "Arta de a Iubi",
+    "author": "Erich Fromm",
+    "publisher": "Trei",
+    "source": "dataset/251.jpg",
+    "title_en": "The Art of Loving",
+    "cover": "covers/251.jpg"
+  },
+  {
+    "id": 252,
+    "title": "Dicționar de Analiză Matematică",
+    "author": null,
+    "publisher": "Editura Științifică și Enciclopedică",
+    "source": "dataset/252.jpg",
+    "title_en": "Dictionary of Mathematical Analysis",
+    "cover": "covers/252.jpg"
+  },
+  {
+    "id": 253,
+    "title": "Corneliu Zelea Codreanu Ascensiunea și Căderea \"Căpitanului\"",
+    "author": "Oliver Jens Schmitt",
+    "publisher": "Humanitas",
+    "source": "dataset/253.jpg",
+    "cover": "covers/253.jpg"
+  },
+  {
+    "id": 254,
+    "title": "Șoareci și oameni",
+    "author": "John Steinbeck",
+    "publisher": "Polirom",
+    "source": "dataset/254.jpg",
+    "title_en": "Of Mice and Men",
+    "cover": "covers/254.jpg"
+  },
+  {
+    "id": 255,
+    "title": "50 de Clasici Filosofie",
+    "author": "Tom Butler-Bowdon",
+    "publisher": "Litera",
+    "source": "dataset/255.jpg",
+    "title_en": "50 Philosophy Classics",
+    "cover": "covers/255.jpg"
+  },
+  {
+    "id": 256,
+    "title": "Divina comedie",
+    "author": "Dante",
+    "publisher": "Cartier Popular",
+    "source": "dataset/256.jpg",
+    "title_en": "The Divine Comedy",
+    "cover": "covers/256.jpg"
+  },
+  {
+    "id": 257,
+    "title": "Etica",
+    "author": "B. Spinoza",
+    "publisher": null,
+    "source": "dataset/257.jpg",
+    "cover": "covers/257.jpg"
+  },
+  {
+    "id": 259,
+    "title": "Decameronul",
+    "author": "Giovanni Boccaccio",
+    "publisher": "Adevărul",
+    "source": "dataset/259.jpg",
+    "title_en": "The Decameron",
+    "cover": "covers/259.jpg"
+  },
+  {
+    "id": 260,
+    "title": "100 Idei Geniale de Vânzări",
+    "author": "Patrick Forsyth",
+    "publisher": "Forbes",
+    "source": "dataset/260.jpg",
+    "title_en": "100 Great Sales Ideas",
+    "cover": "covers/260.jpg"
+  },
+  {
+    "id": 262,
+    "title": "Minunata lume nouă Reîntoarcere în minunata lume nouă",
+    "author": "Aldous Huxley",
+    "publisher": "Polirom",
+    "source": "dataset/262.jpg",
+    "title_en": "Brave New World / Brave New World Revisited",
+    "cover": "covers/262.jpg"
+  },
+  {
+    "id": 263,
+    "title": "Me",
+    "author": "Elton John",
+    "publisher": null,
+    "source": "dataset/263.jpg",
+    "cover": "covers/263.jpg"
+  },
+  {
+    "id": 264,
+    "title": "Leviatanul",
+    "author": "Hobbes",
+    "publisher": "EDITURA HERALD",
+    "source": "dataset/264.jpg",
+    "title_en": "Leviathan",
+    "cover": "covers/264.jpg"
+  },
+  {
+    "id": 265,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "author": "Ken Kesey",
+    "publisher": "Penguin Classics",
+    "source": "dataset/265.jpg",
+    "cover": "covers/265.jpg"
+  },
+  {
+    "id": 266,
+    "title": "Comandante: The Life and Legacy of Hugo Chávez",
+    "author": "Rory Carroll",
+    "publisher": null,
+    "source": "dataset/266.jpg",
+    "cover": "covers/266.jpg"
+  },
+  {
+    "id": 267,
+    "title": "O Privire Filozofică",
+    "author": "Ludwig Wittgenstein",
+    "publisher": "Humanitas",
+    "source": "dataset/267.jpg",
+    "title_en": "A Philosophical View",
+    "cover": "covers/267.jpg"
+  },
+  {
+    "id": 268,
+    "title": "Dincolo de Bine si de Rau",
+    "author": "Nietzsche",
+    "publisher": "Humanitas",
+    "source": "dataset/268.jpg",
+    "title_en": "Beyond Good and Evil",
+    "cover": "covers/268.jpg"
+  },
+  {
+    "id": 269,
+    "title": "Adeptii Fanatici",
+    "author": "Eric Hoffer",
+    "publisher": "POLIROM",
+    "source": "dataset/269.jpg",
+    "title_en": "The True Believer",
+    "cover": "covers/269.jpg"
+  },
+  {
+    "id": 270,
+    "title": "Himera credinței în Dumnezeu",
+    "author": "Richard Dawkins",
+    "publisher": "Curtea Veche",
+    "source": "dataset/270.jpg",
+    "title_en": "The God Delusion",
+    "cover": "covers/270.jpg"
+  },
+  {
+    "id": 271,
+    "title": "Privind soarele în față",
+    "author": "Irvin D. Yalom",
+    "publisher": "Vellant",
+    "source": "dataset/271.jpg",
+    "title_en": "Staring at the Sun",
+    "cover": "covers/271.jpg"
+  },
+  {
+    "id": 272,
+    "title": "The Information",
+    "author": "James Gleick",
+    "publisher": null,
+    "source": "dataset/272.jpg",
+    "cover": "covers/272.jpg"
+  },
+  {
+    "id": 273,
+    "title": "Dialoguri",
+    "author": "Platon",
+    "publisher": "univers enciclopedic gold",
+    "source": "dataset/273.jpg",
+    "title_en": "Dialogues",
+    "cover": "covers/273.jpg"
+  },
+  {
+    "id": 274,
+    "title": "Despre mânie",
+    "author": "Seneca",
+    "publisher": "Humanitas",
+    "source": "dataset/274.jpg",
+    "title_en": "On Anger",
+    "cover": "covers/274.jpg"
+  },
+  {
+    "id": 275,
+    "title": "Gânduri către sine însuși",
+    "author": "Marcus Aurelius",
+    "publisher": "Humanitas",
+    "source": "dataset/275.jpg",
+    "title_en": "Meditations",
+    "cover": "covers/275.jpg"
+  },
+  {
+    "id": 276,
+    "title": "Rusia, o ecuație complicată",
+    "author": "Armand Gosu",
+    "publisher": "Polirom",
+    "source": "dataset/276.jpg",
+    "cover": "covers/276.jpg"
+  },
+  {
+    "id": 277,
+    "title": "Convenience Store Woman",
+    "author": "Sayaka Murata",
+    "publisher": null,
+    "source": "dataset/277.jpg",
+    "cover": "covers/277.jpg"
+  },
+  {
+    "id": 278,
+    "title": "Pentru a Înțelege Lumea",
+    "author": "Immanuel Wallerstein",
+    "publisher": null,
+    "source": "dataset/278.jpg",
+    "title_en": "World-Systems Analysis",
+    "cover": "covers/278.jpg"
+  },
+  {
+    "id": 279,
+    "title": "Ecluze pe Bega",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/279.jpg",
+    "cover": "covers/279.jpg"
+  },
+  {
+    "id": 280,
+    "title": "Techno Feudalism: What Killed Capitalism",
+    "author": "Yanis Varoufakis",
+    "publisher": null,
+    "source": "dataset/280.jpg",
+    "cover": "covers/280.jpg"
+  },
+  {
+    "id": 281,
+    "title": "O Cronica Violeta",
+    "author": "Stefan Carpanu",
+    "publisher": "Editura Diacritic",
+    "source": "dataset/281.jpg",
+    "cover": "covers/281.jpg"
+  },
+  {
+    "id": 282,
+    "title": "Tatăl Meu, Beria: În Inima Puterii Staliniste",
+    "author": "Sergo Beria",
+    "publisher": "METEOR PUBLISHING",
+    "source": "dataset/282.jpg",
+    "title_en": "Beria, My Father: Inside Stalin's Kremlin",
+    "cover": "covers/282.jpg"
+  },
+  {
+    "id": 283,
+    "title": "Zei Americani",
+    "author": "Neil Gaiman",
+    "publisher": null,
+    "source": "dataset/283.jpg",
+    "title_en": "American Gods",
+    "cover": "covers/283.jpg"
+  },
+  {
+    "id": 284,
+    "title": "Gripa Spaniolă Din 1918",
+    "author": "Laura Spinney",
+    "publisher": "Corint",
+    "source": "dataset/284.jpg",
+    "title_en": "Pale Rider: The Spanish Flu of 1918",
+    "cover": "covers/284.jpg"
+  },
+  {
+    "id": 285,
+    "title": "Cercului Mincinoșilor",
+    "author": "Jean-Claude Carrière",
+    "publisher": "Humanitas",
+    "source": "dataset/285.jpg",
+    "title_en": "The Circle of Liars",
+    "cover": "covers/285.jpg"
+  },
+  {
+    "id": 286,
+    "title": "Despre vis",
+    "author": "Sigmund Freud",
+    "publisher": "editura cartex",
+    "source": "dataset/286.jpg",
+    "title_en": "On Dreams",
+    "cover": "covers/286.jpg"
+  },
+  {
+    "id": 287,
+    "title": "Liber Arbitru",
+    "author": "Sam Harris",
+    "publisher": null,
+    "source": "dataset/287.jpg",
+    "title_en": "Free Will",
+    "cover": "covers/287.jpg"
+  },
+  {
+    "id": 288,
+    "title": "Aspecte Ale Economiei Românești În Timpul Războiului Rece (1946-1991)",
+    "author": "Petre Opriș",
+    "publisher": "TREI",
+    "source": "dataset/288.jpg",
+    "cover": "covers/288.jpg"
+  },
+  {
+    "id": 289,
+    "title": "Poate știința explica totul?",
+    "author": "John C. Lennox",
+    "publisher": null,
+    "source": "dataset/289.jpg",
+    "title_en": "Can Science Explain Everything?",
+    "cover": "covers/289.jpg"
+  },
+  {
+    "id": 290,
+    "title": "Crestinism Pur Si Simplu",
+    "author": "C.S. Lewis",
+    "publisher": "HUMANITAS",
+    "source": "dataset/290.jpg",
+    "title_en": "Mere Christianity",
+    "cover": "covers/290.jpg"
+  },
+  {
+    "id": 291,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "publisher": "Polirom",
+    "source": "dataset/291.jpg",
+    "cover": "covers/291.jpg"
+  },
+  {
+    "id": 292,
+    "title": "Tribal",
+    "author": "Sebastian Junger",
+    "publisher": "sapiens",
+    "source": "dataset/292.jpg",
+    "cover": "covers/292.jpg"
+  },
+  {
+    "id": 293,
+    "title": "Ordinea Timpului",
+    "author": "Carlo Rovelli",
+    "publisher": "HUMANITAS",
+    "source": "dataset/293.jpg",
+    "title_en": "The Order of Time",
+    "cover": "covers/293.jpg"
+  },
+  {
+    "id": 294,
+    "title": "Ceasornicarul Orb",
+    "author": "Richard Dawkins",
+    "publisher": "Humanitas",
+    "source": "dataset/294.jpg",
+    "title_en": "The Blind Watchmaker",
+    "cover": "covers/294.jpg"
+  },
+  {
+    "id": 295,
+    "title": "Cum Merge Lumea",
+    "author": "Noam Chomsky",
+    "publisher": null,
+    "source": "dataset/295.jpg",
+    "title_en": "How the World Works",
+    "cover": "covers/295.jpg"
+  },
+  {
+    "id": 296,
+    "title": "Cronica vieții mele",
+    "author": "Bob Dylan",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/296.jpg",
+    "title_en": "Chronicles: Volume One",
+    "cover": "covers/296.jpg"
+  },
+  {
+    "id": 297,
+    "title": "Minunata lume nouă",
+    "author": "Aldous Huxley",
+    "publisher": "Polirom",
+    "source": "dataset/297.jpg",
+    "title_en": "Brave New World",
+    "cover": "covers/297.jpg"
+  },
+  {
+    "id": 298,
+    "title": "Unchiul Petros și Conjectura lui Goldbach",
+    "author": "Apostolos Doxiadis",
+    "publisher": "Humanitas",
+    "source": "dataset/298.jpg",
+    "title_en": "Uncle Petros and Goldbach's Conjecture",
+    "cover": "covers/298.jpg"
+  },
+  {
+    "id": 299,
+    "title": "Școala Dictatorilor",
+    "author": "William J. Dobson",
+    "publisher": "DP",
+    "source": "dataset/299.jpg",
+    "title_en": "The Dictator's Learning Curve",
+    "cover": "covers/299.jpg"
+  },
+  {
+    "id": 300,
+    "title": "Mică istorie a filosofiei",
+    "author": "Nigel Warburton",
+    "publisher": "Editura ART",
+    "source": "dataset/300.jpg",
+    "title_en": "A Little History of Philosophy",
+    "cover": "covers/300.jpg"
+  },
+  {
+    "id": 301,
+    "title": "Însemnări din subterană Eternul soț Jucătorul",
+    "author": "F.M. Dostoievski",
+    "publisher": "Corint",
+    "source": "dataset/301.jpg",
+    "title_en": "Notes from Underground / The Eternal Husband / The Gambler",
+    "cover": "covers/301.jpg"
+  },
+  {
+    "id": 302,
+    "title": "Lupul de stepă",
+    "author": "Hermann Hesse",
+    "publisher": "adevărul",
+    "source": "dataset/302.jpg",
+    "title_en": "Steppenwolf",
+    "cover": "covers/302.jpg"
+  },
+  {
+    "id": 303,
+    "title": "Kafka pe malul mării",
+    "author": "Haruki Murakami",
+    "publisher": "Polirom",
+    "source": "dataset/303.jpg",
+    "title_en": "Kafka on the Shore",
+    "cover": "covers/303.jpg"
+  },
+  {
+    "id": 304,
+    "title": "La răsărit de Eden",
+    "author": "John Steinbeck",
+    "publisher": "Polirom",
+    "source": "dataset/304.jpg",
+    "title_en": "East of Eden",
+    "cover": "covers/304.jpg"
+  },
+  {
+    "id": 305,
+    "title": "Dreapta și stînga",
+    "author": "Norberto Bobbio",
+    "publisher": "Humanitas",
+    "source": "dataset/305.jpg",
+    "title_en": "Left and Right",
+    "cover": "covers/305.jpg"
+  },
+  {
+    "id": 306,
+    "title": "Mitul lui Sisif",
+    "author": "Albert Camus",
+    "publisher": "Polirom",
+    "source": "dataset/306.jpg",
+    "title_en": "The Myth of Sisyphus",
+    "cover": "covers/306.jpg"
+  },
+  {
+    "id": 307,
+    "title": "Însemnări Intime Și Politice (martie 1942–noiembrie 1944)",
+    "author": "Adolf Hitler",
+    "publisher": "Corint Istorie",
+    "source": "dataset/307.jpg",
+    "title_en": "Hitler's Table Talk",
+    "cover": "covers/307.jpg"
+  },
+  {
+    "id": 308,
+    "title": "Inginerii Lumii Inelare",
+    "author": "Larry Niven",
+    "publisher": "Paladin",
+    "source": "dataset/308.jpg",
+    "title_en": "The Ringworld Engineers",
+    "cover": "covers/308.jpg"
+  },
+  {
+    "id": 309,
+    "title": "Lumea Inelară",
+    "author": "Larry Niven",
+    "publisher": "Paladin",
+    "source": "dataset/309.jpg",
+    "title_en": "Ringworld",
+    "cover": "covers/309.jpg"
+  },
+  {
+    "id": 310,
+    "title": "Amurgul Idolilor",
+    "author": "Nietzsche",
+    "publisher": "Humanitas",
+    "source": "dataset/310.jpg",
+    "title_en": "Twilight of the Idols",
+    "cover": "covers/310.jpg"
+  },
+  {
+    "id": 311,
+    "title": "Pe Bune",
+    "author": "Harry G. Frankfurt",
+    "publisher": null,
+    "source": "dataset/311.jpg",
+    "title_en": "On Truth",
+    "cover": "covers/311.jpg"
+  },
+  {
+    "id": 312,
+    "title": "Jacques Lacan the basics",
+    "author": "Calum Neill",
+    "publisher": "Routledge",
+    "source": "dataset/312.jpg",
+    "cover": "covers/312.jpg"
+  },
+  {
+    "id": 313,
+    "title": "Lacan",
+    "author": "Slavoj Žižek",
+    "publisher": null,
+    "source": "dataset/313.jpg",
+    "cover": "covers/313.jpg"
+  },
+  {
+    "id": 314,
+    "title": "O piatră pe cer",
+    "author": "Isaac Asimov",
+    "publisher": "Univers",
+    "source": "dataset/314.jpg",
+    "title_en": "Pebble in the Sky",
+    "cover": "covers/314.jpg"
+  },
+  {
+    "id": 315,
+    "title": "M-am hotărât să devin prost",
+    "author": "Martin Page",
+    "publisher": "HUMANITAS fiction",
+    "source": "dataset/315.jpg",
+    "title_en": "How I Became Stupid",
+    "cover": "covers/315.jpg"
+  },
+  {
+    "id": 316,
+    "title": "The Black Cloud",
+    "author": "Fred Hoyle",
+    "publisher": "Penguin Modern Classics",
+    "source": "dataset/316.jpg",
+    "cover": "covers/316.jpg"
+  },
+  {
+    "id": 317,
+    "title": "Inamicul",
+    "author": "Erich Maria Remarque",
+    "publisher": "Polirom",
+    "source": "dataset/317.jpg",
+    "title_en": "The Road Back",
+    "cover": "covers/317.jpg"
+  },
+  {
+    "id": 318,
+    "title": "Bărbații sunt de pe Marte, Femeile sunt de pe Venus",
+    "author": "Dr. John Gray",
+    "publisher": "Editura Vremea",
+    "source": "dataset/318.jpg",
+    "title_en": "Men Are from Mars, Women Are from Venus",
+    "cover": "covers/318.jpg"
+  },
+  {
+    "id": 319,
+    "title": "Prăbușirea ființei",
+    "author": "Arturo Leyte",
+    "publisher": "LITERA",
+    "source": "dataset/319.jpg",
+    "cover": "covers/319.jpg"
+  },
+  {
+    "id": 320,
+    "title": "Copilăria filosofiei",
+    "author": "Víctor Gómez Pin",
+    "publisher": "Litera",
+    "source": "dataset/320.jpg",
+    "cover": "covers/320.jpg"
+  },
+  {
+    "id": 321,
+    "title": "Revoluția copernicană în filosofie",
+    "author": "Joan Solé",
+    "publisher": "Litera",
+    "source": "dataset/321.jpg",
+    "cover": "covers/321.jpg"
+  },
+  {
+    "id": 322,
+    "title": "Un filosof dincolo de orice îndoială",
+    "author": "Jaume Xiol",
+    "publisher": "Litera",
+    "source": "dataset/322.jpg",
+    "cover": "covers/322.jpg"
+  },
+  {
+    "id": 323,
+    "title": "De la agora la piață",
+    "author": "José Manuel Bermudo",
+    "publisher": "LITERA",
+    "source": "dataset/323.jpg",
+    "cover": "covers/323.jpg"
+  },
+  {
+    "id": 324,
+    "title": "Nietzsche: Supraomul și voința de putere",
+    "author": "Toni Llácer",
+    "publisher": "Litera",
+    "source": "dataset/324.jpg",
+    "cover": "covers/324.jpg"
+  },
+  {
+    "id": 325,
+    "title": "Pesimismul devine filosofie",
+    "author": "Joan Solé",
+    "publisher": "Litera",
+    "source": "dataset/325.jpg",
+    "cover": "covers/325.jpg"
+  },
+  {
+    "id": 326,
+    "title": "Filosofia după metoda geometrică",
+    "author": "Joan Solé",
+    "publisher": "Litera",
+    "source": "dataset/326.jpg",
+    "cover": "covers/326.jpg"
+  },
+  {
+    "id": 327,
+    "title": "Socrate",
+    "author": "Beatrice Collina",
+    "publisher": "Litera",
+    "source": "dataset/327.jpg",
+    "cover": "covers/327.jpg"
+  },
+  {
+    "id": 328,
+    "title": "Doctorul Harului împotriva Răului",
+    "author": "E.A. Dal Maschio",
+    "publisher": "Litera",
+    "source": "dataset/328.jpg",
+    "cover": "covers/328.jpg"
+  },
+  {
+    "id": 329,
+    "title": "Conștiința limitei",
+    "author": "Carla Carmona",
+    "publisher": "Litera",
+    "source": "dataset/329.jpg",
+    "cover": "covers/329.jpg"
+  },
+  {
+    "id": 330,
+    "title": "Nopti albe",
+    "author": "Fyodor Dostoevsky",
+    "publisher": "bpt",
+    "source": "dataset/330.jpg",
+    "title_en": "White Nights",
+    "cover": "covers/330.jpg"
+  },
+  {
+    "id": 331,
+    "title": "Arhipelagul Gulag III",
+    "author": "Alexandr Soljenițîn",
+    "publisher": "Univers",
+    "source": "dataset/331.jpg",
+    "title_en": "The Gulag Archipelago III",
+    "cover": "covers/331.jpg"
+  },
+  {
+    "id": 332,
+    "title": "Fake News În Epoca De Aur",
+    "author": "Ioan T. Morar",
+    "publisher": "Polirom",
+    "source": "dataset/332.jpg",
+    "cover": "covers/332.jpg"
+  },
+  {
+    "id": 333,
+    "title": "Iugoslavia: Pace, Război și Disoluție",
+    "author": "Noam Chomsky",
+    "publisher": "Litera",
+    "source": "dataset/333.jpg",
+    "title_en": "Yugoslavia: Peace, War, and Dissolution",
+    "cover": "covers/333.jpg"
+  },
+  {
+    "id": 334,
+    "title": "Arta Războiului",
+    "author": "Sun Tzu",
+    "publisher": "cArt",
+    "source": "dataset/334.jpg",
+    "title_en": "The Art of War",
+    "cover": "covers/334.jpg"
+  },
+  {
+    "id": 335,
+    "title": "Dosar permanent",
+    "author": "Edward Snowden",
+    "publisher": "Nemira",
+    "source": "dataset/335.jpg",
+    "title_en": "Permanent Record",
+    "cover": "covers/335.jpg"
+  },
+  {
+    "id": 336,
+    "title": "Bătrînul și marea",
+    "author": "Ernest Hemingway",
+    "publisher": "Polirom",
+    "source": "dataset/336.jpg",
+    "title_en": "The Old Man and the Sea",
+    "cover": "covers/336.jpg"
+  },
+  {
+    "id": 337,
+    "title": "On Anarchism",
+    "author": "Noam Chomsky",
+    "publisher": "Penguin",
+    "source": "dataset/337.jpg",
+    "cover": "covers/337.jpg"
+  },
+  {
+    "id": 338,
+    "title": "Manufacturing Consent",
+    "author": "Edward S. Herman & Noam Chomsky",
+    "publisher": "Vintage",
+    "source": "dataset/338.jpg",
+    "cover": "covers/338.jpg"
+  },
+  {
+    "id": 339,
+    "title": "Cine mi-a luat cașcavalul?",
+    "author": "Spencer Johnson",
+    "publisher": null,
+    "source": "dataset/339.jpg",
+    "title_en": "Who Moved My Cheese?",
+    "cover": "covers/339.jpg"
+  },
+  {
+    "id": 340,
+    "title": "Standardul Bitcoin",
+    "author": "Saifedean Ammous",
+    "publisher": null,
+    "source": "dataset/340.jpg",
+    "title_en": "The Bitcoin Standard",
+    "cover": "covers/340.jpg"
+  },
+  {
+    "id": 341,
+    "title": "Douăsprezece povestiri călătoare",
+    "author": "Gabriel García Márquez",
+    "publisher": null,
+    "source": "dataset/341.jpg",
+    "title_en": "Strange Pilgrims",
+    "cover": "covers/341.jpg"
+  },
+  {
+    "id": 342,
+    "title": "Marele Roman al Matematicii",
+    "author": "Mickaël Launay",
+    "publisher": "Trei",
+    "source": "dataset/342.jpg",
+    "title_en": "The Great Mathematical Novel",
+    "cover": "covers/342.jpg"
+  },
+  {
+    "id": 343,
+    "title": "De gardă-n noaptea de Crăciun",
+    "author": "Adam Kay",
+    "publisher": "Narator",
+    "source": "dataset/343.jpg",
+    "title_en": "Twas the Nightshift Before Christmas",
+    "cover": "covers/343.jpg"
+  },
+  {
+    "id": 344,
+    "title": "Dublul",
+    "author": "F.M. Dostoievski",
+    "publisher": "Editura ART",
+    "source": "dataset/344.jpg",
+    "title_en": "The Double",
+    "cover": "covers/344.jpg"
+  },
+  {
+    "id": 345,
+    "title": "Dictionar de Filosofie",
+    "author": null,
+    "publisher": "univers enciclopedic",
+    "source": "dataset/345.jpg",
+    "title_en": "Dictionary of Philosophy",
+    "cover": "covers/345.jpg"
+  },
+  {
+    "id": 346,
+    "title": "Numerati",
+    "author": "Stephen Baker",
+    "publisher": "Publica",
+    "source": "dataset/346.jpg",
+    "cover": "covers/346.jpg"
+  },
+  {
+    "id": 347,
+    "title": "Metafizica",
+    "author": "Aristotel",
+    "publisher": "Humanitas",
+    "source": "dataset/347.jpg",
+    "title_en": "Metaphysics",
+    "cover": "covers/347.jpg"
+  },
+  {
+    "id": 348,
+    "title": "Făuritorul • Ficțiuni • Memoria lui Shakespeare",
+    "author": "Jorge Luis Borges",
+    "publisher": "Polirom",
+    "source": "dataset/348.jpg",
+    "title_en": "The Maker / Fictions / Shakespeare's Memory",
+    "cover": "covers/348.jpg"
+  },
+  {
+    "id": 349,
+    "title": "Arhipelagul Gulag II",
+    "author": "Alexandr Soljenițîn",
+    "publisher": "Univers",
+    "source": "dataset/349.jpg",
+    "title_en": "The Gulag Archipelago II",
+    "cover": "covers/349.jpg"
+  },
+  {
+    "id": 350,
+    "title": "Caius Iulius Caesar",
+    "author": "Nic Fields",
+    "publisher": null,
+    "source": "dataset/350.jpg",
+    "cover": "covers/350.jpg"
+  },
+  {
+    "id": 351,
+    "title": "Asta nu e propagandă!",
+    "author": "Peter Pomerantsev",
+    "publisher": "Cartier",
+    "source": "dataset/351.jpg",
+    "title_en": "This Is Not Propaganda",
+    "cover": "covers/351.jpg"
+  },
+  {
+    "id": 352,
+    "title": "Global Discontents",
+    "author": "Noam Chomsky",
+    "publisher": "Penguin",
+    "source": "dataset/352.jpg",
+    "cover": "covers/352.jpg"
+  },
+  {
+    "id": 353,
+    "title": "Dumnezeul logicii",
+    "author": "Piergiorgio Odifreddi",
+    "publisher": "Polirom",
+    "source": "dataset/353.jpg",
+    "title_en": "The God of Logic",
+    "cover": "covers/353.jpg"
+  },
+  {
+    "id": 355,
+    "title": "Opera Magna",
+    "author": "Nichita Stănescu",
+    "publisher": "Editura Muzeul Literaturii Române",
+    "source": "dataset/355.jpg",
+    "cover": "covers/355.jpg"
+  },
+  {
+    "id": 356,
+    "title": "Gena Egoistă",
+    "author": "Richard Dawkins",
+    "publisher": "Publica",
+    "source": "dataset/356.jpg",
+    "title_en": "The Selfish Gene",
+    "cover": "covers/356.jpg"
+  },
+  {
+    "id": 358,
+    "title": "What If?",
+    "author": "Randall Munroe",
+    "publisher": "Publica",
+    "source": "dataset/358.jpg",
+    "cover": "covers/358.jpg"
+  },
+  {
+    "id": 359,
+    "title": "Mao Zedong",
+    "author": "Enrico Fardella",
+    "publisher": "bestseller biografii",
+    "source": "dataset/359.jpg",
+    "cover": "covers/359.jpg"
+  },
+  {
+    "id": 360,
+    "title": "Ernesto Che Guevara",
+    "author": "Carlo Batà",
+    "publisher": null,
+    "source": "dataset/360.jpg",
+    "cover": "covers/360.jpg"
+  },
+  {
+    "id": 361,
+    "title": "Mitologie Nordică",
+    "author": "Neil Gaiman",
+    "publisher": "Arthur",
+    "source": "dataset/361.jpg",
+    "title_en": "Norse Mythology",
+    "cover": "covers/361.jpg"
+  },
+  {
+    "id": 362,
+    "title": "John Fitzgerald Kennedy",
+    "author": "Marilena Gala",
+    "publisher": null,
+    "source": "dataset/362.jpg",
+    "cover": "covers/362.jpg"
+  },
+  {
+    "id": 363,
+    "title": "Micul Dejun Al Campionilor",
+    "author": "Kurt Vonnegut",
+    "publisher": "EDITURA ART",
+    "source": "dataset/363.jpg",
+    "title_en": "Breakfast of Champions",
+    "cover": "covers/363.jpg"
+  },
+  {
+    "id": 364,
+    "title": "Mama Noapte",
+    "author": "Kurt Vonnegut",
+    "publisher": "Art",
+    "source": "dataset/364.jpg",
+    "title_en": "Mother Night",
+    "cover": "covers/364.jpg"
+  },
+  {
+    "id": 365,
+    "title": "Abatorul 5",
+    "author": "Kurt Vonnegut",
+    "publisher": "EDITURA ART",
+    "source": "dataset/365.jpg",
+    "title_en": "Slaughterhouse-Five",
+    "cover": "covers/365.jpg"
+  },
+  {
+    "id": 366,
+    "title": "Galápagos",
+    "author": "Kurt Vonnegut",
+    "publisher": "Editura Art",
+    "source": "dataset/366.jpg",
+    "cover": "covers/366.jpg"
+  },
+  {
+    "id": 367,
+    "title": "Apostolii Epocii De Aur",
+    "author": "Laurentiu Ungureanu, Radu Eremia",
+    "publisher": null,
+    "source": "dataset/367.jpg",
+    "cover": "covers/367.jpg"
+  },
+  {
+    "id": 368,
+    "title": "Behave",
+    "author": "Robert M. Sapolsky",
+    "publisher": "PUBLISHER",
+    "source": "dataset/368.jpg",
+    "cover": "covers/368.jpg"
+  },
+  {
+    "id": 369,
+    "title": "Lumea Ca Vointa Și Reprezentare (vol. 1)",
+    "author": "Arthur Schopenhauer",
+    "publisher": "HUMANITAS",
+    "source": "dataset/369.jpg",
+    "title_en": "The World as Will and Representation Vol. 1",
+    "cover": "covers/369.jpg"
+  },
+  {
+    "id": 370,
+    "title": "Lumea Ca Vointă Şi Reprezentare (vol. 2)",
+    "author": "Arthur Schopenhauer",
+    "publisher": "HUMANITAS",
+    "source": "dataset/370.jpg",
+    "title_en": "The World as Will and Representation Vol. 2",
+    "cover": "covers/370.jpg"
+  },
+  {
+    "id": 371,
+    "title": "O Istorie A Bibliei",
+    "author": "John Barton",
+    "publisher": "HUMANITAS",
+    "source": "dataset/371.jpg",
+    "title_en": "A History of the Bible",
+    "cover": "covers/371.jpg"
+  },
+  {
+    "id": 372,
+    "title": "Log",
+    "author": null,
+    "publisher": null,
+    "source": "dataset/372.jpg",
+    "cover": "covers/372.jpg"
+  },
+  {
+    "id": 373,
+    "title": "Scene istorice * Pseudokynegeticos",
+    "author": "Alexandru Odobescu",
+    "publisher": "Cartea de acasă",
+    "source": "dataset/373.jpg",
+    "cover": "covers/373.jpg"
+  },
+  {
+    "id": 374,
+    "title": "Ulise",
+    "author": "James Joyce",
+    "publisher": "Humanitas",
+    "source": "dataset/374.jpg",
+    "title_en": "Ulysses",
+    "cover": "covers/374.jpg"
+  },
+  {
+    "id": 375,
+    "title": "Un Spion Desăvârșit Richard Sorge",
+    "author": "Owen Matthews",
+    "publisher": "Litera",
+    "source": "dataset/375.jpg",
+    "title_en": "An Impeccable Spy",
+    "cover": "covers/375.jpg"
+  },
+  {
+    "id": 376,
+    "title": "Istanbul Orașul Imperial",
+    "author": "John Freely",
+    "publisher": "Trei",
+    "source": "dataset/376.jpg",
+    "title_en": "Istanbul: The Imperial City",
+    "cover": "covers/376.jpg"
+  },
+  {
+    "id": 377,
+    "title": "Unde locuiesc eu",
+    "author": null,
+    "publisher": "Asociația MOJAR",
+    "source": "dataset/377.jpg",
+    "cover": "covers/377.jpg"
+  },
+  {
+    "id": 378,
+    "title": "Despre boxul și boxerii timișoreni 1924-2007",
+    "author": "Gheorghe Almadi",
+    "publisher": "Editura Marineasa",
+    "source": "dataset/378.jpg",
+    "cover": "covers/378.jpg"
+  },
+  {
+    "id": 379,
+    "title": "Infinite Powers",
+    "author": "Steven Strogatz",
+    "publisher": null,
+    "source": "dataset/379.jpg",
+    "cover": "covers/379.jpg"
+  },
+  {
+    "id": 380,
+    "title": "Metro 2033",
+    "author": "Dmitri Glukhovski",
+    "publisher": "Paladin",
+    "source": "dataset/380.jpg",
+    "cover": "covers/380.jpg"
+  },
+  {
+    "id": 381,
+    "title": "Scurtă Istorie A Vieții Mele",
+    "author": "Stephen W. Hawking",
+    "publisher": "HUMANITAS",
+    "source": "dataset/381.jpg",
+    "title_en": "My Brief History",
+    "cover": "covers/381.jpg"
+  },
+  {
+    "id": 382,
+    "title": "Fortăreața albă",
+    "author": "Orhan Pamuk",
+    "publisher": "Curtea veche",
+    "source": "dataset/382.jpg",
+    "title_en": "The White Castle",
+    "cover": "covers/382.jpg"
+  },
+  {
+    "id": 383,
+    "title": "Internat",
+    "author": "Serhii Jadan",
+    "publisher": "Cartier",
+    "source": "dataset/383.jpg",
+    "title_en": "The Orphanage",
+    "cover": "covers/383.jpg"
+  },
+  {
+    "id": 384,
+    "title": "Ideas That Created the Future: Classic Papers of Computer Science",
+    "author": "Harry R. Lewis",
+    "publisher": null,
+    "source": "dataset/384.jpg",
+    "cover": "covers/384.jpg"
+  },
+  {
+    "id": 385,
+    "title": "O teorie a dreptății",
+    "author": "John Rawls",
+    "publisher": "Editura Universității „Alexandru Ioan Cuza” Iași",
+    "source": "dataset/385.jpg",
+    "title_en": "A Theory of Justice",
+    "cover": "covers/385.jpg"
+  },
+  {
+    "id": 386,
+    "title": "Creierul Povestea Noastră",
+    "author": "David Eagleman",
+    "publisher": null,
+    "source": "dataset/386.jpg",
+    "title_en": "The Brain: The Story of You",
+    "cover": "covers/386.jpg"
+  },
+  {
+    "id": 387,
+    "title": "Dictionar de Simboluri",
+    "author": "Jean Chevalier, Alain Gheerbrant",
+    "publisher": "Polirom",
+    "source": "dataset/387.jpg",
+    "title_en": "Dictionary of Symbols",
+    "cover": "covers/387.jpg"
+  },
+  {
+    "id": 388,
+    "title": "Pe frontul de vest nimic nou",
+    "author": "Erich Maria Remarque",
+    "publisher": "Polirom",
+    "source": "dataset/388.jpg",
+    "title_en": "All Quiet on the Western Front",
+    "cover": "covers/388.jpg"
+  },
+  {
+    "id": 389,
+    "title": "Cartea de nisip",
+    "author": "Jorge Luis Borges",
+    "publisher": "Polirom",
+    "source": "dataset/389.jpg",
+    "title_en": "The Book of Sand",
+    "cover": "covers/389.jpg"
+  },
+  {
+    "id": 390,
+    "title": "Detox Sufletesc",
+    "author": "Tukaram",
+    "publisher": null,
+    "source": "dataset/390.jpg",
+    "cover": "covers/390.jpg"
+  },
+  {
+    "id": 391,
+    "title": "Omul din viitor",
+    "author": "Ananyo Bhattacharya",
+    "publisher": null,
+    "source": "dataset/391.jpg",
+    "title_en": "The Man from the Future",
+    "cover": "covers/391.jpg"
+  },
+  {
+    "id": 392,
+    "title": "Blestemul Svetlanei",
+    "author": "Beata de Robien",
+    "publisher": "Humanitas",
+    "source": "dataset/392.jpg",
+    "cover": "covers/392.jpg"
+  },
+  {
+    "id": 393,
+    "title": "Vorbind în șoaptă: Viața privată în Rusia lui Stalin",
+    "author": "Orlando Figes",
+    "publisher": "Polirom",
+    "source": "dataset/393.jpg",
+    "title_en": "The Whisperers: Private Life in Stalin's Russia",
+    "cover": "covers/393.jpg"
+  },
+  {
+    "id": 394,
+    "title": "Deținut politic și președinte",
+    "author": "Václav Havel",
+    "publisher": null,
+    "source": "dataset/394.jpg",
+    "cover": "covers/394.jpg"
+  },
+  {
+    "id": 395,
+    "title": "Vițelul de aur",
+    "author": "Ilf și Petrov",
+    "publisher": "POLIROM",
+    "source": "dataset/395.jpg",
+    "title_en": "The Golden Calf",
+    "cover": "covers/395.jpg"
+  },
+  {
+    "id": 396,
+    "title": "Epicur şi epicureismul antic",
+    "author": "Andrei Cornea",
+    "publisher": "Humanitas",
+    "source": "dataset/396.jpg",
+    "title_en": "Epicurus and Ancient Epicureanism",
+    "cover": "covers/396.jpg"
+  },
+  {
+    "id": 397,
+    "title": "Noaptea",
+    "author": "Elie Wiesel",
+    "publisher": "ART",
+    "source": "dataset/397.jpg",
+    "title_en": "Night",
+    "cover": "covers/397.jpg"
+  },
+  {
+    "id": 398,
+    "title": "Ordinea De Zi",
+    "author": "Éric Vuillard",
+    "publisher": null,
+    "source": "dataset/398.jpg",
+    "title_en": "The Order of the Day",
+    "cover": "covers/398.jpg"
+  },
+  {
+    "id": 399,
+    "title": "Viața unui sclav american",
+    "author": "Frederick Douglass",
+    "publisher": null,
+    "source": "dataset/399.jpg",
+    "title_en": "Narrative of the Life of Frederick Douglass",
+    "cover": "covers/399.jpg"
+  },
+  {
+    "id": 400,
+    "title": "Confesiunile unui asasin economic",
+    "author": "John Perkins",
+    "publisher": null,
+    "source": "dataset/400.jpg",
+    "title_en": "Confessions of an Economic Hit Man",
+    "cover": "covers/400.jpg"
+  },
+  {
+    "id": 401,
+    "title": "Opus Pistorum",
+    "author": "Henry Miller",
+    "publisher": "Eroscop",
+    "source": "dataset/401.jpg",
+    "cover": "covers/401.jpg"
+  },
+  {
+    "id": 402,
+    "title": "Primăvară neagră",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/402.jpg",
+    "title_en": "Black Spring",
+    "cover": "covers/402.jpg"
+  },
+  {
+    "id": 403,
+    "title": "Tropical Cancerului",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/403.jpg",
+    "title_en": "Tropic of Cancer",
+    "cover": "covers/403.jpg"
+  },
+  {
+    "id": 404,
+    "title": "Plexus",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/404.jpg",
+    "cover": "covers/404.jpg"
+  },
+  {
+    "id": 405,
+    "title": "Nexus",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/405.jpg",
+    "cover": "covers/405.jpg"
+  },
+  {
+    "id": 406,
+    "title": "Sexus",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/406.jpg",
+    "cover": "covers/406.jpg"
+  },
+  {
+    "id": 407,
+    "title": "Înțelepciunea inimii",
+    "author": "Henry Miller",
+    "publisher": "Polirom",
+    "source": "dataset/407.jpg",
+    "title_en": "The Wisdom of the Heart",
+    "cover": "covers/407.jpg"
+  },
+  {
+    "id": 408,
+    "title": "Node.js in Action",
+    "author": "Mike Cantelon, Marc Harter, T.J. Holowaychuk, Nathan Rajlich",
+    "publisher": "Manning",
+    "source": "dataset/408.jpg",
+    "cover": "covers/408.jpg"
+  },
+  {
+    "id": 409,
+    "title": "Violent Python",
+    "author": "TJ O'Connor",
+    "publisher": "Syngress",
+    "source": "dataset/409.jpg",
+    "cover": "covers/409.jpg"
+  },
+  {
+    "id": 410,
+    "title": "A Programmer's Introduction to Mathematics",
+    "author": "Jeremy Kun",
+    "publisher": null,
+    "source": "dataset/410.jpg",
+    "cover": "covers/410.jpg"
+  },
+  {
+    "id": 411,
+    "title": "Jocul cu mărgele de sticlă",
+    "author": "Hermann Hesse",
+    "publisher": "roo clays",
+    "source": "dataset/411.jpg",
+    "title_en": "The Glass Bead Game",
+    "cover": "covers/411.jpg"
+  },
+  {
+    "id": 412,
+    "title": "Invenția lui Morel",
+    "author": "Adolfo Bioy Casares",
+    "publisher": "RAO",
+    "source": "dataset/412.jpg",
+    "title_en": "The Invention of Morel",
+    "cover": "covers/412.jpg"
+  },
+  {
+    "id": 413,
+    "title": "Peter Camenzind",
+    "author": "Hermann Hesse",
+    "publisher": null,
+    "source": "dataset/413.jpg",
+    "cover": "covers/413.jpg"
+  },
+  {
+    "id": 414,
+    "title": "Siddhartha Călătoria spre Soare-Răsare",
+    "author": "Hermann Hesse",
+    "publisher": "100 clasici",
+    "source": "dataset/414.jpg",
+    "title_en": "Siddhartha / Journey to the East",
+    "cover": "covers/414.jpg"
+  },
+  {
+    "id": 415,
+    "title": "Mândrie și prejudecată",
+    "author": "Jane Austen",
+    "publisher": null,
+    "source": "dataset/415.jpg",
+    "title_en": "Pride and Prejudice",
+    "cover": "covers/415.jpg"
+  },
+  {
+    "id": 416,
+    "title": "Notre-Dame de Paris",
+    "author": "Victor Hugo",
+    "publisher": "roo classic",
+    "source": "dataset/416.jpg",
+    "cover": "covers/416.jpg"
+  },
+  {
+    "id": 417,
+    "title": "Un veac de singurătate",
+    "author": "Gabriel García Márquez",
+    "publisher": "rao classic",
+    "source": "dataset/417.jpg",
+    "title_en": "One Hundred Years of Solitude",
+    "cover": "covers/417.jpg"
+  },
+  {
+    "id": 418,
+    "title": "Moș Goriot",
+    "author": "Honoré de Balzac",
+    "publisher": "rao classic",
+    "source": "dataset/418.jpg",
+    "title_en": "Father Goriot",
+    "cover": "covers/418.jpg"
+  },
+  {
+    "id": 419,
+    "title": "Litera stacojie",
+    "author": "Nathaniel Hawthorne",
+    "publisher": "rao clasic",
+    "source": "dataset/419.jpg",
+    "title_en": "The Scarlet Letter",
+    "cover": "covers/419.jpg"
+  },
+  {
+    "id": 420,
+    "title": "Aventurile lui Alice în Țara Minunilor / Alice în Țara Oglinzii și ce a găsit acolo",
+    "author": "Lewis Carroll",
+    "publisher": null,
+    "source": "dataset/420.jpg",
+    "title_en": "Alice's Adventures in Wonderland / Through the Looking-Glass",
+    "cover": "covers/420.jpg"
+  },
+  {
+    "id": 421,
+    "title": "Greața, Cuvintele",
+    "author": "Jean-Paul Sartre",
+    "publisher": null,
+    "source": "dataset/421.jpg",
+    "title_en": "Nausea / The Words",
+    "cover": "covers/421.jpg"
+  },
+  {
+    "id": 422,
+    "title": "Muntele vrăjit partea a II-a",
+    "author": "Thomas Mann",
+    "publisher": "rao",
+    "source": "dataset/422.jpg",
+    "title_en": "The Magic Mountain Part II",
+    "cover": "covers/422.jpg"
+  },
+  {
+    "id": 423,
+    "title": "Străinul, Ciuma, Căderea, Exilul și împărăția",
+    "author": "Albert Camus",
+    "publisher": "rao classic",
+    "source": "dataset/423.jpg",
+    "title_en": "The Stranger / The Plague / The Fall / Exile and the Kingdom",
+    "cover": "covers/423.jpg"
+  },
+  {
+    "id": 424,
+    "title": "Muntele vrăjit",
+    "author": "Thomas Mann",
+    "publisher": "rao classic",
+    "source": "dataset/424.jpg",
+    "title_en": "The Magic Mountain",
+    "cover": "covers/424.jpg"
+  },
+  {
+    "id": 425,
+    "title": "Narcis și Gură-de-Aur",
+    "author": "Hermann Hesse",
+    "publisher": null,
+    "source": "dataset/425.jpg",
+    "title_en": "Narcissus and Goldmund",
+    "cover": "covers/425.jpg"
+  },
+  {
+    "id": 426,
+    "title": "La răscruce de vânturi",
+    "author": "Emily Brontë",
+    "publisher": null,
+    "source": "dataset/426.jpg",
+    "title_en": "Wuthering Heights",
+    "cover": "covers/426.jpg"
+  },
+  {
+    "id": 427,
+    "title": "Casa Buddenbrook",
+    "author": "Thomas Mann",
+    "publisher": "100 Classic",
+    "source": "dataset/427.jpg",
+    "title_en": "Buddenbrooks",
+    "cover": "covers/427.jpg"
+  },
+  {
+    "id": 428,
+    "title": "Fața și reversul, Nunta, Mitul lui Sisif, Omul revoltat, Vara",
+    "author": "Albert Camus",
+    "publisher": null,
+    "source": "dataset/428.jpg",
+    "title_en": "The Wrong Side and the Right Side / Nuptials / The Myth of Sisyphus / The Rebel / Summer",
+    "cover": "covers/428.jpg"
+  },
+  {
+    "id": 429,
+    "title": "Doctor Faustus",
+    "author": "Thomas Mann",
+    "publisher": null,
+    "source": "dataset/429.jpg",
+    "cover": "covers/429.jpg"
+  },
+  {
+    "id": 430,
+    "title": "The Joy of Clojure",
+    "author": "Michael Fogus, Chris Houser",
+    "publisher": "Manning",
+    "source": "dataset/430.jpg",
+    "cover": "covers/430.jpg"
+  },
+  {
+    "id": 431,
+    "title": "Clojure in Action",
+    "author": "Amit Rathore, Francis Avila",
+    "publisher": "Manning",
+    "source": "dataset/431.jpg",
+    "cover": "covers/431.jpg"
+  },
+  {
+    "id": 432,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "publisher": "O'Reilly",
+    "source": "dataset/432.jpg",
+    "cover": "covers/432.jpg"
+  },
+  {
+    "id": 433,
+    "title": "Python Programming: An Introduction to Computer Science",
+    "author": "John Zelle",
+    "publisher": "Franklin, Beedle & Associates Inc.",
+    "source": "dataset/433.jpg",
+    "cover": "covers/433.jpg"
+  },
+  {
+    "id": 434,
+    "title": "High Performance Browser Networking",
+    "author": "Ilya Grigorik",
+    "publisher": "O'Reilly",
+    "source": "dataset/434.jpg",
+    "cover": "covers/434.jpg"
+  },
+  {
+    "id": 435,
+    "title": "Another Side of Bob Dylan",
+    "author": "Victor Maymudes",
+    "publisher": null,
+    "source": "dataset/435.jpg",
+    "cover": "covers/435.jpg"
+  },
+  {
+    "id": 436,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "publisher": "Adevărul",
+    "source": "dataset/436.jpg",
+    "cover": "covers/436.jpg"
+  },
+  {
+    "id": 437,
+    "title": "Stăpânul Inelelor: Cele două turnuri",
+    "author": "J.R.R. Tolkien",
+    "publisher": "Adevărul",
+    "source": "dataset/437.jpg",
+    "title_en": "The Lord of the Rings: The Two Towers",
+    "cover": "covers/437.jpg"
+  },
+  {
+    "id": 438,
+    "title": "Stăpânul Inelelor: Frăția Inelului",
+    "author": "J.R.R. Tolkien",
+    "publisher": "Adevărul",
+    "source": "dataset/438.jpg",
+    "title_en": "The Lord of the Rings: The Fellowship of the Ring",
+    "cover": "covers/438.jpg"
+  },
+  {
+    "id": 439,
+    "title": "2001: O odisee spațială",
+    "author": "Arthur C. Clarke",
+    "publisher": "adevărul",
+    "source": "dataset/439.jpg",
+    "title_en": "2001: A Space Odyssey",
+    "cover": "covers/439.jpg"
+  },
+  {
+    "id": 440,
+    "title": "Stăpânul Inelelor: Întoarcerea Regelui",
+    "author": "J.R.R. Tolkien",
+    "publisher": "Biblioteca Adevărul",
+    "source": "dataset/440.jpg",
+    "title_en": "The Lord of the Rings: The Return of the King",
+    "cover": "covers/440.jpg"
+  },
+  {
+    "id": 441,
+    "title": "Marele Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publisher": "Humanitas Fiction",
+    "source": "dataset/441.jpg",
+    "title_en": "The Great Gatsby",
+    "cover": "covers/441.jpg"
+  },
+  {
+    "id": 442,
+    "title": "Absalom, Absalom!",
+    "author": "William Faulkner",
+    "publisher": "Editura ART",
+    "source": "dataset/442.jpg",
+    "cover": "covers/442.jpg"
+  },
+  {
+    "id": 443,
+    "title": "Biblioteca lui Hitler",
+    "author": "Timothy W. Ryback",
+    "publisher": "Litera",
+    "source": "dataset/443.jpg",
+    "title_en": "Hitler's Private Library",
+    "cover": "covers/443.jpg"
+  },
+  {
+    "id": 444,
+    "title": "Eu",
+    "author": "Elton John",
+    "publisher": "VICTORIA BOOKS",
+    "source": "dataset/444.jpg",
+    "title_en": "Me",
+    "cover": "covers/444.jpg"
+  },
+  {
+    "id": 445,
+    "title": "Fragmentele Stoicilor Vechi",
+    "author": "Hans von Arnim (ed.)",
+    "publisher": "Humanitas",
+    "source": "dataset/445.jpg",
+    "title_en": "Fragments of the Early Stoics",
+    "cover": "covers/445.jpg"
+  },
+  {
+    "id": 446,
+    "title": "Platon: Banchetul sau Despre Iubire",
+    "author": null,
+    "publisher": "HUMANITAS",
+    "source": "dataset/446.jpg",
+    "title_en": "Plato: The Symposium",
+    "cover": "covers/446.jpg"
+  },
+  {
+    "id": 447,
+    "title": "Phaidros sau Despre frumos",
+    "author": "Platon",
+    "publisher": "HUMANITAS",
+    "source": "dataset/447.jpg",
+    "title_en": "Phaedrus",
+    "cover": "covers/447.jpg"
+  },
+  {
+    "id": 448,
+    "title": "Phaidon sau Despre suflet",
+    "author": "Platon",
+    "publisher": "HUMANITAS",
+    "source": "dataset/448.jpg",
+    "title_en": "Phaedo",
+    "cover": "covers/448.jpg"
+  },
+  {
+    "id": 449,
+    "title": "Ludice",
+    "author": "Gabriel Liiceanu",
+    "publisher": "Humanitas",
+    "source": "dataset/449.jpg",
+    "cover": "covers/449.jpg"
+  },
+  {
+    "id": 450,
+    "title": "Despre inimă și alte eseuri",
+    "author": "Andrei Pleșu",
+    "publisher": "HUMANITAS",
+    "source": "dataset/450.jpg",
+    "cover": "covers/450.jpg"
+  },
+  {
+    "id": 451,
+    "title": "Luminile Și Umbrele Sufletului",
+    "author": "Petru Creția",
+    "publisher": "HUMANITAS",
+    "source": "dataset/451.jpg",
+    "cover": "covers/451.jpg"
+  },
+  {
+    "id": 452,
+    "title": "Creionul Tâmplarului",
+    "author": "Manuel Rivas",
+    "publisher": null,
+    "source": "dataset/452.jpg",
+    "title_en": "The Carpenter's Pencil",
+    "cover": "covers/452.jpg"
+  },
+  {
+    "id": 453,
+    "title": "Nazismul O Istorie Ilustrată",
+    "author": "Paul Roland",
+    "publisher": "Corint",
+    "source": "dataset/453.jpg",
+    "title_en": "Nazism: An Illustrated History",
+    "cover": "covers/453.jpg"
+  },
+  {
+    "id": 454,
+    "title": "Istoria Frumusetii",
+    "author": "Umberto Eco",
+    "publisher": null,
+    "source": "dataset/454.jpg",
+    "title_en": "History of Beauty",
+    "cover": "covers/454.jpg"
+  },
+  {
+    "id": 455,
+    "title": "Răzbunarea Geografiei",
+    "author": "Robert D. Kaplan",
+    "publisher": "KRONIKA",
+    "source": "dataset/455.jpg",
+    "title_en": "The Revenge of Geography",
+    "cover": "covers/455.jpg"
+  },
+  {
+    "id": 456,
+    "title": "CCCP Cosmic Communist Constructions Photographed",
+    "author": "Frédéric Chaubin",
+    "publisher": "TASCHEN",
+    "source": "dataset/456.jpg",
+    "cover": "covers/456.jpg"
+  },
+  {
+    "id": 457,
+    "title": "Viața și opera lui Rembrandt",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/457.jpg",
+    "title_en": "The Life and Work of Rembrandt",
+    "cover": "covers/457.jpg"
+  },
+  {
+    "id": 458,
+    "title": "Viața și opera lui Tiziano",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/458.jpg",
+    "title_en": "The Life and Work of Titian",
+    "cover": "covers/458.jpg"
+  },
+  {
+    "id": 459,
+    "title": "Viața și opera lui Rubens",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/459.jpg",
+    "title_en": "The Life and Work of Rubens",
+    "cover": "covers/459.jpg"
+  },
+  {
+    "id": 460,
+    "title": "Viața și opera lui Tonitza",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/460.jpg",
+    "title_en": "The Life and Work of Tonitza",
+    "cover": "covers/460.jpg"
+  },
+  {
+    "id": 461,
+    "title": "Viața și opera lui Rafael",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/461.jpg",
+    "title_en": "The Life and Work of Raphael",
+    "cover": "covers/461.jpg"
+  },
+  {
+    "id": 462,
+    "title": "Viața și opera lui Dalí",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/462.jpg",
+    "title_en": "The Life and Work of Dalí",
+    "cover": "covers/462.jpg"
+  },
+  {
+    "id": 463,
+    "title": "Viata si opera lui Grigorescu",
+    "author": null,
+    "publisher": "adevărul",
+    "source": "dataset/463.jpg",
+    "title_en": "The Life and Work of Grigorescu",
+    "cover": "covers/463.jpg"
+  },
+  {
+    "id": 464,
+    "title": "Viața și opera lui Goya",
+    "author": null,
+    "publisher": "adevărul",
+    "source": "dataset/464.jpg",
+    "title_en": "The Life and Work of Goya",
+    "cover": "covers/464.jpg"
+  },
+  {
+    "id": 465,
+    "title": "Viața și opera lui Botticelli",
+    "author": null,
+    "publisher": "adevărul",
+    "source": "dataset/465.jpg",
+    "title_en": "The Life and Work of Botticelli",
+    "cover": "covers/465.jpg"
+  },
+  {
+    "id": 466,
+    "title": "Viața și opera lui Monet",
+    "author": null,
+    "publisher": "adevărul",
+    "source": "dataset/466.jpg",
+    "title_en": "The Life and Work of Monet",
+    "cover": "covers/466.jpg"
+  },
+  {
+    "id": 467,
+    "title": "Viata si opera lui Van Gogh",
+    "author": null,
+    "publisher": "adevărul",
+    "source": "dataset/467.jpg",
+    "title_en": "The Life and Work of Van Gogh",
+    "cover": "covers/467.jpg"
+  },
+  {
+    "id": 468,
+    "title": "Viaţa şi opera lui Picasso",
+    "author": null,
+    "publisher": "adevărul",
+    "source": "dataset/468.jpg",
+    "title_en": "The Life and Work of Picasso",
+    "cover": "covers/468.jpg"
+  },
+  {
+    "id": 469,
+    "title": "Viața și opera lui Leonardo da Vinci",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/469.jpg",
+    "title_en": "The Life and Work of Leonardo da Vinci",
+    "cover": "covers/469.jpg"
+  },
+  {
+    "id": 470,
+    "title": "Viata si opera lui Michelangelo",
+    "author": null,
+    "publisher": "Adevărul",
+    "source": "dataset/470.jpg",
+    "title_en": "The Life and Work of Michelangelo",
+    "cover": "covers/470.jpg"
+  }
+]

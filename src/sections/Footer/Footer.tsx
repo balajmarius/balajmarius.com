@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { accounts, links } from "@/utils/links";
 
 import { Typography } from "@/components/Typography";
-
 import { FooterListItem } from "@/sections/Footer";
 
 export type FooterProps = {} & HTMLAttributes<HTMLElement>;
@@ -19,12 +18,6 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
     { label: t("footer.github"), href: links.github },
     { label: t("footer.x"), href: links.x },
   ];
-
-  const renderers = {
-    serif: (chunks: ReactNode) => (
-      <span className="font-serif italic">{chunks}</span>
-    ),
-  };
 
   return (
     <footer
@@ -50,7 +43,11 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ ...props }, ref) => {
 
         <div className="space-y-6">
           <Typography variant="body1" color="inherit">
-            {t.rich("footer.quote", renderers)}
+            {t.rich("footer.quote", {
+              serif: (chunks: ReactNode) => (
+                <span className="font-serif italic text-white">{chunks}</span>
+              ),
+            })}
           </Typography>
           <div className="border-t border-blue-100 pt-1 text-right">
             <Typography variant="small" color="inherit">

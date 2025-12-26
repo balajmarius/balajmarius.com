@@ -1,12 +1,11 @@
+import type { ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
 import getPosts, { type Post } from "@/lib/posts";
 
 import { SvgIconBack } from "@/components/SvgIcon";
-
 import { Button } from "@/components/Button";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
@@ -18,12 +17,6 @@ type WritingsProps = {
 
 const Writings = ({ posts }: WritingsProps) => {
   const t = useTranslations();
-
-  const renderers = {
-    serif: (chunks: ReactNode) => (
-      <span className="text-blue-500 font-serif italic">{chunks}</span>
-    ),
-  };
 
   return (
     <>
@@ -37,13 +30,17 @@ const Writings = ({ posts }: WritingsProps) => {
             <Link href="/" className="block">
               <Button startIcon={<SvgIconBack size="small" />}>
                 <Typography variant="body1" color="inherit">
-                  {t("posts.backToHome")}
+                  {t("common.backToHome")}
                 </Typography>
               </Button>
             </Link>
 
             <Typography variant="h1" display="block">
-              {t.rich("posts.itIsTimeToWrite", renderers)}
+              {t.rich("posts.itIsTimeToWrite", {
+              serif: (chunks: ReactNode) => (
+                <span className="font-serif italic text-blue-500">{chunks}</span>
+              ),
+            })}
             </Typography>
           </div>
 
