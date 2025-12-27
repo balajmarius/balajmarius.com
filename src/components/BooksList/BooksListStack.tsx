@@ -1,9 +1,5 @@
 import type { Book } from "@/lib/books";
 
-import { useInfiniteLoader } from "@/hooks/useInfiniteLoader";
-
-import { BOOKSHELF_BATCH_SIZE } from "@/utils/const";
-
 import { BooksListStackItem } from "@/components/BooksList";
 
 type BooksListStackProps = {
@@ -11,13 +7,9 @@ type BooksListStackProps = {
 };
 
 const BooksListStack = ({ books }: BooksListStackProps) => {
-  const { items, sentinelRef, isPartial } = useInfiniteLoader(books, {
-    batchSize: BOOKSHELF_BATCH_SIZE,
-  });
-
   return (
     <div className="flex flex-col items-center gap-1 px-6 sm:px-12 max-w-2xl">
-      {items.map((book) => (
+      {books.map((book) => (
         <BooksListStackItem
           key={book.id}
           title={book.title}
@@ -28,7 +20,6 @@ const BooksListStack = ({ books }: BooksListStackProps) => {
           size={book.size}
         />
       ))}
-      {isPartial ? <div ref={sentinelRef} /> : null}
     </div>
   );
 };
