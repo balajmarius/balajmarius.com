@@ -24,15 +24,15 @@ export const useScrollSmooth = <T extends HTMLElement>(): {
       orientation: "horizontal",
     });
 
-    lenis.on("scroll", (event: { velocity: number }) => {
-      velocity.set(event.velocity);
-    });
-
     const raf = (time: number) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
     requestAnimationFrame(raf);
+
+    lenis.on("scroll", (event: { velocity: number }) => {
+      velocity.set(event.velocity);
+    });
 
     return () => lenis.destroy();
   }, [velocity]);
