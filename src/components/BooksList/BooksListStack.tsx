@@ -18,6 +18,8 @@ const BooksListStack = ({ books }: BooksListStackProps) => {
           color={book.color}
           backgroundColor={book.backgroundColor}
           size={book.size}
+          coverWidth={book.coverWidth}
+          coverHeight={book.coverHeight}
         />
       ))}
     </div>

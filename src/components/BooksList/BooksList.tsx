@@ -28,6 +28,8 @@ const BooksList = ({ books }: BooksListProps) => {
           size={book.size}
           paddingLeft={book.paddingLeft}
           paddingRight={book.paddingRight}
+          coverWidth={book.coverWidth}
+          coverHeight={book.coverHeight}
         />
       ))}
     </div>

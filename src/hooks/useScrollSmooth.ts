@@ -34,6 +34,10 @@ export const useScrollSmooth = <T extends HTMLElement>(): {
       velocity.set(event.velocity);
     });
 
+    document.fonts.ready.then(() => {
+      lenis.resize();
+    });
+
     return () => lenis.destroy();
   }, [velocity]);
 

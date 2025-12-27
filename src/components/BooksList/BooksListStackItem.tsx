@@ -5,7 +5,6 @@ import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import type { Book } from "@/lib/books";
 
 import {
-  BOOKSHELF_COVER_SIZE,
   BOOKSHELF_ANIMATION_DAMPING,
   BOOKSHELF_ANIMATION_STIFFNESS,
   BOOKSHELF_TRANSPARENCY_OUTSIDE_VIEW,
@@ -26,6 +25,8 @@ const BooksListStackItem = ({
   src,
   color,
   backgroundColor,
+  coverWidth,
+  coverHeight,
 }: BooksListStackItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
@@ -70,9 +71,9 @@ const BooksListStackItem = ({
         src={src}
         alt={title}
         loading="lazy"
-        className="rounded-md"
-        width={BOOKSHELF_COVER_SIZE}
-        height={BOOKSHELF_COVER_SIZE}
+        className="rounded-md w-16 h-auto"
+        width={coverWidth}
+        height={coverHeight}
       />
     </motion.div>
   );

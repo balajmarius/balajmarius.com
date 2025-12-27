@@ -12,7 +12,6 @@ import {
 import type { Book } from "@/lib/books";
 
 import {
-  BOOKSHELF_COVER_SIZE,
   BOOKSHELF_FACTOR,
   BOOKSHELF_ROTATE_MAX,
   BOOKSHELF_ROTATE_OUTSIDE_VIEW,
@@ -36,6 +35,8 @@ const BooksListItem = ({
   size,
   paddingLeft,
   paddingRight,
+  coverWidth,
+  coverHeight,
 }: BooksListItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
@@ -98,9 +99,9 @@ const BooksListItem = ({
         src={src}
         alt={title}
         loading="lazy"
-        className="rounded-md"
-        width={BOOKSHELF_COVER_SIZE}
-        height={BOOKSHELF_COVER_SIZE}
+        className="rounded-md w-16 h-auto"
+        width={coverWidth}
+        height={coverHeight}
       />
     </motion.div>
   );

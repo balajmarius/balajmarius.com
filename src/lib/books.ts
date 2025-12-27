@@ -11,6 +11,8 @@ export type Book = {
   size: number;
   paddingLeft: number;
   paddingRight: number;
+  coverWidth: number;
+  coverHeight: number;
 };
 
 export const getBooks = async () => {
