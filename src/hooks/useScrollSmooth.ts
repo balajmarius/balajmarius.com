@@ -1,11 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import { MotionValue, useMotionValue } from "framer-motion";
 import Lenis from "lenis";
 
 import { isNullOrUndefined } from "@/utils/helpers";
+import { BOOKSHELF_VELOCITY_INITIAL } from "@/utils/const";
 
-export const useScrollSmooth = <T extends HTMLElement>() => {
+export const useScrollSmooth = <T extends HTMLElement>(): {
+  ref: React.RefObject<T | null>;
+  velocity: MotionValue<number>;
+} => {
   const ref = useRef<T>(null);
-  const [velocity, setVelocity] = useState(0);
+  const velocity = useMotionValue(BOOKSHELF_VELOCITY_INITIAL);
 
   useEffect(() => {
     if (isNullOrUndefined(ref.current)) {
@@ -20,7 +25,7 @@ export const useScrollSmooth = <T extends HTMLElement>() => {
     });
 
     lenis.on("scroll", (event: { velocity: number }) => {
-      setVelocity(event.velocity);
+      velocity.set(event.velocity);
     });
 
     const raf = (time: number) => {
@@ -30,10 +35,10 @@ export const useScrollSmooth = <T extends HTMLElement>() => {
     requestAnimationFrame(raf);
 
     return () => lenis.destroy();
-  }, []);
+  }, [velocity]);
 
   return {
     ref,
     velocity,
-  } as const;
+  };
 };

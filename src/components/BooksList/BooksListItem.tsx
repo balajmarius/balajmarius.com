@@ -1,6 +1,13 @@
-import { useRef } from "react";
+import { memo, useEffect, useRef } from "react";
 import Image from "next/image";
-import { clamp, motion, useInView } from "framer-motion";
+import {
+  clamp,
+  motion,
+  MotionValue,
+  useInView,
+  useMotionValue,
+  useSpring,
+} from "framer-motion";
 
 import type { Book } from "@/lib/books";
 
@@ -16,7 +23,7 @@ import {
 import { Typography } from "@/components/Typography";
 
 type BooksListItemProps = Omit<Book, "id"> & {
-  velocity: number;
+  velocity: MotionValue<number>;
 };
 
 const BooksListItem = ({
@@ -32,24 +39,39 @@ const BooksListItem = ({
 }: BooksListItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+  const tilt = useMotionValue(BOOKSHELF_ROTATE_OUTISDE_VIEW);
 
-  const rotate = isInView
-    ? clamp(-BOOKSHELF_ROTATE, BOOKSHELF_ROTATE, velocity * BOOKSHELF_FACTOR)
-    : BOOKSHELF_ROTATE_OUTISDE_VIEW;
+  const rotate = useSpring(tilt, {
+    damping: BOOKSHELF_ROTATE_DAMPING,
+    stiffness: BOOKSHELF_ROTATE_STIFFNESS,
+  });
+
+  useEffect(() => {
+    if (isInView) {
+      tilt.set(
+        clamp(
+          -BOOKSHELF_ROTATE,
+          BOOKSHELF_ROTATE,
+          velocity.get() * BOOKSHELF_FACTOR
+        )
+      );
+
+      return velocity.on("change", (value) => {
+        tilt.set(
+          clamp(-BOOKSHELF_ROTATE, BOOKSHELF_ROTATE, value * BOOKSHELF_FACTOR)
+        );
+      });
+    }
+
+    tilt.set(BOOKSHELF_ROTATE_OUTISDE_VIEW);
+  }, [isInView, velocity, tilt]);
 
   return (
     <motion.div
       ref={ref}
       className="flex items-center justify-between gap-8 rounded-sm pt-8 pb-8 writing-sideways-lr"
-      animate={{
-        rotate,
-      }}
-      transition={{
-        type: "spring",
-        damping: BOOKSHELF_ROTATE_DAMPING,
-        stiffness: BOOKSHELF_ROTATE_STIFFNESS,
-      }}
       style={{
+        rotate,
         color,
         backgroundColor,
         height,
@@ -81,4 +103,4 @@ const BooksListItem = ({
   );
 };
 
-export default BooksListItem;
+export default memo(BooksListItem);
