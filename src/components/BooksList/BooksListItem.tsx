@@ -40,8 +40,10 @@ const BooksListItem = ({
       </div>
 
       <Image
+        unoptimized
         src={src}
         alt={title}
+        loading="lazy"
         className="rounded-md"
         width={BOOKSHELF_COVER_SIZE}
         height={BOOKSHELF_COVER_SIZE}

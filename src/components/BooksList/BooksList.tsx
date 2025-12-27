@@ -1,4 +1,5 @@
 import type { Book } from "@/lib/books";
+
 import { useScrollSmooth } from "@/hooks/useScrollSmooth";
 
 import { BooksListItem } from "@/components/BooksList";
