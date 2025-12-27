@@ -8,7 +8,7 @@ export type Book = {
   src: string;
   color: string;
   backgroundColor: string;
-  height: number;
+  size: number;
   paddingLeft: number;
   paddingRight: number;
 };

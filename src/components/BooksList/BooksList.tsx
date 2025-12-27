@@ -25,7 +25,7 @@ const BooksList = ({ books }: BooksListProps) => {
           src={book.src}
           color={book.color}
           backgroundColor={book.backgroundColor}
-          height={book.height}
+          size={book.size}
           paddingLeft={book.paddingLeft}
           paddingRight={book.paddingRight}
         />

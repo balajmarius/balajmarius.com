@@ -33,7 +33,7 @@ const BooksListItem = ({
   src,
   color,
   backgroundColor,
-  height,
+  size,
   paddingLeft,
   paddingRight,
 }: BooksListItemProps) => {
@@ -78,9 +78,9 @@ const BooksListItem = ({
         rotate,
         color,
         backgroundColor,
-        height,
         paddingLeft,
         paddingRight,
+        height: size,
       }}
     >
       <div className="flex flex-col">

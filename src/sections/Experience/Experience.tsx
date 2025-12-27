@@ -10,10 +10,6 @@ const Experience = () => {
 
   const jobs = [
     {
-      title: t("experience.jobs.0.title"),
-      role: t("experience.jobs.0.role"),
-    },
-    {
       title: t("experience.jobs.1.title"),
       role: t("experience.jobs.1.role"),
     },
