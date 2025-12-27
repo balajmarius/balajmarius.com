@@ -5,10 +5,10 @@ import { useTranslations } from "next-intl";
 
 import getPosts, { type Post } from "@/lib/posts";
 
-import { SvgIconBack } from "@/components/SvgIcon";
 import { Button } from "@/components/Button";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
+import { SvgIconBack } from "@/components/SvgIcon";
 import { PostsList } from "@/components/PostsList";
 
 type WritingsProps = {
