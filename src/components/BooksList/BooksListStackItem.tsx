@@ -71,7 +71,7 @@ const BooksListStackItem = ({
         src={src}
         alt={title}
         loading="lazy"
-        className="rounded-md w-16 h-auto"
+        className="rounded-md w-auto h-22"
         width={coverWidth}
         height={coverHeight}
       />

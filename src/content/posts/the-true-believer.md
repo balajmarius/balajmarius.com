@@ -1,5 +1,5 @@
 ---
-title: The True Believer
+title: The true believer
 author: Eric Hoffer
 label: Book
 createdAt: Feb 8, 2023
