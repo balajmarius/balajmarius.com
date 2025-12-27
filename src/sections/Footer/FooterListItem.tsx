@@ -37,7 +37,7 @@ const FooterListItem = ({
 
   const handleCopy = async () => {
     if (isNullOrUndefined(value)) {
-      return undefined;
+      return;
     }
 
     try {

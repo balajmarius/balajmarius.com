@@ -8,8 +8,8 @@ import { getBooks, type Book } from "@/lib/books";
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
 import { Button } from "@/components/Button";
-import { BooksList } from "@/components/BooksList";
 import { SvgIconBack } from "@/components/SvgIcon";
+import { BooksListStack } from "@/components/BooksList";
 
 type BookshelfProps = {
   books: Book[];
@@ -61,7 +61,7 @@ const Bookshelf = ({ books }: BookshelfProps) => {
           </Typography>
         </Section>
 
-        <BooksList books={books} />
+        <BooksListStack books={books} />
       </div>
     </>
   );

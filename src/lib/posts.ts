@@ -53,7 +53,7 @@ export const getPostSlugs = () => {
 
 export const getPost = (slug?: string | string[]) => {
   if (isNullOrUndefined(slug)) {
-    return undefined;
+    return;
   }
 
   try {

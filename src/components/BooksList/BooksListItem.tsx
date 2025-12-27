@@ -15,9 +15,9 @@ import {
   BOOKSHELF_COVER_SIZE,
   BOOKSHELF_FACTOR,
   BOOKSHELF_ROTATE_MAX,
-  BOOKSHELF_ROTATE_OUTISDE_VIEW,
-  BOOKSHELF_ROTATE_DAMPING,
-  BOOKSHELF_ROTATE_STIFFNESS,
+  BOOKSHELF_ROTATE_OUTSIDE_VIEW,
+  BOOKSHELF_ANIMATION_DAMPING,
+  BOOKSHELF_ANIMATION_STIFFNESS,
 } from "@/utils/const";
 
 import { Typography } from "@/components/Typography";
@@ -39,11 +39,11 @@ const BooksListItem = ({
 }: BooksListItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
-  const tilt = useMotionValue(BOOKSHELF_ROTATE_OUTISDE_VIEW);
+  const tilt = useMotionValue(BOOKSHELF_ROTATE_OUTSIDE_VIEW);
 
   const rotate = useSpring(tilt, {
-    damping: BOOKSHELF_ROTATE_DAMPING,
-    stiffness: BOOKSHELF_ROTATE_STIFFNESS,
+    damping: BOOKSHELF_ANIMATION_DAMPING,
+    stiffness: BOOKSHELF_ANIMATION_STIFFNESS,
   });
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const BooksListItem = ({
       });
     }
 
-    tilt.set(BOOKSHELF_ROTATE_OUTISDE_VIEW);
+    tilt.set(BOOKSHELF_ROTATE_OUTSIDE_VIEW);
   }, [isInView, velocity, tilt]);
 
   return (

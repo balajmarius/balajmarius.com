@@ -14,7 +14,7 @@ export const useScrollSmooth = <T extends HTMLElement>(): {
 
   useEffect(() => {
     if (isNullOrUndefined(ref.current)) {
-      return undefined;
+      return;
     }
 
     const lenis = new Lenis({
