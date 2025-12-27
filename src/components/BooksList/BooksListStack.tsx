@@ -1,9 +1,6 @@
-import { useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
-import { useCounter } from "usehooks-ts";
-
 import type { Book } from "@/lib/books";
-import { BOOKSHELF_BATCH_SIZE } from "@/utils/const";
+
+import { useInfiniteLoader } from "@/hooks/useInfiniteLoader";
 
 import { BooksListStackItem } from "@/components/BooksList";
 
@@ -12,23 +9,11 @@ type BooksListStackProps = {
 };
 
 const BooksListStack = ({ books }: BooksListStackProps) => {
-  const { count, increment } = useCounter();
-
-  const sentinelRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(sentinelRef);
-
-  const stack = books.slice(0, count * BOOKSHELF_BATCH_SIZE);
-  const areVisibleBooksLeft = stack.length < books.length;
-
-  useEffect(() => {
-    if (isInView && areVisibleBooksLeft) {
-      increment();
-    }
-  }, [isInView, areVisibleBooksLeft, increment]);
+  const { items, sentinelRef, isPartial } = useInfiniteLoader(books);
 
   return (
     <div className="flex flex-col items-center gap-1 px-6 sm:px-12 max-w-2xl">
-      {stack.map((book) => (
+      {items.map((book) => (
         <BooksListStackItem
           key={book.id}
           title={book.title}
@@ -39,8 +24,7 @@ const BooksListStack = ({ books }: BooksListStackProps) => {
           size={book.size}
         />
       ))}
-
-      {areVisibleBooksLeft ? <div ref={sentinelRef} /> : null}
+      {isPartial ? <div ref={sentinelRef} /> : null}
     </div>
   );
 };
