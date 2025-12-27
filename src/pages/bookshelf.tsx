@@ -1,4 +1,4 @@
-import { type HTMLAttributes, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -11,7 +11,7 @@ import { BooksList } from "@/components/BooksList";
 
 type BookshelfProps = {
   books: Book[];
-} & HTMLAttributes<HTMLElement>;
+};
 
 const Bookshelf = ({ books }: BookshelfProps) => {
   const t = useTranslations();

@@ -23,18 +23,9 @@
   --ease-out-exponential: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-@layer utilities {
-  .scrollbar-w-none {
-    /* Hides scrollbar in Firefox */
-    scrollbar-width: none;
-    /* Hides scrollbar in IE and Edge */
-    -ms-overflow-style: none;
-  }
-  .scrollbar-w-none::-webkit-scrollbar {
-    /* Hides scrollbar in Chrome, Safari, and Opera */
-    display: none;
-  }
-  .writing-sideways-lr {
-    writing-mode: sideways-lr;
-  }
+@utility scrollbar-w-none {
+  scrollbar-width: none;
+}
+@utility writing-sideways-lr {
+  writing-mode: sideways-lr;
 }

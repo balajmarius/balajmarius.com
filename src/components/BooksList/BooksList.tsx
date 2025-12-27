@@ -9,7 +9,7 @@ type BooksListProps = {
 };
 
 const BooksList = ({ books }: BooksListProps) => {
-  const ref = useScrollSmooth<HTMLDivElement>();
+  const { ref, velocity } = useScrollSmooth<HTMLDivElement>();
 
   return (
     <div
@@ -19,6 +19,7 @@ const BooksList = ({ books }: BooksListProps) => {
       {books.map((book) => (
         <BooksListItem
           key={book.id}
+          velocity={velocity}
           title={book.title}
           author={book.author}
           src={book.src}

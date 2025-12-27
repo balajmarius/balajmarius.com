@@ -20,9 +20,7 @@ import {
 import { Button } from "@/components/Button";
 import { Typography } from "@/components/Typography";
 
-export type AppBarProps = {} & HTMLAttributes<HTMLElement>;
-
-const AppBar = ({ ...props }: AppBarProps) => {
+const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
   const { value, setTrue, setFalse } = useBoolean();
 
   const t = useTranslations();

@@ -1,4 +1,10 @@
+export const BOOKSHELF_FACTOR = 0.5;
+export const BOOKSHELF_ROTATE = 3;
+export const BOOKSHELF_ROTATE_OUTISDE_VIEW = 0;
+export const BOOKSHELF_ROTATE_DAMPING = 30;
+export const BOOKSHELF_ROTATE_STIFFNESS = 300;
 export const BOOKSHELF_COVER_SIZE = 64;
+
 export const THIRTY_FIVE_WEEKS_IN_MS = 35 * 7 * 24 * 60 * 60 * 1000;
 
 export const GOOGLE_ANALYTICS_ID = "G-TKEZZNZ9RP";
