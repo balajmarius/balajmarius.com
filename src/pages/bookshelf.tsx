@@ -7,7 +7,9 @@ import { getBooks, type Book } from "@/lib/books";
 
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
+import { Button } from "@/components/Button";
 import { BooksList } from "@/components/BooksList";
+import { SvgIconBack } from "@/components/SvgIcon";
 
 type BookshelfProps = {
   books: Book[];
@@ -35,6 +37,14 @@ const Bookshelf = ({ books }: BookshelfProps) => {
 
       <Section>
         <div className="space-y-8">
+          <Link href="/" className="inline-block">
+            <Button startIcon={<SvgIconBack size="small" />}>
+              <Typography variant="body1" color="inherit">
+                {t("common.backToHome")}
+              </Typography>
+            </Button>
+          </Link>
+
           <Typography variant="h1" display="block">
             {t.rich("bookshelf.onMyBookshelf", renderers)}
           </Typography>
