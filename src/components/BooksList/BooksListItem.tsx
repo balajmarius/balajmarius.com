@@ -14,7 +14,7 @@ import type { Book } from "@/lib/books";
 import {
   BOOKSHELF_COVER_SIZE,
   BOOKSHELF_FACTOR,
-  BOOKSHELF_ROTATE,
+  BOOKSHELF_ROTATE_MAX,
   BOOKSHELF_ROTATE_OUTISDE_VIEW,
   BOOKSHELF_ROTATE_DAMPING,
   BOOKSHELF_ROTATE_STIFFNESS,
@@ -50,15 +50,19 @@ const BooksListItem = ({
     if (isInView) {
       tilt.set(
         clamp(
-          -BOOKSHELF_ROTATE,
-          BOOKSHELF_ROTATE,
+          -BOOKSHELF_ROTATE_MAX,
+          BOOKSHELF_ROTATE_MAX,
           velocity.get() * BOOKSHELF_FACTOR
         )
       );
 
       return velocity.on("change", (value) => {
         tilt.set(
-          clamp(-BOOKSHELF_ROTATE, BOOKSHELF_ROTATE, value * BOOKSHELF_FACTOR)
+          clamp(
+            -BOOKSHELF_ROTATE_MAX,
+            BOOKSHELF_ROTATE_MAX,
+            value * BOOKSHELF_FACTOR
+          )
         );
       });
     }

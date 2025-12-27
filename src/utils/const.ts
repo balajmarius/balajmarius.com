@@ -1,5 +1,5 @@
 export const BOOKSHELF_FACTOR = 0.5;
-export const BOOKSHELF_ROTATE = 3;
+export const BOOKSHELF_ROTATE_MAX = 3;
 export const BOOKSHELF_ROTATE_OUTISDE_VIEW = 0;
 export const BOOKSHELF_VELOCITY_INITIAL = 0;
 export const BOOKSHELF_ROTATE_DAMPING = 30;
