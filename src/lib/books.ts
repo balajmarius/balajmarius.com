@@ -8,7 +8,7 @@ export type Book = {
   src: string;
   color: string;
   backgroundColor: string;
-  size: number;
+  cardSize: number;
   paddingLeft: number;
   paddingRight: number;
   coverWidth: number;

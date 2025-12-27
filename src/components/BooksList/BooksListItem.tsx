@@ -32,7 +32,7 @@ const BooksListItem = ({
   src,
   color,
   backgroundColor,
-  size,
+  cardSize,
   paddingLeft,
   paddingRight,
   coverWidth,
@@ -81,7 +81,7 @@ const BooksListItem = ({
         backgroundColor,
         paddingLeft,
         paddingRight,
-        height: size,
+        height: cardSize,
       }}
     >
       <div className="flex flex-col">

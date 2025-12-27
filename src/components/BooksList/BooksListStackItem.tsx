@@ -19,7 +19,7 @@ type BooksListStackItemProps = Omit<
 >;
 
 const BooksListStackItem = ({
-  size,
+  cardSize,
   title,
   author,
   src,
@@ -53,7 +53,7 @@ const BooksListStackItem = ({
         opacity,
         color,
         backgroundColor,
-        width: size,
+        width: cardSize,
       }}
     >
       <div className="flex flex-col">

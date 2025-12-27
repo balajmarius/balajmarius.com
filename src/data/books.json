@@ -8,7 +8,7 @@
     "color": "#2e2b1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -21,7 +21,7 @@
     "color": "#e9e9ed",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 401,
+    "cardSize": 401,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -34,7 +34,7 @@
     "color": "#262626",
     "paddingLeft": 40,
     "paddingRight": 40,
-    "size": 497,
+    "cardSize": 497,
     "coverWidth": 231,
     "coverHeight": 400
   },
@@ -47,7 +47,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 273,
     "coverHeight": 400
   },
@@ -60,7 +60,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 401,
+    "cardSize": 401,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -73,7 +73,7 @@
     "color": "#e8eaed",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 380,
+    "cardSize": 380,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -86,7 +86,7 @@
     "color": "#ebebeb",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 422,
+    "cardSize": 422,
     "coverWidth": 257,
     "coverHeight": 400
   },
@@ -99,7 +99,7 @@
     "color": "#e9eaed",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 362,
+    "cardSize": 362,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -112,7 +112,7 @@
     "color": "#262626",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -125,7 +125,7 @@
     "color": "#e8eeeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 428,
+    "cardSize": 428,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -138,7 +138,7 @@
     "color": "#eeebe8",
     "paddingLeft": 29,
     "paddingRight": 29,
-    "size": 450,
+    "cardSize": 450,
     "coverWidth": 255,
     "coverHeight": 400
   },
@@ -151,7 +151,7 @@
     "color": "#eee8e9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 275,
     "coverHeight": 400
   },
@@ -164,7 +164,7 @@
     "color": "#e9e9ec",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -177,7 +177,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -190,7 +190,7 @@
     "color": "#ebebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -203,7 +203,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -216,7 +216,7 @@
     "color": "#1f1f2e",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 389,
+    "cardSize": 389,
     "coverWidth": 253,
     "coverHeight": 400
   },
@@ -229,7 +229,7 @@
     "color": "#2e291f",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 241,
     "coverHeight": 400
   },
@@ -242,7 +242,7 @@
     "color": "#212c2c",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -255,7 +255,7 @@
     "color": "#262626",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 410,
+    "cardSize": 410,
     "coverWidth": 273,
     "coverHeight": 400
   },
@@ -268,7 +268,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -281,7 +281,7 @@
     "color": "#2e2e1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -294,7 +294,7 @@
     "color": "#1f262e",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -307,7 +307,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 305,
     "coverHeight": 400
   },
@@ -320,7 +320,7 @@
     "color": "#eee8e8",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 405,
+    "cardSize": 405,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -333,7 +333,7 @@
     "color": "#262626",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 361,
+    "cardSize": 361,
     "coverWidth": 221,
     "coverHeight": 400
   },
@@ -346,7 +346,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -359,7 +359,7 @@
     "color": "#e8eeee",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 382,
+    "cardSize": 382,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -372,7 +372,7 @@
     "color": "#eee8e8",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 395,
+    "cardSize": 395,
     "coverWidth": 311,
     "coverHeight": 400
   },
@@ -385,7 +385,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -398,7 +398,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -411,7 +411,7 @@
     "color": "#ecebe9",
     "paddingLeft": 28,
     "paddingRight": 28,
-    "size": 446,
+    "cardSize": 446,
     "coverWidth": 245,
     "coverHeight": 400
   },
@@ -424,7 +424,7 @@
     "color": "#2c2121",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 372,
+    "cardSize": 372,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -437,7 +437,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 243,
     "coverHeight": 400
   },
@@ -450,7 +450,7 @@
     "color": "#eeece8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -463,7 +463,7 @@
     "color": "#e8ecee",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 368,
+    "cardSize": 368,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -476,7 +476,7 @@
     "color": "#ecebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -489,7 +489,7 @@
     "color": "#e8eeee",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 273,
     "coverHeight": 400
   },
@@ -502,7 +502,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 278,
     "coverHeight": 400
   },
@@ -515,7 +515,7 @@
     "color": "#ebebeb",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 375,
+    "cardSize": 375,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -528,7 +528,7 @@
     "color": "#e8ebee",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 414,
+    "cardSize": 414,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -541,7 +541,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -554,7 +554,7 @@
     "color": "#eee8e9",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 418,
+    "cardSize": 418,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -567,7 +567,7 @@
     "color": "#e8eaee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -580,7 +580,7 @@
     "color": "#ebebeb",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 373,
+    "cardSize": 373,
     "coverWidth": 255,
     "coverHeight": 400
   },
@@ -593,7 +593,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 412,
+    "cardSize": 412,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -606,7 +606,7 @@
     "color": "#2e291f",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 255,
     "coverHeight": 400
   },
@@ -619,7 +619,7 @@
     "color": "#1f2a2e",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 390,
+    "cardSize": 390,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -632,7 +632,7 @@
     "color": "#edebe8",
     "paddingLeft": 31,
     "paddingRight": 31,
-    "size": 458,
+    "cardSize": 458,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -645,7 +645,7 @@
     "color": "#eeeae8",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 384,
+    "cardSize": 384,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -658,7 +658,7 @@
     "color": "#ebebeb",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 377,
+    "cardSize": 377,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -671,7 +671,7 @@
     "color": "#ebebeb",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 365,
+    "cardSize": 365,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -684,7 +684,7 @@
     "color": "#e8ecee",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 369,
+    "cardSize": 369,
     "coverWidth": 244,
     "coverHeight": 400
   },
@@ -697,7 +697,7 @@
     "color": "#eee8e8",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 414,
+    "cardSize": 414,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -710,7 +710,7 @@
     "color": "#eee9e8",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 412,
+    "cardSize": 412,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -723,7 +723,7 @@
     "color": "#262626",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 443,
+    "cardSize": 443,
     "coverWidth": 282,
     "coverHeight": 400
   },
@@ -736,7 +736,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 239,
     "coverHeight": 400
   },
@@ -749,7 +749,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -762,7 +762,7 @@
     "color": "#eaeaeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -775,7 +775,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 240,
     "coverHeight": 400
   },
@@ -788,7 +788,7 @@
     "color": "#e9ebec",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -801,7 +801,7 @@
     "color": "#eee8e8",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 377,
+    "cardSize": 377,
     "coverWidth": 286,
     "coverHeight": 400
   },
@@ -814,7 +814,7 @@
     "color": "#e9ecea",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 405,
+    "cardSize": 405,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -827,7 +827,7 @@
     "color": "#2d2420",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 425,
+    "cardSize": 425,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -840,7 +840,7 @@
     "color": "#e8ecee",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 280,
     "coverHeight": 400
   },
@@ -853,7 +853,7 @@
     "color": "#222a26",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 371,
+    "cardSize": 371,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -866,7 +866,7 @@
     "color": "#eee8ea",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 396,
+    "cardSize": 396,
     "coverWidth": 236,
     "coverHeight": 400
   },
@@ -879,7 +879,7 @@
     "color": "#2c2c21",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -892,7 +892,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -905,7 +905,7 @@
     "color": "#2e261f",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 441,
+    "cardSize": 441,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -918,7 +918,7 @@
     "color": "#eee9e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 269,
     "coverHeight": 400
   },
@@ -931,7 +931,7 @@
     "color": "#2e2c1f",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 406,
+    "cardSize": 406,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -944,7 +944,7 @@
     "color": "#eeebe8",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 417,
+    "cardSize": 417,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -957,7 +957,7 @@
     "color": "#ece9ec",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 441,
+    "cardSize": 441,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -970,7 +970,7 @@
     "color": "#262626",
     "paddingLeft": 40,
     "paddingRight": 40,
-    "size": 497,
+    "cardSize": 497,
     "coverWidth": 232,
     "coverHeight": 400
   },
@@ -983,7 +983,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 34,
     "paddingRight": 34,
-    "size": 474,
+    "cardSize": 474,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -996,7 +996,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -1009,7 +1009,7 @@
     "color": "#e8eaee",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -1022,7 +1022,7 @@
     "color": "#ecece9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 270,
     "coverHeight": 400
   },
@@ -1035,7 +1035,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -1048,7 +1048,7 @@
     "color": "#eee8eb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -1061,7 +1061,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -1074,7 +1074,7 @@
     "color": "#1f1f2e",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 384,
+    "cardSize": 384,
     "coverWidth": 223,
     "coverHeight": 400
   },
@@ -1087,7 +1087,7 @@
     "color": "#ebebeb",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 361,
+    "cardSize": 361,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -1100,7 +1100,7 @@
     "color": "#262626",
     "paddingLeft": 38,
     "paddingRight": 38,
-    "size": 488,
+    "cardSize": 488,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -1113,7 +1113,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 279,
     "coverHeight": 400
   },
@@ -1126,7 +1126,7 @@
     "color": "#262626",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -1139,7 +1139,7 @@
     "color": "#ebebeb",
     "paddingLeft": 43,
     "paddingRight": 43,
-    "size": 511,
+    "cardSize": 511,
     "coverWidth": 283,
     "coverHeight": 400
   },
@@ -1152,7 +1152,7 @@
     "color": "#eee8e8",
     "paddingLeft": 43,
     "paddingRight": 43,
-    "size": 510,
+    "cardSize": 510,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -1165,7 +1165,7 @@
     "color": "#ebebeb",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -1178,7 +1178,7 @@
     "color": "#e8eeee",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 363,
+    "cardSize": 363,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -1191,7 +1191,7 @@
     "color": "#ebebeb",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 383,
+    "cardSize": 383,
     "coverWidth": 324,
     "coverHeight": 400
   },
@@ -1204,7 +1204,7 @@
     "color": "#eee8ec",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 305,
     "coverHeight": 400
   },
@@ -1217,7 +1217,7 @@
     "color": "#ede8ec",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 305,
     "coverHeight": 400
   },
@@ -1230,7 +1230,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 430,
+    "cardSize": 430,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -1243,7 +1243,7 @@
     "color": "#ecede8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -1256,7 +1256,7 @@
     "color": "#2c2c21",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 516,
+    "cardSize": 516,
     "coverWidth": 293,
     "coverHeight": 400
   },
@@ -1269,7 +1269,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -1282,7 +1282,7 @@
     "color": "#262626",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 394,
+    "cardSize": 394,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -1295,7 +1295,7 @@
     "color": "#e9eaed",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 415,
+    "cardSize": 415,
     "coverWidth": 270,
     "coverHeight": 400
   },
@@ -1308,7 +1308,7 @@
     "color": "#ebeaea",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -1321,7 +1321,7 @@
     "color": "#2e291f",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 365,
+    "cardSize": 365,
     "coverWidth": 281,
     "coverHeight": 400
   },
@@ -1334,7 +1334,7 @@
     "color": "#2e2c1f",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 401,
+    "cardSize": 401,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -1347,7 +1347,7 @@
     "color": "#ebebeb",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -1360,7 +1360,7 @@
     "color": "#1f2d2d",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -1373,7 +1373,7 @@
     "color": "#eee8e8",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -1386,7 +1386,7 @@
     "color": "#e8ecee",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -1399,7 +1399,7 @@
     "color": "#e8ebee",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 412,
+    "cardSize": 412,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -1412,7 +1412,7 @@
     "color": "#ebebeb",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 416,
+    "cardSize": 416,
     "coverWidth": 230,
     "coverHeight": 400
   },
@@ -1425,7 +1425,7 @@
     "color": "#e8eaee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -1438,7 +1438,7 @@
     "color": "#2e261f",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 371,
+    "cardSize": 371,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -1451,7 +1451,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 390,
+    "cardSize": 390,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -1464,7 +1464,7 @@
     "color": "#e8ebee",
     "paddingLeft": 26,
     "paddingRight": 26,
-    "size": 436,
+    "cardSize": 436,
     "coverWidth": 307,
     "coverHeight": 400
   },
@@ -1477,7 +1477,7 @@
     "color": "#eeeae8",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 371,
+    "cardSize": 371,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -1490,7 +1490,7 @@
     "color": "#262626",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 373,
+    "cardSize": 373,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -1503,7 +1503,7 @@
     "color": "#ebebeb",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 390,
+    "cardSize": 390,
     "coverWidth": 233,
     "coverHeight": 400
   },
@@ -1516,7 +1516,7 @@
     "color": "#2e2e1f",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 375,
+    "cardSize": 375,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -1529,7 +1529,7 @@
     "color": "#eee8e8",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 371,
+    "cardSize": 371,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -1542,7 +1542,7 @@
     "color": "#2e1f2e",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 393,
+    "cardSize": 393,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -1555,7 +1555,7 @@
     "color": "#e8e9ee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 234,
     "coverHeight": 400
   },
@@ -1568,7 +1568,7 @@
     "color": "#2d2820",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -1581,7 +1581,7 @@
     "color": "#ede9e9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 245,
     "coverHeight": 400
   },
@@ -1594,7 +1594,7 @@
     "color": "#ebebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 251,
     "coverHeight": 400
   },
@@ -1607,7 +1607,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 248,
     "coverHeight": 400
   },
@@ -1620,7 +1620,7 @@
     "color": "#ebebeb",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 366,
+    "cardSize": 366,
     "coverWidth": 248,
     "coverHeight": 400
   },
@@ -1633,7 +1633,7 @@
     "color": "#ebebeb",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 369,
+    "cardSize": 369,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -1646,7 +1646,7 @@
     "color": "#ebebeb",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -1659,7 +1659,7 @@
     "color": "#2c2c21",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 416,
+    "cardSize": 416,
     "coverWidth": 310,
     "coverHeight": 400
   },
@@ -1672,7 +1672,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -1685,7 +1685,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -1698,7 +1698,7 @@
     "color": "#eeece8",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 398,
+    "cardSize": 398,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -1711,7 +1711,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 253,
     "coverHeight": 400
   },
@@ -1724,7 +1724,7 @@
     "color": "#ebebeb",
     "paddingLeft": 39,
     "paddingRight": 39,
-    "size": 496,
+    "cardSize": 496,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -1737,7 +1737,7 @@
     "color": "#262626",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 406,
+    "cardSize": 406,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -1750,7 +1750,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -1763,7 +1763,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 236,
     "coverHeight": 400
   },
@@ -1776,7 +1776,7 @@
     "color": "#262626",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 407,
+    "cardSize": 407,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -1789,7 +1789,7 @@
     "color": "#e8eaee",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -1802,7 +1802,7 @@
     "color": "#262626",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -1815,7 +1815,7 @@
     "color": "#ebebeb",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 388,
+    "cardSize": 388,
     "coverWidth": 310,
     "coverHeight": 400
   },
@@ -1828,7 +1828,7 @@
     "color": "#edebe9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 255,
     "coverHeight": 400
   },
@@ -1841,7 +1841,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 235,
     "coverHeight": 400
   },
@@ -1854,7 +1854,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 382,
+    "cardSize": 382,
     "coverWidth": 239,
     "coverHeight": 400
   },
@@ -1867,7 +1867,7 @@
     "color": "#ede9e9",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 408,
+    "cardSize": 408,
     "coverWidth": 236,
     "coverHeight": 400
   },
@@ -1880,7 +1880,7 @@
     "color": "#1f292e",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -1893,7 +1893,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -1906,7 +1906,7 @@
     "color": "#e9ede9",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 373,
+    "cardSize": 373,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -1919,7 +1919,7 @@
     "color": "#262e1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -1932,7 +1932,7 @@
     "color": "#262626",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 401,
+    "cardSize": 401,
     "coverWidth": 245,
     "coverHeight": 400
   },
@@ -1945,7 +1945,7 @@
     "color": "#eee8e8",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 378,
+    "cardSize": 378,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -1958,7 +1958,7 @@
     "color": "#ebebeb",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 372,
+    "cardSize": 372,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -1971,7 +1971,7 @@
     "color": "#ebebeb",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -1984,7 +1984,7 @@
     "color": "#ebeaea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -1997,7 +1997,7 @@
     "color": "#e9ebed",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2010,7 +2010,7 @@
     "color": "#262626",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 396,
+    "cardSize": 396,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -2023,7 +2023,7 @@
     "color": "#ede9e9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 278,
     "coverHeight": 400
   },
@@ -2036,7 +2036,7 @@
     "color": "#ebebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 276,
     "coverHeight": 400
   },
@@ -2049,7 +2049,7 @@
     "color": "#ebebeb",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 403,
+    "cardSize": 403,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -2062,7 +2062,7 @@
     "color": "#eee8e8",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -2075,7 +2075,7 @@
     "color": "#eee8e8",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 403,
+    "cardSize": 403,
     "coverWidth": 252,
     "coverHeight": 400
   },
@@ -2088,7 +2088,7 @@
     "color": "#e9e9ed",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 400,
+    "cardSize": 400,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -2101,7 +2101,7 @@
     "color": "#e9e8ee",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 424,
+    "cardSize": 424,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2114,7 +2114,7 @@
     "color": "#2c2c21",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -2127,7 +2127,7 @@
     "color": "#2e261f",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 394,
+    "cardSize": 394,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2140,7 +2140,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 363,
+    "cardSize": 363,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -2153,7 +2153,7 @@
     "color": "#e9eaed",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 426,
+    "cardSize": 426,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -2166,7 +2166,7 @@
     "color": "#ebebea",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 383,
+    "cardSize": 383,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -2179,7 +2179,7 @@
     "color": "#ebeaea",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 382,
+    "cardSize": 382,
     "coverWidth": 253,
     "coverHeight": 400
   },
@@ -2192,7 +2192,7 @@
     "color": "#2c2c21",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -2205,7 +2205,7 @@
     "color": "#262626",
     "paddingLeft": 31,
     "paddingRight": 31,
-    "size": 459,
+    "cardSize": 459,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -2218,7 +2218,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -2231,7 +2231,7 @@
     "color": "#2e261f",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2244,7 +2244,7 @@
     "color": "#e9e9ec",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -2257,7 +2257,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 26,
     "paddingRight": 26,
-    "size": 439,
+    "cardSize": 439,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -2270,7 +2270,7 @@
     "color": "#eeece8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -2283,7 +2283,7 @@
     "color": "#ebe9ed",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 238,
     "coverHeight": 400
   },
@@ -2296,7 +2296,7 @@
     "color": "#eee8e9",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 408,
+    "cardSize": 408,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -2309,7 +2309,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -2322,7 +2322,7 @@
     "color": "#262626",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 410,
+    "cardSize": 410,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2335,7 +2335,7 @@
     "color": "#ebebeb",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 415,
+    "cardSize": 415,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2348,7 +2348,7 @@
     "color": "#ebebeb",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -2361,7 +2361,7 @@
     "color": "#ebebeb",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 380,
+    "cardSize": 380,
     "coverWidth": 251,
     "coverHeight": 400
   },
@@ -2374,7 +2374,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2387,7 +2387,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 257,
     "coverHeight": 400
   },
@@ -2400,7 +2400,7 @@
     "color": "#ebebeb",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -2413,7 +2413,7 @@
     "color": "#eeece8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -2426,7 +2426,7 @@
     "color": "#262626",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 382,
+    "cardSize": 382,
     "coverWidth": 235,
     "coverHeight": 400
   },
@@ -2439,7 +2439,7 @@
     "color": "#ede9e9",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2452,7 +2452,7 @@
     "color": "#e8ecee",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 440,
+    "cardSize": 440,
     "coverWidth": 277,
     "coverHeight": 400
   },
@@ -2465,7 +2465,7 @@
     "color": "#eee9e8",
     "paddingLeft": 31,
     "paddingRight": 31,
-    "size": 460,
+    "cardSize": 460,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -2478,7 +2478,7 @@
     "color": "#ecece9",
     "paddingLeft": 32,
     "paddingRight": 32,
-    "size": 466,
+    "cardSize": 466,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -2491,7 +2491,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2504,7 +2504,7 @@
     "color": "#292323",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 389,
+    "cardSize": 389,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -2517,7 +2517,7 @@
     "color": "#ebebeb",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -2530,7 +2530,7 @@
     "color": "#ebebeb",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 402,
+    "cardSize": 402,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -2543,7 +2543,7 @@
     "color": "#ebebeb",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 425,
+    "cardSize": 425,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2556,7 +2556,7 @@
     "color": "#e9e9ec",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 376,
+    "cardSize": 376,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -2569,7 +2569,7 @@
     "color": "#eaeaeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 310,
     "coverHeight": 400
   },
@@ -2582,7 +2582,7 @@
     "color": "#ebebeb",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -2595,7 +2595,7 @@
     "color": "#eee8e8",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2608,7 +2608,7 @@
     "color": "#ebebeb",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 408,
+    "cardSize": 408,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -2621,7 +2621,7 @@
     "color": "#262626",
     "paddingLeft": 28,
     "paddingRight": 28,
-    "size": 445,
+    "cardSize": 445,
     "coverWidth": 257,
     "coverHeight": 400
   },
@@ -2634,7 +2634,7 @@
     "color": "#2e2e1f",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 442,
+    "cardSize": 442,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -2647,7 +2647,7 @@
     "color": "#eee9e8",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -2660,7 +2660,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -2673,7 +2673,7 @@
     "color": "#262626",
     "paddingLeft": 34,
     "paddingRight": 34,
-    "size": 471,
+    "cardSize": 471,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2686,7 +2686,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -2699,7 +2699,7 @@
     "color": "#eeece8",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 426,
+    "cardSize": 426,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -2712,7 +2712,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -2725,7 +2725,7 @@
     "color": "#1f2e2a",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -2738,7 +2738,7 @@
     "color": "#eee8e8",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 418,
+    "cardSize": 418,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -2751,7 +2751,7 @@
     "color": "#eee8ec",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2764,7 +2764,7 @@
     "color": "#eeebe8",
     "paddingLeft": 36,
     "paddingRight": 36,
-    "size": 481,
+    "cardSize": 481,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -2777,7 +2777,7 @@
     "color": "#2e2b1f",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 400,
+    "cardSize": 400,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -2790,7 +2790,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -2803,7 +2803,7 @@
     "color": "#edede9",
     "paddingLeft": 35,
     "paddingRight": 35,
-    "size": 479,
+    "cardSize": 479,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -2816,7 +2816,7 @@
     "color": "#2b2b21",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 395,
+    "cardSize": 395,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -2829,7 +2829,7 @@
     "color": "#ebe8ed",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 233,
     "coverHeight": 400
   },
@@ -2842,7 +2842,7 @@
     "color": "#ebebeb",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -2855,7 +2855,7 @@
     "color": "#ebebeb",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 393,
+    "cardSize": 393,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -2868,7 +2868,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -2881,7 +2881,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 411,
+    "cardSize": 411,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2894,7 +2894,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 26,
     "paddingRight": 26,
-    "size": 438,
+    "cardSize": 438,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2907,7 +2907,7 @@
     "color": "#e9e9ed",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 429,
+    "cardSize": 429,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -2920,7 +2920,7 @@
     "color": "#eeebe8",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -2933,7 +2933,7 @@
     "color": "#eee8e8",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 516,
+    "cardSize": 516,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -2946,7 +2946,7 @@
     "color": "#ebebeb",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 376,
+    "cardSize": 376,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -2959,7 +2959,7 @@
     "color": "#eaebeb",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 382,
+    "cardSize": 382,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -2972,7 +2972,7 @@
     "color": "#eee8e9",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 414,
+    "cardSize": 414,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -2985,7 +2985,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 283,
     "coverHeight": 400
   },
@@ -2998,7 +2998,7 @@
     "color": "#262626",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -3011,7 +3011,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 380,
+    "cardSize": 380,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -3024,7 +3024,7 @@
     "color": "#eeebe8",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 368,
+    "cardSize": 368,
     "coverWidth": 281,
     "coverHeight": 400
   },
@@ -3037,7 +3037,7 @@
     "color": "#ecebe9",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 368,
+    "cardSize": 368,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -3050,7 +3050,7 @@
     "color": "#eee8e8",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 400,
+    "cardSize": 400,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3063,7 +3063,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 278,
     "coverHeight": 400
   },
@@ -3076,7 +3076,7 @@
     "color": "#eee8ee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -3089,7 +3089,7 @@
     "color": "#ebeaea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 239,
     "coverHeight": 400
   },
@@ -3102,7 +3102,7 @@
     "color": "#ede8e9",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 392,
+    "cardSize": 392,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3115,7 +3115,7 @@
     "color": "#ebebeb",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -3128,7 +3128,7 @@
     "color": "#ebebeb",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 406,
+    "cardSize": 406,
     "coverWidth": 235,
     "coverHeight": 400
   },
@@ -3141,7 +3141,7 @@
     "color": "#e8eeee",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -3154,7 +3154,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -3167,7 +3167,7 @@
     "color": "#ebebeb",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 392,
+    "cardSize": 392,
     "coverWidth": 242,
     "coverHeight": 400
   },
@@ -3180,7 +3180,7 @@
     "color": "#262626",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 378,
+    "cardSize": 378,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -3193,7 +3193,7 @@
     "color": "#e8eaee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 281,
     "coverHeight": 400
   },
@@ -3206,7 +3206,7 @@
     "color": "#e8eeee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3219,7 +3219,7 @@
     "color": "#ecebea",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 374,
+    "cardSize": 374,
     "coverWidth": 241,
     "coverHeight": 400
   },
@@ -3232,7 +3232,7 @@
     "color": "#e8eeec",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 273,
     "coverHeight": 400
   },
@@ -3245,7 +3245,7 @@
     "color": "#2b2621",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 279,
     "coverHeight": 400
   },
@@ -3258,7 +3258,7 @@
     "color": "#eee8e9",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 406,
+    "cardSize": 406,
     "coverWidth": 269,
     "coverHeight": 400
   },
@@ -3271,7 +3271,7 @@
     "color": "#eeeae8",
     "paddingLeft": 33,
     "paddingRight": 33,
-    "size": 469,
+    "cardSize": 469,
     "coverWidth": 248,
     "coverHeight": 400
   },
@@ -3284,7 +3284,7 @@
     "color": "#ebebeb",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 394,
+    "cardSize": 394,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -3297,7 +3297,7 @@
     "color": "#edede9",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -3310,7 +3310,7 @@
     "color": "#e8eeee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 428,
+    "cardSize": 428,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -3323,7 +3323,7 @@
     "color": "#262626",
     "paddingLeft": 30,
     "paddingRight": 30,
-    "size": 455,
+    "cardSize": 455,
     "coverWidth": 282,
     "coverHeight": 400
   },
@@ -3336,7 +3336,7 @@
     "color": "#eee8e8",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 414,
+    "cardSize": 414,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3349,7 +3349,7 @@
     "color": "#ebebeb",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 415,
+    "cardSize": 415,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3362,7 +3362,7 @@
     "color": "#e9e9ec",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -3375,7 +3375,7 @@
     "color": "#e8ecee",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 392,
+    "cardSize": 392,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -3388,7 +3388,7 @@
     "color": "#262626",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -3401,7 +3401,7 @@
     "color": "#2e261f",
     "paddingLeft": 26,
     "paddingRight": 26,
-    "size": 440,
+    "cardSize": 440,
     "coverWidth": 273,
     "coverHeight": 400
   },
@@ -3414,7 +3414,7 @@
     "color": "#2e2c1f",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 415,
+    "cardSize": 415,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -3427,7 +3427,7 @@
     "color": "#262626",
     "paddingLeft": 31,
     "paddingRight": 31,
-    "size": 459,
+    "cardSize": 459,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -3440,7 +3440,7 @@
     "color": "#eeebe8",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 376,
+    "cardSize": 376,
     "coverWidth": 286,
     "coverHeight": 400
   },
@@ -3453,7 +3453,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3466,7 +3466,7 @@
     "color": "#e8e8ed",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 376,
+    "cardSize": 376,
     "coverWidth": 251,
     "coverHeight": 400
   },
@@ -3479,7 +3479,7 @@
     "color": "#262626",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -3492,7 +3492,7 @@
     "color": "#2e2e1f",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 384,
+    "cardSize": 384,
     "coverWidth": 257,
     "coverHeight": 400
   },
@@ -3505,7 +3505,7 @@
     "color": "#292923",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 372,
+    "cardSize": 372,
     "coverWidth": 242,
     "coverHeight": 400
   },
@@ -3518,7 +3518,7 @@
     "color": "#e8ecee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -3531,7 +3531,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3544,7 +3544,7 @@
     "color": "#21212c",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 282,
     "coverHeight": 400
   },
@@ -3557,7 +3557,7 @@
     "color": "#ebebeb",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 432,
+    "cardSize": 432,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -3570,7 +3570,7 @@
     "color": "#eee8e8",
     "paddingLeft": 33,
     "paddingRight": 33,
-    "size": 469,
+    "cardSize": 469,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -3583,7 +3583,7 @@
     "color": "#ebebeb",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3596,7 +3596,7 @@
     "color": "#2e261f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 279,
     "coverHeight": 400
   },
@@ -3609,7 +3609,7 @@
     "color": "#ebebeb",
     "paddingLeft": 30,
     "paddingRight": 30,
-    "size": 456,
+    "cardSize": 456,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -3622,7 +3622,7 @@
     "color": "#eee8e8",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 360,
+    "cardSize": 360,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -3635,7 +3635,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 429,
+    "cardSize": 429,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -3648,7 +3648,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3661,7 +3661,7 @@
     "color": "#ebebeb",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -3674,7 +3674,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 444,
+    "cardSize": 444,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -3687,7 +3687,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -3700,7 +3700,7 @@
     "color": "#edede9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3713,7 +3713,7 @@
     "color": "#262626",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 426,
+    "cardSize": 426,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -3726,7 +3726,7 @@
     "color": "#ebeaea",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3739,7 +3739,7 @@
     "color": "#262626",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -3752,7 +3752,7 @@
     "color": "#ebebeb",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 360,
+    "cardSize": 360,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -3765,7 +3765,7 @@
     "color": "#e9e9ec",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 393,
+    "cardSize": 393,
     "coverWidth": 257,
     "coverHeight": 400
   },
@@ -3778,7 +3778,7 @@
     "color": "#262626",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 421,
+    "cardSize": 421,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -3791,7 +3791,7 @@
     "color": "#ebebeb",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 402,
+    "cardSize": 402,
     "coverWidth": 286,
     "coverHeight": 400
   },
@@ -3804,7 +3804,7 @@
     "color": "#e9e9ec",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 516,
+    "cardSize": 516,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3817,7 +3817,7 @@
     "color": "#e8ecee",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 361,
+    "cardSize": 361,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3830,7 +3830,7 @@
     "color": "#e8eeee",
     "paddingLeft": 33,
     "paddingRight": 33,
-    "size": 469,
+    "cardSize": 469,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -3843,7 +3843,7 @@
     "color": "#eaebeb",
     "paddingLeft": 35,
     "paddingRight": 35,
-    "size": 477,
+    "cardSize": 477,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -3856,7 +3856,7 @@
     "color": "#ebebeb",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 383,
+    "cardSize": 383,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -3869,7 +3869,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 385,
+    "cardSize": 385,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -3882,7 +3882,7 @@
     "color": "#262626",
     "paddingLeft": 42,
     "paddingRight": 42,
-    "size": 509,
+    "cardSize": 509,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -3895,7 +3895,7 @@
     "color": "#ebebeb",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 424,
+    "cardSize": 424,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3908,7 +3908,7 @@
     "color": "#ebebeb",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 247,
     "coverHeight": 400
   },
@@ -3921,7 +3921,7 @@
     "color": "#eee8e8",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 369,
+    "cardSize": 369,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -3934,7 +3934,7 @@
     "color": "#edece9",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 366,
+    "cardSize": 366,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -3947,7 +3947,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -3960,7 +3960,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 255,
     "coverHeight": 400
   },
@@ -3973,7 +3973,7 @@
     "color": "#ebebeb",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 396,
+    "cardSize": 396,
     "coverWidth": 269,
     "coverHeight": 400
   },
@@ -3986,7 +3986,7 @@
     "color": "#2e2a1f",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 383,
+    "cardSize": 383,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -3999,7 +3999,7 @@
     "color": "#ebebeb",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 396,
+    "cardSize": 396,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -4012,7 +4012,7 @@
     "color": "#edede8",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 285,
     "coverHeight": 400
   },
@@ -4025,7 +4025,7 @@
     "color": "#ecebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 309,
     "coverHeight": 400
   },
@@ -4038,7 +4038,7 @@
     "color": "#ece9e9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 275,
     "coverHeight": 400
   },
@@ -4051,7 +4051,7 @@
     "color": "#2e2d1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -4064,7 +4064,7 @@
     "color": "#eee8e9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 280,
     "coverHeight": 400
   },
@@ -4077,7 +4077,7 @@
     "color": "#ebebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 278,
     "coverHeight": 400
   },
@@ -4090,7 +4090,7 @@
     "color": "#212c2c",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -4103,7 +4103,7 @@
     "color": "#21212c",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 281,
     "coverHeight": 400
   },
@@ -4116,7 +4116,7 @@
     "color": "#e8eced",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 275,
     "coverHeight": 400
   },
@@ -4129,7 +4129,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -4142,7 +4142,7 @@
     "color": "#e8eeeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 278,
     "coverHeight": 400
   },
@@ -4155,7 +4155,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 324,
     "coverHeight": 400
   },
@@ -4168,7 +4168,7 @@
     "color": "#eee8e9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 278,
     "coverHeight": 400
   },
@@ -4181,7 +4181,7 @@
     "color": "#eeeee8",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 372,
+    "cardSize": 372,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -4194,7 +4194,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -4207,7 +4207,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -4220,7 +4220,7 @@
     "color": "#ebebeb",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 394,
+    "cardSize": 394,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -4233,7 +4233,7 @@
     "color": "#eee8e8",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 272,
     "coverHeight": 400
   },
@@ -4246,7 +4246,7 @@
     "color": "#262626",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -4259,7 +4259,7 @@
     "color": "#ebecea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 274,
     "coverHeight": 400
   },
@@ -4272,7 +4272,7 @@
     "color": "#eeeee8",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 400,
+    "cardSize": 400,
     "coverWidth": 280,
     "coverHeight": 400
   },
@@ -4285,7 +4285,7 @@
     "color": "#262626",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 435,
+    "cardSize": 435,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -4298,7 +4298,7 @@
     "color": "#262626",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -4311,7 +4311,7 @@
     "color": "#262626",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -4324,7 +4324,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4337,7 +4337,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4350,7 +4350,7 @@
     "color": "#e8edec",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 380,
+    "cardSize": 380,
     "coverWidth": 252,
     "coverHeight": 400
   },
@@ -4363,7 +4363,7 @@
     "color": "#ebebeb",
     "paddingLeft": 16,
     "paddingRight": 16,
-    "size": 394,
+    "cardSize": 394,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -4376,7 +4376,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -4389,7 +4389,7 @@
     "color": "#262626",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 403,
+    "cardSize": 403,
     "coverWidth": 269,
     "coverHeight": 400
   },
@@ -4402,7 +4402,7 @@
     "color": "#eee8e8",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 414,
+    "cardSize": 414,
     "coverWidth": 282,
     "coverHeight": 400
   },
@@ -4415,7 +4415,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -4428,7 +4428,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -4441,7 +4441,7 @@
     "color": "#282825",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -4454,7 +4454,7 @@
     "color": "#edede8",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 403,
+    "cardSize": 403,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -4467,7 +4467,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -4480,7 +4480,7 @@
     "color": "#eaebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -4493,7 +4493,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4506,7 +4506,7 @@
     "color": "#ebebea",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 423,
+    "cardSize": 423,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -4519,7 +4519,7 @@
     "color": "#262626",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 415,
+    "cardSize": 415,
     "coverWidth": 305,
     "coverHeight": 400
   },
@@ -4532,7 +4532,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -4545,7 +4545,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -4558,7 +4558,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 413,
+    "cardSize": 413,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4571,7 +4571,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -4584,7 +4584,7 @@
     "color": "#eaebea",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 411,
+    "cardSize": 411,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -4597,7 +4597,7 @@
     "color": "#e8e9ee",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -4610,7 +4610,7 @@
     "color": "#ebebeb",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 392,
+    "cardSize": 392,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -4623,7 +4623,7 @@
     "color": "#1f2e1f",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 411,
+    "cardSize": 411,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -4636,7 +4636,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 290,
     "coverHeight": 400
   },
@@ -4649,7 +4649,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 515,
+    "cardSize": 515,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -4662,7 +4662,7 @@
     "color": "#e8ebee",
     "paddingLeft": 30,
     "paddingRight": 30,
-    "size": 457,
+    "cardSize": 457,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -4675,7 +4675,7 @@
     "color": "#eeebe8",
     "paddingLeft": 30,
     "paddingRight": 30,
-    "size": 457,
+    "cardSize": 457,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -4688,7 +4688,7 @@
     "color": "#e8ebee",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 516,
+    "cardSize": 516,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -4701,7 +4701,7 @@
     "color": "#ecebe9",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 401,
+    "cardSize": 401,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -4714,7 +4714,7 @@
     "color": "#e8eeea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -4727,7 +4727,7 @@
     "color": "#2c2c21",
     "paddingLeft": 41,
     "paddingRight": 41,
-    "size": 503,
+    "cardSize": 503,
     "coverWidth": 255,
     "coverHeight": 400
   },
@@ -4740,7 +4740,7 @@
     "color": "#20282d",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -4753,7 +4753,7 @@
     "color": "#2e291f",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 426,
+    "cardSize": 426,
     "coverWidth": 279,
     "coverHeight": 400
   },
@@ -4766,7 +4766,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -4779,7 +4779,7 @@
     "color": "#1f262e",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 310,
     "coverHeight": 400
   },
@@ -4792,7 +4792,7 @@
     "color": "#eeeae8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 431,
+    "cardSize": 431,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -4805,7 +4805,7 @@
     "color": "#ebebeb",
     "paddingLeft": 32,
     "paddingRight": 32,
-    "size": 463,
+    "cardSize": 463,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -4818,7 +4818,7 @@
     "color": "#ebebeb",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 380,
+    "cardSize": 380,
     "coverWidth": 271,
     "coverHeight": 400
   },
@@ -4831,7 +4831,7 @@
     "color": "#ebebeb",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 388,
+    "cardSize": 388,
     "coverWidth": 252,
     "coverHeight": 400
   },
@@ -4844,7 +4844,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -4857,7 +4857,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 311,
     "coverHeight": 400
   },
@@ -4870,7 +4870,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 35,
     "paddingRight": 35,
-    "size": 476,
+    "cardSize": 476,
     "coverWidth": 257,
     "coverHeight": 400
   },
@@ -4883,7 +4883,7 @@
     "color": "#e8ecee",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 408,
+    "cardSize": 408,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4896,7 +4896,7 @@
     "color": "#282825",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 516,
+    "cardSize": 516,
     "coverWidth": 277,
     "coverHeight": 400
   },
@@ -4909,7 +4909,7 @@
     "color": "#2e261f",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 401,
+    "cardSize": 401,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4922,7 +4922,7 @@
     "color": "#292923",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 384,
+    "cardSize": 384,
     "coverWidth": 234,
     "coverHeight": 400
   },
@@ -4935,7 +4935,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4948,7 +4948,7 @@
     "color": "#292923",
     "paddingLeft": 23,
     "paddingRight": 23,
-    "size": 426,
+    "cardSize": 426,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4961,7 +4961,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -4974,7 +4974,7 @@
     "color": "#eee9e8",
     "paddingLeft": 42,
     "paddingRight": 42,
-    "size": 508,
+    "cardSize": 508,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -4987,7 +4987,7 @@
     "color": "#2c2c21",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -5000,7 +5000,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 233,
     "coverHeight": 400
   },
@@ -5013,7 +5013,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 281,
     "coverHeight": 400
   },
@@ -5026,7 +5026,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -5039,7 +5039,7 @@
     "color": "#ebebeb",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 381,
+    "cardSize": 381,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -5052,7 +5052,7 @@
     "color": "#eee9e8",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 370,
+    "cardSize": 370,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -5065,7 +5065,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 411,
+    "cardSize": 411,
     "coverWidth": 256,
     "coverHeight": 400
   },
@@ -5078,7 +5078,7 @@
     "color": "#eee8e8",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 412,
+    "cardSize": 412,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -5091,7 +5091,7 @@
     "color": "#ebebeb",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 398,
+    "cardSize": 398,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -5104,7 +5104,7 @@
     "color": "#262626",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 418,
+    "cardSize": 418,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -5117,7 +5117,7 @@
     "color": "#ebebeb",
     "paddingLeft": 36,
     "paddingRight": 36,
-    "size": 483,
+    "cardSize": 483,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -5130,7 +5130,7 @@
     "color": "#262626",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 416,
+    "cardSize": 416,
     "coverWidth": 262,
     "coverHeight": 400
   },
@@ -5143,7 +5143,7 @@
     "color": "#eeebe8",
     "paddingLeft": 30,
     "paddingRight": 30,
-    "size": 455,
+    "cardSize": 455,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -5156,7 +5156,7 @@
     "color": "#ebebeb",
     "paddingLeft": 18,
     "paddingRight": 18,
-    "size": 403,
+    "cardSize": 403,
     "coverWidth": 246,
     "coverHeight": 400
   },
@@ -5169,7 +5169,7 @@
     "color": "#eaebea",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 319,
     "coverHeight": 400
   },
@@ -5182,7 +5182,7 @@
     "color": "#e8eaee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 324,
     "coverHeight": 400
   },
@@ -5195,7 +5195,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 428,
+    "cardSize": 428,
     "coverWidth": 307,
     "coverHeight": 400
   },
@@ -5208,7 +5208,7 @@
     "color": "#eaeaeb",
     "paddingLeft": 34,
     "paddingRight": 34,
-    "size": 474,
+    "cardSize": 474,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -5221,7 +5221,7 @@
     "color": "#e8ebee",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 385,
+    "cardSize": 385,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -5234,7 +5234,7 @@
     "color": "#262626",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 391,
+    "cardSize": 391,
     "coverWidth": 254,
     "coverHeight": 400
   },
@@ -5247,7 +5247,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -5260,7 +5260,7 @@
     "color": "#2e2e1f",
     "paddingLeft": 8,
     "paddingRight": 8,
-    "size": 362,
+    "cardSize": 362,
     "coverWidth": 269,
     "coverHeight": 400
   },
@@ -5273,7 +5273,7 @@
     "color": "#ebebeb",
     "paddingLeft": 26,
     "paddingRight": 26,
-    "size": 439,
+    "cardSize": 439,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -5286,7 +5286,7 @@
     "color": "#2e1f1f",
     "paddingLeft": 26,
     "paddingRight": 26,
-    "size": 439,
+    "cardSize": 439,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -5299,7 +5299,7 @@
     "color": "#eee8e8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 245,
     "coverHeight": 400
   },
@@ -5312,7 +5312,7 @@
     "color": "#ebebeb",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 365,
+    "cardSize": 365,
     "coverWidth": 258,
     "coverHeight": 400
   },
@@ -5325,7 +5325,7 @@
     "color": "#262626",
     "paddingLeft": 19,
     "paddingRight": 19,
-    "size": 407,
+    "cardSize": 407,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -5338,7 +5338,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 266,
     "coverHeight": 400
   },
@@ -5351,7 +5351,7 @@
     "color": "#e8ebee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 247,
     "coverHeight": 400
   },
@@ -5364,7 +5364,7 @@
     "color": "#e8e8ee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -5377,7 +5377,7 @@
     "color": "#e8ebee",
     "paddingLeft": 41,
     "paddingRight": 41,
-    "size": 501,
+    "cardSize": 501,
     "coverWidth": 247,
     "coverHeight": 400
   },
@@ -5390,7 +5390,7 @@
     "color": "#e9e9ed",
     "paddingLeft": 21,
     "paddingRight": 21,
-    "size": 416,
+    "cardSize": 416,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -5403,7 +5403,7 @@
     "color": "#ebebeb",
     "paddingLeft": 10,
     "paddingRight": 10,
-    "size": 369,
+    "cardSize": 369,
     "coverWidth": 259,
     "coverHeight": 400
   },
@@ -5416,7 +5416,7 @@
     "color": "#e8eded",
     "paddingLeft": 38,
     "paddingRight": 38,
-    "size": 489,
+    "cardSize": 489,
     "coverWidth": 300,
     "coverHeight": 400
   },
@@ -5429,7 +5429,7 @@
     "color": "#232929",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 261,
     "coverHeight": 400
   },
@@ -5442,7 +5442,7 @@
     "color": "#e9eaec",
     "paddingLeft": 32,
     "paddingRight": 32,
-    "size": 463,
+    "cardSize": 463,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -5455,7 +5455,7 @@
     "color": "#eee8ea",
     "paddingLeft": 31,
     "paddingRight": 31,
-    "size": 458,
+    "cardSize": 458,
     "coverWidth": 319,
     "coverHeight": 400
   },
@@ -5468,7 +5468,7 @@
     "color": "#eee8e8",
     "paddingLeft": 22,
     "paddingRight": 22,
-    "size": 419,
+    "cardSize": 419,
     "coverWidth": 319,
     "coverHeight": 400
   },
@@ -5481,7 +5481,7 @@
     "color": "#e8eeee",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 389,
+    "cardSize": 389,
     "coverWidth": 305,
     "coverHeight": 400
   },
@@ -5494,7 +5494,7 @@
     "color": "#2c2c21",
     "paddingLeft": 31,
     "paddingRight": 31,
-    "size": 459,
+    "cardSize": 459,
     "coverWidth": 323,
     "coverHeight": 400
   },
@@ -5507,7 +5507,7 @@
     "color": "#e8eeee",
     "paddingLeft": 25,
     "paddingRight": 25,
-    "size": 433,
+    "cardSize": 433,
     "coverWidth": 305,
     "coverHeight": 400
   },
@@ -5520,7 +5520,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 411,
+    "cardSize": 411,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -5533,7 +5533,7 @@
     "color": "#eaebec",
     "paddingLeft": 11,
     "paddingRight": 11,
-    "size": 372,
+    "cardSize": 372,
     "coverWidth": 269,
     "coverHeight": 400
   },
@@ -5546,7 +5546,7 @@
     "color": "#ebebeb",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 440,
+    "cardSize": 440,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -5559,7 +5559,7 @@
     "color": "#ebebeb",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 399,
+    "cardSize": 399,
     "coverWidth": 267,
     "coverHeight": 400
   },
@@ -5572,7 +5572,7 @@
     "color": "#ebebeb",
     "paddingLeft": 44,
     "paddingRight": 44,
-    "size": 516,
+    "cardSize": 516,
     "coverWidth": 263,
     "coverHeight": 400
   },
@@ -5585,7 +5585,7 @@
     "color": "#eeeae8",
     "paddingLeft": 9,
     "paddingRight": 9,
-    "size": 365,
+    "cardSize": 365,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -5598,7 +5598,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 428,
+    "cardSize": 428,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -5611,7 +5611,7 @@
     "color": "#ebebeb",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 412,
+    "cardSize": 412,
     "coverWidth": 265,
     "coverHeight": 400
   },
@@ -5624,7 +5624,7 @@
     "color": "#e8eeee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 428,
+    "cardSize": 428,
     "coverWidth": 264,
     "coverHeight": 400
   },
@@ -5637,7 +5637,7 @@
     "color": "#e8e9ee",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -5650,7 +5650,7 @@
     "color": "#e8eee8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 249,
     "coverHeight": 400
   },
@@ -5663,7 +5663,7 @@
     "color": "#2e2b1f",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 382,
+    "cardSize": 382,
     "coverWidth": 282,
     "coverHeight": 400
   },
@@ -5676,7 +5676,7 @@
     "color": "#ebeee8",
     "paddingLeft": 15,
     "paddingRight": 15,
-    "size": 390,
+    "cardSize": 390,
     "coverWidth": 250,
     "coverHeight": 400
   },
@@ -5689,7 +5689,7 @@
     "color": "#2c2c21",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -5702,7 +5702,7 @@
     "color": "#212c21",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 383,
+    "cardSize": 383,
     "coverWidth": 283,
     "coverHeight": 400
   },
@@ -5715,7 +5715,7 @@
     "color": "#eeeee8",
     "paddingLeft": 13,
     "paddingRight": 13,
-    "size": 384,
+    "cardSize": 384,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -5728,7 +5728,7 @@
     "color": "#ebebeb",
     "paddingLeft": 14,
     "paddingRight": 14,
-    "size": 386,
+    "cardSize": 386,
     "coverWidth": 268,
     "coverHeight": 400
   },
@@ -5741,7 +5741,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 285,
     "coverHeight": 400
   },
@@ -5754,7 +5754,7 @@
     "color": "#e8ebee",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 441,
+    "cardSize": 441,
     "coverWidth": 292,
     "coverHeight": 400
   },
@@ -5767,7 +5767,7 @@
     "color": "#eee8e8",
     "paddingLeft": 27,
     "paddingRight": 27,
-    "size": 443,
+    "cardSize": 443,
     "coverWidth": 260,
     "coverHeight": 400
   },
@@ -5780,7 +5780,7 @@
     "color": "#262626",
     "paddingLeft": 20,
     "paddingRight": 20,
-    "size": 414,
+    "cardSize": 414,
     "coverWidth": 284,
     "coverHeight": 400
   },
@@ -5793,7 +5793,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -5806,7 +5806,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -5819,7 +5819,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -5832,7 +5832,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 347,
     "coverHeight": 400
   },
@@ -5845,7 +5845,7 @@
     "color": "#262626",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -5858,7 +5858,7 @@
     "color": "#eee8e8",
     "paddingLeft": 12,
     "paddingRight": 12,
-    "size": 379,
+    "cardSize": 379,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -5871,7 +5871,7 @@
     "color": "#ecece9",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 334,
     "coverHeight": 400
   },
@@ -5884,7 +5884,7 @@
     "color": "#eeeee8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 324,
     "coverHeight": 400
   },
@@ -5897,7 +5897,7 @@
     "color": "#252828",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 336,
     "coverHeight": 400
   },
@@ -5910,7 +5910,7 @@
     "color": "#eaebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 343,
     "coverHeight": 400
   },
@@ -5923,7 +5923,7 @@
     "color": "#e9ecec",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 317,
     "coverHeight": 400
   },
@@ -5936,7 +5936,7 @@
     "color": "#262626",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 286,
     "coverHeight": 400
   },
@@ -5949,7 +5949,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 338,
     "coverHeight": 400
   },
@@ -5962,7 +5962,7 @@
     "color": "#eeeae8",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "size": 420,
+    "cardSize": 420,
     "coverWidth": 328,
     "coverHeight": 400
   },
@@ -5975,7 +5975,7 @@
     "color": "#2e2e1f",
     "paddingLeft": 17,
     "paddingRight": 17,
-    "size": 398,
+    "cardSize": 398,
     "coverWidth": 259,
     "coverHeight": 400
   }

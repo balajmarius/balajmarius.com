@@ -25,7 +25,7 @@ const BooksList = ({ books }: BooksListProps) => {
           src={book.src}
           color={book.color}
           backgroundColor={book.backgroundColor}
-          size={book.size}
+          cardSize={book.cardSize}
           paddingLeft={book.paddingLeft}
           paddingRight={book.paddingRight}
           coverWidth={book.coverWidth}

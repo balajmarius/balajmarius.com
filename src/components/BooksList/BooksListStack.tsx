@@ -17,7 +17,7 @@ const BooksListStack = ({ books }: BooksListStackProps) => {
           src={book.src}
           color={book.color}
           backgroundColor={book.backgroundColor}
-          size={book.size}
+          cardSize={book.cardSize}
           coverWidth={book.coverWidth}
           coverHeight={book.coverHeight}
         />
