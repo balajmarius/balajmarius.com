@@ -52,7 +52,7 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
       label: t("appBar.contact"),
       icon: <SvgIconGlobe size="small" />,
     },
-  ];
+  ] as const;
 
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === Keys.ESCAPE) {

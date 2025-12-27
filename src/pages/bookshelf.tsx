@@ -1,15 +1,20 @@
-import { type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 import { getBooks, type Book } from "@/lib/books";
 
+import {
+  SvgIconBack,
+  SvgIconBookshelf,
+  SvgIconBookshelfStack,
+} from "@/components/SvgIcon";
+
 import { Section } from "@/components/Section";
 import { Typography } from "@/components/Typography";
 import { Button } from "@/components/Button";
-import { SvgIconBack } from "@/components/SvgIcon";
-import { BooksListStack } from "@/components/BooksList";
+import { BooksList, BooksListStack } from "@/components/BooksList";
 
 type BookshelfProps = {
   books: Book[];
@@ -17,6 +22,20 @@ type BookshelfProps = {
 
 const Bookshelf = ({ books }: BookshelfProps) => {
   const t = useTranslations();
+  const [variant, setVariant] = useState<"shelf" | "stack">("shelf");
+
+  const options = [
+    {
+      variant: "shelf",
+      label: t("bookshelf.shelf"),
+      icon: <SvgIconBookshelf size="small" />,
+    },
+    {
+      variant: "stack",
+      label: t("bookshelf.stack"),
+      icon: <SvgIconBookshelfStack size="small" />,
+    },
+  ] as const;
 
   const renderers = {
     serif: (chunks: ReactNode) => (
@@ -56,12 +75,33 @@ const Bookshelf = ({ books }: BookshelfProps) => {
 
       <div className="space-y-16">
         <Section spacing="small">
-          <Typography variant="subtitle1" display="block">
-            {t("bookshelf.booksOnMyShelf", { count: books.length })}
-          </Typography>
+          <div className="flex items-center justify-between">
+            <Typography variant="subtitle1" display="block">
+              {t("bookshelf.booksOnMyShelf", { count: books.length })}
+            </Typography>
+
+            <div className="flex items-center gap-1 bg-gray-400/40 backdrop-blur rounded-lg px-1 py-1">
+              {options.map((option) => (
+                <Button
+                  key={option.variant}
+                  startIcon={option.icon}
+                  active={option.variant === variant}
+                  onClick={() => setVariant(option.variant)}
+                >
+                  <Typography variant="body1" color="inherit">
+                    {option.label}
+                  </Typography>
+                </Button>
+              ))}
+            </div>
+          </div>
         </Section>
 
-        <BooksListStack books={books} />
+        {variant === "stack" ? (
+          <BooksListStack books={books} />
+        ) : (
+          <BooksList books={books} />
+        )}
       </div>
     </>
   );
