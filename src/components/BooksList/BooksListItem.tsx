@@ -91,7 +91,6 @@ const BooksListItem = ({
       </div>
 
       <Image
-        unoptimized
         src={src}
         alt={title}
         loading="lazy"
