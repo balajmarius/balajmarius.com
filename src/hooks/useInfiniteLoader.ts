@@ -2,15 +2,20 @@ import { useEffect, useRef } from "react";
 import { useCounter } from "usehooks-ts";
 import { useInView } from "framer-motion";
 
-import { BOOKSHELF_BATCH_SIZE } from "@/utils/const";
+type UseInfiniteLoaderOptions = {
+  batchSize: number;
+};
 
-export const useInfiniteLoader = <T>(data: T[]) => {
+export const useInfiniteLoader = <T>(
+  data: T[],
+  { batchSize }: UseInfiniteLoaderOptions
+) => {
   const { count, increment } = useCounter();
 
   const sentinelRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sentinelRef);
 
-  const items = data.slice(0, count * BOOKSHELF_BATCH_SIZE);
+  const items = data.slice(0, count * batchSize);
   const isPartial = items.length < data.length;
 
   useEffect(() => {

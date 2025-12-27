@@ -8,8 +8,9 @@ import { NextIntlClientProvider } from "next-intl";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 
-import { cn } from "@/utils/helpers";
 import { GOOGLE_ANALYTICS_ID } from "@/utils/const";
+
+import { cn } from "@/utils/helpers";
 import { scrollTransforms } from "@/utils/keyframes";
 
 import { AppBar } from "@/sections/AppBar";
@@ -113,7 +114,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           sans.variable,
           serif.variable,
           mono.variable,
-          "min-h-screen overflow-hidden pb-48 bg-white selection:bg-blue-500 selection:text-white"
+          "min-h-screen overflow-hidden pb-48 bg-white selection:bg-blue-500 selection:text-white origin-bottom"
         )}
         style={{
           scale,
