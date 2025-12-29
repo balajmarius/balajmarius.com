@@ -36,7 +36,7 @@ const Writings = ({ posts }: WritingsProps) => {
             </Link>
 
             <Typography variant="h1" display="block">
-              {t.rich("posts.itIsTimeToWrite", {
+              {t.rich("posts.sometimesIWrite", {
                 serif: (chunks: ReactNode) => (
                   <span className="font-serif italic text-blue-500">
                     {chunks}

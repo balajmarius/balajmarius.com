@@ -54,7 +54,7 @@
     "author": " - {author}",
     "moreWritings": "More writings",
     "backToWritings": "Back to writings",
-    "itIsTimeToWrite": "Sometimes it’s time to <serif>write</serif>."
+    "sometimesIWrite": "Sometimes I <serif>write</serif>."
   },
   "error404": {
     "title": "Page Not Found",

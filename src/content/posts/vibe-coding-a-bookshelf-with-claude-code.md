@@ -14,8 +14,8 @@ of a startup idea. A spreadsheet would have been enough. I never did it, not
 because it was hard, but because it was tedious.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/bookshelf-library.jpg" alt="Part of my library" />
-  <figcaption>Part of my library</figcaption>
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/part-of-my-personal-library.jpg" alt="Part of my personal library" />
+  <figcaption>Part of my personal library</figcaption>
 </figure>
 
 The gap between intention and execution was small, but it was enough to keep the
@@ -30,8 +30,8 @@ execution stops being the bottleneck.
 
 ## The problem
 
-I tried the obvious tools first. ISBN scanner apps failed on Romanian
-editions, and Goodreads could not identify obscure publishers or antiquarian
+I tried the obvious tools first. [ISBN scanner apps](https://apps.apple.com/us/app/isbn-scan-book-info-ratings/id6463488866) failed on Romanian
+editions, and [Goodreads](https://goodreads.com/) could not identify obscure publishers or antiquarian
 finds. Anything even slightly nonstandard came back incomplete or wrong.
 Partial data felt worse than no data at all, so every attempt ended the same
 way: a few entries filled in, followed by abandonment.
@@ -47,7 +47,7 @@ the occasional blurry thumb. **Four hundred and seventy photos in total**. Once
 the images were on my laptop, I opened Claude.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/raw-dataset.jpg" alt="470 shots, one afternoon" />
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/470-shots-one-afternoon.jpg" alt="470 shots, one afternoon" />
   <figcaption>470 shots, one afternoon</figcaption>
 </figure>
 
@@ -79,19 +79,19 @@ have meant days of edge cases for very little additional value. That was the
 first moment where my role became clear.
 
 Later, when I received a few books for Christmas, we added a second script that
-runs the same pipeline for new additions. Photo in, metadata and images out.
+runs the same pipeline for new additions. _Photo in, metadata and images out_.
 
 ## The covers
 
 With metadata sorted, covers were still missing. My photos showed spines, not
 artwork, and I wanted a clean visual representation. Claude suggested using
-`Open Library`'s API to fetch covers, which mostly worked. Half the covers were
+[Open Library](https://openlibrary.org/)'s API to fetch covers, which mostly worked. Half the covers were
 low quality or incorrect, and Romanian editions barely existed in the
 database.
 
 We iterated. Claude wrote a second pass, another model call that scored cover
 quality and flagged bad matches. For flagged books, it fell back to Google
-Images via `SerpAPI`. That handled most cases. A few remained: antiquarian finds
+Images via [SerpAPI](https://serpapi.com/). That handled most cases. A few remained: antiquarian finds
 and obscure Soviet boxing manuals that no database was ever going to have
 clean assets for.
 
@@ -106,6 +106,11 @@ my physical bookshelf instead. What makes it interesting is not the covers,
 but the spines. Different widths, uneven pressure, colors blending into a
 single texture.
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/the-shelf-version-zero.jpg" alt="The shelf, version zero" />
+  <figcaption>The shelf, version zero</figcaption>
+</figure>
+
 That was the thing I wanted to recreate.
 
 Claude did not invent that idea. It executed it. It wrote a script to extract
@@ -113,7 +118,7 @@ dominant colors from each cover using color quantization, then computed
 contrasting text colors for readability. The result was better, but still
 wrong. Every book had the same width, and real books are not like that.
 
-`Open Library` had page counts. We mapped page count to spine width and added
+[Open Library](https://openlibrary.org/) had page counts. We mapped page count to spine width and added
 slight variation to break the uniformity. At that point, it finally looked
 like a bookshelf.
 
@@ -137,10 +142,15 @@ like a bookshelf.
 Visually, the shelf worked, but it felt static. A real shelf responds to
 touch. When you run your finger along the spines, they tilt slightly. I asked
 Claude for an animation, and it came back with a scroll based tilt using
-Framer Motion.
+[Framer Motion](https://motion.dev/).
 
 It was close, but wrong. The movement snapped instead of flowing. I did not
 know why, I just knew it felt off. That was enough.
+
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <video src="/images/vibe-coding-a-bookshelf-with-claude-code/scroll-animation.webm" autoPlay loop muted playsInline />
+  <figcaption>Scroll-based tilt animation</figcaption>
+</figure>
 
 Claude explained the issue immediately. We were updating React state on every
 scroll event, causing unnecessary re renders. The fix was to use motion values
@@ -171,8 +181,8 @@ readable without tilting your head. I pointed Claude at the shelf
 implementation and asked for a stack view.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/stack-view.jpg" alt="Stack view on mobile" />
-  <figcaption>Stack view on mobile</figcaption>
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/stack-ui-on-mobile.jpg" alt="Stack UI on mobile" />
+  <figcaption>Stack UI on mobile</figcaption>
 </figure>
 
 It read the code, inferred the patterns, and reused them: animation timing,
