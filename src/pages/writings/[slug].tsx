@@ -51,6 +51,9 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
     li: (props: ComponentProps<"li">) => (
       <li className="list-disc pl-2 marker:text-blue-500" {...props} />
     ),
+    hr: (props: ComponentProps<"hr">) => (
+      <hr className="my-8 border-gray-100" {...props} />
+    ),
   };
 
   return (
