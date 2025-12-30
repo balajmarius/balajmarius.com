@@ -5,6 +5,11 @@ label: Dev
 createdAt: Dec 27, 2025
 ---
 
+_This post went unexpectedly viral on Hacker News. There's an interesting
+discussion [there](https://news.ycombinator.com/item?id=46420453) if you want to take a look_.
+
+---
+
 I own more books than I can read. Not in a charming, aspirational way, but in
 the practical sense that at some point I stopped knowing what I owned.
 Somewhere around 500 books, memory stopped being a reliable catalog.
