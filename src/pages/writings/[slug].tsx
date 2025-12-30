@@ -28,7 +28,10 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
   const renderers = {
     p: (props: ComponentProps<"p">) => <p {...props} />,
     a: (props: ComponentProps<"a">) => (
-      <a className="text-blue-500 border-b hover:text-blue-400" {...props} />
+      <a
+        className="text-blue-500 border-b border-b-blue-300 hover:text-blue-400"
+        {...props}
+      />
     ),
     h2: (props: ComponentProps<"h2">) => (
       <h2 className="pt-8 text-xl font-medium" {...props} />
