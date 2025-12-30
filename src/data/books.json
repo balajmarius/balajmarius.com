@@ -26,6 +26,19 @@
     "coverHeight": 400
   },
   {
+    "id": "U3baxBzsWDiVBLmOeb-1l",
+    "title": "Dying for Ideas",
+    "author": "Costica Bradatan",
+    "src": "/images/bookshelf/dying-for-ideas@2x.webp",
+    "backgroundColor": "#302020",
+    "color": "#ece9e9",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 420,
+    "coverWidth": 260,
+    "coverHeight": 400
+  },
+  {
     "id": "-esoIdGGKtdn8WlI8R00i",
     "title": "Vă țineți de glume, domnule Feynman!",
     "author": "Richard P. Feynman",
@@ -34,7 +47,7 @@
     "color": "#ebebeb",
     "paddingLeft": 24,
     "paddingRight": 24,
-    "height": 380,
+    "cardSize": 380,
     "coverWidth": 260,
     "coverHeight": 400
   },
