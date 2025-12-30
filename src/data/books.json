@@ -1,5 +1,31 @@
 [
   {
+    "id": "vKwNdHUffUeDTK41fLsHw",
+    "title": "Ideologii și ideologi în România contemporană",
+    "author": "Cristian Preda",
+    "src": "/images/bookshelf/ideologii-si-ideologi-in-romania-contemporana@2x.webp",
+    "backgroundColor": "#f0f0f0",
+    "color": "#262626",
+    "paddingLeft": 44,
+    "paddingRight": 44,
+    "cardSize": 500,
+    "coverWidth": 267,
+    "coverHeight": 400
+  },
+  {
+    "id": "yitDdTLX8cPIjKddkFJDa",
+    "title": "Boxing: A Cultural History",
+    "author": "Kasia Boddy",
+    "src": "/images/bookshelf/boxing-a-cultural-history@2x.webp",
+    "backgroundColor": "#a03030",
+    "color": "#eee8e8",
+    "paddingLeft": 29,
+    "paddingRight": 29,
+    "cardSize": 449,
+    "coverWidth": 282,
+    "coverHeight": 400
+  },
+  {
     "id": "qRGAKkI0ER5BDPuQ7X2Cr",
     "title": "Conversatii despre Dumnezeu",
     "author": "Byung-Chul Han",
