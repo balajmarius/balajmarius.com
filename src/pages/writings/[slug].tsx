@@ -29,7 +29,7 @@ const PostPage = ({ title, author, createdAt, mdxSource }: PostPageProps) => {
     p: (props: ComponentProps<"p">) => <p {...props} />,
     a: (props: ComponentProps<"a">) => (
       <a
-        className="text-blue-500 border-b border-b-blue-300 hover:text-blue-400"
+        className="text-blue-500 border-b border-b-blue-300 hover:text-blue-400 hover:border-b-blue-200"
         {...props}
       />
     ),
