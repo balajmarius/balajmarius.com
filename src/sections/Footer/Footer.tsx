@@ -1,6 +1,7 @@
 import type { HTMLAttributes, ReactNode } from "react";
 import { forwardRef } from "react";
 import { useTranslations } from "next-intl";
+import { getYear } from "date-fns/getYear";
 
 import { accounts, links } from "@/utils/links";
 
@@ -50,7 +51,7 @@ const Footer = forwardRef<HTMLElement, HTMLAttributes<HTMLElement>>(
             </Typography>
             <div className="border-t border-blue-100 pt-1 text-right">
               <Typography variant="small" color="inherit">
-                {t("footer.copyright", { year: new Date().getFullYear() })}
+                {t("footer.copyright", { year: getYear(new Date()) })}
               </Typography>
             </div>
           </div>
