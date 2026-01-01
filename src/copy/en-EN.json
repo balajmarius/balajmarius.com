@@ -79,7 +79,7 @@
     "github": "GitHub",
     "x": "X",
     "copyToClipboard": "Copy to clipboard",
-    "copyright": "© 2025 Marius Balaj",
+    "copyright": "© {year} Marius Balaj",
     "quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
   }
 }

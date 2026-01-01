@@ -50,7 +50,7 @@ const Footer = forwardRef<HTMLElement, HTMLAttributes<HTMLElement>>(
             </Typography>
             <div className="border-t border-blue-100 pt-1 text-right">
               <Typography variant="small" color="inherit">
-                {t("footer.copyright")}
+                {t("footer.copyright", { year: new Date().getFullYear() })}
               </Typography>
             </div>
           </div>
