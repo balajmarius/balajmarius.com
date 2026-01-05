@@ -14,7 +14,10 @@ const Document = () => {
         <meta property="og:description" content={copy.metadata.description} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content="/og-image.png" />
+        <meta
+          property="og:image"
+          content="https://balajmarius.com/og-image.png"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://balajmarius.com/" />
