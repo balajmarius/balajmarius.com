@@ -7,8 +7,6 @@ const Document = () => {
     <Html lang="en" className="scroll-smooth">
       <Head>
         <meta name="description" content={copy.metadata.description} />
-        <meta name="twitter:title" content={copy.metadata.title} />
-        <meta name="twitter:description" content={copy.metadata.description} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@balajmarius" />
         <meta property="og:author" content="Marius Bălaj" />
