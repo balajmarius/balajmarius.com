@@ -39,6 +39,19 @@
     "coverHeight": 400
   },
   {
+    "id": "ZAJ9woZpKLkh4gtVxZCC0",
+    "title": "Simple Genius",
+    "author": "David Baldacci",
+    "src": "/images/bookshelf/simple-genius@2x.webp",
+    "backgroundColor": "#f0f0f0",
+    "color": "#262626",
+    "paddingLeft": 27,
+    "paddingRight": 27,
+    "cardSize": 441,
+    "coverWidth": 264,
+    "coverHeight": 400
+  },
+  {
     "id": "-esoIdGGKtdn8WlI8R00i",
     "title": "Vă țineți de glume, domnule Feynman!",
     "author": "Richard P. Feynman",
