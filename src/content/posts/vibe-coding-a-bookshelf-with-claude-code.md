@@ -70,7 +70,7 @@ to matter.
   "title": "Simulacre și simulare",
   "author": "Jean Baudrillard",
   "publisher": "Colectia Panopticon",
-  "source": "dataset/83.jpg",
+  "source": "/dataset/83.jpg",
 },
 ```
 
@@ -138,7 +138,7 @@ like a bookshelf.
   "paddingRight": 13,
   "height": 384,
   "cover": "/images/bookshelf/simulacre-si-simulare@2x.webp",
-  "source": "dataset/83.jpg"
+  "source": "/dataset/83.jpg"
 },
 ```
 
