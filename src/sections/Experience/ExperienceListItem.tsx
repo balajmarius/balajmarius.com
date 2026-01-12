@@ -30,7 +30,7 @@ const ExperienceListItem = ({
         <div className="flex-grow border-t border-gray-100" />
 
         {duration ? (
-          <Chip variant="outlined">{duration}</Chip>
+          <Chip>{duration}</Chip>
         ) : (
           <div className="flex items-center gap-1">
             <SvgIconDot size="small" className="text-blue-500" />
