@@ -1,12 +1,14 @@
+import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { format } from "date-fns";
 
 import { links } from "@/utils/links";
 
+import { Chip } from "@/components/Chip";
 import { Card, CardContent, CardFooter, CardListItem } from "@/components/Card";
-import { Typography } from "@/components/Typography";
 import { Section } from "@/components/Section";
 import { IconButton } from "@/components/IconButton";
+import { Typography } from "@/components/Typography";
 import { Divider } from "@/components/Divider";
 
 import {
@@ -15,7 +17,18 @@ import {
   SvgIconGlove,
 } from "@/components/SvgIcon";
 
-const Stats = () => {
+type Workout = {
+  time: string;
+  createdAt: string;
+  volume: number;
+};
+
+type StatsProps = {
+  workoutsCount: number;
+  workout: Workout;
+};
+
+const Stats = ({ workoutsCount, workout }: StatsProps) => {
   const t = useTranslations();
 
   return (
@@ -38,12 +51,15 @@ const Stats = () => {
               <div className="flex gap-3">
                 <CardListItem
                   label={t("stats.date")}
-                  value={format(new Date("2025-01-12"), "MMM d")}
+                  value={format(new Date(workout.createdAt), "MMM d")}
                 />
                 <Divider />
-                <CardListItem label={t("stats.time")} value="52 min" />
+                <CardListItem label={t("stats.time")} value={workout.time} />
                 <Divider />
-                <CardListItem label={t("stats.volume")} value="10.252 kg" />
+                <CardListItem
+                  label={t("stats.volume")}
+                  value={`${workout.volume.toLocaleString()} kg`}
+                />
               </div>
             </div>
 
@@ -70,6 +86,17 @@ const Stats = () => {
               <SvgIconHevy size="small" />
             </IconButton>
           </a>
+
+          <Chip>
+            <Typography variant="body2">
+              {t.rich("stats.workouts", {
+                count: workoutsCount,
+                serif: (chunks: ReactNode) => (
+                  <span className="font-serif italic">{chunks}</span>
+                ),
+              })}
+            </Typography>
+          </Chip>
         </CardFooter>
       </Card>
     </Section>

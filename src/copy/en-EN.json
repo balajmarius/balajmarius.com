@@ -63,7 +63,8 @@
     "time": "Time",
     "date": "Date",
     "volume": "Volume",
-    "sets": "Sets"
+    "sets": "Sets",
+    "workouts": "<serif>{count}</serif> workouts"
   },
   "error404": {
     "title": "Page Not Found",
