@@ -6,7 +6,7 @@ export type CardContentProps = {
 
 const CardContent = ({ children }: CardContentProps) => {
   return (
-    <div className="bg-white py-3 px-3 rounded-2xl space-y-6">{children}</div>
+    <div className="space-y-6 px-3 py-3 rounded-2xl bg-white">{children}</div>
   );
 };
 

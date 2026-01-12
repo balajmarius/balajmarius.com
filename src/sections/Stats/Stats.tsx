@@ -26,7 +26,7 @@ const Stats = () => {
             {t("stats.latestTrainingSessions")}
           </Typography>
 
-          <div className="flex gap-12">
+          <div className="flex flex-col gap-3 sm:flex-row sm:gap-12">
             <div className="space-y-3">
               <div className="flex items-center gap-1">
                 <SvgIconDumbell size="small" />
@@ -44,8 +44,6 @@ const Stats = () => {
                 <CardListItem label={t("stats.time")} value="52 min" />
                 <Divider />
                 <CardListItem label={t("stats.volume")} value="10.252 kg" />
-                <Divider />
-                <CardListItem label={t("stats.sets")} value="15" />
               </div>
             </div>
 

@@ -9,7 +9,7 @@ const IconButton = ({ children, className, ...props }: IconButtonProps) => {
   return (
     <button
       className={twMerge(
-        "bg-white rounded-full flex items-center justify-center px-1 py-1 cursor-pointer",
+        "flex items-center justify-center px-1 py-1 rounded-full bg-white cursor-pointer",
         className
       )}
       {...props}
