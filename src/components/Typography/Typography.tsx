@@ -55,6 +55,7 @@ const typographyFontWeightClassNames: TypographyFontWeightMapping = {
 const typographyColorClassNames: TypographyColorMapping = {
   default: "text-gray-600",
   muted: "text-gray-500",
+  accent: "text-blue-500",
   inherit: "text-inherit",
 };
 

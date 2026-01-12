@@ -7,6 +7,7 @@ import type { SvgIconSize, SvgIconSizeMapping } from "@/components/SvgIcon";
 export type SvgIconProps = {
   children: ReactNode;
   size?: SvgIconSize;
+  viewBox?: string;
   className?: HTMLAttributes<SVGSVGElement>["className"];
 } & HTMLAttributes<SVGSVGElement>;
 
@@ -17,10 +18,15 @@ const svgIconSizeClassNames: SvgIconSizeMapping = {
   large: "w-8 h-8",
 };
 
-const SvgIcon = ({ children, className, size = "inherit" }: SvgIconProps) => {
+const SvgIcon = ({
+  children,
+  className,
+  size = "inherit",
+  viewBox = "0 0 16 16",
+}: SvgIconProps) => {
   return (
     <svg
-      viewBox="0 0 16 16"
+      viewBox={viewBox}
       fill="currentColor"
       className={cn(className, svgIconSizeClassNames[size])}
     >

@@ -57,7 +57,13 @@
     "sometimesIWrite": "Sometimes I <serif>write</serif>."
   },
   "stats": {
-    "latestTrainingSessions": "Latest training sessions"
+    "latestTrainingSessions": "Latest training sessions",
+    "weights": "Weights",
+    "boxing": "Boxing",
+    "time": "Time",
+    "date": "Date",
+    "volume": "Volume",
+    "sets": "Sets"
   },
   "error404": {
     "title": "Page Not Found",
