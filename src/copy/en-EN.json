@@ -56,6 +56,9 @@
     "backToWritings": "Back to writings",
     "sometimesIWrite": "Sometimes I <serif>write</serif>."
   },
+  "stats": {
+    "latestTrainingSessions": "Latest training sessions"
+  },
   "error404": {
     "title": "Page Not Found",
     "doesNotExist": "The page you are looking for does <serif>not exist</serif>."

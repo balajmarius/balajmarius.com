@@ -7,6 +7,7 @@ import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
 import { Commits } from "@/sections/Commits";
 import { Posts } from "@/sections/Posts";
+import { Stats } from "@/sections/Stats";
 
 type HomeProps = {
   posts: Record<string, Post[]>;
@@ -25,6 +26,7 @@ const Home = ({ posts }: HomeProps) => {
       <Experience />
       <Commits />
       <Posts posts={posts} />
+      <Stats />
     </>
   );
 };
