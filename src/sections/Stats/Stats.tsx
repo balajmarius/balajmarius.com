@@ -87,7 +87,7 @@ const Stats = ({ workoutsCount, workout }: StatsProps) => {
             </IconButton>
           </a>
 
-          <Chip>
+          <Chip color="default">
             <Typography variant="body2">
               {t.rich("stats.workouts", {
                 count: workoutsCount,

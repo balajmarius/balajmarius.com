@@ -5,8 +5,17 @@ import type { MouseEventHandler } from "react";
 import { cn } from "@/utils/helpers";
 import type { Post } from "@/lib/posts";
 
-import { Chip } from "@/components/Chip";
+import { Chip, type ChipColor } from "@/components/Chip";
 import { Typography } from "@/components/Typography";
+
+type ChipColorLabelMapping = Record<Post["label"], ChipColor>;
+
+const chipColorLabel: ChipColorLabelMapping = {
+  Book: "info",
+  LLMs: "success",
+  Dev: "primary",
+  TIL: "secondary",
+};
 
 type PostListItemProps = {
   slug: string;
@@ -55,7 +64,7 @@ const PostListItem = ({
           {format(createdAt, "dd/MM")}
         </Typography>
 
-        <Chip>{label}</Chip>
+        <Chip color={chipColorLabel[label]}>{label}</Chip>
       </div>
     </Link>
   );

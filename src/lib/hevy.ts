@@ -10,8 +10,8 @@ type WorkoutsCountResponse = {
 };
 
 type WorkoutSet = {
-  reps: number;
-  weight_kg: number;
+  reps: number | null;
+  weight_kg: number | null;
 };
 
 type WorkoutExercise = {
@@ -58,7 +58,12 @@ const formatDuration = (minutes: number): string => {
 };
 
 export const getWorkout = async () => {
-  const response = await fetch(`${HEVY_API_URL}/workouts?page=1&pageSize=1`, {
+  const params = new URLSearchParams({
+    page: "1",
+    pageSize: "1",
+  });
+
+  const response = await fetch(`${HEVY_API_URL}/workouts?${params}`, {
     headers: {
       "api-key": process.env.HEVY_API_KEY ?? "",
     },
@@ -71,6 +76,8 @@ export const getWorkout = async () => {
   const data: WorkoutsResponse = await response.json();
   const workout = data.workouts[0];
 
+  console.log(JSON.stringify(workout, null, 2));
+
   const startTime = new Date(workout.start_time);
   const endTime = new Date(workout.end_time);
   const durationMinutes = differenceInMinutes(endTime, startTime);
@@ -79,7 +86,9 @@ export const getWorkout = async () => {
     return (
       total +
       exercise.sets.reduce((setTotal, set) => {
-        return setTotal + set.reps * set.weight_kg;
+        const reps = set.reps ?? 0;
+        const weight = set.weight_kg ?? 0;
+        return setTotal + reps * weight;
       }, 0)
     );
   }, 0);

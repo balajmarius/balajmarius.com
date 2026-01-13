@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import getPosts, { type Post } from "@/lib/posts";
+import { getPosts, type Post } from "@/lib/posts";
 
 import { Button } from "@/components/Button";
 import { Section } from "@/components/Section";
