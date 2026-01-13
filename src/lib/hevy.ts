@@ -1,7 +1,11 @@
 import axios from "axios";
 import { format, differenceInMinutes } from "date-fns";
 
-import { isNullOrUndefined } from "@/utils/helpers";
+import {
+  isNullOrUndefined,
+  toMinutes,
+  toKilograms,
+} from "@/utils/helpers";
 
 import {
   HEVY_API_URL,
@@ -32,7 +36,7 @@ type WorkoutsResponse = {
 };
 
 export type WorkoutDetails = {
-  duration: number;
+  duration: string;
   createdAt: string;
   volume: string;
 };
@@ -52,7 +56,7 @@ const instance = axios.create({
 
 instance.interceptors.response.use((response) => response.data);
 
-const calculateVolume = (sets: ReadonlyArray<ExerciseSet>): number => {
+const calculateVolume = (sets: ReadonlyArray<ExerciseSet>) => {
   return sets.reduce((total, set) => {
     if (isNullOrUndefined(set.weight_kg) || isNullOrUndefined(set.reps)) {
       return total;
@@ -72,9 +76,9 @@ const getWorkoutDetails = (workout?: Workout): WorkoutDetails | null => {
   const volume = calculateVolume(sets);
 
   return {
-    duration,
     createdAt,
-    volume: Intl.NumberFormat("en-EN").format(volume),
+    duration: toMinutes(duration),
+    volume: toKilograms(volume),
   };
 };
 
