@@ -56,6 +56,18 @@
     "backToWritings": "Back to writings",
     "sometimesIWrite": "Sometimes I <serif>write</serif>."
   },
+  "stats": {
+    "latestTrainingSessions": "Latest training sessions",
+    "weights": "Weights",
+    "boxing": "Boxing",
+    "duration": "Duration",
+    "date": "Date",
+    "volume": "Volume",
+    "sets": "Sets",
+    "workouts": "<serif>{count}</serif> workouts",
+    "kgs": "{count} kgs",
+    "mins": "{count} mins"
+  },
   "error404": {
     "title": "Page Not Found",
     "doesNotExist": "The page you are looking for does <serif>not exist</serif>."

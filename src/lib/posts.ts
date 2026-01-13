@@ -17,7 +17,7 @@ export type Post = {
 
 const postsDir = path.join(process.cwd(), "src/content/posts");
 
-const getPosts = () => {
+export const getPosts = () => {
   const fileNames = fs
     .readdirSync(postsDir)
     .filter((fileName) => fileName.endsWith(".md"));
@@ -78,5 +78,3 @@ export const getPost = (slug?: string | string[]) => {
     };
   } catch {}
 };
-
-export default getPosts;

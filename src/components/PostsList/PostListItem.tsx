@@ -10,6 +10,13 @@ import { Typography } from "@/components/Typography";
 
 type ChipColorLabelMapping = Record<Post["label"], ChipColor>;
 
+const chipColorLabel: ChipColorLabelMapping = {
+  Book: "info",
+  LLMs: "success",
+  Dev: "primary",
+  TIL: "secondary",
+};
+
 type PostListItemProps = {
   slug: string;
   title: string;
@@ -19,13 +26,6 @@ type PostListItemProps = {
   active: boolean;
   onMouseEnter: MouseEventHandler<HTMLAnchorElement>;
   onMouseLeave: MouseEventHandler<HTMLAnchorElement>;
-};
-
-const chipColorLabel: ChipColorLabelMapping = {
-  Book: "info",
-  LLMs: "success",
-  Dev: "primary",
-  TIL: "secondary",
 };
 
 const PostListItem = ({

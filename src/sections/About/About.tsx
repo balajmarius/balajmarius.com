@@ -64,7 +64,7 @@ const About = () => {
     ),
     url3: (chunks: ReactNode) => (
       <Link
-        href={links.viitorul}
+        href={links.boxing}
         className="text-blue-500"
         target="_blank"
         rel="noopener noreferrer"
