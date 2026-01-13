@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
-import type { WorkoutsStats } from "@/lib/hevy";
+import type { Workouts } from "@/lib/hevy";
 
 import { links } from "@/utils/links";
 
@@ -19,7 +19,7 @@ import { IconButton } from "@/components/IconButton";
 import { Typography } from "@/components/Typography";
 
 type StatsProps = {
-  workouts: WorkoutsStats;
+  workouts: Workouts;
 };
 
 const Stats = ({ workouts }: StatsProps) => {
@@ -81,7 +81,7 @@ const Stats = ({ workouts }: StatsProps) => {
           </div>
         </CardContent>
         <CardFooter>
-          <a href={links.hevy} target="_blank" rel="noopener noreferrer">
+          <a href={links.hevy} target="_blank" rel="noopener noreferrer" aria-label="Hevy">
             <IconButton>
               <SvgIconHevy size="small" />
             </IconButton>

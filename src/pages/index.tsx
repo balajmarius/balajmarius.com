@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useTranslations } from "next-intl";
 
 import { getPosts, type Post } from "@/lib/posts";
-import { getWorkouts, type WorkoutsStats } from "@/lib/hevy";
+import { getWorkouts, type Workouts } from "@/lib/hevy";
 
 import { About } from "@/sections/About";
 import { Experience } from "@/sections/Experience";
@@ -11,7 +11,7 @@ import { Posts } from "@/sections/Posts";
 import { Stats } from "@/sections/Stats";
 
 type HomeProps = {
-  workouts: WorkoutsStats;
+  workouts: Workouts;
   posts: Record<string, Post[]>;
 };
 

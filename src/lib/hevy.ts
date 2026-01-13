@@ -9,38 +9,38 @@ import {
   WORKOUTS_BOXING_EXERCISES,
 } from "@/utils/const";
 
-type ExerciseSet = {
-  reps?: number;
-  weight_kg?: number;
-};
-
-type Workout = {
-  end_time: string;
-  start_time: string;
-  created_at: string;
-  exercises: ReadonlyArray<{
-    sets: ReadonlyArray<ExerciseSet>;
-  }>;
-};
-
-type WorkoutsCountResponse = {
+type HevyAPIWorkoutsCountResponse = {
   workout_count: number;
 };
 
-type WorkoutsResponse = {
-  workouts: ReadonlyArray<Workout>;
+type HevyAPIWorkoutsResponse = {
+  workouts: ReadonlyArray<{
+    end_time: string;
+    start_time: string;
+    created_at: string;
+    exercises: ReadonlyArray<{
+      sets: ReadonlyArray<{
+        reps?: number;
+        weight_kg?: number;
+      }>;
+    }>;
+  }>;
 };
 
-export type WorkoutDetails = {
+type HevyAPIWorkout = HevyAPIWorkoutsResponse["workouts"][number];
+type HevyAPIExercise = HevyAPIWorkout["exercises"][number];
+type HevyAPIExerciseSet = HevyAPIExercise["sets"][number];
+
+export type Workout = {
   duration: string;
   createdAt: string;
   volume: string;
 };
 
-export type WorkoutsStats = {
+export type Workouts = {
   count: number;
-  weights: WorkoutDetails | null;
-  boxing: WorkoutDetails | null;
+  weights: Workout | null;
+  boxing: Workout | null;
 };
 
 const instance = axios.create({
@@ -50,9 +50,7 @@ const instance = axios.create({
   },
 });
 
-instance.interceptors.response.use((response) => response.data);
-
-const calculateVolume = (sets: ReadonlyArray<ExerciseSet>) => {
+const calculateVolume = (sets: ReadonlyArray<HevyAPIExerciseSet>) => {
   return sets.reduce((total, set) => {
     if (isNullOrUndefined(set.weight_kg) || isNullOrUndefined(set.reps)) {
       return total;
@@ -61,7 +59,7 @@ const calculateVolume = (sets: ReadonlyArray<ExerciseSet>) => {
   }, WORKOUTS_VOLUME);
 };
 
-const getWorkoutDetails = (workout?: Workout): WorkoutDetails | null => {
+const getWorkout = (workout?: HevyAPIWorkout): Workout | null => {
   if (isNullOrUndefined(workout)) {
     return null;
   }
@@ -78,22 +76,22 @@ const getWorkoutDetails = (workout?: Workout): WorkoutDetails | null => {
   };
 };
 
-export const getWorkouts = async (): Promise<WorkoutsStats> => {
+export const getWorkouts = async (): Promise<Workouts> => {
   const [workoutsCountResponse, workoutsResponse] = await Promise.all([
-    instance.get<never, WorkoutsCountResponse>("/workouts/count"),
-    instance.get<never, WorkoutsResponse>("/workouts"),
+    instance.get<HevyAPIWorkoutsCountResponse>("/workouts/count"),
+    instance.get<HevyAPIWorkoutsResponse>("/workouts"),
   ]);
 
-  const boxing = workoutsResponse.workouts.find(
+  const boxing = workoutsResponse.data.workouts.find(
     (workout) => workout.exercises.length === WORKOUTS_BOXING_EXERCISES
   );
-  const weights = workoutsResponse.workouts.find(
+  const weights = workoutsResponse.data.workouts.find(
     (workout) => workout.exercises.length > WORKOUTS_BOXING_EXERCISES
   );
 
   return {
-    boxing: getWorkoutDetails(boxing),
-    weights: getWorkoutDetails(weights),
-    count: workoutsCountResponse.workout_count,
+    boxing: getWorkout(boxing),
+    weights: getWorkout(weights),
+    count: workoutsCountResponse.data.workout_count,
   };
 };
