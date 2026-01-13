@@ -1,15 +1,9 @@
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
-import { format } from "date-fns";
+
+import type { WorkoutsStats } from "@/lib/hevy";
 
 import { links } from "@/utils/links";
-
-import { Chip } from "@/components/Chip";
-import { Card, CardContent, CardFooter, CardListItem } from "@/components/Card";
-import { Section } from "@/components/Section";
-import { IconButton } from "@/components/IconButton";
-import { Typography } from "@/components/Typography";
-import { Divider } from "@/components/Divider";
 
 import {
   SvgIconHevy,
@@ -17,18 +11,18 @@ import {
   SvgIconGlove,
 } from "@/components/SvgIcon";
 
-type Workout = {
-  time: string;
-  createdAt: string;
-  volume: number;
-};
+import { Chip } from "@/components/Chip";
+import { Divider } from "@/components/Divider";
+import { Card, CardContent, CardFooter, CardListItem } from "@/components/Card";
+import { Section } from "@/components/Section";
+import { IconButton } from "@/components/IconButton";
+import { Typography } from "@/components/Typography";
 
 type StatsProps = {
-  workoutsCount: number;
-  workout: Workout;
+  workouts: WorkoutsStats;
 };
 
-const Stats = ({ workoutsCount, workout }: StatsProps) => {
+const Stats = ({ workouts }: StatsProps) => {
   const t = useTranslations();
 
   return (
@@ -51,14 +45,17 @@ const Stats = ({ workoutsCount, workout }: StatsProps) => {
               <div className="flex gap-3">
                 <CardListItem
                   label={t("stats.date")}
-                  value={format(new Date(workout.createdAt), "MMM d")}
+                  value={workouts.weights?.createdAt}
                 />
                 <Divider />
-                <CardListItem label={t("stats.time")} value={workout.time} />
+                <CardListItem
+                  label={t("stats.duration")}
+                  value={workouts.weights?.duration}
+                />
                 <Divider />
                 <CardListItem
                   label={t("stats.volume")}
-                  value={`${workout.volume.toLocaleString()} kg`}
+                  value={workouts.weights?.volume}
                 />
               </div>
             </div>
@@ -72,10 +69,13 @@ const Stats = ({ workoutsCount, workout }: StatsProps) => {
               <div className="flex gap-3">
                 <CardListItem
                   label={t("stats.date")}
-                  value={format(new Date("2025-01-09"), "MMM d")}
+                  value={workouts.boxing?.createdAt}
                 />
                 <Divider />
-                <CardListItem label={t("stats.time")} value="2:52 hrs" />
+                <CardListItem
+                  label={t("stats.duration")}
+                  value={workouts.boxing?.duration}
+                />
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Stats = ({ workoutsCount, workout }: StatsProps) => {
           <Chip color="default">
             <Typography variant="body2">
               {t.rich("stats.workouts", {
-                count: workoutsCount,
+                count: workouts.count,
                 serif: (chunks: ReactNode) => (
                   <span className="font-serif italic">{chunks}</span>
                 ),

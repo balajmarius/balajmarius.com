@@ -60,11 +60,13 @@
     "latestTrainingSessions": "Latest training sessions",
     "weights": "Weights",
     "boxing": "Boxing",
-    "time": "Time",
+    "duration": "Duration",
     "date": "Date",
     "volume": "Volume",
     "sets": "Sets",
-    "workouts": "<serif>{count}</serif> workouts"
+    "workouts": "<serif>{count}</serif> workouts",
+    "kgs": "{count} kgs",
+    "mins": "{count} mins"
   },
   "error404": {
     "title": "Page Not Found",

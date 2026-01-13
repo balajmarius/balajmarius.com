@@ -1,101 +1,99 @@
-// ABOUTME: Fetches workout data from the Hevy API.
-// ABOUTME: API docs: https://api.hevyapp.com/docs/#/Workouts/get_v1_workouts
+import axios from "axios";
+import { format, differenceInMinutes } from "date-fns";
 
-import { differenceInMinutes } from "date-fns";
+import { isNullOrUndefined } from "@/utils/helpers";
 
-import { HEVY_API_URL } from "@/utils/const";
+import {
+  HEVY_API_URL,
+  WORKOUTS_VOLUME,
+  WORKOUTS_BOXING_EXERCISES,
+} from "@/utils/const";
+
+type ExerciseSet = {
+  reps?: number;
+  weight_kg?: number;
+};
+
+type Workout = {
+  end_time: string;
+  start_time: string;
+  created_at: string;
+  exercises: ReadonlyArray<{
+    sets: ReadonlyArray<ExerciseSet>;
+  }>;
+};
 
 type WorkoutsCountResponse = {
   workout_count: number;
 };
 
-type WorkoutSet = {
-  reps: number | null;
-  weight_kg: number | null;
-};
-
-type WorkoutExercise = {
-  sets: WorkoutSet[];
-};
-
-type Workout = {
-  created_at: string;
-  start_time: string;
-  end_time: string;
-  exercises: WorkoutExercise[];
-};
-
 type WorkoutsResponse = {
-  workouts: Workout[];
+  workouts: ReadonlyArray<Workout>;
 };
 
-export const getWorkoutsCount = async () => {
-  const response = await fetch(`${HEVY_API_URL}/workouts/count`, {
-    headers: {
-      "api-key": process.env.HEVY_API_KEY ?? "",
-    },
-  });
+export type WorkoutDetails = {
+  duration: number;
+  createdAt: string;
+  volume: string;
+};
 
-  console.log(process.env.HEVY_API_KEY);
+export type WorkoutsStats = {
+  count: number;
+  weights: WorkoutDetails | null;
+  boxing: WorkoutDetails | null;
+};
 
-  console.log(response);
+const instance = axios.create({
+  baseURL: HEVY_API_URL,
+  headers: {
+    "api-key": process.env.HEVY_API_KEY,
+  },
+});
 
-  if (!response.ok) {
-    throw new Error(`Hevy API error: ${response.status}`);
+instance.interceptors.response.use((response) => response.data);
+
+const calculateVolume = (sets: ReadonlyArray<ExerciseSet>): number => {
+  return sets.reduce((total, set) => {
+    if (isNullOrUndefined(set.weight_kg) || isNullOrUndefined(set.reps)) {
+      return total;
+    }
+    return total + set.weight_kg * set.reps;
+  }, WORKOUTS_VOLUME);
+};
+
+const getWorkoutDetails = (workout?: Workout): WorkoutDetails | null => {
+  if (isNullOrUndefined(workout)) {
+    return null;
   }
 
-  const data: WorkoutsCountResponse = await response.json();
-
-  console.log(data);
-
-  return data.workout_count;
-};
-
-const formatDuration = (minutes: number): string => {
-  const hours = Math.floor(minutes / 60);
-  const mins = minutes % 60;
-  return `${hours}:${mins.toString().padStart(2, "0")} hrs`;
-};
-
-export const getWorkout = async () => {
-  const params = new URLSearchParams({
-    page: "1",
-    pageSize: "1",
-  });
-
-  const response = await fetch(`${HEVY_API_URL}/workouts?${params}`, {
-    headers: {
-      "api-key": process.env.HEVY_API_KEY ?? "",
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error(`Hevy API error: ${response.status}`);
-  }
-
-  const data: WorkoutsResponse = await response.json();
-  const workout = data.workouts[0];
-
-  console.log(JSON.stringify(workout, null, 2));
-
-  const startTime = new Date(workout.start_time);
-  const endTime = new Date(workout.end_time);
-  const durationMinutes = differenceInMinutes(endTime, startTime);
-
-  const volume = workout.exercises.reduce((total, exercise) => {
-    return (
-      total +
-      exercise.sets.reduce((setTotal, set) => {
-        const reps = set.reps ?? 0;
-        const weight = set.weight_kg ?? 0;
-        return setTotal + reps * weight;
-      }, 0)
-    );
-  }, 0);
+  const sets = workout.exercises.flatMap((exercise) => exercise.sets);
+  const createdAt = format(workout.created_at, "MMM d");
+  const duration = differenceInMinutes(workout.end_time, workout.start_time);
+  const volume = calculateVolume(sets);
 
   return {
-    time: formatDuration(durationMinutes),
-    createdAt: workout.created_at,
-    volume: Math.round(volume),
+    duration,
+    createdAt,
+    volume: Intl.NumberFormat("en-EN").format(volume),
+  };
+};
+
+export const getWorkouts = async (): Promise<WorkoutsStats> => {
+  const [workoutsCountResponse, workoutsResponse] = await Promise.all([
+    instance.get<never, WorkoutsCountResponse>("/workouts/count"),
+    instance.get<never, WorkoutsResponse>("/workouts"),
+  ]);
+
+  const boxing = workoutsResponse.workouts.find(
+    (workout) => workout.exercises.length === WORKOUTS_BOXING_EXERCISES
+  );
+  const weights = workoutsResponse.workouts.find(
+    (workout) => workout.exercises.length > WORKOUTS_BOXING_EXERCISES
+  );
+
+  return {
+    boxing: getWorkoutDetails(boxing),
+    weights: getWorkoutDetails(weights),
+    count: workoutsCountResponse.workout_count,
   };
 };

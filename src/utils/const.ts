@@ -8,8 +8,10 @@ export const BOOKSHELF_ANIMATION_DAMPING = 30;
 export const BOOKSHELF_ANIMATION_STIFFNESS = 300;
 export const BOOKSHELF_COVER_SIZE = 64;
 
+export const WORKOUTS_VOLUME = 0;
+export const WORKOUTS_BOXING_EXERCISES = 1;
+
 export const THIRTY_FIVE_WEEKS_IN_MS = 35 * 7 * 24 * 60 * 60 * 1000;
 
 export const GOOGLE_ANALYTICS_ID = "G-TKEZZNZ9RP";
-
 export const HEVY_API_URL = "https://api.hevyapp.com/v1";
