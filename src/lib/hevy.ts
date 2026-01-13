@@ -1,11 +1,7 @@
 import axios from "axios";
 import { format, differenceInMinutes } from "date-fns";
 
-import {
-  isNullOrUndefined,
-  toMinutes,
-  toKilograms,
-} from "@/utils/helpers";
+import { isNullOrUndefined, toMinutes, toKilograms } from "@/utils/helpers";
 
 import {
   HEVY_API_URL,
