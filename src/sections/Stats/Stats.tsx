@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
 import type { Workouts } from "@/lib/hevy";
@@ -25,6 +25,26 @@ type StatsProps = {
 const Stats = ({ workouts }: StatsProps) => {
   const t = useTranslations();
 
+  const sections = [
+    {
+      icon: <SvgIconDumbell size="small" />,
+      title: t("stats.weights"),
+      fields: [
+        { label: t("stats.date"), value: workouts.weights?.createdAt },
+        { label: t("stats.duration"), value: workouts.weights?.duration },
+        { label: t("stats.volume"), value: workouts.weights?.volume },
+      ],
+    },
+    {
+      icon: <SvgIconGlove size="small" />,
+      title: t("stats.boxing"),
+      fields: [
+        { label: t("stats.date"), value: workouts.boxing?.createdAt },
+        { label: t("stats.duration"), value: workouts.boxing?.duration },
+      ],
+    },
+  ] as const;
+
   return (
     <Section id="stats">
       <Card color="primary">
@@ -34,59 +54,30 @@ const Stats = ({ workouts }: StatsProps) => {
           </Typography>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:gap-12">
-            <div className="space-y-3">
-              <div className="flex items-center gap-1">
-                <SvgIconDumbell size="small" />
-                <Typography variant="subtitle1">
-                  {t("stats.weights")}
-                </Typography>
+            {sections.map((section) => (
+              <div key={section.title} className="space-y-3">
+                <div className="flex items-center gap-1">
+                  {section.icon}
+                  <Typography variant="subtitle1">{section.title}</Typography>
+                </div>
+                <div className="flex gap-3">
+                  {section.fields.map((field, i) => (
+                    <Fragment key={field.label}>
+                      {i > 0 && <Divider />}
+                      <CardListItem label={field.label} value={field.value} />
+                    </Fragment>
+                  ))}
+                </div>
               </div>
-
-              <div className="flex gap-3">
-                <CardListItem
-                  label={t("stats.date")}
-                  value={workouts.weights?.createdAt}
-                />
-                <Divider />
-                <CardListItem
-                  label={t("stats.duration")}
-                  value={workouts.weights?.duration}
-                />
-                <Divider />
-                <CardListItem
-                  label={t("stats.volume")}
-                  value={workouts.weights?.volume}
-                />
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <div className="flex items-center gap-1">
-                <SvgIconGlove size="small" />
-                <Typography variant="subtitle1">{t("stats.boxing")}</Typography>
-              </div>
-
-              <div className="flex gap-3">
-                <CardListItem
-                  label={t("stats.date")}
-                  value={workouts.boxing?.createdAt}
-                />
-                <Divider />
-                <CardListItem
-                  label={t("stats.duration")}
-                  value={workouts.boxing?.duration}
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </CardContent>
         <CardFooter>
-          <a href={links.hevy} target="_blank" rel="noopener noreferrer" aria-label="Hevy">
+          <a href={links.hevy} target="_blank" rel="noopener noreferrer">
             <IconButton>
               <SvgIconHevy size="small" />
             </IconButton>
           </a>
-
           <Chip color="default">
             <Typography variant="body2">
               {t.rich("stats.workouts", {
