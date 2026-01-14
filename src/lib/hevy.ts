@@ -59,7 +59,7 @@ const calculateVolume = (sets: ReadonlyArray<HevyAPIExerciseSet>) => {
   }, WORKOUTS_VOLUME);
 };
 
-const getWorkout = (workout?: HevyAPIWorkout): Workout | null => {
+const getWorkout = (workout?: HevyAPIWorkout) => {
   if (isNullOrUndefined(workout)) {
     return null;
   }
@@ -76,7 +76,7 @@ const getWorkout = (workout?: HevyAPIWorkout): Workout | null => {
   };
 };
 
-export const getWorkouts = async (): Promise<Workouts> => {
+export const getWorkouts = async () => {
   const [workoutsCountResponse, workoutsResponse] = await Promise.all([
     instance.get<HevyAPIWorkoutsCountResponse>("/workouts/count"),
     instance.get<HevyAPIWorkoutsResponse>("/workouts"),
