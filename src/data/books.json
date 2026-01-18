@@ -1,5 +1,18 @@
 [
   {
+    "id": "Fic62G2f0GJI_h97cO8lj",
+    "title": "Jean Baudrillard",
+    "author": "Emmanuelle Fantin, Bran Nicol",
+    "src": "/images/bookshelf/jean-baudrillard@2x.webp",
+    "backgroundColor": "#356680",
+    "color": "#e8f0f0",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 420,
+    "coverWidth": 260,
+    "coverHeight": 400
+  },
+  {
     "id": "vKwNdHUffUeDTK41fLsHw",
     "title": "Ideologii și ideologi în România contemporană",
     "author": "Cristian Preda",
