@@ -5,43 +5,43 @@ import { BOOKSHELF_VELOCITY_INITIAL } from "@/utils/const";
 import { isNullOrUndefined } from "@/utils/helpers";
 
 export const useScrollSmooth = <T extends HTMLElement>(): {
-	ref: React.RefObject<T | null>;
-	velocity: MotionValue<number>;
+  ref: React.RefObject<T | null>;
+  velocity: MotionValue<number>;
 } => {
-	const ref = useRef<T>(null);
-	const velocity = useMotionValue(BOOKSHELF_VELOCITY_INITIAL);
+  const ref = useRef<T>(null);
+  const velocity = useMotionValue(BOOKSHELF_VELOCITY_INITIAL);
 
-	useEffect(() => {
-		if (isNullOrUndefined(ref.current)) {
-			return;
-		}
+  useEffect(() => {
+    if (isNullOrUndefined(ref.current)) {
+      return;
+    }
 
-		const lenis = new Lenis({
-			wrapper: ref.current,
-			content: ref.current,
-			gestureOrientation: "both",
-			orientation: "horizontal",
-		});
+    const lenis = new Lenis({
+      wrapper: ref.current,
+      content: ref.current,
+      gestureOrientation: "both",
+      orientation: "horizontal",
+    });
 
-		const raf = (time: number) => {
-			lenis.raf(time);
-			requestAnimationFrame(raf);
-		};
-		requestAnimationFrame(raf);
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
 
-		lenis.on("scroll", (event: { velocity: number }) => {
-			velocity.set(event.velocity);
-		});
+    lenis.on("scroll", (event: { velocity: number }) => {
+      velocity.set(event.velocity);
+    });
 
-		document.fonts.ready.then(() => {
-			lenis.resize();
-		});
+    document.fonts.ready.then(() => {
+      lenis.resize();
+    });
 
-		return () => lenis.destroy();
-	}, [velocity]);
+    return () => lenis.destroy();
+  }, [velocity]);
 
-	return {
-		ref,
-		velocity,
-	};
+  return {
+    ref,
+    velocity,
+  };
 };

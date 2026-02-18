@@ -1,97 +1,97 @@
 {
-	"metadata": {
-		"title": "Marius Bălaj",
-		"description": "I’m a UI engineer turned founder with a background in startups. I co-founded QED in 2021, grew it, and eventually sold it to The Sandbox. Now, I’m focused on building in AI."
-	},
-	"appBar": {
-		"home": "Home",
-		"menu": "Menu",
-		"close": "Close",
-		"intro": "Intro",
-		"experiences": "Experiences",
-		"writings": "Writings",
-		"bookshelf": "Bookshelf",
-		"contact": "Contact"
-	},
-	"about": {
-		"title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>founder</serif>.\nOne exit behind me, <serif>now building in <ai>AI</ai></serif>.",
-		"description": {
-			"0": "I’m a UI engineer turned founder with a background in startups — from blockchain pioneers to larger tech companies. I co-founded <url1><serif>QED</serif></url1> in 2021, grew it, and eventually sold it to <url2><serif>Sandbox</serif></url2>.",
-			"1": "Outside of work, I box. I’m the president of <url3><serif>Viitorul Boxing Club</serif></url3>, where I train and help others do the same. I also <url4><serif>read</serif></url4> a lot — it keeps me sharp.",
-			"2": "Now, I’m focused on building in AI."
-		}
-	},
-	"experience": {
-		"today": "Today",
-		"title": "Experience",
-		"jobs": {
-			"1": {
-				"title": "The Sandbox",
-				"role": "Managing Director (Romania)"
-			},
-			"2": {
-				"title": "QED (acquired by The Sandbox)",
-				"role": "Co-Founder",
-				"duration": "2022 ~ 2025"
-			},
-			"3": {
-				"title": "stake.fish / f2pool.io",
-				"role": "Senior Software Engineer",
-				"duration": "2019 ~ 2022"
-			},
-			"4": {
-				"title": "Alacritylaw",
-				"role": "Lead Software Engineer",
-				"duration": "2017 ~ 2019"
-			}
-		}
-	},
-	"commits": {
-		"viewOnGitHub": "View on GitHub"
-	},
-	"posts": {
-		"title": "Writings",
-		"author": " - {author}",
-		"moreWritings": "More writings",
-		"backToWritings": "Back to writings",
-		"sometimesIWrite": "Sometimes I <serif>write</serif>."
-	},
-	"stats": {
-		"latestTrainingSessions": "Latest training sessions",
-		"weights": "Weights",
-		"boxing": "Boxing",
-		"duration": "Duration",
-		"date": "Date",
-		"volume": "Volume",
-		"sets": "Sets",
-		"workouts": "<serif>{count}</serif> workouts",
-		"kgs": "{count} kgs",
-		"mins": "{count} mins"
-	},
-	"error404": {
-		"title": "Page Not Found",
-		"doesNotExist": "The page you are looking for does <serif>not exist</serif>."
-	},
-	"bookshelf": {
-		"title": "Bookshelf",
-		"books": "Books",
-		"onMyBookshelf": "On my <serif>Bookshelf</serif>",
-		"personalCollectionOfBooks": "This is a personal collection of books I physically own. I'm always happy to exchange books or lend them out, feel free to <serif><url>reach out</url></serif>.",
-		"booksOnMyShelf": "{count} books",
-		"stack": "Stack",
-		"shelf": "Shelf"
-	},
-	"common": {
-		"backToHome": "Back to home"
-	},
-	"footer": {
-		"contact": "Contact",
-		"email": "Email",
-		"linkedin": "LinkedIn",
-		"github": "GitHub",
-		"x": "X",
-		"copyToClipboard": "Copy to clipboard",
-		"copyright": "© {year} Marius Balaj",
-		"quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
-	}
+  "metadata": {
+    "title": "Marius Bălaj",
+    "description": "I’m a UI engineer turned founder with a background in startups. I co-founded QED in 2021, grew it, and eventually sold it to The Sandbox. Now, I’m focused on building in AI."
+  },
+  "appBar": {
+    "home": "Home",
+    "menu": "Menu",
+    "close": "Close",
+    "intro": "Intro",
+    "experiences": "Experiences",
+    "writings": "Writings",
+    "bookshelf": "Bookshelf",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>founder</serif>.\nOne exit behind me, <serif>now building in <ai>AI</ai></serif>.",
+    "description": {
+      "0": "I’m a UI engineer turned founder with a background in startups — from blockchain pioneers to larger tech companies. I co-founded <url1><serif>QED</serif></url1> in 2021, grew it, and eventually sold it to <url2><serif>Sandbox</serif></url2>.",
+      "1": "Outside of work, I box. I’m the president of <url3><serif>Viitorul Boxing Club</serif></url3>, where I train and help others do the same. I also <url4><serif>read</serif></url4> a lot — it keeps me sharp.",
+      "2": "Now, I’m focused on building in AI."
+    }
+  },
+  "experience": {
+    "today": "Today",
+    "title": "Experience",
+    "jobs": {
+      "1": {
+        "title": "The Sandbox",
+        "role": "Managing Director (Romania)"
+      },
+      "2": {
+        "title": "QED (acquired by The Sandbox)",
+        "role": "Co-Founder",
+        "duration": "2022 ~ 2025"
+      },
+      "3": {
+        "title": "stake.fish / f2pool.io",
+        "role": "Senior Software Engineer",
+        "duration": "2019 ~ 2022"
+      },
+      "4": {
+        "title": "Alacritylaw",
+        "role": "Lead Software Engineer",
+        "duration": "2017 ~ 2019"
+      }
+    }
+  },
+  "commits": {
+    "viewOnGitHub": "View on GitHub"
+  },
+  "posts": {
+    "title": "Writings",
+    "author": " - {author}",
+    "moreWritings": "More writings",
+    "backToWritings": "Back to writings",
+    "sometimesIWrite": "Sometimes I <serif>write</serif>."
+  },
+  "stats": {
+    "latestTrainingSessions": "Latest training sessions",
+    "weights": "Weights",
+    "boxing": "Boxing",
+    "duration": "Duration",
+    "date": "Date",
+    "volume": "Volume",
+    "sets": "Sets",
+    "workouts": "<serif>{count}</serif> workouts",
+    "kgs": "{count} kgs",
+    "mins": "{count} mins"
+  },
+  "error404": {
+    "title": "Page Not Found",
+    "doesNotExist": "The page you are looking for does <serif>not exist</serif>."
+  },
+  "bookshelf": {
+    "title": "Bookshelf",
+    "books": "Books",
+    "onMyBookshelf": "On my <serif>Bookshelf</serif>",
+    "personalCollectionOfBooks": "This is a personal collection of books I physically own. I'm always happy to exchange books or lend them out, feel free to <serif><url>reach out</url></serif>.",
+    "booksOnMyShelf": "{count} books",
+    "stack": "Stack",
+    "shelf": "Shelf"
+  },
+  "common": {
+    "backToHome": "Back to home"
+  },
+  "footer": {
+    "contact": "Contact",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "x": "X",
+    "copyToClipboard": "Copy to clipboard",
+    "copyright": "© {year} Marius Balaj",
+    "quote": "The <serif>starry heavens</serif> above me and <serif>the moral law</serif> within me."
+  }
 }
