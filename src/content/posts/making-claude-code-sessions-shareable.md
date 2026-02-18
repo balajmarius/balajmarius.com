@@ -110,6 +110,11 @@ execution. Code blocks are syntax highlighted so they remain readable.
 Tool calls such as file reads, writes, bash commands, web searches, and MCP
 calls can be collapsed so they do not dominate the screen.
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/claudebin-conversation.png" alt="Collapsible tool calls in Claudebin" />
+  <figcaption>Collapsible tool calls in Claudebin</figcaption>
+</figure>
+
 User and assistant messages are clearly separated so the conversation keeps its
 structure.
 
@@ -128,6 +133,11 @@ and pipes it directly into Claude Code.
 Running that command in your terminal loads the entire conversation as context.
 Claude reads through what has already happened, summarizes it, and asks how you
 would like to proceed.
+
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/continue-conversation.png" alt="Continue conversation option in Claudebin" />
+  <figcaption>Continue conversation option in Claudebin</figcaption>
+</figure>
 
 From that point forward, you are in a normal Claude Code session with full
 historical context. The shared thread becomes a starting point rather than a
@@ -155,9 +165,14 @@ Every session receives an Open Graph image at publish time, including the thread
 title, author, date, model used, and summary statistics such as message count
 and file interactions. Sharing the link is enough to generate a clean preview.
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/x-og-image.png" alt="Open Graph preview of a Claudebin session on X" />
+  <figcaption>Open Graph preview of a Claudebin session on X</figcaption>
+</figure>
+
 ## Building it
 
-We built Claudebin while actively using it ourselves, iterating on the CLI flow,
+We built [Claudebin](https://claudebin.com) while actively using it ourselves, iterating on the CLI flow,
 the viewer, embedding, and continuation features as we encountered friction in
 day-to-day work. It is open source and free to use.
 
