@@ -18,7 +18,7 @@ adjusting constraints, refining the output until it felt correct. Then I would
 want to show Vlad what I did.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/slack-conversation.png" alt="Slack conversation sharing a Claude Code session" />
+  <img className="w-full" src="/images/making-claude-code-sessions-shareable/slack-conversation.png" alt="Slack conversation sharing a Claude Code session" />
   <figcaption>Sharing Claude Code sessions over Slack</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ multiple iterations, or what product specifications and constraints I initially
 gave to the AI.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/github-comment.png" alt="GitHub comment with Claude Code context" />
+  <img className="w-full" src="/images/making-claude-code-sessions-shareable/github-comment.png" alt="GitHub comment with Claude Code context" />
   <figcaption>GitHub comment lacking session context</figcaption>
 </figure>
 
@@ -166,7 +166,7 @@ title, author, date, model used, and summary statistics such as message count
 and file interactions. Sharing the link is enough to generate a clean preview.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/x-og-image.png" alt="Open Graph preview of a Claudebin session on X" />
+  <img className="w-full" src="/images/making-claude-code-sessions-shareable/x-og-image.png" alt="Open Graph preview of a Claudebin session on X" />
   <figcaption>Open Graph preview of a Claudebin session on X</figcaption>
 </figure>
 
@@ -181,4 +181,8 @@ and shareable, start on
 [GitHub](https://github.com/wunderlabs-dev/claudebin.com/), try it in your
 workflow, and open a pull request if you see something that can be improved.
 
-_PRs are welcome._
+PRs are welcome!
+
+---
+
+_This is the [thread](https://claudebin.com/threads/B9fqkyQPJs) used to write parts of this article._
