@@ -8,6 +8,8 @@ author:
 _Claudebin is a project I built together with Vlad Temian. You can follow him
 on [X](https://x.com/vtemian) and [GitHub](https://github.com/vtemian)._
 
+_This is the [thread](https://claudebin.com/threads/B9fqkyQPJs) used to write parts of this article._
+
 ---
 
 I use Claude Code daily, Vlad does too, and we often work on the same projects.
@@ -123,6 +125,11 @@ link, depending on the use case. Instead of scrolling through a terminal buffer,
 you get a session that can be browsed, referenced, and sent to someone else
 without additional explanation.
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/claudebin-thread-visibility.png" alt="Thread visibility options in Claudebin" />
+  <figcaption>Thread visibility options in Claudebin</figcaption>
+</figure>
+
 ## Continuing a conversation
 
 Sharing a session is useful, but being able to continue it is even more
@@ -181,8 +188,4 @@ and shareable, start on
 [GitHub](https://github.com/wunderlabs-dev/claudebin.com/), try it in your
 workflow, and open a pull request if you see something that can be improved.
 
-PRs are welcome!
-
----
-
-_This is the [thread](https://claudebin.com/threads/B9fqkyQPJs) used to write parts of this article._
+_PRs are welcome!_
