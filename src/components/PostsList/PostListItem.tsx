@@ -1,73 +1,71 @@
-import Link from "next/link";
 import { format } from "date-fns";
+import Link from "next/link";
 import type { MouseEventHandler } from "react";
-
-import { cn } from "@/utils/helpers";
-import type { Post } from "@/lib/posts";
-
 import { Chip, type ChipColor } from "@/components/Chip";
 import { Typography } from "@/components/Typography";
+import type { Post } from "@/lib/posts";
+import { cn } from "@/utils/helpers";
 
 type ChipColorLabelMapping = Record<Post["label"], ChipColor>;
 
 const chipColorLabel: ChipColorLabelMapping = {
-  Book: "info",
-  LLMs: "success",
-  Dev: "primary",
-  TIL: "secondary",
+	Book: "info",
+	LLMs: "success",
+	Dev: "primary",
+	TIL: "secondary",
 };
 
 type PostListItemProps = {
-  slug: string;
-  title: string;
-  author?: string;
-  createdAt: Date;
-  label: Post["label"];
-  active: boolean;
-  onMouseEnter: MouseEventHandler<HTMLAnchorElement>;
-  onMouseLeave: MouseEventHandler<HTMLAnchorElement>;
+	slug: string;
+	title: string;
+	author?: string;
+	createdAt: Date;
+	label: Post["label"];
+	active: boolean;
+	onMouseEnter: MouseEventHandler<HTMLAnchorElement>;
+	onMouseLeave: MouseEventHandler<HTMLAnchorElement>;
 };
 
 const PostListItem = ({
-  slug,
-  title,
-  author,
-  createdAt,
-  label,
-  active,
-  onMouseEnter,
-  onMouseLeave,
+	slug,
+	title,
+	author,
+	createdAt,
+	label,
+	active,
+	onMouseEnter,
+	onMouseLeave,
 }: PostListItemProps) => {
-  return (
-    <Link
-      href={`/writings/${slug}`}
-      className={cn(
-        "group flex flex-col sm:flex-row gap-1.5 sm:justify-between py-3 transition-opacity ease-out-exponential",
-        active ? "opacity-100" : "opacity-50"
-      )}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
-      <div className="space-x-1 group-hover:text-blue-500">
-        <Typography variant="body1" color="inherit" display="inline">
-          {title}
-        </Typography>
-        {author ? (
-          <Typography variant="subtitle1" color="inherit" display="inline">
-            {author}
-          </Typography>
-        ) : null}
-      </div>
+	return (
+		<Link
+			href={`/writings/${slug}`}
+			className={cn(
+				"group flex flex-col sm:flex-row gap-1.5 sm:justify-between py-3 transition-opacity ease-out-exponential",
+				active ? "opacity-100" : "opacity-50",
+			)}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+		>
+			<div className="space-x-1 group-hover:text-blue-500">
+				<Typography variant="body1" color="inherit" display="inline">
+					{title}
+				</Typography>
+				{author ? (
+					<Typography variant="subtitle1" color="inherit" display="inline">
+						{author}
+					</Typography>
+				) : null}
+			</div>
 
-      <div className="flex items-center gap-x-3">
-        <Typography variant="body2" color="muted">
-          {format(createdAt, "dd/MM")}
-        </Typography>
+			<div className="flex items-center gap-x-3">
+				<Typography variant="body2" color="muted">
+					{format(createdAt, "dd/MM")}
+				</Typography>
 
-        <Chip color={chipColorLabel[label]}>{label}</Chip>
-      </div>
-    </Link>
-  );
+				<Chip color={chipColorLabel[label]}>{label}</Chip>
+			</div>
+		</Link>
+	);
 };
 
 export default PostListItem;
