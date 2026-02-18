@@ -5,6 +5,6 @@ export default getRequestConfig(async () => {
 
   return {
     locale,
-    messages: {},
+    messages: (await import("@/copy/en-EN.json")).default,
   };
 });

@@ -17,6 +17,11 @@ something with Claude, iterating on prompts, running commands, inspecting files,
 adjusting constraints, refining the output until it felt correct. Then I would
 want to show Vlad what I did.
 
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/slack-conversation.png" alt="Slack conversation sharing a Claude Code session" />
+  <figcaption>Sharing Claude Code sessions over Slack</figcaption>
+</figure>
+
 At that point, the workflow would fall apart.
 
 Screenshots of the terminal lose structure immediately and become hard to follow
@@ -49,6 +54,11 @@ the model suggested and I rejected, which files were inspected along the way,
 what commands were executed in the terminal, how the solution evolved over
 multiple iterations, or what product specifications and constraints I initially
 gave to the AI.
+
+<figure className="space-y-2 text-center text-gray-500 text-xs">
+  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/github-comment.png" alt="GitHub comment with Claude Code context" />
+  <figcaption>GitHub comment lacking session context</figcaption>
+</figure>
 
 When AI is part of the workflow, the conversation becomes part of the
 engineering process.
@@ -129,6 +139,8 @@ Sometimes the goal is not to share the entire session but to include part of it
 inside documentation. Claudebin supports selecting a range of messages and
 generating an iframe snippet that can be embedded in a blog post, tutorial, or
 README.
+
+<iframe className="w-full rounded-lg h-96" src="https://claudebin.com/threads/I0karOj-vb/embed?from=1&to=28"></iframe>
 
 The embedded view preserves formatting, avatars, syntax highlighting, and tool
 calls, along with a small footer that links back to the original thread. Instead
