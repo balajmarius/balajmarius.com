@@ -157,7 +157,7 @@ inside documentation. Claudebin supports selecting a range of messages and
 generating an iframe snippet that can be embedded in a blog post, tutorial, or
 README.
 
-<iframe className="w-full rounded-lg h-96" src="https://claudebin.com/threads/I0karOj-vb/embed?from=1&to=28"></iframe>
+<iframe className="w-full rounded-lg h-56" src="https://claudebin.com/threads/N2wtwZOwhU/embed?from=6&to=6"></iframe>
 
 The embedded view preserves formatting, avatars, syntax highlighting, and tool
 calls, along with a small footer that links back to the original thread. Instead
