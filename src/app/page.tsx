@@ -4,6 +4,8 @@ import { getTranslations } from "next-intl/server";
 import { getWorkouts } from "@/lib/hevy";
 import { getPosts } from "@/lib/posts";
 
+import { POSTS_LIMIT } from "@/utils/const";
+
 import { About } from "@/sections/about";
 import { Commits } from "@/sections/commits";
 import { Experience } from "@/sections/experience";
@@ -19,7 +21,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 const Home = async () => {
-  const posts = getPosts();
+  const posts = getPosts(POSTS_LIMIT);
   const workouts = await getWorkouts();
 
   return (

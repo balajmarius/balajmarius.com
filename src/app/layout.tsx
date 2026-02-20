@@ -1,11 +1,11 @@
 import "@/static/css/globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import type { ReactNode } from "react";
 
 import copy from "@/copy/en-EN.json";
 import { cn } from "@/utils/helpers";
@@ -76,6 +76,7 @@ const mono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.APP_URL),
   title: copy.metadata.title,
   description: copy.metadata.description,
   twitter: {
@@ -112,7 +113,8 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
             {children}
           </ScrollContainer>
         </NextIntlClientProvider>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!} />
+
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
       </body>
     </html>
   );
