@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { getPosts } from "@/lib/posts";
 
-import WritingsContent from "@/app/writings/writings-content";
+import WritingsContent from "@/app/writings/writings-client";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const t = await getTranslations();

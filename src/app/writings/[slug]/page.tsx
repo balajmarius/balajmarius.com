@@ -6,7 +6,7 @@ import type { ComponentProps } from "react";
 import { getPost, getPostSlugs } from "@/lib/posts";
 import { isNullOrUndefined } from "@/utils/helpers";
 
-import PostContent from "@/app/writings/[slug]/post-content";
+import PostContent from "@/app/writings/[slug]/writings-slug-client";
 
 type PostPageProps = {
   params: Promise<{ slug: string }>;
