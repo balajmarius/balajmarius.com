@@ -11,7 +11,7 @@ academic. In fact, he was a self-taught philosopher who spent most of his life
 working odd jobs (and somehow I related to him).
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/the-true-believer/crowd.jpg" alt="Photo by Adi Goldstein on Unsplash" />
+  <img src="/images/the-true-believer/crowd.webp" alt="Photo by Adi Goldstein on Unsplash" />
   <figcaption>Photo by Adi Goldstein on Unsplash</figcaption>
 </figure>
 

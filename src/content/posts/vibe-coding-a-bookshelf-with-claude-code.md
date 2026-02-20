@@ -19,7 +19,7 @@ of a startup idea. A spreadsheet would have been enough. I never did it, not
 because it was hard, but because it was tedious.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/part-of-my-personal-library.jpg" alt="Part of my personal library" />
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/part-of-my-personal-library.webp" alt="Part of my personal library" />
   <figcaption>Part of my personal library</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ the occasional blurry thumb. **Four hundred and seventy photos in total**. Once
 the images were on my laptop, I opened Claude.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/470-shots-one-afternoon.jpg" alt="470 shots, one afternoon" />
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/470-shots-one-afternoon.webp" alt="470 shots, one afternoon" />
   <figcaption>470 shots, one afternoon</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ but the spines. Different widths, uneven pressure, colors blending into a
 single texture.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/the-shelf-version-zero.jpg" alt="The shelf, version zero" />
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/the-shelf-version-zero.webp" alt="The shelf, version zero" />
   <figcaption>The shelf, version zero</figcaption>
 </figure>
 
@@ -186,7 +186,7 @@ readable without tilting your head. I pointed Claude at the shelf
 implementation and asked for a stack view.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/stack-ui-on-mobile.jpg" alt="Stack UI on mobile" />
+  <img src="/images/vibe-coding-a-bookshelf-with-claude-code/stack-ui-on-mobile.webp" alt="Stack UI on mobile" />
   <figcaption>Stack UI on mobile</figcaption>
 </figure>
 
