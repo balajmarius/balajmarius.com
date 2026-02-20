@@ -22,7 +22,7 @@ built a proof of concept using variant-driven components with
 [cva](https://cva.style/docs).
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/building-the-sandbox-design-system/research-development.jpg" alt="Photo by Mohammad Rahmani on Unsplash" />
+  <img src="/images/building-the-sandbox-design-system/research-development.webp" alt="Photo by Mohammad Rahmani on Unsplash" />
   <figcaption>Photo by Mohammad Rahmani on Unsplash</figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ the major version for breaking changes, we ensure existing clients don't break
 when using older builds.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/building-the-sandbox-design-system/release-notes.png" alt="Sandbox UI Release Notes" />
+  <img src="/images/building-the-sandbox-design-system/release-notes.webp" alt="Sandbox UI Release Notes" />
   <figcaption>Sandbox UI Release Notes</figcaption>
 </figure>
 

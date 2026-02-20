@@ -8,7 +8,7 @@ createdAt: Nov 18, 2025
 Humans create by moving through time. We carry the past, we try to escape it, we reshape it through memory, and we use it to throw ourselves forward into the future. Every act of creation is a negotiation with what came before and what might still come. Creation is a way to conjure or exorcise the past and to claim the future. So, we naturally assume that anything that creates must stand in time with us.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/llms-and-creation-outside-of-time/llm-chat.png" alt="LLM Chat Interface" />
+  <img src="/images/llms-and-creation-outside-of-time/llm-chat.webp" alt="LLM Chat Interface" />
   <figcaption>LLM Chat Interface</figcaption>
 </figure>
 

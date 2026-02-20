@@ -1,9 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
-import { compareDesc } from "date-fns/compareDesc";
-import { getYear } from "date-fns/getYear";
 import matter from "gray-matter";
 import groupBy from "lodash.groupby";
+import take from "lodash.take";
+import { getYear } from "date-fns/getYear";
+import { compareDesc } from "date-fns/compareDesc";
 
 import { isNullOrUndefined } from "@/utils/helpers";
 
@@ -17,7 +18,7 @@ export type Post = {
 
 const postsDir = path.join(process.cwd(), "src/content/posts");
 
-export const getPosts = () => {
+export const getPosts = (limit?: number) => {
   const fileNames = fs
     .readdirSync(postsDir)
     .filter((fileName) => fileName.endsWith(".md"));
@@ -42,7 +43,9 @@ export const getPosts = () => {
     })
     .sort((post1, post2) => compareDesc(post1.createdAt, post2.createdAt));
 
-  return groupBy<Post>(posts, (post) => getYear(post.createdAt));
+  const result = limit ? take(posts, limit) : posts;
+
+  return groupBy<Post>(result, (post) => getYear(post.createdAt));
 };
 
 export const getPostSlugs = () => {
@@ -64,8 +67,8 @@ export const getPost = (slug?: string | string[]) => {
     const fileContents = fs.readFileSync(filePath, "utf8");
 
     const {
-      data: { title, createdAt, author, label },
       content,
+      data: { title, createdAt, author, label },
     } = matter(fileContents);
 
     return {

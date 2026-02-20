@@ -10,7 +10,7 @@ think about. It's a short text, but very sharp. And honestly, it made me see
 how often we deal with bullshit around us, and sometimes, even produce it.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/on-bullshit/bull.jpg" alt="Photo by Kajetan Sumila on Unsplash" />
+  <img src="/images/on-bullshit/bull.webp" alt="Photo by Kajetan Sumila on Unsplash" />
   <figcaption>Photo by Kajetan Sumila on Unsplash</figcaption>
 </figure>
 

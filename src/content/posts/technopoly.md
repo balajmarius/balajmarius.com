@@ -10,7 +10,7 @@ Neil Postman, and it really gave me a new perspective on technology and
 society.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img src="/images/technopoly/building.jpg" alt="Photo by Mateusz Sieradzan-Sobolewski on Unsplash" />
+  <img src="/images/technopoly/building.webp" alt="Photo by Mateusz Sieradzan-Sobolewski on Unsplash" />
   <figcaption>Photo by Mateusz Sieradzan-Sobolewski on Unsplash</figcaption>
 </figure>
 

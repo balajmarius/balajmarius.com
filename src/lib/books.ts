@@ -1,6 +1,3 @@
-// ABOUTME: Loads and types bookshelf data from the JSON file.
-// ABOUTME: Provides typed access to the book collection for static generation.
-
 export type Book = {
   id: string;
   title: string;
