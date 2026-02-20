@@ -1,12 +1,16 @@
 import createMdxConfig from "@next/mdx";
+import createNextIntlPlugin from "next-intl/plugin";
 
-const mdxConfig = createMdxConfig();
+const withMdx = createMdxConfig();
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-export default mdxConfig({
-  output: "export",
-  trailingSlash: true,
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
-  images: {
-    unoptimized: true,
-  },
-});
+export default withNextIntl(
+  withMdx({
+    output: "export",
+    trailingSlash: true,
+    pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+    images: {
+      unoptimized: true,
+    },
+  })
+);

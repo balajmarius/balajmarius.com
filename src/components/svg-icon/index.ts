@@ -1,0 +1,18 @@
+export { default as SvgIcon, type SvgIconProps } from "./svg-icon";
+export { default as SvgIconArrow } from "./svg-icon-arrow";
+export { default as SvgIconBack } from "./svg-icon-back";
+export { default as SvgIconBookshelf } from "./svg-icon-bookshelf";
+export { default as SvgIconBookshelfStack } from "./svg-icon-bookshelf-stack";
+export { default as SvgIconBranch } from "./svg-icon-branch";
+export { default as SvgIconCheckmark } from "./svg-icon-checkmark";
+export { default as SvgIconClipboard } from "./svg-icon-clipboard";
+export { default as SvgIconDot } from "./svg-icon-dot";
+export { default as SvgIconDumbell } from "./svg-icon-dumbell";
+export { default as SvgIconGlobe } from "./svg-icon-globe";
+export { default as SvgIconGlove } from "./svg-icon-glove";
+export { default as SvgIconHevy } from "./svg-icon-hevy";
+export { default as SvgIconHouse } from "./svg-icon-house";
+export { default as SvgIconM } from "./svg-icon-m";
+export { default as SvgIconNotepad } from "./svg-icon-notepad";
+export { default as SvgIconTrophy } from "./svg-icon-trophy";
+export * from "./types";
