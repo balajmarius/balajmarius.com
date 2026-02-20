@@ -9,12 +9,13 @@ import type { Book } from "@/lib/books";
 import { BooksList, BooksListStack } from "@/components/books-list";
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
+import { Typography } from "@/components/typography";
+
 import {
   SvgIconBack,
   SvgIconBookshelf,
   SvgIconBookshelfStack,
 } from "@/components/svg-icon";
-import { Typography } from "@/components/typography";
 
 type BookshelfContentProps = {
   books: Book[];
