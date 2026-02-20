@@ -15,4 +15,6 @@ export const THIRTY_FIVE_WEEKS_IN_MS = 35 * 7 * 24 * 60 * 60 * 1000;
 
 export const POSTS_LIMIT = 6;
 
+export const APP_URL = "https://balajmarius.com";
+
 export const HEVY_API_URL = "https://api.hevyapp.com/v1";

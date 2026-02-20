@@ -8,7 +8,9 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
 import copy from "@/copy/en-EN.json";
+
 import { cn } from "@/utils/helpers";
+import { APP_URL } from "@/utils/const";
 
 import { ScrollContainer } from "@/components/scroll-container";
 
@@ -76,7 +78,7 @@ const mono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_URL),
+  metadataBase: new URL(APP_URL),
   title: copy.metadata.title,
   description: copy.metadata.description,
   twitter: {
