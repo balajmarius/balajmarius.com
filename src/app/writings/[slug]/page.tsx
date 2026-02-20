@@ -60,6 +60,14 @@ export const generateMetadata = async ({
 
   return {
     title: post?.title,
+    openGraph: {
+      title: post?.title,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post?.title,
+    },
   };
 };
 
