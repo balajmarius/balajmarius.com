@@ -6056,5 +6056,70 @@
     "cardSize": 398,
     "coverWidth": 259,
     "coverHeight": 400
+  },
+  {
+    "id": "48DgcqBP6y8BLfIeUsTTD",
+    "title": "Alienation and Acceleration",
+    "author": "Hartmut Rosa",
+    "src": "/images/bookshelf/alienation-and-acceleration@2x.webp",
+    "backgroundColor": "#181820",
+    "color": "#f0ece8",
+    "paddingLeft": 20,
+    "paddingRight": 20,
+    "cardSize": 420,
+    "coverWidth": 273,
+    "coverHeight": 400
+  },
+  {
+    "id": "Nj-ntjhTRj6Bk7iBvNJXx",
+    "title": "The Plot Against America",
+    "author": "Philip Roth",
+    "src": "/images/bookshelf/the-plot-against-america@2x.webp",
+    "backgroundColor": "#8a7d58",
+    "color": "#2a2820",
+    "paddingLeft": 20,
+    "paddingRight": 20,
+    "cardSize": 420,
+    "coverWidth": 259,
+    "coverHeight": 400
+  },
+  {
+    "id": "FmOi6CdKfvMgCaWMAw2Be",
+    "title": "Ubik",
+    "author": "Philip K. Dick",
+    "src": "/images/bookshelf/ubik@2x.webp",
+    "backgroundColor": "#c85820",
+    "color": "#f0e8d0",
+    "paddingLeft": 20,
+    "paddingRight": 20,
+    "cardSize": 410,
+    "coverWidth": 248,
+    "coverHeight": 400
+  },
+  {
+    "id": "CibaaXHRKpA-Hg66EtiXX",
+    "title": "Electric Dreams",
+    "author": "Philip K. Dick",
+    "src": "/images/bookshelf/electric-dreams@2x.webp",
+    "backgroundColor": "#101010",
+    "color": "#f0ece8",
+    "paddingLeft": 20,
+    "paddingRight": 20,
+    "cardSize": 420,
+    "coverWidth": 259,
+    "coverHeight": 400
+  },
+  {
+    "id": "jhAORlWJRytQPoZI7PIHD",
+    "title": "The Maniac",
+    "author": "Benjamín Labatut",
+    "src": "/images/bookshelf/the-maniac@2x.webp",
+    "backgroundColor": "#f0d020",
+    "color": "#1a1a1a",
+    "paddingLeft": 20,
+    "paddingRight": 20,
+    "cardSize": 420,
+    "coverWidth": 261,
+    "coverHeight": 400
   }
 ]
