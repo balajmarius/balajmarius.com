@@ -15,7 +15,9 @@ const About = () => {
   const t = useTranslations();
 
   const renderers = {
-    ai: (chunks: ReactNode) => <span className="text-blue-500">{chunks}</span>,
+    exited: (chunks: ReactNode) => (
+      <span className="text-blue-500">{chunks}</span>
+    ),
     ui: (chunks: ReactNode) => (
       <span className="relative inline-block text-blue-500">{chunks}</span>
     ),
@@ -104,6 +106,9 @@ const About = () => {
           </Typography>
           <Typography variant="body1">
             {t.rich("about.description.2", renderers)}
+          </Typography>
+          <Typography variant="body1">
+            {t.rich("about.description.3", renderers)}
           </Typography>
         </div>
       </motion.div>
