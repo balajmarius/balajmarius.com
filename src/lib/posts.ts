@@ -43,11 +43,9 @@ export const getPosts = (limit?: number) => {
     })
     .sort((post1, post2) => compareDesc(post1.createdAt, post2.createdAt));
 
+  const result = limit ? take(posts, limit) : posts;
 
-  if (limit) {
-    return groupBy<Post>(take(posts, limit), (post) => getYear(post.createdAt))
-  }
-  return groupBy<Post>(posts, (post) => getYear(post.createdAt));
+  return groupBy<Post>(result, (post) => getYear(post.createdAt));
 };
 
 export const getPostSlugs = () => {
