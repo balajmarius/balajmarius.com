@@ -1,4 +1,4 @@
 {
-  "**/*.{js,jsx,ts,tsx}": ["eslint --max-warnings=0", "prettier --write"],
-  "**/*.{json,md,css,yml,yaml}": ["prettier --write"]
+  "**/*.{js,jsx,ts,tsx}": ["oxlint --deny-warnings", "oxfmt"],
+  "**/*.{json,md,mdx,css,yml,yaml}": ["oxfmt"]
 }

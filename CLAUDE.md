@@ -8,7 +8,9 @@ Personal website built with Next.js (Pages Router), TypeScript, Tailwind CSS, an
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run lint` - Run ESLint
+- `npm run lint` - Run oxlint
+- `npm run format` - Format with oxfmt
+- `npm run format:check` - Check formatting with oxfmt
 
 ## Project Structure
 
