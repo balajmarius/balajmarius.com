@@ -15,7 +15,7 @@ const About = () => {
   const t = useTranslations();
 
   const renderers = {
-    exited: (chunks: ReactNode) => (
+    companies: (chunks: ReactNode) => (
       <span className="text-blue-500">{chunks}</span>
     ),
     ui: (chunks: ReactNode) => (
