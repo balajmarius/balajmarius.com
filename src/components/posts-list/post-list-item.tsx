@@ -1,9 +1,12 @@
 import { format } from "date-fns";
 import Link from "next/link";
 import type { MouseEventHandler } from "react";
+
+import type { Post } from "@/lib/posts";
+
 import { Chip, type ChipColor } from "@/components/chip";
 import { Typography } from "@/components/typography";
-import type { Post } from "@/lib/posts";
+
 import { cn } from "@/utils/helpers";
 
 type ChipColorLabelMapping = Record<Post["label"], ChipColor>;
