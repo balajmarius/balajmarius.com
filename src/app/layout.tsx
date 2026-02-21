@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   description: copy.metadata.description,
   twitter: {
     card: "summary_large_image",
-    images: "/og-image.webp",
+    images: "/og-image.png",
     site: "@balajmarius",
   },
   openGraph: {
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     title: copy.metadata.title,
     description: copy.metadata.description,
     images: {
-      url: "/og-image.webp",
+      url: "/og-image.png",
     },
   },
   icons: {
