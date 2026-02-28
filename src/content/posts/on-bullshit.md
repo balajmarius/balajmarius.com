@@ -16,7 +16,7 @@ how often we deal with bullshit around us, and sometimes, even produce it.
 
 Here are some key ideas:
 
-### Bullshit is not the same as lying
+## Bullshit is not the same as lying
 
 A liar knows the truth but chooses to hide it. That's bad, of course. But at
 least the liar still respects the truth in some strange way, because they have
@@ -27,7 +27,7 @@ or false. The only thing that matters to them is how they sound, if they
 impress, if they influence, if they win the moment. Truth is not even on the
 table.
 
-### Bullshit is more dangerous than lies
+## Bullshit is more dangerous than lies
 
 When someone lies, we can still detect the lie if we know the facts. But with
 bullshit, we're lost, There is no clear relation to reality. It's just words,
@@ -37,7 +37,7 @@ truth even matters and that's the real danger.
 Frankfurt also says that bullshit isn't just a problem with how we talk. It's
 also about what kind of people we are. It shows how we treat knowledge.
 
-### Why is there so much bullshit today?
+## Why is there so much bullshit today?
 
 Frankfurt says it's because of social pressure, social media, and the crazy
 speed of the world we live in, we're expected to have opinions on everything,

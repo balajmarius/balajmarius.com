@@ -45,6 +45,10 @@ const renderers = {
   hr: (props: ComponentProps<"hr">) => (
     <hr className="my-8 border-gray-100" {...props} />
   ),
+  img: (props: ComponentProps<"img">) => (
+    // eslint-disable-next-line @next/next/no-img-element -- MDX renderer must match the HTML element name
+    <img className="w-full rounded-lg" {...props} />
+  ),
 };
 
 export const generateStaticParams = () => {

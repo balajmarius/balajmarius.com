@@ -10,7 +10,7 @@ needs to support over 20 product teams and 100+ developers. An endeavor like
 this requires careful consideration at every step. It's been a fun journey
 filled with discoveries and lessons worth sharing.
 
-### Research and Development
+## Research and Development
 
 The Sandbox frontend is built with [Vue](https://vuejs.org/) and
 [Nuxt](https://nuxt.com/). Our styling approach combines
@@ -71,7 +71,7 @@ For documentation, we chose [Storybook.js](https://storybook.js.org/) as a
 centralized hub where teams can explore and interact with all components,
 ensuring consistency across the board.
 
-### Deployment and Processes
+## Deployment and Processes
 
 The library is a standard _TypeScript_ project that outputs a
 [Vue](https://vuejs.org/) library.

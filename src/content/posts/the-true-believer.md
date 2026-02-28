@@ -27,7 +27,7 @@ _The True Believer_ is one of his most known works, and it explores how mass
 movements are formed and why people get pulled into them. Here are some notes
 and thoughts I had while reading:
 
-### It's me, it's you
+## It's me, it's you
 
 One of the main ideas in The True Believer is that people are often drawn to
 mass movements not because of the cause itself, but because of something
@@ -38,7 +38,7 @@ the movement becomes a kind of escape, or even a new identity.
 Movements give people a sense of belonging and purpose, something bigger than
 themselves to be part of.
 
-### The charismatic leader
+## The charismatic leader
 
 Mass movements often rise around strong, charismatic leaders, people who can
 inspire and bring others together with big promises and simple answers. These
@@ -48,7 +48,7 @@ The success of a mass movement depends on its ability to create a sense of
 unity and purpose among its followers, as well as to provide a clear target
 for their anger and frustration.
 
-### Black-and-white view of the world
+## Black-and-white view of the world
 
 Mass movements often offer a very clear and simple view of the world
 _black-and-white_, with no shades of grey. This way of thinking can feel
@@ -63,7 +63,7 @@ bad, and what must be done. It removes the need for personal responsibility.
 Most people find comfort in this kind of certainty, it feels like a relief
 when the world/life seems too complex.
 
-### Mass movements can be positive
+## Mass movements can be positive
 
 Mass movements can be both positive and negative, it all depends on their
 beliefs and how they try to reach their goals. Not all movements are built on
@@ -73,7 +73,7 @@ Gandhi led a mass movement in India based on nonviolence and civil
 disobedience. His goal wasn't to destroy an enemy, but to push for freedom and
 justice without losing humanity.
 
-### Movements move us
+## Movements move us
 
 Understanding why people are attracted to mass movements helps us see how
 social and political change happens. It also helps us notice when something

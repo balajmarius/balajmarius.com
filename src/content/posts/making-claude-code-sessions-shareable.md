@@ -20,7 +20,7 @@ adjusting constraints, refining the output until it felt correct. Then I would
 want to show Vlad what I did.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full" src="/images/making-claude-code-sessions-shareable/slack-conversation.webp" alt="Slack conversation sharing a Claude Code session" />
+  <img src="/images/making-claude-code-sessions-shareable/slack-conversation.webp" alt="Slack conversation sharing a Claude Code session" />
   <figcaption>Sharing Claude Code sessions over Slack</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ multiple iterations, or what product specifications and constraints I initially
 gave to the AI.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full" src="/images/making-claude-code-sessions-shareable/github-comment.webp" alt="GitHub comment with Claude Code context" />
+  <img src="/images/making-claude-code-sessions-shareable/github-comment.webp" alt="GitHub comment with Claude Code context" />
   <figcaption>GitHub comment lacking session context</figcaption>
 </figure>
 
@@ -113,7 +113,7 @@ Tool calls such as file reads, writes, bash commands, web searches, and MCP
 calls can be collapsed so they do not dominate the screen.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/claudebin-conversation.webp" alt="Collapsible tool calls in Claudebin" />
+  <img src="/images/making-claude-code-sessions-shareable/claudebin-conversation.webp" alt="Collapsible tool calls in Claudebin" />
   <figcaption>Collapsible tool calls in Claudebin</figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ you get a session that can be browsed, referenced, and sent to someone else
 without additional explanation.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/claudebin-thread-visibility.webp" alt="Thread visibility options in Claudebin" />
+  <img src="/images/making-claude-code-sessions-shareable/claudebin-thread-visibility.webp" alt="Thread visibility options in Claudebin" />
   <figcaption>Thread visibility options in Claudebin</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ Claude reads through what has already happened, summarizes it, and asks how you
 would like to proceed.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full rounded-lg" src="/images/making-claude-code-sessions-shareable/continue-conversation.webp" alt="Continue conversation option in Claudebin" />
+  <img src="/images/making-claude-code-sessions-shareable/continue-conversation.webp" alt="Continue conversation option in Claudebin" />
   <figcaption>Continue conversation option in Claudebin</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ title, author, date, model used, and summary statistics such as message count
 and file interactions. Sharing the link is enough to generate a clean preview.
 
 <figure className="space-y-2 text-center text-gray-500 text-xs">
-  <img className="w-full" src="/images/making-claude-code-sessions-shareable/x-og-image.webp" alt="Open Graph preview of a Claudebin session on X" />
+  <img src="/images/making-claude-code-sessions-shareable/x-og-image.webp" alt="Open Graph preview of a Claudebin session on X" />
   <figcaption>Open Graph preview of a Claudebin session on X</figcaption>
 </figure>
 
