@@ -1,8 +1,8 @@
 "use client";
 
+import { memo, useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
-import { memo, useEffect, useRef } from "react";
 
 import type { Book } from "@/lib/books";
 import {
