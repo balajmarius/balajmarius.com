@@ -1,7 +1,7 @@
 ---
 title: Building the Sandbox design system
 label: Dev
-createdAt: 10 Feb, 2024
+createdAt: Feb 10, 2024
 author:
 ---
 
