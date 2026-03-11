@@ -1,5 +1,18 @@
 [
   {
+    "id": "iUoOix91HT7IjAvsGFpv",
+    "title": "Against the Machine",
+    "author": "Paul Kingsnorth",
+    "src": "/images/bookshelf/against-the-machine@2x.webp",
+    "backgroundColor": "#1a3a24",
+    "color": "#e8f0ea",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 500,
+    "coverWidth": 265,
+    "coverHeight": 400
+  },
+  {
     "id": "Fic62G2f0GJI_h97cO8lj",
     "title": "Jean Baudrillard",
     "author": "Emmanuelle Fantin, Bran Nicol",
