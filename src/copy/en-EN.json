@@ -14,9 +14,9 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>founder</serif>.\nI build <serif>digital products</serif> and <serif><companies>companies</companies></serif>.",
+    "title": "<serif><ui>UI</ui> engineer</serif> turned <serif>founder</serif>.\nI build <serif>digital products</serif> and <serif><teams>teams</teams></serif>.",
     "description": {
-      "0": "I’ve spent the last decade at the intersection of product, design, and engineering, working across early-stage startups and scaled tech teams.",
+      "0": "Over the past decade, I’ve worked across early-stage startups and scaled teams, focusing on turning ideas into well-crafted, usable systems.",
       "1": "In 2021, I co-founded <url1><serif>QED</serif></url1> and grew it from zero to acquisition by <url2><serif>Sandbox</serif></url2>.",
       "2": "Outside of work, I box. I’m the president of <url3><serif>Viitorul Boxing Club</serif></url3>, where I train and help others do the same. I also <url4><serif>read</serif></url4> a lot, it keeps me sharp.",
       "3": "Now, I’m building in AI."

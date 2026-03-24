@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 
-import { titleAnimation } from "@/utils/keyframes";
 import { links } from "@/utils/links";
 
 import { Section } from "@/components/section";
@@ -15,7 +14,7 @@ const About = () => {
   const t = useTranslations();
 
   const renderers = {
-    companies: (chunks: ReactNode) => (
+    teams: (chunks: ReactNode) => (
       <span className="text-blue-500">{chunks}</span>
     ),
     ui: (chunks: ReactNode) => (
@@ -27,25 +26,6 @@ const About = () => {
     serif: (chunks: ReactNode) => (
       <span className="font-serif italic">{chunks}</span>
     ),
-    letterDown: (chunks: ReactNode) => (
-      <motion.span
-        variants={titleAnimation.letterDown}
-        transition={titleAnimation.transition}
-        className="absolute left-0 top-0 inline-block"
-      >
-        {chunks}
-      </motion.span>
-    ),
-    letterUp: (chunks: ReactNode) => (
-      <motion.span
-        variants={titleAnimation.letterUp}
-        transition={titleAnimation.transition}
-        className="inline-block"
-      >
-        {chunks}
-      </motion.span>
-    ),
-
     url1: (chunks: ReactNode) => (
       <Link
         href={links.qed}

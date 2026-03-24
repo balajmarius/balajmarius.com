@@ -1,12 +1,12 @@
 # Marius Balaj
 
-> UI engineer turned founder with a background in startups. Co-founded QED in 2021 (acquired by The Sandbox). Now building in AI.
+> UI engineer turned founder. I build products and companies at the intersection of design and engineering.
 
 This is the personal website and blog of Marius Balaj, a software engineer and entrepreneur based in Romania. The site showcases professional experience, technical writings, and open source contributions.
 
 ## About
 
-Marius is a UI engineer turned founder with experience across crypto pioneers and larger tech companies. He co-founded QED in 2021, grew it, and eventually sold it to The Sandbox. Currently serving as Managing Director (Romania) at The Sandbox and developing concepts at VOID2.
+Marius is a UI engineer turned founder who builds products and companies at the intersection of design and engineering. He co-founded QED in 2021, grew it, and eventually sold it to The Sandbox. Currently serving as Managing Director (Romania) at The Sandbox.
 
 Outside of work, he's the president of Viitorul Boxing Club where he trains and helps others. He's also an avid reader.
 
