@@ -24,10 +24,7 @@ type ShioriAPILinksResponse = {
   total: number;
 };
 
-type ShioriAPITag = ShioriAPITagsResponse["tags"][number];
-type ShioriAPILink = ShioriAPILinksResponse["links"][number];
-
-export type Reading = ShioriAPILink;
+export type Reading = ShioriAPILinksResponse["links"][number];
 
 export type ReadingsByTag = Record<string, ReadonlyArray<Reading>>;
 
@@ -38,18 +35,16 @@ const instance = axios.create({
   },
 });
 
-const getLinksByTag = async (tag: ShioriAPITag) => {
-  const response = await instance.get<ShioriAPILinksResponse>("/links", {
-    params: { tag: tag.id },
-  });
-
-  return [tag.name, response.data.links] as const;
-};
-
-export const getLinks = async (): Promise<ReadingsByTag> => {
+export const getReadings = async (): Promise<ReadingsByTag> => {
   const tagsResponse = await instance.get<ShioriAPITagsResponse>("/tags");
+
   const linksByTag = await Promise.all(
-    tagsResponse.data.tags.map(getLinksByTag)
+    tagsResponse.data.tags.map(async (tag) => {
+      const response = await instance.get<ShioriAPILinksResponse>("/links", {
+        params: { tag: tag.id },
+      });
+      return [tag.name, response.data.links] as const;
+    })
   );
 
   return Object.fromEntries(linksByTag);
