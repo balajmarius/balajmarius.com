@@ -10,6 +10,7 @@
     "intro": "Intro",
     "experiences": "Experiences",
     "writings": "Writings",
+    "readings": "Readings",
     "bookshelf": "Bookshelf",
     "contact": "Contact"
   },
@@ -81,6 +82,9 @@
     "booksOnMyShelf": "{count} books",
     "stack": "Stack",
     "shelf": "Shelf"
+  },
+  "readings": {
+    "title": "Readings"
   },
   "common": {
     "backToHome": "Back to home"

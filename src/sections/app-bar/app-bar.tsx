@@ -13,6 +13,7 @@ import { appBarAnimation } from "@/utils/keyframes";
 import { Button } from "@/components/button";
 import {
   SvgIconBookshelf,
+  SvgIconFolder,
   SvgIconGlobe,
   SvgIconHouse,
   SvgIconM,
@@ -42,6 +43,11 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
       href: "/writings",
       label: t("appBar.writings"),
       icon: <SvgIconNotepad size="small" />,
+    },
+    {
+      href: "/readings",
+      label: t("appBar.readings"),
+      icon: <SvgIconFolder size="small" />,
     },
     {
       href: "/bookshelf",
