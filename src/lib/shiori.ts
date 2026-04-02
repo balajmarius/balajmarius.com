@@ -24,35 +24,15 @@ type ShioriAPILinksResponse = {
   total: number;
 };
 
-export type Reading = {
-  id: string;
-  url: string;
-  title: string;
-  domain: string;
-  summary: string | null;
-  imageUrl: string | null;
-  author: string | null;
-  createdAt: string;
-};
+export type Reading = ShioriAPILinksResponse["links"][number];
 
-export type ReadingsByTag = Record<string, Reading[]>;
+export type ReadingsByTag = Record<string, ReadonlyArray<Reading>>;
 
 const instance = axios.create({
   baseURL: SHIORI_API_URL,
   headers: {
     Authorization: `Bearer ${process.env.SHIORI_API_KEY}`,
   },
-});
-
-const mapLink = (link: ShioriAPILinksResponse["links"][number]): Reading => ({
-  id: link.id,
-  url: link.url,
-  title: link.title,
-  domain: link.domain,
-  summary: link.summary,
-  imageUrl: link.image_url,
-  author: link.author,
-  createdAt: link.created_at,
 });
 
 export const getReadings = async (): Promise<ReadingsByTag> => {
@@ -64,7 +44,7 @@ export const getReadings = async (): Promise<ReadingsByTag> => {
         params: { tag: tag.id },
       });
 
-      return [tag.name, response.data.links.map(mapLink)] as const;
+      return [tag.name, response.data.links] as const;
     })
   );
 
