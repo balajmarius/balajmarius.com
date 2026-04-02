@@ -1,5 +1,12 @@
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getTranslations } from "next-intl/server";
+
+import { Button } from "@/components/button";
+import { Section } from "@/components/section";
+import { SvgIconBack } from "@/components/svg-icon";
+import { Typography } from "@/components/typography";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const t = await getTranslations();
@@ -10,7 +17,34 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 const ReadingsPage = async () => {
-  return null;
+  const t = await getTranslations();
+
+  const renderers = {
+    serif: (chunks: ReactNode) => (
+      <span className="font-serif italic text-blue-500">{chunks}</span>
+    ),
+  };
+
+  return (
+    <Section>
+      <div className="space-y-8">
+        <Link href="/" className="inline-block">
+          <Button startIcon={<SvgIconBack size="small" />}>
+            <Typography variant="body1" color="inherit">
+              {t("common.backToHome")}
+            </Typography>
+          </Button>
+        </Link>
+
+        <Typography variant="h1" display="block">
+          {t.rich("readings.thingsWorthReading", renderers)}
+        </Typography>
+        <Typography variant="body1" display="block">
+          {t("readings.personalCommonplaceBook")}
+        </Typography>
+      </div>
+    </Section>
+  );
 };
 
 export default ReadingsPage;

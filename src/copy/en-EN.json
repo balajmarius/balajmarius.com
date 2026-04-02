@@ -84,7 +84,9 @@
     "shelf": "Shelf"
   },
   "readings": {
-    "title": "Readings"
+    "title": "Readings",
+    "thingsWorthReading": "Things worth <serif>reading</serif>",
+    "personalCommonplaceBook": "A personal commonplace book of ideas, passages, and references that shape how I think."
   },
   "common": {
     "backToHome": "Back to home"
