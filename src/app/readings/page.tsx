@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
-import { getLinks } from "@/lib/shiori";
+import { getReadings } from "@/lib/shiori";
 
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
@@ -20,7 +20,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 const ReadingsPage = async () => {
   const t = await getTranslations();
-  const _links = await getLinks();
+  const _links = await getReadings();
 
   const renderers = {
     serif: (chunks: ReactNode) => (

@@ -24,9 +24,9 @@ type ShioriAPILinksResponse = {
   total: number;
 };
 
-export type Reading = ShioriAPILinksResponse["links"][number];
+type ShioriAPILink = ShioriAPILinksResponse["links"][number];
 
-export type ReadingsByTag = Record<string, ReadonlyArray<Reading>>;
+export type ReadingsByTag = Record<string, ReadonlyArray<ShioriAPILink>>;
 
 const instance = axios.create({
   baseURL: SHIORI_API_URL,
