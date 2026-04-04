@@ -1,6 +1,11 @@
 import cx from "classnames";
 import { twMerge } from "tailwind-merge";
 
+import {
+  FOLDERS_INDEX_PAD_CHAR,
+  FOLDERS_INDEX_PAD_LENGTH,
+} from "@/utils/const";
+
 export const cn = (...inputs: Parameters<typeof cx>) => {
   return twMerge(cx(...inputs));
 };
@@ -23,4 +28,12 @@ export const toKilograms = (value: number) => {
     style: "unit",
     unit: "kilogram",
   }).format(value);
+};
+
+export const leftPad = (
+  value: number,
+  length: number = FOLDERS_INDEX_PAD_LENGTH,
+  char: string = FOLDERS_INDEX_PAD_CHAR
+) => {
+  return value.toString().padStart(length, char);
 };

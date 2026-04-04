@@ -3,10 +3,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
+import { getReadings } from "@/lib/shiori";
+
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
 import { SvgIconBack } from "@/components/svg-icon";
 import { Typography } from "@/components/typography";
+import { FoldersList } from "@/components/folders-list";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const t = await getTranslations();
@@ -18,7 +21,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 const ReadingsPage = async () => {
   const t = await getTranslations();
-  // const links = await getReadings();
+  const links = await getReadings();
 
   const renderers = {
     serif: (chunks: ReactNode) => (
@@ -47,11 +50,8 @@ const ReadingsPage = async () => {
         </div>
       </Section>
 
-      <Section
-        spacing="small"
-        className="border-b border-b-blue-100 max-w-full"
-      >
-        testsa
+      <Section className="border-b border-b-blue-100 max-w-full">
+        <FoldersList readings={links} />
       </Section>
     </>
   );

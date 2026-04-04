@@ -9,6 +9,7 @@ export { default as SvgIconClipboard } from "./svg-icon-clipboard";
 export { default as SvgIconDot } from "./svg-icon-dot";
 export { default as SvgIconDumbell } from "./svg-icon-dumbell";
 export { default as SvgIconFolder } from "./svg-icon-folder";
+export { default as SvgIconFolderTab } from "./svg-icon-folder-tab";
 export { default as SvgIconGlobe } from "./svg-icon-globe";
 export { default as SvgIconGlove } from "./svg-icon-glove";
 export { default as SvgIconHevy } from "./svg-icon-hevy";
