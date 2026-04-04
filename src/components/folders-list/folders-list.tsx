@@ -12,7 +12,7 @@ const FoldersList = ({ readings }: FoldersListProps) => {
   const tags = Object.keys(readings);
 
   return (
-    <div className="max-w-6xl rounded-tr-3xl bg-gray-200">
+    <div className="max-w-6xl">
       {tags.map((tag, index) => (
         <FoldersListItem
           key={tag}

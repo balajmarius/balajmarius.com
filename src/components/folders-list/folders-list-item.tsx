@@ -28,7 +28,7 @@ const FoldersListItem = ({
         "-mt-8 py-16 first:mt-0 last:py-24 hover:-translate-y-16",
         "rounded-tr-3xl border-t border-blue-500 bg-gray-200",
         "after:absolute after:inset-x-0 after:top-16 after:py-16",
-        "after:rounded-t-3xl after:border-t after:border-blue-500",
+        "after:rounded-t-3xl after:border-t after:border-blue-500 after:bg-gray-200",
         "after:opacity-0 after:transition-all after:duration-300 after:ease-out after:delay-75",
         "hover:after:top-8 hover:after:opacity-100"
       )}
