@@ -107,7 +107,7 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
 
   return (
     <html lang={locale} className="scroll-smooth">
-      <body className="antialiased bg-blue-500 text-gray-600">
+      <body className="bg-blue-500 text-gray-600 antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ScrollContainer
             className={cn(sans.variable, serif.variable, mono.variable)}

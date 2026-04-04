@@ -15,7 +15,7 @@ const BooksList = ({ books }: BooksListProps) => {
   return (
     <div
       ref={ref}
-      className="flex items-end gap-1 overflow-x-auto overflow-y-hidden overscroll-y-none touch-auto md:touch-pan-x scrollbar-w-none px-6 sm:px-12"
+      className="flex items-end gap-1 overflow-x-auto overflow-y-hidden px-6 overscroll-y-none touch-auto scrollbar-w-none sm:px-12 md:touch-pan-x"
     >
       {books.map((book) => (
         <BooksListItem

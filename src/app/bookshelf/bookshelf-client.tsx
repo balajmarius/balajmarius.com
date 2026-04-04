@@ -77,7 +77,7 @@ const BookshelfContent = ({ books }: BookshelfContentProps) => {
               {t("bookshelf.booksOnMyShelf", { count: books.length })}
             </Typography>
 
-            <div className="flex items-center gap-1 bg-gray-400/40 backdrop-blur rounded-lg px-1 py-1">
+            <div className="flex items-center gap-1 px-1 py-1 rounded-lg bg-gray-400/40 backdrop-blur">
               {options.map((option) => (
                 <Button
                   key={option.variant}

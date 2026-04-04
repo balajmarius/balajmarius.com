@@ -17,7 +17,7 @@ const renderers = {
   a: (props: ComponentProps<"a">) => (
     <a
       target="_blank"
-      className="text-blue-500 border-b border-b-blue-300 hover:text-blue-400 hover:border-b-blue-200"
+      className="border-b border-b-blue-300 text-blue-500 hover:border-b-blue-200 hover:text-blue-400"
       {...props}
     />
   ),

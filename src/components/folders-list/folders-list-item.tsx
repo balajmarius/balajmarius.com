@@ -13,11 +13,7 @@ type FoldersListItemProps = {
   links: ReadonlyArray<Reading>;
 };
 
-const FoldersListItem = ({
-  index,
-  name,
-  links: _links,
-}: FoldersListItemProps) => {
+const FoldersListItem = ({ index, name }: FoldersListItemProps) => {
   const textTransform = index ? "capitalize" : "uppercase";
 
   return (

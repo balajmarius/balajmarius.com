@@ -7,7 +7,7 @@ type BooksListStackProps = {
 
 const BooksListStack = ({ books }: BooksListStackProps) => {
   return (
-    <div className="flex flex-col items-center gap-1 px-6 sm:px-12 max-w-2xl">
+    <div className="flex flex-col items-center gap-1 max-w-2xl px-6 sm:px-12">
       {books.map((book) => (
         <BooksListStackItem
           key={book.id}

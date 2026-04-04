@@ -50,7 +50,7 @@ const ReadingsPage = async () => {
         </div>
       </Section>
 
-      <Section className="border-b border-b-blue-100 max-w-full">
+      <Section className="max-w-full border-b border-b-blue-100">
         <FoldersList readings={links} />
       </Section>
     </>
