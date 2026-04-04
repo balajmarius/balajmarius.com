@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
-import { getReadings } from "@/lib/shiori";
-
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
 import { SvgIconBack } from "@/components/svg-icon";
@@ -20,7 +18,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 const ReadingsPage = async () => {
   const t = await getTranslations();
-  const _links = await getReadings();
+  // const links = await getReadings();
 
   const renderers = {
     serif: (chunks: ReactNode) => (
@@ -29,24 +27,33 @@ const ReadingsPage = async () => {
   };
 
   return (
-    <Section>
-      <div className="space-y-8">
-        <Link href="/" className="inline-block">
-          <Button startIcon={<SvgIconBack size="small" />}>
-            <Typography variant="body1" color="inherit">
-              {t("common.backToHome")}
-            </Typography>
-          </Button>
-        </Link>
+    <>
+      <Section>
+        <div className="space-y-8">
+          <Link href="/" className="inline-block">
+            <Button startIcon={<SvgIconBack size="small" />}>
+              <Typography variant="body1" color="inherit">
+                {t("common.backToHome")}
+              </Typography>
+            </Button>
+          </Link>
 
-        <Typography variant="h1" display="block">
-          {t.rich("readings.thingsWorthReading", renderers)}
-        </Typography>
-        <Typography variant="body1" display="block">
-          {t("readings.personalCommonplaceBook")}
-        </Typography>
-      </div>
-    </Section>
+          <Typography variant="h1" display="block">
+            {t.rich("readings.thingsWorthReading", renderers)}
+          </Typography>
+          <Typography variant="body1" display="block">
+            {t("readings.personalCommonplaceBook")}
+          </Typography>
+        </div>
+      </Section>
+
+      <Section
+        spacing="small"
+        className="border-b border-b-blue-100 max-w-full"
+      >
+        testsa
+      </Section>
+    </>
   );
 };
 
