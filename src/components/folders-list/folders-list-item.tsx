@@ -19,7 +19,7 @@ const FoldersListItem = ({ index, name }: FoldersListItemProps) => {
   return (
     <div
       className={cn(
-        "group relative w-full",
+        "group relative w-full cursor-pointer",
         "transition-transform duration-300 ease-in-out",
         "-mt-8 py-16 first:mt-0 last:py-24 hover:-translate-y-16",
         "rounded-tr-3xl border-t border-blue-500 bg-gray-200",

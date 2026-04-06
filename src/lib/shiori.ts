@@ -1,14 +1,14 @@
-import axios from "axios";
+// import axios from "axios";
 
-import { SHIORI_API_URL } from "@/utils/const";
+// import { SHIORI_API_URL } from "@/utils/const";
 
-type ShioriAPITagsResponse = {
-  tags: ReadonlyArray<{
-    id: string;
-    name: string;
-    position: number;
-  }>;
-};
+// type ShioriAPITagsResponse = {
+//   tags: ReadonlyArray<{
+//     id: string;
+//     name: string;
+//     position: number;
+//   }>;
+// };
 
 type ShioriAPILinksResponse = {
   links: ReadonlyArray<{
@@ -24,18 +24,18 @@ type ShioriAPILinksResponse = {
   total: number;
 };
 
-type _ShioriAPITag = ShioriAPITagsResponse["tags"][number];
+// type ShioriAPITag = ShioriAPITagsResponse["tags"][number];
 type ShioriAPILink = ShioriAPILinksResponse["links"][number];
 
 export type Reading = ShioriAPILink;
 export type Readings = Record<string, ReadonlyArray<Reading>>;
 
-const _instance = axios.create({
-  baseURL: SHIORI_API_URL,
-  headers: {
-    Authorization: `Bearer ${process.env.SHIORI_API_KEY}`,
-  },
-});
+// const instance = axios.create({
+//   baseURL: SHIORI_API_URL,
+//   headers: {
+//     Authorization: `Bearer ${process.env.SHIORI_API_KEY}`,
+//   },
+// });
 
 export const getReadings = async (): Promise<
   Record<string, ReadonlyArray<ShioriAPILink>>
@@ -50,8 +50,6 @@ export const getReadings = async (): Promise<
   //     return [tag.name, response.data.links] as const;
   //   })
   // );
-
-  // console.log(linksByTag1);
 
   const linksByTag = [
     ["ai", []],
