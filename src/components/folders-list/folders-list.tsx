@@ -15,6 +15,13 @@ const FoldersList = ({ readings }: FoldersListProps) => {
   const tags = Object.keys(readings);
   const [active, setActive] = useState<string | null>(null);
 
+  const handleClick = (tag: string) => {
+    if (active === tag) {
+      return null;
+    }
+    setActive(tag);
+  };
+
   return (
     <div className="max-w-6xl bg-gray-200 rounded-tr-3xl">
       {tags.map((tag, index) => {
@@ -26,7 +33,7 @@ const FoldersList = ({ readings }: FoldersListProps) => {
               name={tag}
               links={readings[tag]}
               active={active === tag}
-              onClick={() => setActive(active === tag ? null : tag)}
+              onClick={() => handleClick(tag)}
             />
           );
         }
