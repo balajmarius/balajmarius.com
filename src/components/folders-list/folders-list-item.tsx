@@ -133,7 +133,7 @@ const FoldersListItem = ({
           })}
         </div>
       ) : (
-        <div className="absolute -top-24 left-1/2 flex w-full max-w-2xl -translate-x-1/2">
+        <div className="absolute -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2">
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
 
