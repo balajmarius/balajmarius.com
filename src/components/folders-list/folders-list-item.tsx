@@ -78,8 +78,11 @@ const FoldersListItem = ({
           ? "transition-none"
           : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
         active
+          ? null
+          : "before:absolute before:inset-x-0 before:top-32 before:-bottom-16 before:z-20 before:bg-gray-200",
+        active
           ? "after:border-transparent"
-          : "after:absolute after:inset-x-0 after:top-16 after:bottom-0 after:z-20 after:py-16",
+          : "after:pointer-events-none after:absolute after:inset-x-0 after:top-16 after:bottom-0 after:z-20 after:py-16",
         active
           ? null
           : "after:rounded-t-3xl after:border-t after:border-blue-500 after:bg-gray-200",
@@ -130,7 +133,7 @@ const FoldersListItem = ({
           })}
         </div>
       ) : (
-        <div className="absolute top-0 left-1/2 flex w-full max-w-2xl -translate-x-1/2 -translate-y-1/2 items-center">
+        <div className="absolute -top-24 left-1/2 flex w-full max-w-2xl -translate-x-1/2">
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
 
@@ -138,8 +141,8 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 delay-0 translate-y-32 scale-95 opacity-0 transition-all duration-250 ease-out",
-                  "group-hover:scale-100 group-hover:translate-y-14 group-hover:opacity-100",
+                  "flex-1 delay-0 translate-y-16 scale-95 opacity-0 transition-all duration-250 ease-out",
+                  "group-hover:scale-100 group-hover:translate-y-0 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}
               >
