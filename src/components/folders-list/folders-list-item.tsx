@@ -15,10 +15,16 @@ import {
 } from "@/components/folders-list";
 
 const domainKind: Record<string, "book" | "note"> = {
-  "goodreads.com": "book",
-  "bsky.app": "note",
   "x.com": "note",
+  "bsky.app": "note",
+  "goodreads.com": "book",
 } as const;
+
+const foldersListRotationClassNames = [
+  "group-hover:delay-150 group-hover:-rotate-6",
+  "group-hover:delay-200 group-hover:rotate-0",
+  "group-hover:delay-250 group-hover:rotate-8",
+] as const;
 
 const renderers = {
   book: (link: Reading) => (
@@ -59,7 +65,7 @@ const FoldersListItem = ({
   links,
   onClick,
 }: FoldersListItemProps) => {
-  const _previews = take([...links], FOLDERS_PREVIEW_LIMIT);
+  const previews = take([...links], FOLDERS_PREVIEW_LIMIT);
 
   return (
     <div
@@ -67,13 +73,13 @@ const FoldersListItem = ({
         "group relative w-full rounded-tr-3xl bg-gray-200",
         active
           ? "border-t-transparent p-8 xl:p-12"
-          : "-mt-8 first:mt-0 cursor-pointer border-t border-blue-500 p-16 last:p-24",
+          : "-mt-8 cursor-pointer border-t border-blue-500 p-16 first:mt-0 last:p-24",
         active
           ? "transition-none"
           : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
         active
           ? "after:border-transparent"
-          : "after:absolute after:inset-x-0 after:top-16 after:z-20 after:py-16",
+          : "after:absolute after:inset-x-0 after:top-16 after:bottom-0 after:z-20 after:py-16",
         active
           ? null
           : "after:rounded-t-3xl after:border-t after:border-blue-500 after:bg-gray-200",
@@ -123,7 +129,26 @@ const FoldersListItem = ({
             );
           })}
         </div>
-      ) : null}
+      ) : (
+        <div className="absolute top-0 left-1/2 flex w-full max-w-2xl -translate-x-1/2 -translate-y-1/2 items-center">
+          {previews.map((link, index) => {
+            const type = domainKind[link.domain] ?? "article";
+
+            return (
+              <div
+                key={link.id}
+                className={cn(
+                  "flex-1 delay-0 translate-y-32 scale-95 opacity-0 transition-all duration-250 ease-out",
+                  "group-hover:scale-100 group-hover:translate-y-14 group-hover:opacity-100",
+                  foldersListRotationClassNames[index]
+                )}
+              >
+                {renderers[type](link)}
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

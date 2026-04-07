@@ -31,6 +31,7 @@
 @utility scrollbar-w-none {
   scrollbar-width: none;
 }
+
 @utility writing-sideways-lr {
   writing-mode: sideways-lr;
 }
