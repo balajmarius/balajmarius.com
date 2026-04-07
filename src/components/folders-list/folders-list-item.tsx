@@ -121,7 +121,7 @@ const FoldersListItem = ({
       </div>
 
       {active ? (
-        <div className="columns-2 lg:columns-3 xl:columns-4 gap-6">
+        <div className="columns-2 gap-6 lg:columns-3 xl:columns-4">
           {links.map((link) => {
             const type = domainKind[link.domain] ?? "article";
 
@@ -141,7 +141,7 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 delay-0 translate-y-16 scale-95 opacity-0 transition-all duration-250 ease-out",
+                  "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-250 ease-out delay-0",
                   "group-hover:scale-100 group-hover:translate-y-0 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}
