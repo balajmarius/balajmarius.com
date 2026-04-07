@@ -18,6 +18,9 @@ export const POSTS_LIMIT = 6;
 export const FOLDERS_INDEX_OFFSET = 1;
 export const FOLDERS_INDEX_PAD_LENGTH = 2;
 export const FOLDERS_INDEX_PAD_CHAR = "0";
+export const FOLDERS_PREVIEW_LIMIT = 3;
+export const FOLDERS_CARD_IMAGE_WIDTH = 400;
+export const FOLDERS_CARD_IMAGE_HEIGHT = 600;
 
 export const APP_URL = "https://balajmarius.com";
 export const HEVY_API_URL = "https://api.hevyapp.com/v1";

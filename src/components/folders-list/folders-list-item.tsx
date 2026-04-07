@@ -1,19 +1,48 @@
+import take from "lodash.take";
+
 import type { Reading } from "@/lib/shiori";
-import type { FoldersListCardVariant } from "@/components/folders-list";
 
 import { cn, leftPad } from "@/utils/helpers";
-import { FOLDERS_INDEX_OFFSET } from "@/utils/const";
+import { FOLDERS_INDEX_OFFSET, FOLDERS_PREVIEW_LIMIT } from "@/utils/const";
 
-import { FoldersListCard } from "@/components/folders-list";
 import { SvgIconFolderTab } from "@/components/svg-icon";
-
 import { Typography } from "@/components/typography";
 
-const foldersListCardDomainVariant: Record<string, FoldersListCardVariant> = {
+import {
+  FoldersListCardArticle,
+  FoldersListCardBook,
+  FoldersListCardNote,
+} from "@/components/folders-list";
+
+const domainKind: Record<string, "book" | "note"> = {
   "goodreads.com": "book",
   "bsky.app": "note",
   "x.com": "note",
 } as const;
+
+const renderers = {
+  book: (link: Reading) => (
+    <FoldersListCardBook
+      title={link.title}
+      url={link.url}
+      imageUrl={link.image_url}
+    />
+  ),
+  note: (link: Reading) => (
+    <FoldersListCardNote
+      title={link.title}
+      url={link.url}
+      author={link.author}
+    />
+  ),
+  article: (link: Reading) => (
+    <FoldersListCardArticle
+      title={link.title}
+      url={link.url}
+      summary={link.summary}
+    />
+  ),
+};
 
 type FoldersListItemProps = {
   index: number;
@@ -30,22 +59,21 @@ const FoldersListItem = ({
   links,
   onClick,
 }: FoldersListItemProps) => {
+  const _previews = take([...links], FOLDERS_PREVIEW_LIMIT);
+
   return (
     <div
       className={cn(
-        active ? "relative w-full" : "group relative w-full",
-        "rounded-tr-3xl bg-gray-200",
+        "group relative w-full rounded-tr-3xl bg-gray-200",
+        active
+          ? "border-t-transparent p-8 xl:p-12"
+          : "-mt-8 first:mt-0 cursor-pointer border-t border-blue-500 p-16 last:p-24",
         active
           ? "transition-none"
-          : "transition-transform duration-300 ease-in-out",
-        active ? null : "first:mt-0 last:p-24",
-        active ? null : "hover:-translate-y-16",
-        active
-          ? "p-12 border-t-transparent"
-          : "-mt-8 p-16 border-t border-blue-500 cursor-pointer",
+          : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
         active
           ? "after:border-transparent"
-          : "after:absolute after:inset-x-0 after:top-16 after:py-16",
+          : "after:absolute after:inset-x-0 after:top-16 after:z-20 after:py-16",
         active
           ? null
           : "after:rounded-t-3xl after:border-t after:border-blue-500 after:bg-gray-200",
@@ -59,7 +87,7 @@ const FoldersListItem = ({
       }}
       onClick={onClick}
     >
-      <div className="absolute bottom-full left-0 flex h-14 w-full -mb-px items-center">
+      <div className="absolute bottom-full left-0 -mb-px flex h-14 w-60 items-center">
         <div className="relative z-10 flex items-start gap-4 px-6 select-none">
           <Typography variant="body2">
             {leftPad(index + FOLDERS_INDEX_OFFSET)}
@@ -84,19 +112,16 @@ const FoldersListItem = ({
       </div>
 
       {active ? (
-        <div className="columns-4 gap-6">
-          {links.map((link) => (
-            <div key={link.id} className="mb-6 break-inside-avoid">
-              <FoldersListCard
-                title={link.title}
-                variant={foldersListCardDomainVariant[link.domain]}
-                url={link.url}
-                summary={link.summary}
-                author={link.author}
-                imageUrl={link.image_url}
-              />
-            </div>
-          ))}
+        <div className="columns-2 lg:columns-3 xl:columns-4 gap-6">
+          {links.map((link) => {
+            const type = domainKind[link.domain] ?? "article";
+
+            return (
+              <div key={link.id} className="mb-6 break-inside-avoid">
+                {renderers[type](link)}
+              </div>
+            );
+          })}
         </div>
       ) : null}
     </div>
