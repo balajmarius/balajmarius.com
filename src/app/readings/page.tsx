@@ -5,9 +5,10 @@ import { getTranslations } from "next-intl/server";
 
 import { getReadings } from "@/lib/shiori";
 
+import { SvgIconBack } from "@/components/svg-icon";
+
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
-import { SvgIconBack } from "@/components/svg-icon";
 import { Typography } from "@/components/typography";
 import { FoldersList } from "@/components/folders-list";
 
@@ -50,7 +51,7 @@ const ReadingsPage = async () => {
         </div>
       </Section>
 
-      <Section className="max-w-full border-b border-b-blue-100">
+      <Section className="max-w-full overflow-clip border-b border-b-blue-100">
         <FoldersList readings={links} />
       </Section>
     </>
