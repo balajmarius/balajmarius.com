@@ -119,7 +119,7 @@ const FoldersListItem = ({
           className={cn(
             "absolute inset-0 max-h-full",
             "text-gray-200",
-            active ? null : "drop-shadow-inset-top"
+            active ? "drop-shadow-none" : "drop-shadow-inset-top"
           )}
         />
       </div>
@@ -133,7 +133,7 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-250 ease-out delay-0",
+                  "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-0",
                   "group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}
