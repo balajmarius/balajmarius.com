@@ -21,9 +21,9 @@ const domainKind: Record<string, "book" | "note"> = {
 } as const;
 
 const foldersListRotationClassNames = [
-  "group-hover:delay-150 group-hover:-rotate-6",
-  "group-hover:delay-200 group-hover:rotate-0",
-  "group-hover:delay-250 group-hover:rotate-8",
+  "group-hover:-rotate-6 group-hover:delay-150",
+  "group-hover:rotate-0 group-hover:delay-200",
+  "group-hover:rotate-8 group-hover:delay-250",
 ] as const;
 
 const renderers = {
@@ -72,31 +72,35 @@ const FoldersListItem = ({
       className={cn(
         "group relative w-full rounded-tr-3xl bg-gray-200",
         active
-          ? "border-t-transparent p-8 xl:p-12"
-          : "-mt-8 cursor-pointer border-t border-blue-500 p-16 first:mt-0 last:p-24",
+          ? "p-8 border-t-transparent xl:p-12"
+          : "-mt-8 p-16 border-t border-blue-500 cursor-pointer first:mt-0 last:p-24",
         active
           ? "transition-none"
           : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
         active
           ? null
-          : "before:absolute before:inset-x-0 before:top-32 before:-bottom-16 before:z-20 before:bg-gray-200",
-        active
-          ? "after:border-transparent"
-          : "after:pointer-events-none after:absolute after:inset-x-0 after:top-16 after:bottom-0 after:z-20 after:py-16",
-        active
-          ? null
-          : "after:rounded-t-3xl after:border-t after:border-blue-500 after:bg-gray-200",
-        active
-          ? null
-          : "after:opacity-0 after:transition-all after:duration-300 after:ease-out after:delay-75",
-        active ? null : "hover:after:top-8 hover:after:opacity-100"
+          : "before:absolute before:z-20 before:inset-x-0 before:top-32 before:-bottom-16 before:bg-gray-200"
       )}
       style={{
         zIndex: index,
       }}
       onClick={onClick}
     >
-      <div className="absolute bottom-full left-0 -mb-px flex h-14 w-60 items-center">
+      {active ? null : (
+        <div
+          className={cn(
+            "absolute z-20 inset-x-0 top-16 bottom-0 py-16 pointer-events-none",
+            "rounded-t-3xl bg-gray-200",
+            "transform-gpu transition-transform duration-300 ease-out",
+            "group-hover:-translate-y-8",
+            "after:absolute after:inset-0 after:rounded-t-3xl after:border-t after:border-blue-500",
+            "after:opacity-0 after:transition-opacity after:duration-300 after:ease-out after:delay-75",
+            "group-hover:after:opacity-100 group-hover:after:delay-0"
+          )}
+        />
+      )}
+
+      <div className="absolute bottom-full left-0 flex items-center -mb-px h-14 w-60">
         <div className="relative z-10 flex items-start gap-4 px-6 select-none">
           <Typography variant="body2">
             {leftPad(index + FOLDERS_INDEX_OFFSET)}
@@ -115,25 +119,13 @@ const FoldersListItem = ({
           className={cn(
             "absolute inset-0 max-h-full",
             "text-gray-200",
-            active ? "drop-shadow-none" : "drop-shadow-inset-top"
+            active ? null : "drop-shadow-inset-top"
           )}
         />
       </div>
 
-      {active ? (
-        <div className="columns-2 gap-6 lg:columns-3 xl:columns-4">
-          {links.map((link) => {
-            const type = domainKind[link.domain] ?? "article";
-
-            return (
-              <div key={link.id} className="mb-6 break-inside-avoid">
-                {renderers[type](link)}
-              </div>
-            );
-          })}
-        </div>
-      ) : (
-        <div className="absolute -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2">
+      {active ? null : (
+        <div className="absolute z-10 -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2 pointer-events-none group-hover:pointer-events-auto">
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
 
@@ -142,7 +134,7 @@ const FoldersListItem = ({
                 key={link.id}
                 className={cn(
                   "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-250 ease-out delay-0",
-                  "group-hover:scale-100 group-hover:translate-y-0 group-hover:opacity-100",
+                  "group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}
               >
