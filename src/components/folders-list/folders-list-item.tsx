@@ -2,7 +2,7 @@ import take from "lodash.take";
 
 import type { Reading } from "@/lib/shiori";
 
-import { cn, leftPad } from "@/utils/helpers";
+import { cn, isNullOrUndefined, leftPad } from "@/utils/helpers";
 import { FOLDERS_INDEX_OFFSET, FOLDERS_PREVIEW_LIMIT } from "@/utils/const";
 
 import { SvgIconFolderTab } from "@/components/svg-icon";
@@ -53,7 +53,7 @@ const renderers = {
 type FoldersListItemProps = {
   index: number;
   name: string;
-  active: boolean;
+  active: string | null;
   links: ReadonlyArray<Reading>;
   onClick: () => void;
 };
@@ -65,28 +65,29 @@ const FoldersListItem = ({
   links,
   onClick,
 }: FoldersListItemProps) => {
+  const open = active === name;
   const previews = take([...links], FOLDERS_PREVIEW_LIMIT);
 
   return (
     <div
       className={cn(
         "group relative w-full rounded-tr-3xl bg-gray-200",
-        active
+        open
           ? "p-8 border-t-transparent xl:p-12"
           : "-mt-8 p-16 border-t border-blue-500 cursor-pointer first:mt-0 last:p-24",
-        active
+        open
           ? "transition-none"
           : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
-        active
-          ? null
-          : "before:absolute before:z-20 before:inset-x-0 before:top-32 before:-bottom-16 before:bg-gray-200"
+        isNullOrUndefined(active)
+          ? "before:absolute before:z-20 before:inset-x-0 before:top-32 before:-bottom-16 before:bg-gray-200"
+          : null
       )}
       style={{
         zIndex: index,
       }}
       onClick={onClick}
     >
-      {active ? null : (
+      {isNullOrUndefined(active) ? (
         <div
           className={cn(
             "absolute z-20 inset-x-0 top-16 bottom-0 py-16 pointer-events-none",
@@ -98,7 +99,7 @@ const FoldersListItem = ({
             "group-hover:after:opacity-100 group-hover:after:delay-0"
           )}
         />
-      )}
+      ) : null}
 
       <div className="absolute bottom-full left-0 flex items-center -mb-px h-14 w-60">
         <div className="relative z-10 flex items-start gap-4 px-6 select-none">
@@ -119,12 +120,12 @@ const FoldersListItem = ({
           className={cn(
             "absolute inset-0 max-h-full",
             "text-gray-200",
-            active ? "drop-shadow-none" : "drop-shadow-inset-top"
+            open ? "drop-shadow-none" : "drop-shadow-inset-top"
           )}
         />
       </div>
 
-      {active ? null : (
+      {isNullOrUndefined(active) ? (
         <div className="absolute z-10 -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2 pointer-events-none group-hover:pointer-events-auto">
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
@@ -133,7 +134,7 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-250 ease-out delay-0",
+                  "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-200 ease-out delay-0",
                   "group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}
@@ -143,7 +144,7 @@ const FoldersListItem = ({
             );
           })}
         </div>
-      )}
+      ) : null}
     </div>
   );
 };

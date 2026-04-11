@@ -32,7 +32,7 @@ const FoldersList = ({ readings }: FoldersListProps) => {
               index={index}
               name={tag}
               links={readings[tag]}
-              active={active === tag}
+              active={active}
               onClick={() => handleClick(tag)}
             />
           );
