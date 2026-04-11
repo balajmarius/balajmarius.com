@@ -13,6 +13,7 @@ import { appBarAnimation } from "@/utils/keyframes";
 import { Button } from "@/components/button";
 import {
   SvgIconBookshelf,
+  SvgIconFolder,
   SvgIconGlobe,
   SvgIconHouse,
   SvgIconM,
@@ -44,6 +45,11 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
       icon: <SvgIconNotepad size="small" />,
     },
     {
+      href: "/readings",
+      label: t("appBar.readings"),
+      icon: <SvgIconFolder size="small" />,
+    },
+    {
       href: "/bookshelf",
       label: t("appBar.bookshelf"),
       icon: <SvgIconBookshelf size="small" />,
@@ -67,7 +73,7 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
   return (
     <header
       className={cn(
-        "fixed top-3 left-3 z-50 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all duration-400 ease-out-exponential",
+        "fixed top-3 left-3 z-50 px-4 py-3 rounded-lg bg-gray-400/40 backdrop-blur transition-all duration-400 ease-out-exponential",
         value ? "w-84" : "w-44"
       )}
       ref={ref}
@@ -97,7 +103,7 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
           >
             <motion.div
               {...appBarAnimation.innerContainer}
-              className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3"
+              className="space-y-3 px-3 py-3 rounded-sm bg-gray-400/40"
             >
               {sections.map((section, index) => (
                 <Link
@@ -109,7 +115,7 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
                     initial={appBarAnimation.item.initial}
                     animate={appBarAnimation.item.animate}
                     transition={appBarAnimation.item.transition(index)}
-                    className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+                    className="flex items-center gap-2 px-3 py-1 text-gray-600 rounded-sm cursor-pointer transition-colors hover:bg-blue-500 hover:text-white"
                   >
                     {section.icon}
                     <Typography variant="body1" color="inherit">

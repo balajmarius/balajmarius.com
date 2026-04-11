@@ -49,7 +49,7 @@ const BooksListStackItem = ({
   return (
     <motion.div
       ref={ref}
-      className="flex items-center justify-between gap-8 max-w-full rounded-sm py-3 px-8 content-auto"
+      className="flex items-center justify-between gap-8 max-w-full px-8 py-3 rounded-sm content-auto"
       style={{
         opacity,
         color,
@@ -72,7 +72,7 @@ const BooksListStackItem = ({
         src={src}
         alt={title}
         loading="lazy"
-        className="rounded-md w-auto h-22"
+        className="h-22 w-auto rounded-md"
         width={coverWidth}
         height={coverHeight}
       />

@@ -10,6 +10,7 @@
     "intro": "Intro",
     "experiences": "Experiences",
     "writings": "Writings",
+    "readings": "Readings",
     "bookshelf": "Bookshelf",
     "contact": "Contact"
   },
@@ -81,6 +82,13 @@
     "booksOnMyShelf": "{count} books",
     "stack": "Stack",
     "shelf": "Shelf"
+  },
+  "readings": {
+    "title": "Readings",
+    "thingsWorthReading": "Things worth <serif>reading</serif>",
+    "personalCommonplaceBook": "A personal commonplace book of ideas, passages, and references.",
+    "readArticle": "Read article",
+    "quoteAuthor": "- <link>{author}</link>"
   },
   "common": {
     "backToHome": "Back to home"

@@ -1,4 +1,5 @@
 import type { HTMLAttributes, ReactNode } from "react";
+
 import type {
   TypographyColor,
   TypographyColorMapping,
@@ -6,9 +7,12 @@ import type {
   TypographyDisplayMapping,
   TypographyFontWeight,
   TypographyFontWeightMapping,
+  TypographyTextTransform,
+  TypographyTextTransformMapping,
   TypographyVariant,
   TypographyVariantMapping,
 } from "@/components/typography";
+
 import { cn } from "@/utils/helpers";
 
 export type TypographyProps = {
@@ -17,6 +21,7 @@ export type TypographyProps = {
   variant?: TypographyVariant;
   display?: TypographyDisplay;
   fontWeight?: TypographyFontWeight;
+  textTransform?: TypographyTextTransform;
   className?: string;
 } & Omit<HTMLAttributes<HTMLElement>, "className">;
 
@@ -57,6 +62,12 @@ const typographyColorClassNames: TypographyColorMapping = {
   inherit: "text-inherit",
 };
 
+const typographyTextTransformClassNames: TypographyTextTransformMapping = {
+  none: "normal-case",
+  capitalize: "capitalize",
+  uppercase: "uppercase",
+};
+
 const typographyDisplayClassNames: TypographyDisplayMapping = {
   inline: "inline",
   "inline-block": "inline-block",
@@ -66,6 +77,7 @@ const typographyDisplayClassNames: TypographyDisplayMapping = {
 const Typography = ({
   variant = "body1",
   fontWeight = "normal",
+  textTransform = "none",
   color = "default",
   display = "inline-block",
   ...props
@@ -78,6 +90,7 @@ const Typography = ({
         typographyVariantClassNames[variant],
         typographyFontWeightClassNames[fontWeight],
         typographyColorClassNames[color],
+        typographyTextTransformClassNames[textTransform],
         typographyDisplayClassNames[display]
       )}
       {...props}
