@@ -126,7 +126,12 @@ const FoldersListItem = ({
       </div>
 
       {isNullOrUndefined(active) ? (
-        <div className="absolute z-10 -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2 pointer-events-none group-hover:pointer-events-auto">
+        <div
+          className={cn(
+            "absolute z-10 -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2",
+            "pointer-events-none group-hover:pointer-events-auto"
+          )}
+        >
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
 
@@ -139,6 +144,20 @@ const FoldersListItem = ({
                   foldersListRotationClassNames[index]
                 )}
               >
+                {renderers[type](link)}
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
+
+      {open ? (
+        <div className="gap-6 columns-4">
+          {links.map((link) => {
+            const type = domainKind[link.domain] ?? "article";
+
+            return (
+              <div key={link.id} className="mb-6 break-inside-avoid">
                 {renderers[type](link)}
               </div>
             );
