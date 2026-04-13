@@ -53,7 +53,6 @@
   },
   "posts": {
     "title": "Writings",
-    "author": " - {author}",
     "moreWritings": "More writings",
     "backToWritings": "Back to writings",
     "sometimesIWrite": "Sometimes I <serif>write</serif>."
@@ -91,7 +90,8 @@
     "quoteAuthor": "- <link>{author}</link>"
   },
   "common": {
-    "backToHome": "Back to home"
+    "backToHome": "Back to home",
+    "author": " - {author}"
   },
   "footer": {
     "contact": "Contact",

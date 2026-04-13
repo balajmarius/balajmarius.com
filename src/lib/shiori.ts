@@ -37,9 +37,7 @@ export type Readings = Record<string, ReadonlyArray<Reading>>;
 //   },
 // });
 
-export const getReadings = async (): Promise<
-  Record<string, ReadonlyArray<ShioriAPILink>>
-> => {
+export const getReadings = async (): Promise<Readings> => {
   // const tagsResponse = await instance.get<ShioriAPITagsResponse>("/tags");
 
   // const linksByTag = await Promise.all(

@@ -8,7 +8,7 @@ import {
 type FoldersListCardBookProps = {
   title: string;
   url: string;
-  imageUrl: string | null;
+  imageUrl: string;
 };
 
 const FoldersListCardBook = ({
@@ -16,8 +16,6 @@ const FoldersListCardBook = ({
   url,
   imageUrl,
 }: FoldersListCardBookProps) => {
-  if (!imageUrl) return null;
-
   return (
     <div className="overflow-clip rounded-xs shadow-2xl shadow-blue-950/20">
       <a

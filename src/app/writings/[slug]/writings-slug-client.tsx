@@ -39,7 +39,7 @@ const PostContent = ({
           {title}
           {author ? (
             <span className="font-serif italic text-blue-500">
-              {t("posts.author", { author })}
+              {t("common.author", { author })}
             </span>
           ) : null}
         </Typography>

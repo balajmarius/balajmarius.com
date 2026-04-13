@@ -8,12 +8,14 @@ import { Typography } from "@/components/typography";
 type FoldersListCardArticleProps = {
   title: string;
   url: string;
+  domain: string;
   summary: string | null;
 };
 
 const FoldersListCardArticle = ({
   title,
   url,
+  domain,
   summary,
 }: FoldersListCardArticleProps) => {
   const t = useTranslations();
@@ -25,6 +27,10 @@ const FoldersListCardArticle = ({
         summary ? "gap-6" : "gap-3"
       )}
     >
+      <Typography variant="body2" color="muted">
+        {domain}
+      </Typography>
+
       <Typography variant={summary ? "h2" : "subtitle1"}>{title}</Typography>
 
       {summary ? (

@@ -45,6 +45,7 @@ const renderers = {
     <FoldersListCardArticle
       title={link.title}
       url={link.url}
+      domain={link.domain}
       summary={link.summary}
     />
   ),
@@ -152,7 +153,7 @@ const FoldersListItem = ({
       ) : null}
 
       {open ? (
-        <div className="gap-6 columns-4">
+        <div className="columns-1 gap-6 md:columns-2 xl:columns-4">
           {links.map((link) => {
             const type = domainKind[link.domain] ?? "article";
 

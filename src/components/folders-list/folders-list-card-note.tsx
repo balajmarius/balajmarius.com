@@ -31,7 +31,7 @@ const FoldersListCardNote = ({
               rel="noopener noreferrer"
               className="text-blue-500 underline"
             >
-              {t("posts.author", { author })}
+              {t("common.author", { author })}
             </a>
           </Typography>
         ) : null}
