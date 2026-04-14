@@ -11,9 +11,9 @@ export type SvgIconProps = {
 
 const svgIconSizeClassNames: SvgIconSizeMapping = {
   inherit: "size-auto",
-  small: "w-4 h-4",
-  medium: "w-6 h-6",
-  large: "w-8 h-8",
+  small: "size-4",
+  medium: "size-6",
+  large: "size-8",
 };
 
 const SvgIcon = ({

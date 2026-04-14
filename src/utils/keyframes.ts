@@ -31,3 +31,64 @@ export const appBarAnimation = {
     }),
   },
 };
+
+const previewRotationSets = [
+  [-6, 0, 8],
+  [-8, 2, 6],
+  [-4, -1, 7],
+  [-7, 3, 5],
+  [-5, -2, 9],
+] as const;
+
+const previewContainerVariants = {
+  rest: {},
+  hover: {
+    transition: { staggerChildren: 0.04, delayChildren: 0.1 },
+  },
+};
+
+const previewVariants = {
+  rest: { opacity: 0, y: 64, scale: 0.95, rotate: 0 },
+  hover: ({ rotate }: { rotate: number }) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate,
+    transition: { duration: 0.15, ease: "easeOut" as const },
+  }),
+};
+
+export const foldersListAnimation = {
+  overlay: (hovered: boolean) => ({
+    initial: false as const,
+    animate: { y: hovered ? -32 : 0 },
+    transition: { duration: 0.3, ease: "easeOut" as const },
+  }),
+  overlayBorder: (hovered: boolean) => ({
+    initial: false as const,
+    animate: { opacity: hovered ? 1 : 0 },
+    transition: {
+      duration: 0.3,
+      ease: "easeOut" as const,
+      delay: hovered ? 0 : 0.075,
+    },
+  }),
+  preview: {
+    container: (hovered: boolean) => ({
+      initial: "rest" as const,
+      animate: hovered ? "hover" : "rest",
+      variants: previewContainerVariants,
+    }),
+    item: {
+      variants: previewVariants,
+    },
+    custom: (folderIndex: number, index: number) => {
+      const rotations =
+        previewRotationSets[folderIndex % previewRotationSets.length];
+
+      return {
+        rotate: rotations?.[index],
+      };
+    },
+  },
+};

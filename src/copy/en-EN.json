@@ -10,6 +10,7 @@
     "intro": "Intro",
     "experiences": "Experiences",
     "writings": "Writings",
+    "readings": "Readings",
     "bookshelf": "Bookshelf",
     "contact": "Contact"
   },
@@ -52,7 +53,6 @@
   },
   "posts": {
     "title": "Writings",
-    "author": " - {author}",
     "moreWritings": "More writings",
     "backToWritings": "Back to writings",
     "sometimesIWrite": "Sometimes I <serif>write</serif>."
@@ -82,8 +82,17 @@
     "stack": "Stack",
     "shelf": "Shelf"
   },
+  "readings": {
+    "title": "Readings",
+    "thingsWorthReading": "Things worth <serif>reading</serif>",
+    "personalCommonplaceBook": "A personal commonplace book of ideas, passages, and references.",
+    "readArticle": "Read article",
+    "quoteAuthor": "- <link>{author}</link>",
+    "backToFolders": "Back to folders"
+  },
   "common": {
-    "backToHome": "Back to home"
+    "backToHome": "Back to home",
+    "author": " - {author}"
   },
   "footer": {
     "contact": "Contact",

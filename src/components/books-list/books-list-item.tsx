@@ -75,7 +75,7 @@ const BooksListItem = ({
   return (
     <motion.div
       ref={ref}
-      className="flex items-center justify-between gap-8 rounded-sm pt-8 pb-8 writing-sideways-lr"
+      className="flex items-center justify-between gap-8 py-8 rounded-sm writing-sideways-lr"
       style={{
         rotate,
         color,
@@ -100,7 +100,7 @@ const BooksListItem = ({
         src={src}
         alt={title}
         loading="lazy"
-        className="rounded-md w-16 h-auto"
+        className="h-auto w-16 rounded-md"
         width={coverWidth}
         height={coverHeight}
       />

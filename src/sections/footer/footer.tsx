@@ -28,7 +28,7 @@ const Footer = forwardRef<HTMLElement, HTMLAttributes<HTMLElement>>(
         className="py-16 bg-blue-500 text-blue-100 selection:bg-blue-100 selection:text-blue-500"
         {...props}
       >
-        <div className="mx-auto w-full max-w-xl px-6 sm:px-0 space-y-24">
+        <div className="mx-auto w-full max-w-xl space-y-24 px-6 sm:px-0">
           <div className="grid grid-cols-1 sm:grid-cols-12 gap-16 sm:gap-6">
             <div className="col-span-1 sm:col-span-3">
               <Typography variant="subtitle1" color="inherit">

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { MotionConfig, motion, useScroll, useTransform } from "framer-motion";
 import type { ReactNode } from "react";
 import { useRef } from "react";
 
@@ -35,13 +35,13 @@ const ScrollContainer = ({ children, className }: ScrollContainerProps) => {
   );
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <AppBar />
 
       <motion.main
         className={cn(
           className,
-          "min-h-screen overflow-hidden pb-48 bg-white selection:bg-blue-500 selection:text-white origin-bottom"
+          "min-h-dvh overflow-hidden pb-48 bg-white origin-bottom selection:bg-blue-500 selection:text-white"
         )}
         style={{
           scale,
@@ -53,7 +53,7 @@ const ScrollContainer = ({ children, className }: ScrollContainerProps) => {
       </motion.main>
 
       <Footer ref={footerRef} />
-    </>
+    </MotionConfig>
   );
 };
 

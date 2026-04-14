@@ -32,3 +32,15 @@ export const TypographyDisplays = ["inline", "inline-block", "block"] as const;
 
 export type TypographyDisplay = (typeof TypographyDisplays)[number];
 export type TypographyDisplayMapping = Record<TypographyDisplay, string>;
+
+export const TypographyTextTransforms = [
+  "none",
+  "capitalize",
+  "uppercase",
+] as const;
+
+export type TypographyTextTransform = (typeof TypographyTextTransforms)[number];
+export type TypographyTextTransformMapping = Record<
+  TypographyTextTransform,
+  string
+>;

@@ -20,12 +20,18 @@
   --color-gray-500: #6e7394;
   --color-gray-600: #34384c;
 
-  --ease-out-exponential: cubic-bezier(0.33, 1, 0.68, 1);
+  --util-ds-x: 0;
+  --util-ds-y: -1px;
+  --util-ds-blur: 0;
+
+  --drop-shadow-inset-top: var(--util-ds-x) var(--util-ds-y) var(--util-ds-blur)
+    var(--color-blue-500);
 }
 
 @utility scrollbar-w-none {
   scrollbar-width: none;
 }
+
 @utility writing-sideways-lr {
   writing-mode: sideways-lr;
 }

@@ -17,8 +17,8 @@ const linkSvgIconVariantClassNames: LinkVariantMapping = {
 };
 
 const linkTypographyVariantClassNames: LinkVariantMapping = {
-  inherit: "group-hover:text-inherit",
-  default: "transition-colors duration-300 group-hover:text-blue-500",
+  inherit: "group-hover/link:text-inherit",
+  default: "transition-colors duration-300 group-hover/link:text-blue-500",
 };
 
 const Link = ({
@@ -32,7 +32,7 @@ const Link = ({
     <a
       href={href}
       target={target}
-      className="group flex items-center gap-1"
+      className="group/link flex items-center gap-1"
       {...props}
     >
       <Typography
@@ -49,7 +49,7 @@ const Link = ({
       <SvgIconArrow
         size="small"
         className={cn(
-          "transition-transform duration-300 group-hover:-translate-y-1",
+          "transition-transform duration-300 group-hover/link:-translate-y-1",
           linkSvgIconVariantClassNames[variant]
         )}
       />

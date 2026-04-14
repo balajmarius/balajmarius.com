@@ -12,7 +12,7 @@ export type ButtonProps = {
 const buttonVariantClassNames: ButtonVariantMapping = {
   transparent: "cursor-pointer",
   default:
-    "cursor-pointer rounded-sm px-2 py-1 text-gray-600 hover:bg-blue-500 hover:text-white",
+    "rounded-sm px-2 py-1 text-gray-600 cursor-pointer hover:bg-blue-500 hover:text-white",
 };
 
 const buttonActiveClassNames: ButtonVariantMapping = {
