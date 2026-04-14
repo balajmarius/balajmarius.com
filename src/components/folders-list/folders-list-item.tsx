@@ -83,7 +83,7 @@ const FoldersListItem = ({
           : "-mt-8 p-16 border-t border-blue-500 cursor-pointer first:mt-0 last:p-24",
         open
           ? "transition-none"
-          : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
+          : "transform-gpu transition-transform duration-300 ease-in-out hover:-translate-y-16",
         closed
           ? "before:absolute before:inset-x-0 before:top-32 before:-bottom-16 before:z-20 before:bg-gray-200"
           : null
@@ -156,7 +156,7 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 opacity-0 translate-y-16 scale-95 transition-all duration-200 ease-out delay-0",
+                  "flex-1 opacity-0 translate-y-16 scale-95 transform-gpu transition-all duration-200 ease-out",
                   "group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}
