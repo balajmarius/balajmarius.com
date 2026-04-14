@@ -54,7 +54,7 @@ type FoldersListItemProps = {
   name: string;
   active: string | null;
   links: ReadonlyArray<Reading>;
-  onClick: () => void;
+  onOpen: () => void;
 };
 
 const FoldersListItem = ({
@@ -62,7 +62,7 @@ const FoldersListItem = ({
   name,
   active,
   links,
-  onClick,
+  onOpen,
 }: FoldersListItemProps) => {
   const open = active === name;
   const closed = isNullOrUndefined(active);
@@ -85,7 +85,7 @@ const FoldersListItem = ({
       style={{
         zIndex: index,
       }}
-      onClick={closed ? onClick : undefined}
+      onClick={closed ? onOpen : undefined}
     >
       {closed ? (
         <div
@@ -105,13 +105,13 @@ const FoldersListItem = ({
         open={open}
         name={name}
         index={index}
-        onClose={onClick}
+        onClose={onOpen}
       />
 
       {closed ? (
         <div
           className={cn(
-            "absolute -top-24 left-1/2 z-10 flex w-full max-w-2xl -translate-x-1/2",
+            "absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-16 -translate-x-1/2",
             "pointer-events-none group-hover:pointer-events-auto"
           )}
         >
