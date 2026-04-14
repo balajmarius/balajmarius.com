@@ -36,7 +36,7 @@ const FoldersListCardBook = ({
           width={FOLDERS_CARD_IMAGE_WIDTH}
           height={FOLDERS_CARD_IMAGE_HEIGHT}
           loading="lazy"
-          className="w-full rounded-xs object-cover"
+          className="w-full object-cover"
         />
       </a>
     </div>
