@@ -115,7 +115,7 @@ const FoldersListItem = ({
       {closed ? (
         <motion.div
           {...foldersListAnimation.preview.container(value)}
-          className="absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-16 -translate-x-1/2 pointer-events-none"
+          className="absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-24 -translate-x-1/2 pointer-events-none"
         >
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
