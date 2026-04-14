@@ -1,4 +1,7 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import { useMediaQuery } from "usehooks-ts";
 
 import { cn, leftPad } from "@/utils/helpers";
 import { FOLDERS_INDEX_OFFSET } from "@/utils/const";
@@ -21,6 +24,7 @@ const FoldersListItemTab = ({
   onClose,
 }: FoldersListItemTabProps) => {
   const t = useTranslations();
+  const lg = useMediaQuery("(min-width: 768px)");
 
   return (
     <div
@@ -52,7 +56,7 @@ const FoldersListItemTab = ({
       {open ? (
         <Button startIcon={<SvgIconBack size="small" />} onClick={onClose}>
           <Typography variant="body1" color="inherit">
-            {t("readings.backToFolders")}
+            {lg ? t("readings.backToFolders") : t("readings.back")}
           </Typography>
         </Button>
       ) : null}
