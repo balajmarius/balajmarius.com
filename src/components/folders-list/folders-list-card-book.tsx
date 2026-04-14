@@ -5,10 +5,12 @@ import {
   FOLDERS_CARD_IMAGE_WIDTH,
 } from "@/utils/const";
 
+import { isNullOrUndefined } from "@/utils/helpers";
+
 type FoldersListCardBookProps = {
   title: string;
   url: string;
-  imageUrl: string;
+  imageUrl: string | null;
 };
 
 const FoldersListCardBook = ({
@@ -16,6 +18,10 @@ const FoldersListCardBook = ({
   url,
   imageUrl,
 }: FoldersListCardBookProps) => {
+  if (isNullOrUndefined(imageUrl)) {
+    return null;
+  }
+
   return (
     <div className="overflow-clip rounded-xs shadow-2xl shadow-blue-950/20">
       <a
