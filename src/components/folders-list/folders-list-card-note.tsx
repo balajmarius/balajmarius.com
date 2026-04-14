@@ -17,7 +17,7 @@ const FoldersListCardNote = ({
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col gap-4 overflow-clip rounded-xs bg-yellow-100 p-6 shadow-2xl shadow-blue-950/20">
+    <div className="flex flex-col gap-4 overflow-clip p-6 bg-yellow-100 rounded-xs shadow-2xl shadow-blue-950/20">
       <SvgIconQuote size="medium" className="text-blue-500" />
 
       <div className="flex flex-col gap-6 pl-3">

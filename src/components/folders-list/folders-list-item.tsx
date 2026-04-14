@@ -69,21 +69,23 @@ const FoldersListItem = ({
   onClick,
 }: FoldersListItemProps) => {
   const t = useTranslations();
+
   const open = active === name;
-  const previews = take([...links], FOLDERS_PREVIEW_LIMIT);
+  const closed = isNullOrUndefined(active);
+  const previews = take(links, FOLDERS_PREVIEW_LIMIT);
 
   return (
     <div
       className={cn(
-        "group relative w-full rounded-tr-3xl bg-gray-200",
+        "group relative w-full bg-gray-200 rounded-tr-3xl",
         open
           ? "p-8 border-t-transparent xl:p-12"
           : "-mt-8 p-16 border-t border-blue-500 cursor-pointer first:mt-0 last:p-24",
         open
           ? "transition-none"
           : "transition-transform duration-300 ease-in-out hover:-translate-y-16",
-        isNullOrUndefined(active)
-          ? "before:absolute before:z-20 before:inset-x-0 before:top-32 before:-bottom-16 before:bg-gray-200"
+        closed
+          ? "before:absolute before:inset-x-0 before:top-32 before:-bottom-16 before:z-20 before:bg-gray-200"
           : null
       )}
       style={{
@@ -91,22 +93,27 @@ const FoldersListItem = ({
       }}
       onClick={onClick}
     >
-      {isNullOrUndefined(active) ? (
+      {closed ? (
         <div
           className={cn(
-            "absolute z-20 inset-x-0 top-16 bottom-0 py-16 pointer-events-none",
-            "rounded-t-3xl bg-gray-200",
+            "absolute inset-x-0 top-16 bottom-0 z-20 py-16 pointer-events-none",
+            "bg-gray-200 rounded-t-3xl",
             "transform-gpu transition-transform duration-300 ease-out",
             "group-hover:-translate-y-8",
-            "after:absolute after:inset-0 after:rounded-t-3xl after:border-t after:border-blue-500",
+            "after:absolute after:inset-0 after:border-t after:border-blue-500 after:rounded-t-3xl",
             "after:opacity-0 after:transition-opacity after:duration-300 after:ease-out after:delay-75",
             "group-hover:after:opacity-100 group-hover:after:delay-0"
           )}
         />
       ) : null}
 
-      <div className="absolute inset-x-0 bottom-full -mb-px flex items-center justify-between">
-        <div className="relative isolate flex h-14 w-60 items-center gap-4 px-6 select-none">
+      <div
+        className={cn(
+          "absolute bottom-full flex items-center justify-between -mb-px",
+          open ? "inset-x-0" : "left-0"
+        )}
+      >
+        <div className="relative isolate flex items-center gap-4 h-14 w-60 px-6 select-none">
           <SvgIconFolderTab
             size="inherit"
             className={cn(
@@ -135,10 +142,10 @@ const FoldersListItem = ({
         ) : null}
       </div>
 
-      {isNullOrUndefined(active) ? (
+      {closed ? (
         <div
           className={cn(
-            "absolute z-10 -top-1/2 left-1/2 flex w-full max-w-2xl -translate-x-1/2",
+            "absolute -top-24 left-1/2 z-10 flex w-full max-w-2xl -translate-x-1/2",
             "pointer-events-none group-hover:pointer-events-auto"
           )}
         >
@@ -149,7 +156,7 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 translate-y-16 scale-95 opacity-0 transition-all duration-200 ease-out delay-0",
+                  "flex-1 opacity-0 translate-y-16 scale-95 transition-all duration-200 ease-out delay-0",
                   "group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100",
                   foldersListRotationClassNames[index]
                 )}

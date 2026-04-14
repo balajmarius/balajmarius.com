@@ -23,7 +23,7 @@ const FoldersListCardArticle = ({
   return (
     <div
       className={cn(
-        "flex flex-col overflow-clip rounded-xs bg-gray-300 px-6 py-12 shadow-2xl shadow-blue-950/20",
+        "flex flex-col overflow-clip px-6 py-12 bg-gray-300 rounded-xs shadow-2xl shadow-blue-950/20",
         summary ? "gap-6" : "gap-3"
       )}
     >
