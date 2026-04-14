@@ -103,7 +103,7 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
           >
             <motion.div
               {...appBarAnimation.innerContainer}
-              className="space-y-3 px-3 py-3 rounded-sm bg-gray-400/40"
+              className="space-y-3 p-3 bg-gray-400/40 rounded-sm"
             >
               {sections.map((section, index) => (
                 <Link

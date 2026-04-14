@@ -5,9 +5,7 @@ export type CardContentProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 const CardContent = ({ children }: CardContentProps) => {
-  return (
-    <div className="space-y-6 rounded-2xl px-3 py-3 bg-white">{children}</div>
-  );
+  return <div className="space-y-6 p-3 bg-white rounded-2xl">{children}</div>;
 };
 
 export default CardContent;

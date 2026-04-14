@@ -75,7 +75,7 @@ const BooksListItem = ({
   return (
     <motion.div
       ref={ref}
-      className="flex items-center justify-between gap-8 pt-8 pb-8 rounded-sm writing-sideways-lr"
+      className="flex items-center justify-between gap-8 py-8 rounded-sm writing-sideways-lr"
       style={{
         rotate,
         color,
