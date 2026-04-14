@@ -85,7 +85,7 @@ const FoldersListItem = ({
       style={{
         zIndex: index,
       }}
-      onClick={onClick}
+      onClick={closed ? onClick : undefined}
     >
       {closed ? (
         <div
@@ -122,8 +122,8 @@ const FoldersListItem = ({
               <div
                 key={link.id}
                 className={cn(
-                  "flex-1 opacity-0 translate-y-16 scale-95 transform-gpu transition-all duration-200 ease-out",
-                  "group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100",
+                  "flex-1 opacity-0 transform-gpu translate-y-16 scale-95 transition-all duration-200 ease-out",
+                  "pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100",
                   foldersListRotationClassNames[index]
                 )}
               >
