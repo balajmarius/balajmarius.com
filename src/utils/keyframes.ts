@@ -59,6 +59,11 @@ const previewVariants = {
 };
 
 export const foldersListAnimation = {
+  content: {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    transition: { duration: 0.2, ease: "easeOut" as const },
+  },
   overlay: (hovered: boolean) => ({
     initial: false as const,
     animate: { y: hovered ? -32 : 0 },

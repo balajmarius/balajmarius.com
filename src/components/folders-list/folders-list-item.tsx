@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import take from "lodash.take";
 import { useBoolean } from "usehooks-ts";
 
@@ -134,19 +134,25 @@ const FoldersListItem = ({
         </motion.div>
       ) : null}
 
-      {open ? (
-        <div className="columns-1 gap-6 md:columns-2 xl:columns-4">
-          {links.map((link) => {
-            const type = domainKind[link.domain] ?? "article";
+      <AnimatePresence>
+        {open ? (
+          <motion.div
+            key="content"
+            {...foldersListAnimation.content}
+            className="columns-1 gap-6 md:columns-2 xl:columns-4"
+          >
+            {links.map((link) => {
+              const type = domainKind[link.domain] ?? "article";
 
-            return (
-              <div key={link.id} className="mb-6 break-inside-avoid">
-                {renderers[type](link)}
-              </div>
-            );
-          })}
-        </div>
-      ) : null}
+              return (
+                <div key={link.id} className="mb-6 break-inside-avoid">
+                  {renderers[type](link)}
+                </div>
+              );
+            })}
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 };
