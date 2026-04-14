@@ -1,19 +1,15 @@
 import take from "lodash.take";
-import { useTranslations } from "next-intl";
 
 import type { Reading } from "@/lib/shiori";
 
-import { cn, isNullOrUndefined, leftPad } from "@/utils/helpers";
-import { FOLDERS_INDEX_OFFSET, FOLDERS_PREVIEW_LIMIT } from "@/utils/const";
-
-import { SvgIconFolderTab, SvgIconBack } from "@/components/svg-icon";
-import { Typography } from "@/components/typography";
-import { Button } from "@/components/button";
+import { cn, isNullOrUndefined } from "@/utils/helpers";
+import { FOLDERS_PREVIEW_LIMIT } from "@/utils/const";
 
 import {
   FoldersListCardArticle,
   FoldersListCardBook,
   FoldersListCardNote,
+  FoldersListItemTab,
 } from "@/components/folders-list";
 
 const domainKind: Record<string, "book" | "note"> = {
@@ -68,8 +64,6 @@ const FoldersListItem = ({
   links,
   onClick,
 }: FoldersListItemProps) => {
-  const t = useTranslations();
-
   const open = active === name;
   const closed = isNullOrUndefined(active);
   const previews = take(links, FOLDERS_PREVIEW_LIMIT);
@@ -107,40 +101,12 @@ const FoldersListItem = ({
         />
       ) : null}
 
-      <div
-        className={cn(
-          "absolute bottom-full flex items-center justify-between -mb-px",
-          open ? "inset-x-0" : "left-0"
-        )}
-      >
-        <div className="relative isolate flex items-center gap-4 h-14 w-60 px-6 select-none">
-          <SvgIconFolderTab
-            size="inherit"
-            className={cn(
-              "absolute inset-0 -z-10 text-gray-200",
-              open ? "drop-shadow-none" : "drop-shadow-inset-top"
-            )}
-          />
-          <Typography variant="body2">
-            {leftPad(index + FOLDERS_INDEX_OFFSET)}
-          </Typography>
-          <Typography
-            variant="h2"
-            color="accent"
-            textTransform={index ? "capitalize" : "uppercase"}
-          >
-            {name}
-          </Typography>
-        </div>
-
-        {open ? (
-          <Button startIcon={<SvgIconBack size="small" />} onClick={onClick}>
-            <Typography variant="body1" color="inherit">
-              {t("readings.backToFolders")}
-            </Typography>
-          </Button>
-        ) : null}
-      </div>
+      <FoldersListItemTab
+        open={open}
+        name={name}
+        index={index}
+        onClose={onClick}
+      />
 
       {closed ? (
         <div
