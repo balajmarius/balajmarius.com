@@ -1,12 +1,14 @@
 import take from "lodash.take";
+import { useTranslations } from "next-intl";
 
 import type { Reading } from "@/lib/shiori";
 
 import { cn, isNullOrUndefined, leftPad } from "@/utils/helpers";
 import { FOLDERS_INDEX_OFFSET, FOLDERS_PREVIEW_LIMIT } from "@/utils/const";
 
-import { SvgIconFolderTab } from "@/components/svg-icon";
+import { SvgIconFolderTab, SvgIconBack } from "@/components/svg-icon";
 import { Typography } from "@/components/typography";
+import { Button } from "@/components/button";
 
 import {
   FoldersListCardArticle,
@@ -66,6 +68,7 @@ const FoldersListItem = ({
   links,
   onClick,
 }: FoldersListItemProps) => {
+  const t = useTranslations();
   const open = active === name;
   const previews = take([...links], FOLDERS_PREVIEW_LIMIT);
 
@@ -102,8 +105,15 @@ const FoldersListItem = ({
         />
       ) : null}
 
-      <div className="absolute bottom-full left-0 flex items-center -mb-px h-14 w-60">
-        <div className="relative z-10 flex items-start gap-4 px-6 select-none">
+      <div className="absolute inset-x-0 bottom-full -mb-px flex items-center justify-between">
+        <div className="relative isolate flex h-14 w-60 items-center gap-4 px-6 select-none">
+          <SvgIconFolderTab
+            size="inherit"
+            className={cn(
+              "absolute inset-0 -z-10 text-gray-200",
+              open ? "drop-shadow-none" : "drop-shadow-inset-top"
+            )}
+          />
           <Typography variant="body2">
             {leftPad(index + FOLDERS_INDEX_OFFSET)}
           </Typography>
@@ -116,14 +126,13 @@ const FoldersListItem = ({
           </Typography>
         </div>
 
-        <SvgIconFolderTab
-          size="inherit"
-          className={cn(
-            "absolute inset-0 max-h-full",
-            "text-gray-200",
-            open ? "drop-shadow-none" : "drop-shadow-inset-top"
-          )}
-        />
+        {open ? (
+          <Button startIcon={<SvgIconBack size="small" />} onClick={onClick}>
+            <Typography variant="body1" color="inherit">
+              {t("readings.backToFolders")}
+            </Typography>
+          </Button>
+        ) : null}
       </div>
 
       {isNullOrUndefined(active) ? (

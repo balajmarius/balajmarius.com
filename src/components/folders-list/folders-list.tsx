@@ -17,9 +17,10 @@ const FoldersList = ({ readings }: FoldersListProps) => {
 
   const handleClick = (tag: string) => {
     if (active === tag) {
-      return undefined;
+      setActive(null);
+    } else {
+      setActive(tag);
     }
-    setActive(tag);
   };
 
   return (

@@ -87,7 +87,8 @@
     "thingsWorthReading": "Things worth <serif>reading</serif>",
     "personalCommonplaceBook": "A personal commonplace book of ideas, passages, and references.",
     "readArticle": "Read article",
-    "quoteAuthor": "- <link>{author}</link>"
+    "quoteAuthor": "- <link>{author}</link>",
+    "backToFolders": "Back to folders"
   },
   "common": {
     "backToHome": "Back to home",
