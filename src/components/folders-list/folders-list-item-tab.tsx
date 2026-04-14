@@ -8,14 +8,14 @@ import { SvgIconBack, SvgIconFolderTab } from "@/components/svg-icon";
 import { Typography } from "@/components/typography";
 
 type FoldersListItemTabProps = {
-  index: number;
+  folderIndex: number;
   name: string;
   open: boolean;
   onClose: () => void;
 };
 
 const FoldersListItemTab = ({
-  index,
+  folderIndex,
   name,
   open,
   onClose,
@@ -38,12 +38,12 @@ const FoldersListItemTab = ({
           )}
         />
         <Typography variant="body2">
-          {leftPad(index + FOLDERS_INDEX_OFFSET)}
+          {leftPad(folderIndex + FOLDERS_INDEX_OFFSET)}
         </Typography>
         <Typography
           variant="h2"
           color="accent"
-          textTransform={index ? "capitalize" : "uppercase"}
+          textTransform={folderIndex ? "capitalize" : "uppercase"}
         >
           {name}
         </Typography>

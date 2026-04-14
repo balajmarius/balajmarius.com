@@ -1,7 +1,7 @@
 "use client";
 
-import take from "lodash.take";
 import { motion } from "framer-motion";
+import take from "lodash.take";
 import { useBoolean } from "usehooks-ts";
 
 import type { Reading } from "@/lib/shiori";
@@ -78,16 +78,13 @@ const FoldersListItem = ({
   return (
     <div
       className={cn(
-        "group relative w-full bg-gray-200 rounded-tr-3xl",
+        "relative w-full bg-gray-200 rounded-tr-3xl",
         open
           ? "p-8 border-t-transparent xl:p-12"
           : "-mt-8 p-16 border-t border-blue-500 cursor-pointer first:mt-0 last:p-24",
         open
           ? "transition-none"
-          : "transform-gpu transition-transform duration-300 ease-in-out hover:-translate-y-16",
-        closed
-          ? "before:absolute before:inset-x-0 before:top-32 before:-bottom-16 before:z-20 before:bg-gray-200"
-          : null
+          : "transform-gpu transition-transform duration-300 ease-in-out hover:-translate-y-16 before:absolute before:inset-x-0 before:top-32 before:-bottom-16 before:z-20 before:bg-gray-200"
       )}
       style={{
         zIndex: folderIndex,
@@ -111,12 +108,15 @@ const FoldersListItem = ({
       <FoldersListItemTab
         open={open}
         name={name}
-        index={folderIndex}
+        folderIndex={folderIndex}
         onClose={handleClick}
       />
 
       {closed ? (
-        <div className="absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-16 -translate-x-1/2 pointer-events-none">
+        <motion.div
+          {...foldersListAnimation.preview.container(value)}
+          className="absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-16 -translate-x-1/2 pointer-events-none"
+        >
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
 
@@ -124,14 +124,14 @@ const FoldersListItem = ({
               <motion.div
                 key={link.id}
                 className="flex-1"
-                {...foldersListAnimation.preview.item(value)}
+                variants={foldersListAnimation.preview.item.variants}
                 custom={foldersListAnimation.preview.custom(folderIndex, index)}
               >
                 {renderers[type](link)}
               </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       ) : null}
 
       {open ? (

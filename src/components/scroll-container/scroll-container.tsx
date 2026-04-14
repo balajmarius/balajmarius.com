@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { MotionConfig, motion, useScroll, useTransform } from "framer-motion";
 import type { ReactNode } from "react";
 import { useRef } from "react";
 
@@ -35,7 +35,7 @@ const ScrollContainer = ({ children, className }: ScrollContainerProps) => {
   );
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <AppBar />
 
       <motion.main
@@ -53,7 +53,7 @@ const ScrollContainer = ({ children, className }: ScrollContainerProps) => {
       </motion.main>
 
       <Footer ref={footerRef} />
-    </>
+    </MotionConfig>
   );
 };
 
