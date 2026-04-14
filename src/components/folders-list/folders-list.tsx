@@ -30,7 +30,7 @@ const FoldersList = ({ readings }: FoldersListProps) => {
           return (
             <FoldersListItem
               key={tag}
-              index={index}
+              folderIndex={index}
               name={tag}
               links={readings[tag]}
               active={active}

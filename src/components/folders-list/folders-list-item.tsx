@@ -1,6 +1,12 @@
+"use client";
+
 import take from "lodash.take";
+import { motion } from "framer-motion";
+import { useBoolean } from "usehooks-ts";
 
 import type { Reading } from "@/lib/shiori";
+
+import { foldersListAnimation } from "@/utils/keyframes";
 
 import { cn, isNullOrUndefined } from "@/utils/helpers";
 import { FOLDERS_PREVIEW_LIMIT } from "@/utils/const";
@@ -17,12 +23,6 @@ const domainKind: Record<string, "book" | "note"> = {
   "bsky.app": "note",
   "goodreads.com": "book",
 } as const;
-
-const foldersListRotationClassNames = [
-  "group-hover:-rotate-6 group-hover:delay-150",
-  "group-hover:rotate-0 group-hover:delay-200",
-  "group-hover:rotate-8 group-hover:delay-250",
-] as const;
 
 const renderers = {
   book: (link: Reading) => (
@@ -50,7 +50,7 @@ const renderers = {
 };
 
 type FoldersListItemProps = {
-  index: number;
+  folderIndex: number;
   name: string;
   active: string | null;
   links: ReadonlyArray<Reading>;
@@ -58,15 +58,22 @@ type FoldersListItemProps = {
 };
 
 const FoldersListItem = ({
-  index,
+  folderIndex,
   name,
   active,
   links,
   onOpen,
 }: FoldersListItemProps) => {
+  const { value, setTrue, setFalse } = useBoolean();
+
   const open = active === name;
   const closed = isNullOrUndefined(active);
   const previews = take(links, FOLDERS_PREVIEW_LIMIT);
+
+  const handleClick = () => {
+    setFalse();
+    onOpen();
+  };
 
   return (
     <div
@@ -83,52 +90,45 @@ const FoldersListItem = ({
           : null
       )}
       style={{
-        zIndex: index,
+        zIndex: folderIndex,
       }}
-      onClick={closed ? onOpen : undefined}
+      onMouseEnter={setTrue}
+      onMouseLeave={setFalse}
+      onClick={closed ? handleClick : undefined}
     >
       {closed ? (
-        <div
-          className={cn(
-            "absolute inset-x-0 top-16 bottom-0 z-20 py-16 pointer-events-none",
-            "bg-gray-200 rounded-t-3xl",
-            "transform-gpu transition-transform duration-300 ease-out",
-            "group-hover:-translate-y-8",
-            "after:absolute after:inset-0 after:border-t after:border-blue-500 after:rounded-t-3xl",
-            "after:opacity-0 after:transition-opacity after:duration-300 after:ease-out after:delay-75",
-            "group-hover:after:opacity-100 group-hover:after:delay-0"
-          )}
-        />
+        <motion.div
+          {...foldersListAnimation.overlay(value)}
+          className="absolute inset-x-0 top-16 bottom-0 z-20 py-16 bg-gray-200 rounded-t-3xl pointer-events-none"
+        >
+          <motion.div
+            {...foldersListAnimation.overlayBorder(value)}
+            className="absolute inset-0 border-t border-blue-500 rounded-t-3xl"
+          />
+        </motion.div>
       ) : null}
 
       <FoldersListItemTab
         open={open}
         name={name}
-        index={index}
-        onClose={onOpen}
+        index={folderIndex}
+        onClose={handleClick}
       />
 
       {closed ? (
-        <div
-          className={cn(
-            "absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-16 -translate-x-1/2",
-            "pointer-events-none group-hover:pointer-events-auto"
-          )}
-        >
+        <div className="absolute top-0 left-1/2 z-10 flex w-full max-w-2xl -translate-y-16 -translate-x-1/2 pointer-events-none">
           {previews.map((link, index) => {
             const type = domainKind[link.domain] ?? "article";
 
             return (
-              <div
+              <motion.div
                 key={link.id}
-                className={cn(
-                  "flex-1 opacity-0 transform-gpu translate-y-16 scale-95 transition-all duration-200 ease-out",
-                  "pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100",
-                  foldersListRotationClassNames[index]
-                )}
+                className="flex-1"
+                {...foldersListAnimation.preview.item(value)}
+                custom={foldersListAnimation.preview.custom(folderIndex, index)}
               >
                 {renderers[type](link)}
-              </div>
+              </motion.div>
             );
           })}
         </div>
