@@ -45,6 +45,7 @@ jobs:
         run: npm run build
         env:
           HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+          SHIORI_API_KEY: ${{ secrets.SHIORI_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
