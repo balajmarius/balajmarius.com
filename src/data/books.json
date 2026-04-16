@@ -1,5 +1,57 @@
 [
   {
+    "id": "zCRt-bKR9kHTZZ2zTQu-Z",
+    "title": "The Construction of Social Reality",
+    "author": "John R. Searle",
+    "src": "/images/bookshelf/the-construction-of-social-reality@2x.webp",
+    "backgroundColor": "#000010",
+    "color": "#e8e8ee",
+    "paddingLeft": 18,
+    "paddingRight": 18,
+    "cardSize": 401,
+    "coverWidth": 267,
+    "coverHeight": 400
+  },
+  {
+    "id": "qRGAKkI0ER5BDPuQ7X2Cr",
+    "title": "Conversatii despre Dumnezeu",
+    "author": "Byung-Chul Han",
+    "src": "/images/bookshelf/conversatii-despre-dumnezeu@2x.webp",
+    "backgroundColor": "#e0c050",
+    "color": "#2e2b1f",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 420,
+    "coverWidth": 284,
+    "coverHeight": 400
+  },
+  {
+    "id": "yitDdTLX8cPIjKddkFJDa",
+    "title": "Boxing: A Cultural History",
+    "author": "Kasia Boddy",
+    "src": "/images/bookshelf/boxing-a-cultural-history@2x.webp",
+    "backgroundColor": "#a03030",
+    "color": "#eee8e8",
+    "paddingLeft": 29,
+    "paddingRight": 29,
+    "cardSize": 449,
+    "coverWidth": 282,
+    "coverHeight": 400
+  },
+  {
+    "id": "U3baxBzsWDiVBLmOeb-1l",
+    "title": "Dying for Ideas",
+    "author": "Costica Bradatan",
+    "src": "/images/bookshelf/dying-for-ideas@2x.webp",
+    "backgroundColor": "#302020",
+    "color": "#ece9e9",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 420,
+    "coverWidth": 260,
+    "coverHeight": 400
+  },
+  {
     "id": "iUoOix91HT7IjAvsGFpv",
     "title": "Against the Machine",
     "author": "Paul Kingsnorth",
@@ -39,29 +91,16 @@
     "coverHeight": 400
   },
   {
-    "id": "yitDdTLX8cPIjKddkFJDa",
-    "title": "Boxing: A Cultural History",
-    "author": "Kasia Boddy",
-    "src": "/images/bookshelf/boxing-a-cultural-history@2x.webp",
-    "backgroundColor": "#a03030",
-    "color": "#eee8e8",
-    "paddingLeft": 29,
-    "paddingRight": 29,
-    "cardSize": 449,
-    "coverWidth": 282,
-    "coverHeight": 400
-  },
-  {
-    "id": "U3baxBzsWDiVBLmOeb-1l",
-    "title": "Dying for Ideas",
-    "author": "Costica Bradatan",
-    "src": "/images/bookshelf/dying-for-ideas@2x.webp",
-    "backgroundColor": "#302020",
-    "color": "#ece9e9",
+    "id": "4YRV_sWTJFgcNeANHHUI7",
+    "title": "Ruperea blestemului",
+    "author": "Cătălin Ranco Pițu",
+    "src": "/images/bookshelf/ruperea-blestemului@2x.webp",
+    "backgroundColor": "#c02040",
+    "color": "#eee8e9",
     "paddingLeft": 24,
     "paddingRight": 24,
     "cardSize": 420,
-    "coverWidth": 260,
+    "coverWidth": 275,
     "coverHeight": 400
   },
   {
@@ -88,19 +127,6 @@
     "paddingRight": 24,
     "cardSize": 380,
     "coverWidth": 260,
-    "coverHeight": 400
-  },
-  {
-    "id": "qRGAKkI0ER5BDPuQ7X2Cr",
-    "title": "Conversatii despre Dumnezeu",
-    "author": "Byung-Chul Han",
-    "src": "/images/bookshelf/conversatii-despre-dumnezeu@2x.webp",
-    "backgroundColor": "#e0c050",
-    "color": "#2e2b1f",
-    "paddingLeft": 24,
-    "paddingRight": 24,
-    "cardSize": 420,
-    "coverWidth": 284,
     "coverHeight": 400
   },
   {
@@ -140,19 +166,6 @@
     "paddingRight": 24,
     "cardSize": 420,
     "coverWidth": 273,
-    "coverHeight": 400
-  },
-  {
-    "id": "zCRt-bKR9kHTZZ2zTQu-Z",
-    "title": "The Construction of Social Reality",
-    "author": "John R. Searle",
-    "src": "/images/bookshelf/the-construction-of-social-reality@2x.webp",
-    "backgroundColor": "#000010",
-    "color": "#e8e8ee",
-    "paddingLeft": 18,
-    "paddingRight": 18,
-    "cardSize": 401,
-    "coverWidth": 267,
     "coverHeight": 400
   },
   {
@@ -231,19 +244,6 @@
     "paddingRight": 29,
     "cardSize": 450,
     "coverWidth": 255,
-    "coverHeight": 400
-  },
-  {
-    "id": "4YRV_sWTJFgcNeANHHUI7",
-    "title": "Ruperea blestemului",
-    "author": "Cătălin Ranco Pițu",
-    "src": "/images/bookshelf/ruperea-blestemului@2x.webp",
-    "backgroundColor": "#c02040",
-    "color": "#eee8e9",
-    "paddingLeft": 24,
-    "paddingRight": 24,
-    "cardSize": 420,
-    "coverWidth": 275,
     "coverHeight": 400
   },
   {

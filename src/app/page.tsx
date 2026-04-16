@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { getBooks } from "@/lib/books";
 import { getWorkouts } from "@/lib/hevy";
 import { getPosts } from "@/lib/posts";
 
@@ -9,6 +10,7 @@ import { POSTS_LIMIT } from "@/utils/const";
 import { About } from "@/sections/about";
 import { Commits } from "@/sections/commits";
 import { Experience } from "@/sections/experience";
+import { Bookshelf } from "@/sections/bookshelf";
 import { Posts } from "@/sections/posts";
 import { Stats } from "@/sections/stats";
 
@@ -22,6 +24,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 const Home = async () => {
   const posts = getPosts(POSTS_LIMIT);
+  const books = await getBooks();
   const workouts = await getWorkouts();
 
   return (
@@ -30,6 +33,7 @@ const Home = async () => {
       <Experience />
       <Commits />
       <Posts posts={posts} />
+      <Bookshelf books={books} />
       <Stats workouts={workouts} />
     </>
   );

@@ -14,6 +14,7 @@ export const WORKOUTS_BOXING_EXERCISES = 1;
 export const THIRTY_FIVE_WEEKS_IN_MS = 35 * 7 * 24 * 60 * 60 * 1000;
 
 export const POSTS_LIMIT = 6;
+export const BOOKS_LIMIT = 3;
 
 export const FOLDERS_INDEX_OFFSET = 1;
 export const FOLDERS_INDEX_PAD_LENGTH = 2;
