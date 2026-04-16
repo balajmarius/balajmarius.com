@@ -95,7 +95,7 @@ const BookshelfContent = ({ books }: BookshelfContentProps) => {
         </Section>
 
         {variant === "stack" ? (
-          <BooksListStack books={books} />
+          <BooksListStack books={books} animated />
         ) : (
           <BooksList books={books} />
         )}

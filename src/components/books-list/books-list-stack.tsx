@@ -3,9 +3,10 @@ import type { Book } from "@/lib/books";
 
 type BooksListStackProps = {
   books: Book[];
+  animated?: boolean;
 };
 
-const BooksListStack = ({ books }: BooksListStackProps) => {
+const BooksListStack = ({ books, animated }: BooksListStackProps) => {
   return (
     <div className="flex flex-col items-center gap-1 max-w-2xl px-6 sm:px-12">
       {books.map((book) => (
@@ -19,6 +20,7 @@ const BooksListStack = ({ books }: BooksListStackProps) => {
           cardSize={book.cardSize}
           coverWidth={book.coverWidth}
           coverHeight={book.coverHeight}
+          animated={animated}
         />
       ))}
     </div>

@@ -5,19 +5,23 @@ import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 
 import type { Book } from "@/lib/books";
+
 import {
   BOOKSHELF_ANIMATION_DAMPING,
   BOOKSHELF_ANIMATION_STIFFNESS,
   BOOKSHELF_TRANSPARENCY_IN_VIEW,
   BOOKSHELF_TRANSPARENCY_OUTSIDE_VIEW,
 } from "@/utils/const";
+import { isNullOrUndefined } from "@/utils/helpers";
 
 import { Typography } from "@/components/typography";
 
 type BooksListStackItemProps = Omit<
   Book,
   "id" | "paddingLeft" | "paddingRight"
->;
+> & {
+  animated?: boolean;
+};
 
 const BooksListStackItem = ({
   cardSize,
@@ -28,6 +32,7 @@ const BooksListStackItem = ({
   backgroundColor,
   coverWidth,
   coverHeight,
+  animated,
 }: BooksListStackItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
@@ -39,22 +44,26 @@ const BooksListStackItem = ({
   });
 
   useEffect(() => {
+    if (isNullOrUndefined(animated)) {
+      return;
+    }
+
     transparency.set(
       isInView
         ? BOOKSHELF_TRANSPARENCY_IN_VIEW
         : BOOKSHELF_TRANSPARENCY_OUTSIDE_VIEW
     );
-  }, [isInView, transparency]);
+  }, [animated, isInView, transparency]);
 
   return (
     <motion.div
       ref={ref}
       className="flex items-center justify-between gap-8 max-w-full px-8 py-3 rounded-sm content-auto"
       style={{
-        opacity,
         color,
         backgroundColor,
         width: cardSize,
+        opacity: animated ? opacity : undefined,
       }}
     >
       <div className="flex flex-col">
