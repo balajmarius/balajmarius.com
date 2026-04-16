@@ -123,7 +123,7 @@ const FoldersListItem = ({
             return (
               <motion.div
                 key={link.id}
-                className="flex-1"
+                className="flex-1 pointer-events-none"
                 variants={foldersListAnimation.preview.item.variants}
                 custom={foldersListAnimation.preview.custom(folderIndex, index)}
               >
