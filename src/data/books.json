@@ -13,16 +13,16 @@
     "coverHeight": 400
   },
   {
-    "id": "qRGAKkI0ER5BDPuQ7X2Cr",
-    "title": "Conversatii despre Dumnezeu",
-    "author": "Byung-Chul Han",
-    "src": "/images/bookshelf/conversatii-despre-dumnezeu@2x.webp",
-    "backgroundColor": "#e0c050",
-    "color": "#2e2b1f",
-    "paddingLeft": 24,
-    "paddingRight": 24,
-    "cardSize": 420,
-    "coverWidth": 284,
+    "id": "N8gnypRcMTk7u_hROwTwK",
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "src": "/images/bookshelf/the-design-of-everyday-things@2x.webp",
+    "backgroundColor": "#ffe030",
+    "color": "#2e2c1f",
+    "paddingLeft": 19,
+    "paddingRight": 19,
+    "cardSize": 406,
+    "coverWidth": 267,
     "coverHeight": 400
   },
   {
@@ -205,6 +205,20 @@
     "paddingRight": 8,
     "cardSize": 362,
     "coverWidth": 265,
+    "coverHeight": 400
+  },
+
+  {
+    "id": "qRGAKkI0ER5BDPuQ7X2Cr",
+    "title": "Conversatii despre Dumnezeu",
+    "author": "Byung-Chul Han",
+    "src": "/images/bookshelf/conversatii-despre-dumnezeu@2x.webp",
+    "backgroundColor": "#e0c050",
+    "color": "#2e2b1f",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 420,
+    "coverWidth": 284,
     "coverHeight": 400
   },
   {
@@ -1011,19 +1025,6 @@
     "paddingRight": 24,
     "cardSize": 420,
     "coverWidth": 269,
-    "coverHeight": 400
-  },
-  {
-    "id": "N8gnypRcMTk7u_hROwTwK",
-    "title": "The Design of Everyday Things",
-    "author": "Don Norman",
-    "src": "/images/bookshelf/the-design-of-everyday-things@2x.webp",
-    "backgroundColor": "#ffe030",
-    "color": "#2e2c1f",
-    "paddingLeft": 19,
-    "paddingRight": 19,
-    "cardSize": 406,
-    "coverWidth": 267,
     "coverHeight": 400
   },
   {
