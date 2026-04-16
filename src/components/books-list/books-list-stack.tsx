@@ -1,5 +1,7 @@
-import { BooksListStackItem } from "@/components/books-list";
 import type { Book } from "@/lib/books";
+import { BooksListStackItem } from "@/components/books-list";
+
+import { cn } from "@/utils/helpers";
 
 type BooksListStackProps = {
   books: Book[];
@@ -8,7 +10,12 @@ type BooksListStackProps = {
 
 const BooksListStack = ({ books, animated }: BooksListStackProps) => {
   return (
-    <div className="flex flex-col items-center gap-1 max-w-2xl px-6 sm:px-12">
+    <div
+      className={cn(
+        "flex flex-col items-center gap-1 max-w-2xl",
+        animated ? "px-6 sm:px-12" : undefined
+      )}
+    >
       {books.map((book) => (
         <BooksListStackItem
           key={book.id}
