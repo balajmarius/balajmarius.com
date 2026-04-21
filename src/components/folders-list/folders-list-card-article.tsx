@@ -40,7 +40,7 @@ const FoldersListCardArticle = ({
       ) : null}
 
       <Link href={url} target="_blank">
-        {t("readings.readArticle")}
+        {t("bookmarks.readArticle")}
       </Link>
     </div>
   );

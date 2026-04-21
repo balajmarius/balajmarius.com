@@ -50,8 +50,8 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
       icon: <SvgIconBookshelf size="small" />,
     },
     {
-      href: "/readings",
-      label: t("appBar.readings"),
+      href: "/bookmarks",
+      label: t("appBar.bookmarks"),
       icon: <SvgIconFolder size="small" />,
     },
     {

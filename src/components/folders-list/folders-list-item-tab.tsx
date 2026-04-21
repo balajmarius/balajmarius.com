@@ -56,7 +56,7 @@ const FoldersListItemTab = ({
       {open ? (
         <Button startIcon={<SvgIconBack size="small" />} onClick={onClose}>
           <Typography variant="body1" color="inherit">
-            {lg ? t("readings.backToFolders") : t("readings.back")}
+            {lg ? t("bookmarks.backToFolders") : t("bookmarks.back")}
           </Typography>
         </Button>
       ) : null}

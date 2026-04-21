@@ -16,11 +16,11 @@ export const generateMetadata = async (): Promise<Metadata> => {
   const t = await getTranslations();
 
   return {
-    title: t("readings.title"),
+    title: t("bookmarks.title"),
   };
 };
 
-const ReadingsPage = async () => {
+const BookmarksPage = async () => {
   const t = await getTranslations();
   const links = await getReadings();
 
@@ -43,10 +43,10 @@ const ReadingsPage = async () => {
           </Link>
 
           <Typography variant="h1" display="block">
-            {t.rich("readings.thingsWorthReading", renderers)}
+            {t.rich("bookmarks.thingsWorthReading", renderers)}
           </Typography>
           <Typography variant="body1" display="block">
-            {t("readings.personalCommonplaceBook")}
+            {t("bookmarks.personalCommonplaceBook")}
           </Typography>
         </div>
       </Section>
@@ -58,4 +58,4 @@ const ReadingsPage = async () => {
   );
 };
 
-export default ReadingsPage;
+export default BookmarksPage;
