@@ -72,12 +72,12 @@ const About = () => {
     <Section id="about">
       <motion.div className="space-y-8" initial="rest" whileHover="hover">
         <Typography variant="h1">
-          <motion.span className="whitespace-break-spaces">
+          <motion.span className="whitespace-break-spaces text-pretty">
             {t.rich("about.title", renderers)}
           </motion.span>
         </Typography>
 
-        <div className="space-y-4">
+        <div className="space-y-4 text-pretty">
           <Typography variant="body1">
             {t.rich("about.description.0", renderers)}
           </Typography>
