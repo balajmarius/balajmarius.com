@@ -1,6 +1,8 @@
 import type { HTMLAttributes, ReactNode } from "react";
-import type { SvgIconSize, SvgIconSizeMapping } from "@/components/svg-icon";
+
 import { cn } from "@/utils/helpers";
+
+import type { SvgIconSize, SvgIconSizeMapping } from "@/components/svg-icon";
 
 export type SvgIconProps = {
   children: ReactNode;
