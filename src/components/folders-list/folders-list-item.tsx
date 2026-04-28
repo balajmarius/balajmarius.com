@@ -15,13 +15,15 @@ import {
   FoldersListCardArticle,
   FoldersListCardBook,
   FoldersListCardNote,
+  FoldersListCardVideo,
   FoldersListItemTab,
 } from "@/components/folders-list";
 
-const domainKind: Record<string, "book" | "note"> = {
+const domainKind: Record<string, "book" | "note" | "video"> = {
   "x.com": "note",
   "bsky.app": "note",
   "goodreads.com": "book",
+  "youtube.com": "video",
 } as const;
 
 const renderers = {
@@ -44,6 +46,13 @@ const renderers = {
       title={link.title}
       url={link.url}
       domain={link.domain}
+      summary={link.summary}
+    />
+  ),
+  video: (link: Reading) => (
+    <FoldersListCardVideo
+      title={link.title}
+      url={link.url}
       summary={link.summary}
     />
   ),
