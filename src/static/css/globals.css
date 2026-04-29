@@ -35,6 +35,7 @@
 @utility writing-sideways-lr {
   writing-mode: sideways-lr;
 }
+
 @utility content-auto {
   content-visibility: auto;
 }

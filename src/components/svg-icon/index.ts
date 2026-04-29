@@ -18,6 +18,7 @@ export { default as SvgIconM } from "./svg-icon-m";
 export { default as SvgIconMiddleCap } from "./svg-icon-middle-cap";
 export { default as SvgIconNotepad } from "./svg-icon-notepad";
 export { default as SvgIconQuote } from "./svg-icon-quote";
+export { default as SvgIconTopCap } from "./svg-icon-top-cap";
 export { default as SvgIconTrophy } from "./svg-icon-trophy";
 export { default as SvgIconVideo } from "./svg-icon-video";
 export * from "./types";
