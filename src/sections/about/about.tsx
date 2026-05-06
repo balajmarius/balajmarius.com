@@ -66,6 +66,16 @@ const About = () => {
         {chunks}
       </Link>
     ),
+    url5: (chunks: ReactNode) => (
+      <Link
+        href={links.wunderlabs}
+        className="text-blue-500"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {chunks}
+      </Link>
+    ),
   };
 
   return (
