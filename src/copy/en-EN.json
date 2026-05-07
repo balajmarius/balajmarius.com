@@ -28,20 +28,26 @@
     "title": "Experience",
     "jobs": {
       "1": {
-        "title": "The Sandbox",
-        "role": "Managing Director (Romania)"
+        "title": "Wunderlabs",
+        "role": "Co-Founder",
+        "duration": "2026 ~ Present"
       },
       "2": {
+        "title": "The Sandbox",
+        "role": "Managing Director (Romania)",
+        "duration": "2025 ~ 2026"
+      },
+      "3": {
         "title": "QED (acquired by The Sandbox)",
         "role": "Co-Founder",
         "duration": "2022 ~ 2025"
       },
-      "3": {
+      "4": {
         "title": "stake.fish / f2pool.io",
         "role": "Senior Software Engineer",
         "duration": "2019 ~ 2022"
       },
-      "4": {
+      "5": {
         "title": "Alacritylaw",
         "role": "Lead Software Engineer",
         "duration": "2017 ~ 2019"
