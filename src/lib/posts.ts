@@ -1,8 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import { groupBy, take } from "es-toolkit/array";
 import matter from "gray-matter";
-import groupBy from "lodash.groupby";
-import take from "lodash.take";
 import { getYear } from "date-fns/getYear";
 import { compareDesc } from "date-fns/compareDesc";
 
@@ -45,7 +44,7 @@ export const getPosts = (limit?: number) => {
 
   const result = limit ? take(posts, limit) : posts;
 
-  return groupBy<Post>(result, (post) => getYear(post.createdAt));
+  return groupBy(result, (post) => getYear(post.createdAt));
 };
 
 export const getPostSlugs = () => {

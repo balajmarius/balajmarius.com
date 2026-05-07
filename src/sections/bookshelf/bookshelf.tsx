@@ -1,6 +1,6 @@
 "use client";
 
-import take from "lodash.take";
+import { take } from "es-toolkit/array";
 import { useTranslations } from "next-intl";
 
 import type { Book } from "@/lib/books";

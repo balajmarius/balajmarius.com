@@ -1,7 +1,7 @@
 "use client";
 
+import { take } from "es-toolkit/array";
 import { AnimatePresence, motion } from "framer-motion";
-import take from "lodash.take";
 import { useBoolean } from "usehooks-ts";
 
 import type { Reading } from "@/lib/shiori";
