@@ -1,0 +1,23 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://balajmarius.com/",
+      "service-doc": [
+        {
+          "href": "https://balajmarius.com/llms.txt",
+          "type": "text/plain"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://balajmarius.com/robots.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://balajmarius.com/sitemap.xml",
+          "type": "application/xml"
+        }
+      ]
+    }
+  ]
+}

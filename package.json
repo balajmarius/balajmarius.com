@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "cp -R public/_headers public/.well-known out/",
     "start": "next start",
     "lint": "oxlint --deny-warnings",
     "format": "oxfmt .",
