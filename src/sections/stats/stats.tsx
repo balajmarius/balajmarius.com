@@ -73,9 +73,14 @@ const Stats = ({ workouts }: StatsProps) => {
           </div>
         </CardContent>
         <CardFooter>
-          <a href={links.hevy} target="_blank" rel="noopener noreferrer">
-            <IconButton>
-              <SvgIconHevy size="small" />
+          <a
+            href={links.hevy}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("stats.viewHevyProfile")}
+          >
+            <IconButton as="span">
+              <SvgIconHevy size="small" aria-hidden="true" />
             </IconButton>
           </a>
           <Chip color="default">

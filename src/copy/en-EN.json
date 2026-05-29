@@ -71,6 +71,7 @@
     "date": "Date",
     "volume": "Volume",
     "sets": "Sets",
+    "viewHevyProfile": "View Hevy profile",
     "workouts": "<serif>{count}</serif> workouts",
     "kgs": "{count} kgs",
     "mins": "{count} mins"

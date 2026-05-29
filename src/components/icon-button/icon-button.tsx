@@ -1,13 +1,30 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
-export type IconButtonProps = {
+type IconButtonBaseProps = {
   children: ReactNode;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+};
 
-const IconButton = ({ children, className, ...props }: IconButtonProps) => {
+type IconButtonButtonProps = IconButtonBaseProps &
+  ButtonHTMLAttributes<HTMLButtonElement> & {
+    as?: "button";
+  };
+
+type IconButtonSpanProps = IconButtonBaseProps &
+  HTMLAttributes<HTMLSpanElement> & {
+    as: "span";
+  };
+
+export type IconButtonProps = IconButtonButtonProps | IconButtonSpanProps;
+
+const IconButton = ({
+  as: Component = "button",
+  children,
+  className,
+  ...props
+}: IconButtonProps) => {
   return (
-    <button
+    <Component
       className={twMerge(
         "flex items-center justify-center rounded-full px-1 py-1 bg-white cursor-pointer",
         className
@@ -15,7 +32,7 @@ const IconButton = ({ children, className, ...props }: IconButtonProps) => {
       {...props}
     >
       {children}
-    </button>
+    </Component>
   );
 };
 

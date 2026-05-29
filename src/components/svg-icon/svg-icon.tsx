@@ -23,12 +23,14 @@ const SvgIcon = ({
   className,
   size = "inherit",
   viewBox = "0 0 16 16",
+  ...props
 }: SvgIconProps) => {
   return (
     <svg
       viewBox={viewBox}
       fill="currentColor"
       className={cn(className, svgIconSizeClassNames[size])}
+      {...props}
     >
       {children}
     </svg>
