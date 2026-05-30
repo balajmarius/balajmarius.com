@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { ComponentProps } from "react";
+import { formatISO } from "date-fns/formatISO";
 
 import { getPost, getPostSlugs } from "@/lib/posts";
+
+import { APP_URL } from "@/utils/const";
 import { isNullOrUndefined } from "@/utils/helpers";
 
 import PostContent from "@/app/writings/[slug]/writings-slug-client";
@@ -68,7 +71,28 @@ export const generateMetadata = async ({
       card: "summary_large_image",
       title: post?.title,
     },
-  };
+  } as const;
+};
+
+const generateStructuredData = (
+  post: NonNullable<ReturnType<typeof getPost>>
+) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    datePublished: formatISO(post.createdAt),
+    author: {
+      "@id": `${APP_URL}/#person`,
+    },
+    publisher: {
+      "@id": `${APP_URL}/#person`,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${APP_URL}/writings/${post.slug}`,
+    },
+  } as const;
 };
 
 const PostPage = async ({ params }: PostPageProps) => {
@@ -80,13 +104,22 @@ const PostPage = async ({ params }: PostPageProps) => {
   }
 
   return (
-    <PostContent
-      title={post.title}
-      author={post.author}
-      createdAt={post.createdAt}
-    >
-      <MDXRemote source={post.content} components={renderers} />
-    </PostContent>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData(post)),
+        }}
+      />
+
+      <PostContent
+        title={post.title}
+        author={post.author}
+        createdAt={post.createdAt}
+      >
+        <MDXRemote source={post.content} components={renderers} />
+      </PostContent>
+    </>
   );
 };
 
