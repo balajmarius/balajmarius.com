@@ -78,12 +78,9 @@ const mono = localFont({
   variable: "--font-mono",
 });
 
-const personId = `${APP_URL}/#person`;
-const websiteId = `${APP_URL}/#website`;
-
 const personStructuredData = {
   "@type": "Person",
-  "@id": personId,
+  "@id": `${APP_URL}/#person`,
   name: copy.metadata.title,
   url: APP_URL,
   jobTitle: "Co-Founder",
@@ -97,13 +94,13 @@ const personStructuredData = {
 
 const websiteStructuredData = {
   "@type": "WebSite",
-  "@id": websiteId,
+  "@id": `${APP_URL}/#website`,
   url: APP_URL,
   name: copy.metadata.title,
   description: copy.metadata.description,
   inLanguage: "en-US",
   publisher: {
-    "@id": personId,
+    "@id": `${APP_URL}/#person`,
   },
 } as const;
 
