@@ -11,6 +11,7 @@ import copy from "@/copy/en-EN.json";
 
 import { cn } from "@/utils/helpers";
 import { APP_URL } from "@/utils/const";
+import { links } from "@/utils/links";
 
 import { ScrollContainer } from "@/components/scroll-container";
 
@@ -77,6 +78,40 @@ const mono = localFont({
   variable: "--font-mono",
 });
 
+const personId = `${APP_URL}/#person`;
+const websiteId = `${APP_URL}/#website`;
+
+const personStructuredData = {
+  "@type": "Person",
+  "@id": personId,
+  name: copy.metadata.title,
+  url: APP_URL,
+  jobTitle: "Co-Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Wunderlabs",
+    url: links.wunderlabs,
+  },
+  sameAs: [links.github, links.linkedin, links.x, links.goodreads],
+} as const;
+
+const websiteStructuredData = {
+  "@type": "WebSite",
+  "@id": websiteId,
+  url: APP_URL,
+  name: copy.metadata.title,
+  description: copy.metadata.description,
+  inLanguage: "en-US",
+  publisher: {
+    "@id": personId,
+  },
+} as const;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [personStructuredData, websiteStructuredData],
+} as const;
+
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
   title: copy.metadata.title,
@@ -108,6 +143,11 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
   return (
     <html lang={locale} className="scroll-smooth">
       <body className="bg-blue-500 text-gray-600 antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ScrollContainer
             className={cn(sans.variable, serif.variable, mono.variable)}
