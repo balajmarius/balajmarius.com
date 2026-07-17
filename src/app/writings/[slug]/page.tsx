@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { ComponentProps } from "react";
 import { formatISO } from "date-fns/formatISO";
+import remarkGfm from "remark-gfm";
 
 import { getPost, getPostSlugs } from "@/lib/posts";
 
@@ -43,8 +44,27 @@ const renderers = {
     <ul className="list-none space-y-3 pl-6" {...props} />
   ),
   li: (props: ComponentProps<"li">) => (
-    <li className="list-disc pl-2 marker:text-blue-500" {...props} />
+    <li
+      className="list-disc pl-2 marker:text-blue-500 [&>ul]:mt-3"
+      {...props}
+    />
   ),
+  table: (props: ComponentProps<"table">) => (
+    <table
+      className="w-full border-collapse text-left xl:min-w-4xl"
+      {...props}
+    />
+  ),
+  thead: (props: ComponentProps<"thead">) => (
+    <thead className="border-b border-gray-200" {...props} />
+  ),
+  tr: (props: ComponentProps<"tr">) => (
+    <tr className="border-b border-gray-100 align-top" {...props} />
+  ),
+  th: (props: ComponentProps<"th">) => (
+    <th className="pt-4 pb-3 px-3 font-serif font-normal italic" {...props} />
+  ),
+  td: (props: ComponentProps<"td">) => <td className="p-3" {...props} />,
   hr: (props: ComponentProps<"hr">) => (
     <hr className="my-8 border-gray-100" {...props} />
   ),
@@ -117,7 +137,11 @@ const PostPage = async ({ params }: PostPageProps) => {
         author={post.author}
         createdAt={post.createdAt}
       >
-        <MDXRemote source={post.content} components={renderers} />
+        <MDXRemote
+          source={post.content}
+          components={renderers}
+          options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+        />
       </PostContent>
     </>
   );
