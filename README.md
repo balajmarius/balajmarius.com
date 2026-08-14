@@ -1,6 +1,16 @@
+
+
 # balajmarius.com
 
 Personal website and blog built with Next.js.
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+- `HEVY_API_KEY`
+- `SHIORI_API_KEY`
+- `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID`
 
 ## Commands
 
