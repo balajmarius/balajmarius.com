@@ -22,7 +22,10 @@ export const FOLDERS_INDEX_PAD_CHAR = "0";
 export const FOLDERS_PREVIEW_LIMIT = 3;
 export const FOLDERS_CARD_IMAGE_WIDTH = 400;
 export const FOLDERS_CARD_IMAGE_HEIGHT = 600;
+export const FOLDERS_CARD_FAVICON_SIZE = 16;
+export const FOLDERS_CARD_FAVICON_SOURCE_SIZE = 64;
 
 export const APP_URL = "https://balajmarius.com";
 export const HEVY_API_URL = "https://api.hevyapp.com/v1";
 export const SHIORI_API_URL = "https://www.shiori.sh/api";
+export const FAVICON_RESOLVER_URL = "https://www.google.com/s2/favicons";
