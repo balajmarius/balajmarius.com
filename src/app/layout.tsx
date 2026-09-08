@@ -83,11 +83,11 @@ const personStructuredData = {
   "@id": `${APP_URL}/#person`,
   name: copy.metadata.title,
   url: APP_URL,
-  jobTitle: "Co-Founder",
+  jobTitle: "Managing Director (Romania)",
   worksFor: {
     "@type": "Organization",
-    name: "Wunderlabs",
-    url: links.wunderlabs,
+    name: "The Sandbox",
+    url: links.sandbox,
   },
   sameAs: [links.github, links.linkedin, links.x, links.goodreads],
 } as const;
