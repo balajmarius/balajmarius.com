@@ -1,0 +1,4 @@
+Contact: mailto:balajmarius@gmail.com
+Expires: 2027-04-12T00:00:00Z
+Preferred-Languages: en, ro
+Canonical: https://balajmarius.com/.well-known/security.txt

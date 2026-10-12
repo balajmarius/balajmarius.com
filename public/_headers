@@ -1,8 +1,17 @@
-/
-  Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"; profile="https://www.rfc-editor.org/info/rfc9727", </llms.txt>; rel="service-doc"; type="text/plain", </robots.txt>; rel="describedby"; type="text/plain"
-
+# ABOUTME: Inline scripts support Next.js static hydration and analytics; inline styles support motion.
+# ABOUTME: HSTS deliberately excludes subdomains until their HTTPS support has been audited.
 /*
+  Strict-Transport-Security: max-age=15552000
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; font-src 'self'; connect-src 'self' https://*.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://github-contributions-api.jogruber.de https://cloudflareinsights.com; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
   Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"; profile="https://www.rfc-editor.org/info/rfc9727", </llms.txt>; rel="service-doc"; type="text/plain", </robots.txt>; rel="describedby"; type="text/plain"
 
 /.well-known/api-catalog
   Content-Type: application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"
+
+/.well-known/security.txt
+  Content-Type: text/plain; charset=utf-8
