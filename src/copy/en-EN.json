@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Marius Bălaj",
-    "description": "UI engineer turned founder. Built. Scaled. Exited."
+    "description": "Engineer turned founder. Built. Scaled. Exited."
   },
   "appBar": {
     "home": "Home",
@@ -15,7 +15,7 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "<serif><ui>UI</ui> engineer</serif> turned <serif>founder</serif>.\nI build <serif>digital products</serif> and <serif><teams>teams</teams></serif>.",
+    "title": "<serif><ui>Engineer</ui></serif> turned <serif>founder</serif>.\nI build <serif>digital products</serif> and <serif><teams>teams</teams></serif>.",
     "description": {
       "0": "Over the past decade, I’ve worked across early-stage startups and scaled teams, focusing on turning ideas into well-crafted, usable systems.",
       "1": "In 2021, I co-founded <url1><serif>QED</serif></url1> and grew it from zero to acquisition by <url2><serif>Sandbox</serif></url2>.",
