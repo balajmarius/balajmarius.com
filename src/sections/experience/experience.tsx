@@ -13,7 +13,6 @@ const Experience = () => {
     {
       title: t("experience.jobs.1.title"),
       role: t("experience.jobs.1.role"),
-      duration: t("experience.jobs.1.duration"),
     },
     {
       title: t("experience.jobs.2.title"),
