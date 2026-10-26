@@ -24,7 +24,7 @@ const FoldersList = ({ readings }: FoldersListProps) => {
   };
 
   return (
-    <div className="max-w-6xl bg-gray-200 rounded-tr-3xl">
+    <div className="max-w-6xl bg-gray-200 rounded-tr-2xl md:rounded-tr-3xl">
       {tags.map((tag, index) => {
         if (isNullOrUndefined(active) || active === tag) {
           return (

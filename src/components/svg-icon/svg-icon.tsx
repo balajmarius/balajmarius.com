@@ -1,4 +1,4 @@
-import type { HTMLAttributes, ReactNode } from "react";
+import type { ReactNode, SVGAttributes } from "react";
 
 import { cn } from "@/utils/helpers";
 
@@ -8,8 +8,8 @@ export type SvgIconProps = {
   children: ReactNode;
   size?: SvgIconSize;
   viewBox?: string;
-  className?: HTMLAttributes<SVGSVGElement>["className"];
-} & HTMLAttributes<SVGSVGElement>;
+  className?: SVGAttributes<SVGSVGElement>["className"];
+} & SVGAttributes<SVGSVGElement>;
 
 const svgIconSizeClassNames: SvgIconSizeMapping = {
   inherit: "size-auto",
@@ -29,7 +29,7 @@ const SvgIcon = ({
     <svg
       viewBox={viewBox}
       fill="currentColor"
-      className={cn(className, svgIconSizeClassNames[size])}
+      className={cn(svgIconSizeClassNames[size], className)}
       {...props}
     >
       {children}

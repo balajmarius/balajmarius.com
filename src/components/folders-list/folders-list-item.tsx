@@ -87,7 +87,7 @@ const FoldersListItem = ({
   return (
     <div
       className={cn(
-        "relative w-full bg-gray-200 rounded-tr-3xl",
+        "relative w-full bg-gray-200 rounded-tr-2xl md:rounded-tr-3xl",
         open
           ? "p-8 border-t-transparent xl:p-12"
           : "-mt-8 p-16 border-t border-blue-500 cursor-pointer first:mt-0 last:p-24",
@@ -105,11 +105,11 @@ const FoldersListItem = ({
       {closed ? (
         <motion.div
           {...foldersListAnimation.overlay(value)}
-          className="absolute inset-x-0 top-16 bottom-0 z-20 py-16 bg-gray-200 rounded-t-3xl pointer-events-none"
+          className="absolute inset-x-0 top-16 bottom-0 z-20 py-16 bg-gray-200 rounded-t-2xl pointer-events-none md:rounded-t-3xl"
         >
           <motion.div
             {...foldersListAnimation.overlayBorder(value)}
-            className="absolute inset-0 border-t border-blue-500 rounded-t-3xl"
+            className="absolute inset-0 border-t border-blue-500 rounded-t-2xl md:rounded-t-3xl"
           />
         </motion.div>
       ) : null}
