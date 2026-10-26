@@ -25,7 +25,7 @@ export type TypographyProps = {
   className?: string;
 } & Omit<HTMLAttributes<HTMLElement>, "className">;
 
-const typographyVariantMapping: TypographyVariantMapping = {
+const typographyVariantMapping = {
   h1: "h1",
   h2: "h2",
   subtitle1: "h2",
@@ -35,7 +35,7 @@ const typographyVariantMapping: TypographyVariantMapping = {
   overline: "span",
   caption: "small",
   small: "small",
-};
+} as const satisfies TypographyVariantMapping;
 
 const typographyVariantClassNames: TypographyVariantMapping = {
   h1: "text-3xl leading-12",
@@ -80,6 +80,7 @@ const Typography = ({
   textTransform = "none",
   color = "default",
   display = "inline-block",
+  className,
   ...props
 }: TypographyProps) => {
   const Component = typographyVariantMapping[variant];
@@ -91,7 +92,8 @@ const Typography = ({
         typographyFontWeightClassNames[fontWeight],
         typographyColorClassNames[color],
         typographyTextTransformClassNames[textTransform],
-        typographyDisplayClassNames[display]
+        typographyDisplayClassNames[display],
+        className
       )}
       {...props}
     />
