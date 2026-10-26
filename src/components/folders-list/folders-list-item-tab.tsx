@@ -29,7 +29,7 @@ const FoldersListItemTab = ({
   return (
     <div
       className={cn(
-        "absolute bottom-full flex items-center justify-between",
+        "absolute bottom-full flex items-center justify-between md:-mb-px",
         open ? "inset-x-0" : "left-0"
       )}
     >
