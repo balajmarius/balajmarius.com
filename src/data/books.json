@@ -2743,6 +2743,19 @@
     "coverHeight": 400
   },
   {
+    "id": "sARUBjF_jbvzoUOy7fKrn",
+    "title": "Nudge: The Final Edition",
+    "author": "Richard H. Thaler, Cass R. Sunstein",
+    "src": "/images/bookshelf/nudge-the-final-edition@2x.webp",
+    "backgroundColor": "#f0f0f0",
+    "color": "#262626",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 440,
+    "coverWidth": 259,
+    "coverHeight": 400
+  },
+  {
     "id": "PFiEUBn-Pefioi6pholxZ",
     "title": "Night",
     "author": "Elie Wiesel",
@@ -3767,6 +3780,19 @@
     "paddingRight": 27,
     "cardSize": 444,
     "coverWidth": 268,
+    "coverHeight": 400
+  },
+  {
+    "id": "6ij8q3_WtAWWi1eey8TfG",
+    "title": "Genghis Khan and the Making of the Modern World",
+    "author": "Jack Weatherford",
+    "src": "/images/bookshelf/genghis-khan-and-the-making-of-the-modern-world@2x.webp",
+    "backgroundColor": "#e8dfbd",
+    "color": "#302b22",
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "cardSize": 500,
+    "coverWidth": 260,
     "coverHeight": 400
   },
   {
