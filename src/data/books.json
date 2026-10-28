@@ -52,6 +52,19 @@
     "coverHeight": 400
   },
   {
+    "id": "Cm4Sn1PMSZXlx7mFIiGSy",
+    "title": "Mythos: Greek Myths Retold",
+    "author": "Stephen Fry",
+    "src": "/images/bookshelf/mythos@2x.webp",
+    "backgroundColor": "#88c8e8",
+    "color": "#173b52",
+    "paddingLeft": 30,
+    "paddingRight": 30,
+    "cardSize": 420,
+    "coverWidth": 261,
+    "coverHeight": 400
+  },
+  {
     "id": "iUoOix91HT7IjAvsGFpv",
     "title": "Against the Machine",
     "author": "Paul Kingsnorth",
