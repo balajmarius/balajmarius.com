@@ -20,18 +20,14 @@
   --color-gray-500: #6e7394;
   --color-gray-600: #34384c;
 
-  --drop-shadow-inset-top: 0 -1px 0 var(--color-blue-500);
-
   --util-time-ms: 1ms;
-  --util-entrance-duration: 500ms;
-  --util-entrance-easing: ease;
   --util-entrance-opacity-from: 0;
   --util-entrance-opacity-to: 1;
   --util-entrance-transform-from: translateY(8px);
   --util-entrance-transform-to: translateY(0);
 
-  --animate-content-entrance: content-entrance var(--util-entrance-duration)
-    var(--util-entrance-easing) both;
+  --drop-shadow-inset-top: 0 -1px 0 var(--color-blue-500);
+  --animate-content-entrance: content-entrance 500ms ease both;
 
   @keyframes content-entrance {
     from {
