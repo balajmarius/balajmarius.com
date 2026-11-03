@@ -9,6 +9,10 @@ export const scrollTransforms = {
   },
 };
 
+export const scrollRevealAnimation = {
+  viewport: { once: true, amount: 0.5 },
+};
+
 export const appBarAnimation = {
   container: {
     initial: { opacity: 0, height: 0, marginTop: 0 },

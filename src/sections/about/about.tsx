@@ -1,14 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
+import Link from "next/link";
 
-import { links } from "@/utils/links";
+import { useTranslations } from "next-intl";
 
 import { Section } from "@/components/section";
 import { Typography } from "@/components/typography";
+
+import { links } from "@/utils/links";
 
 const About = () => {
   const t = useTranslations();
@@ -70,25 +70,34 @@ const About = () => {
 
   return (
     <Section id="about">
-      <motion.div className="space-y-8" initial="rest" whileHover="hover">
+      <div className="space-y-8">
         <Typography variant="h1">
-          <motion.span className="whitespace-break-spaces text-pretty">
+          <span className="block animate-content-entrance backface-hidden text-pretty">
             {t.rich("about.title", renderers)}
-          </motion.span>
+          </span>
+          <span className="block animate-content-entrance backface-hidden text-pretty animation-delay-50">
+            {t.rich("about.subtitle", renderers)}
+          </span>
         </Typography>
 
         <div className="space-y-4 text-pretty">
-          <Typography variant="body1">
-            {t.rich("about.description.0", renderers)}
-          </Typography>
-          <Typography variant="body1">
-            {t.rich("about.description.1", renderers)}
-          </Typography>
-          <Typography variant="body1">
-            {t.rich("about.description.2", renderers)}
-          </Typography>
+          <div className="animate-content-entrance backface-hidden animation-delay-100">
+            <Typography variant="body1">
+              {t.rich("about.description.0", renderers)}
+            </Typography>
+          </div>
+          <div className="animate-content-entrance backface-hidden animation-delay-150">
+            <Typography variant="body1">
+              {t.rich("about.description.1", renderers)}
+            </Typography>
+          </div>
+          <div className="animate-content-entrance backface-hidden animation-delay-200">
+            <Typography variant="body1">
+              {t.rich("about.description.2", renderers)}
+            </Typography>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </Section>
   );
 };

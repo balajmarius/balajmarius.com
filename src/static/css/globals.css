@@ -20,12 +20,30 @@
   --color-gray-500: #6e7394;
   --color-gray-600: #34384c;
 
-  --util-ds-x: 0;
-  --util-ds-y: -1px;
-  --util-ds-blur: 0;
+  --drop-shadow-inset-top: 0 -1px 0 var(--color-blue-500);
 
-  --drop-shadow-inset-top: var(--util-ds-x) var(--util-ds-y) var(--util-ds-blur)
-    var(--color-blue-500);
+  --util-time-ms: 1ms;
+  --util-entrance-duration: 500ms;
+  --util-entrance-easing: ease;
+  --util-entrance-opacity-from: 0;
+  --util-entrance-opacity-to: 1;
+  --util-entrance-transform-from: translateY(8px);
+  --util-entrance-transform-to: translateY(0);
+
+  --animate-content-entrance: content-entrance var(--util-entrance-duration)
+    var(--util-entrance-easing) both;
+
+  @keyframes content-entrance {
+    from {
+      opacity: var(--util-entrance-opacity-from);
+      transform: var(--util-entrance-transform-from);
+    }
+
+    to {
+      opacity: var(--util-entrance-opacity-to);
+      transform: var(--util-entrance-transform-to);
+    }
+  }
 }
 
 @utility scrollbar-w-none {
@@ -38,4 +56,8 @@
 
 @utility content-auto {
   content-visibility: auto;
+}
+
+@utility animation-delay-* {
+  animation-delay: calc(--value(integer) * var(--util-time-ms));
 }

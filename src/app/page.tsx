@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
-import { ScrollReveal } from "@/components/scroll-reveal";
-
 import { getBooks } from "@/lib/books";
 import { getWorkouts } from "@/lib/hevy";
 import { getPosts } from "@/lib/posts";
 
 import { POSTS_LIMIT } from "@/utils/const";
 
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { About } from "@/sections/about";
 import { Commits } from "@/sections/commits";
 import { Experience } from "@/sections/experience";
