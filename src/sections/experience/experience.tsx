@@ -33,7 +33,7 @@ const Experience = () => {
 
   return (
     <Section id="experience">
-      <div className="grid grid-cols-1 sm:grid-cols-12 gap-16 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-16 sm:gap-6 animate-content-entrance backface-hidden animation-delay-250">
         <div className="col-span-1 sm:col-span-3">
           <Typography variant="subtitle1">{t("experience.title")}</Typography>
         </div>

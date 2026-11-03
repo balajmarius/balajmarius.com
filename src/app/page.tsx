@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { ScrollReveal } from "@/components/scroll-reveal";
+
 import { getBooks } from "@/lib/books";
 import { getWorkouts } from "@/lib/hevy";
 import { getPosts } from "@/lib/posts";
@@ -31,10 +33,19 @@ const Home = async () => {
     <>
       <About />
       <Experience />
-      <Commits />
-      <Posts posts={posts} />
-      <Bookshelf books={books} />
-      <Stats workouts={workouts} />
+
+      <ScrollReveal>
+        <Commits />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Posts posts={posts} />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Bookshelf books={books} />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Stats workouts={workouts} />
+      </ScrollReveal>
     </>
   );
 };
