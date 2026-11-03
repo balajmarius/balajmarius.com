@@ -101,3 +101,38 @@ export const foldersListAnimation = {
     },
   },
 };
+
+export const bashModeIllustrationAnimation = {
+  float: {
+    animate: { y: [0, -6, 0] },
+    transition: {
+      duration: 4,
+      repeat: Infinity,
+      ease: "easeInOut" as const,
+    },
+  },
+  cursor: {
+    animate: { opacity: [1, 1, 0, 0] },
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+      times: [0, 0.5, 0.5, 1],
+      ease: "linear" as const,
+    },
+  },
+  symbol: {
+    initial: { scale: 0.4, opacity: 0 },
+    animate: { scale: 1, opacity: 1 },
+    transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] as const },
+  },
+  line: {
+    initial: { opacity: 0, y: 4 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0 },
+    transition: (index: number) => ({
+      duration: 0.3,
+      delay: index * 0.15,
+      ease: [0.33, 1, 0.68, 1] as const,
+    }),
+  },
+};

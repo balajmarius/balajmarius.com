@@ -7,6 +7,8 @@ import remarkGfm from "remark-gfm";
 
 import { getPost, getPostSlugs } from "@/lib/posts";
 
+import { BashModeIllustration } from "@/components/bash-mode-illustration";
+
 import { APP_URL } from "@/utils/const";
 import { isNullOrUndefined } from "@/utils/helpers";
 
@@ -68,6 +70,7 @@ const renderers = {
   hr: (props: ComponentProps<"hr">) => (
     <hr className="my-8 border-gray-100" {...props} />
   ),
+  BashModeIllustration,
 };
 
 export const generateStaticParams = () => {
