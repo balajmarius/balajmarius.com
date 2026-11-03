@@ -34,7 +34,6 @@
       opacity: var(--util-entrance-opacity-from);
       transform: var(--util-entrance-transform-from);
     }
-
     to {
       opacity: var(--util-entrance-opacity-to);
       transform: var(--util-entrance-transform-to);
@@ -56,4 +55,8 @@
 
 @utility animation-delay-* {
   animation-delay: calc(--value(integer) * var(--util-time-ms));
+}
+
+@utility cursor-boxing-glove {
+  cursor: url("/cursor.cur"), pointer;
 }
