@@ -5,11 +5,10 @@ import { useTranslations } from "next-intl";
 
 import type { ArtifactProps } from "@/components/artifact/types";
 
-import { Typography } from "@/components/typography";
-
+import { cn } from "@/utils/helpers";
 import { artifacts } from "@/artifacts/registry";
 
-import { cn } from "@/utils/helpers";
+import { Typography } from "@/components/typography";
 
 const Artifact = ({ name, title, className, ...props }: ArtifactProps) => {
   const t = useTranslations();
