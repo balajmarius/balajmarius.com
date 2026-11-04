@@ -1,9 +1,9 @@
 "use client";
 
-import { lazy } from "react";
+import dynamic from "next/dynamic";
 
 export const artifacts = {
-  "claude-code-bash-mode": lazy(
+  "claude-code-bash-mode": dynamic(
     () => import("@/artifacts/claude-code-bash-mode")
   ),
 };

@@ -25,7 +25,7 @@ const Artifact = ({ name, title, className, ...props }: ArtifactProps) => {
       <Suspense
         fallback={
           <Typography color="muted" variant="body2">
-            {t("common.loadingArtifact")}
+            {t("common.loading")}
           </Typography>
         }
       >

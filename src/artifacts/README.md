@@ -14,6 +14,6 @@ Register an explicit dynamic import in `registry.ts`, then embed it in a post:
 />
 ```
 
-The shared `Artifact` wrapper uses `React.lazy` and `Suspense` to load the app when rendered. Use `className` to reserve space while loading. Next.js handles bundling and React; use the normal dev and build commands.
+The shared `Artifact` wrapper uses `next/dynamic` and `Suspense` to load the app when rendered. Next.js includes the artifact's CSS with its server-rendered HTML to avoid a flash of unstyled content. Use `className` to reserve space while loading. Use the normal dev and build commands.
 
 Keep animation paused offscreen and respect reduced motion. Any terminal commands shown are simulated.
