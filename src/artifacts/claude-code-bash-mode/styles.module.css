@@ -1,0 +1,152 @@
+.artifact {
+  container-type: inline-size;
+  width: 100%;
+  color-scheme: light;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+.artifact,
+.artifact * {
+  box-sizing: border-box;
+}
+.artifact ::selection {
+  background: #c7c9e5;
+  color: #1c1a26;
+}
+.terminal {
+  --ink: #dedee8;
+  --muted: #aaa5b5;
+  --accent: #efa6d1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #1c1a26;
+  color: var(--ink);
+  font:
+    13px/1.65 ui-monospace,
+    "SFMono-Regular",
+    Menlo,
+    Consolas,
+    monospace;
+}
+.terminalHeader {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 38px;
+  padding-inline: 70px;
+  border-bottom: 1px solid #34303f;
+  color: var(--muted);
+  font:
+    12px/1 -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+.trafficLights {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  display: flex;
+  gap: 6px;
+  transform: translateY(-50%);
+}
+.trafficLights i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+.trafficLights i:nth-child(2) {
+  background: #febc2e;
+}
+.trafficLights i:nth-child(3) {
+  background: #28c840;
+}
+.transcript {
+  height: 172px;
+  overflow: auto;
+  padding: 20px;
+  scrollbar-width: thin;
+}
+.welcome {
+  max-width: 30ch;
+  color: var(--muted);
+}
+.executed {
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.bang {
+  color: var(--accent);
+}
+.terminal pre {
+  margin: 0;
+  padding-left: 16px;
+  font: inherit;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  margin: 0 20px;
+  border-block: 1px solid #595261;
+}
+.promptSymbol {
+  flex: none;
+  width: 1ch;
+  color: var(--muted);
+}
+.bashPrompt .promptSymbol {
+  color: var(--accent);
+}
+.demoInput {
+  flex: 1;
+  min-width: 0;
+  white-space: pre;
+}
+.caret {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.15em;
+  vertical-align: -0.2em;
+  background: #c7c9e5;
+}
+.blinking {
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.modeHint {
+  padding: 10px 20px 18px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.bashHint {
+  color: var(--accent);
+}
+@container (max-width: 360px) {
+  .transcript {
+    padding-inline: 14px;
+  }
+  .prompt {
+    margin-inline: 14px;
+  }
+  .modeHint {
+    padding-inline: 14px;
+  }
+  .terminal {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .blinking {
+    animation: none;
+  }
+}

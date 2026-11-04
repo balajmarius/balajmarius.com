@@ -5,6 +5,8 @@ import type { ComponentProps } from "react";
 import { formatISO } from "date-fns/formatISO";
 import remarkGfm from "remark-gfm";
 
+import { Artifact } from "@/components/artifact";
+
 import { getPost, getPostSlugs } from "@/lib/posts";
 
 import { APP_URL } from "@/utils/const";
@@ -17,6 +19,7 @@ type PostPageProps = {
 };
 
 const renderers = {
+  Artifact,
   p: (props: ComponentProps<"p">) => <p {...props} />,
   a: (props: ComponentProps<"a">) => (
     <a
