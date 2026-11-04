@@ -96,7 +96,8 @@
   },
   "common": {
     "backToHome": "Back to home",
-    "author": " - {author}"
+    "author": " - {author}",
+    "loadingArtifact": "Loading artifact…"
   },
   "footer": {
     "contact": "Contact",

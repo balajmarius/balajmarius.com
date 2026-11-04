@@ -5,9 +5,8 @@ createdAt: Jan 20, 2026
 author:
 ---
 
-You can run shell commands directly without [Claude Code](https://claude.com/product/claude-code) interpreting your intent by prefixing your input with `!` to enter bash mode, it passes your command straight to the terminal, bypassing the LLM entirely.
+You can run shell commands directly without [Claude Code](https://claude.com/product/claude-code) interpreting your intent first.
 
-<figure className="space-y-2 text-center text-gray-500 text-xs">
-  <video src="/images/claude-code-bash-mode/bash-mode.webm" autoPlay loop muted playsInline />
-  <figcaption>Bash mode in action</figcaption>
-</figure>
+Prefix your input with `!` to enter bash mode, type a command, and press `Enter`, the command runs in your shell, and its output is added to the conversation context.
+
+<Artifact name="claude-code-bash-mode" title="Animated Claude Code bash mode demo" className="min-h-76" />

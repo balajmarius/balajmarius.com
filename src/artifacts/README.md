@@ -10,10 +10,10 @@ Register an explicit dynamic import in `registry.ts`, then embed it in a post:
 <Artifact
   name="claude-code-bash-mode"
   title="Claude Code bash mode demo"
-  height={305}
+  className="min-h-76"
 />
 ```
 
-The shared `Artifact` wrapper loads it as it approaches the viewport. `height` reserves space while loading. Next.js handles bundling and React; use the normal dev and build commands.
+The shared `Artifact` wrapper uses `React.lazy` and `Suspense` to load the app when rendered. Use `className` to reserve space while loading. Next.js handles bundling and React; use the normal dev and build commands.
 
 Keep animation paused offscreen and respect reduced motion. Any terminal commands shown are simulated.
