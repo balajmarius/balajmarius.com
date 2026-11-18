@@ -22,7 +22,9 @@ export default function ClaudeCodeBashMode() {
     : "";
 
   useEffect(() => {
-    if (!running) return;
+    if (!running) {
+      return;
+    }
     const timer = window.setInterval(
       () => setTime((value) => (value + 40) % DURATION),
       40
@@ -35,7 +37,9 @@ export default function ClaudeCodeBashMode() {
     const visibility = () => setTabVisible(!document.hidden);
     const motion = () => {
       setReduceMotion(media.matches);
-      if (media.matches) setTime(4500);
+      if (media.matches) {
+        setTime(4500);
+      }
     };
     motion();
     visibility();
@@ -45,7 +49,9 @@ export default function ClaudeCodeBashMode() {
     const observer = new IntersectionObserver(([entry]) =>
       setVisible(entry.isIntersecting)
     );
-    if (rootRef.current) observer.observe(rootRef.current);
+    if (rootRef.current) {
+      observer.observe(rootRef.current);
+    }
 
     return () => {
       document.removeEventListener("visibilitychange", visibility);
