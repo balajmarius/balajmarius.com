@@ -15,7 +15,7 @@ import {
   NON_POINTER_CLICK,
   COMMITS_WAVE_RADIUS_INITIAL,
   COMMITS_WAVE_SPEED,
-  COMMITS_WAVE_TRAVEL_MARGIN,
+  COMMITS_WAVE_FADE_DISTANCE,
 } from "@/utils/const";
 
 export type Point = {
@@ -82,7 +82,7 @@ export const useCommitWaves = (): {
       svg.viewBox.baseVal.height - origin.y
     );
     const travelDistance =
-      Math.hypot(horizontalReach, verticalReach) + COMMITS_WAVE_TRAVEL_MARGIN;
+      Math.hypot(horizontalReach, verticalReach) + COMMITS_WAVE_FADE_DISTANCE;
 
     const wave = {
       origin,
