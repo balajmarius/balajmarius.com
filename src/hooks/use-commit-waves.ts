@@ -12,10 +12,10 @@ import {
 import { isNullOrUndefined } from "@/utils/helpers";
 
 import {
-  NON_POINTER_CLICK,
+  NON_POINTER_CLICK_DETAIL,
   COMMITS_WAVE_RADIUS_INITIAL,
   COMMITS_WAVE_SPEED,
-  COMMITS_WAVE_FADE_DISTANCE,
+  COMMITS_WAVE_RADIUS_PADDING,
 } from "@/utils/const";
 
 export type Point = {
@@ -29,20 +29,20 @@ export type Wave = {
 };
 
 const getSvgCoordinates = (event: MouseEvent, svg: SVGSVGElement): Point => {
-  const bounds = svg.getBoundingClientRect();
+  const svgBounds = svg.getBoundingClientRect();
 
   return {
-    x: event.clientX - bounds.left,
-    y: event.clientY - bounds.top,
+    x: event.clientX - svgBounds.left,
+    y: event.clientY - svgBounds.top,
   };
 };
 
 export const useCommitWaves = (): {
   calendarRef: RefObject<HTMLDivElement | null>;
-  pointer: MotionValue<Point | null>;
+  pointerPosition: MotionValue<Point | null>;
   waves: Wave[];
 } => {
-  const pointer = useMotionValue<Point | null>(null);
+  const pointerPosition = useMotionValue<Point | null>(null);
 
   const [waves, setWaves] = useState<Wave[]>([]);
   const [calendarRef, animate] = useAnimate<HTMLDivElement>();
@@ -54,31 +54,26 @@ export const useCommitWaves = (): {
       return;
     }
 
-    pointer.set(getSvgCoordinates(event, svg));
+    pointerPosition.set(getSvgCoordinates(event, svg));
   };
 
   const handlePointerClear = () => {
-    pointer.set(null);
+    pointerPosition.set(null);
   };
 
   const handleClick = (event: MouseEvent) => {
     const svg = calendarRef.current?.querySelector("svg");
 
-    if (isNullOrUndefined(svg) || event.detail === NON_POINTER_CLICK) {
+    if (isNullOrUndefined(svg) || event.detail === NON_POINTER_CLICK_DETAIL) {
       return;
     }
 
     const origin = getSvgCoordinates(event, svg);
-    const horizontalReach = Math.max(
-      origin.x,
-      svg.viewBox.baseVal.width - origin.x
-    );
-    const verticalReach = Math.max(
-      origin.y,
-      svg.viewBox.baseVal.height - origin.y
-    );
-    const travelDistance =
-      Math.hypot(horizontalReach, verticalReach) + COMMITS_WAVE_FADE_DISTANCE;
+    const { width, height } = svg.viewBox.baseVal;
+    const horizontalReach = Math.max(origin.x, width - origin.x);
+    const verticalReach = Math.max(origin.y, height - origin.y);
+    const finalRadius =
+      Math.hypot(horizontalReach, verticalReach) + COMMITS_WAVE_RADIUS_PADDING;
 
     const wave = {
       origin,
@@ -91,9 +86,9 @@ export const useCommitWaves = (): {
       return [...prevWaves, wave];
     });
 
-    animate(wave.radius, travelDistance, {
+    animate(wave.radius, finalRadius, {
       ease: "linear",
-      duration: travelDistance / COMMITS_WAVE_SPEED,
+      duration: finalRadius / COMMITS_WAVE_SPEED,
       onComplete: () => {
         // Remove the completed wave
         // from the active list.
@@ -116,7 +111,7 @@ export const useCommitWaves = (): {
 
   return {
     calendarRef,
-    pointer,
+    pointerPosition,
     waves,
   };
 };

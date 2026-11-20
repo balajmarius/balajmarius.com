@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import GithubCalendar, { type Props } from "react-github-calendar";
 
 import { accounts, links } from "@/utils/links";
-import { COMMIT_WEEKS_LIMIT, DAYS_IN_A_WEEK } from "@/utils/const";
+import { COMMITS_WEEKS_LIMIT, DAYS_IN_A_WEEK } from "@/utils/const";
 
 import { useCommitWaves } from "@/hooks/use-commit-waves";
 
@@ -27,17 +27,23 @@ const theme = {
 const Commits = () => {
   const t = useTranslations();
 
-  const { calendarRef, pointer, waves } = useCommitWaves();
+  const { calendarRef, pointerPosition, waves } = useCommitWaves();
 
   const renderers: {
     data: Props["transformData"];
     block: Props["renderBlock"];
   } = {
     data: (days) => {
-      return days.slice(-COMMIT_WEEKS_LIMIT * DAYS_IN_A_WEEK);
+      return days.slice(-COMMITS_WEEKS_LIMIT * DAYS_IN_A_WEEK);
     },
     block: (block) => {
-      return <CommitsListItem block={block} pointer={pointer} waves={waves} />;
+      return (
+        <CommitsListItem
+          block={block}
+          pointerPosition={pointerPosition}
+          waves={waves}
+        />
+      );
     },
   };
 

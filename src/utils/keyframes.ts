@@ -103,21 +103,22 @@ export const foldersListAnimation = {
 };
 
 export const commitsAnimation = {
+  baseScale: 1,
   hover: {
     radius: 76,
-    strength: 0.22,
+    maxInfluence: 0.22,
     falloffExponent: 2,
   },
   wave: {
-    width: 24,
-    attenuationDistance: 650,
+    wavefrontFalloffDistance: 24,
+    originFalloffDistance: 650,
     pushDistance: 5,
     scaleIncrease: 0.28,
-    minDirectionDistance: 1,
+    minDirectionLength: 1,
   },
   limits: {
-    translation: 8,
-    scaleIncrease: 0.4,
+    maxTranslation: 8,
+    maxScaleIncrease: 0.4,
   },
   spring: {
     stiffness: 160,
