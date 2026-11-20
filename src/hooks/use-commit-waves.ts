@@ -58,10 +58,6 @@ export const useCommitWaves = (): {
   };
 
   const handlePointerClear = () => {
-    if (isNullOrUndefined(pointer.get())) {
-      return;
-    }
-
     pointer.set(null);
   };
 

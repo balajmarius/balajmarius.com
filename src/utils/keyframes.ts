@@ -102,8 +102,26 @@ export const foldersListAnimation = {
   },
 };
 
-export const commitCellSpring = {
-  stiffness: 160,
-  damping: 19,
-  restSpeed: 0.001,
+export const commitsAnimation = {
+  hover: {
+    radius: 76,
+    strength: 0.22,
+    falloffExponent: 2,
+  },
+  wave: {
+    width: 24,
+    attenuationDistance: 650,
+    pushDistance: 5,
+    scaleIncrease: 0.28,
+    minDirectionDistance: 1,
+  },
+  limits: {
+    translation: 8,
+    scaleIncrease: 0.4,
+  },
+  spring: {
+    stiffness: 160,
+    damping: 19,
+    restSpeed: 0.001,
+  },
 };

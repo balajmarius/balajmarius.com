@@ -17,8 +17,6 @@ export const POSTS_LIMIT = 6;
 export const BOOKS_LIMIT = 3;
 
 export const COMMIT_WEEKS_LIMIT = 35;
-export const COMMITS_HOVER_RADIUS = 76;
-export const COMMITS_WAVE_WIDTH = 24;
 export const COMMITS_WAVE_SPEED = 480;
 export const COMMITS_WAVE_RADIUS_INITIAL = 0;
 export const COMMITS_WAVE_FADE_DISTANCE = 120;

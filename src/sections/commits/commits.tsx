@@ -3,15 +3,16 @@
 import { useTranslations } from "next-intl";
 import GithubCalendar, { type Props } from "react-github-calendar";
 
-import { COMMIT_WEEKS_LIMIT, DAYS_IN_A_WEEK } from "@/utils/const";
 import { accounts, links } from "@/utils/links";
+import { COMMIT_WEEKS_LIMIT, DAYS_IN_A_WEEK } from "@/utils/const";
 
 import { useCommitWaves } from "@/hooks/use-commit-waves";
 
 import { Link } from "@/components/link";
 import { Section } from "@/components/section";
-import { CommitsListItem } from "@/sections/commits";
 import { SvgIconBranch } from "@/components/svg-icon";
+
+import { CommitsListItem } from "@/sections/commits";
 
 const theme = {
   dark: [
