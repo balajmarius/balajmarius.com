@@ -1,14 +1,16 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
-import GithubCalendar, { type Activity } from "react-github-calendar";
+import GithubCalendar, { type Props } from "react-github-calendar";
 
-import { THIRTY_FIVE_WEEKS_IN_MS } from "@/utils/const";
+import { COMMIT_WEEKS_LIMIT, DAYS_IN_A_WEEK } from "@/utils/const";
 import { accounts, links } from "@/utils/links";
+
+import { useCommitWaves } from "@/hooks/use-commit-waves";
 
 import { Link } from "@/components/link";
 import { Section } from "@/components/section";
+import { CommitsListItem } from "@/sections/commits";
 import { SvgIconBranch } from "@/components/svg-icon";
 
 const theme = {
@@ -23,23 +25,25 @@ const theme = {
 
 const Commits = () => {
   const t = useTranslations();
-  const calendarRef = useRef<HTMLDivElement>(null);
 
-  const renderers = {
-    data: (activity: ReadonlyArray<Activity>) => {
-      const today = new Date().getTime();
-      const weeksInMsAgo = new Date(today - THIRTY_FIVE_WEEKS_IN_MS);
+  const { calendarRef, waves } = useCommitWaves();
 
-      return activity.filter(
-        (day: Activity) => new Date(day.date) >= weeksInMsAgo
-      );
+  const renderers: {
+    data: Props["transformData"];
+    block: Props["renderBlock"];
+  } = {
+    data: (days) => {
+      return days.slice(-COMMIT_WEEKS_LIMIT * DAYS_IN_A_WEEK);
+    },
+    block: (block) => {
+      return <CommitsListItem block={block} waves={waves} />;
     },
   };
 
   return (
     <Section spacing="small">
       <div className="space-y-3">
-        <div ref={calendarRef}>
+        <div ref={calendarRef} className="w-fit max-w-full">
           <GithubCalendar
             hideTotalCount
             hideMonthLabels
@@ -47,6 +51,7 @@ const Commits = () => {
             theme={theme}
             username={accounts.githubUsername}
             transformData={renderers.data}
+            renderBlock={renderers.block}
           />
         </div>
 

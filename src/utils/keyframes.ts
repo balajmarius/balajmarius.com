@@ -101,3 +101,9 @@ export const foldersListAnimation = {
     },
   },
 };
+
+export const commitCellSpring = {
+  stiffness: 160,
+  damping: 19,
+  restSpeed: 0.001,
+};
