@@ -101,3 +101,28 @@ export const foldersListAnimation = {
     },
   },
 };
+
+export const commitsAnimation = {
+  baseScale: 1,
+  hover: {
+    radius: 76,
+    maxInfluence: 0.22,
+    falloffExponent: 2,
+  },
+  wave: {
+    wavefrontFalloffDistance: 24,
+    originFalloffDistance: 650,
+    pushDistance: 5,
+    scaleIncrease: 0.28,
+    minDirectionLength: 1,
+  },
+  limits: {
+    maxTranslation: 8,
+    maxScaleIncrease: 0.4,
+  },
+  spring: {
+    stiffness: 160,
+    damping: 19,
+    restSpeed: 0.001,
+  },
+};

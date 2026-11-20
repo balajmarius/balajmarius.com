@@ -4,5 +4,8 @@
   "categories": {
     "correctness": "error"
   },
+  "rules": {
+    "curly": "error"
+  },
   "ignorePatterns": [".next", "node_modules", "out", "public"]
 }
