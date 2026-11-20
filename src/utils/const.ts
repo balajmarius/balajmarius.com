@@ -1,4 +1,5 @@
 export const DAYS_IN_A_WEEK = 7;
+export const NON_POINTER_CLICK = 0;
 
 export const BOOKSHELF_FACTOR = 0.5;
 export const BOOKSHELF_ROTATE_MAX = 3;
@@ -19,6 +20,8 @@ export const COMMIT_WEEKS_LIMIT = 35;
 export const COMMITS_HOVER_RADIUS = 76;
 export const COMMITS_WAVE_WIDTH = 24;
 export const COMMITS_WAVE_SPEED = 480;
+export const COMMITS_WAVE_RADIUS_INITIAL = 0;
+export const COMMITS_WAVE_TRAVEL_MARGIN = 120;
 
 export const FOLDERS_INDEX_OFFSET = 1;
 export const FOLDERS_INDEX_PAD_LENGTH = 2;

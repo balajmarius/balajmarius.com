@@ -26,7 +26,7 @@ const theme = {
 const Commits = () => {
   const t = useTranslations();
 
-  const { calendarRef, waves } = useCommitWaves();
+  const { calendarRef, pointer, waves } = useCommitWaves();
 
   const renderers: {
     data: Props["transformData"];
@@ -36,7 +36,7 @@ const Commits = () => {
       return days.slice(-COMMIT_WEEKS_LIMIT * DAYS_IN_A_WEEK);
     },
     block: (block) => {
-      return <CommitsListItem block={block} waves={waves} />;
+      return <CommitsListItem block={block} pointer={pointer} waves={waves} />;
     },
   };
 
