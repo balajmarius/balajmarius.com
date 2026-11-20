@@ -104,6 +104,15 @@ export const foldersListAnimation = {
 
 export const commitsAnimation = {
   baseScale: 1,
+  restOffset: {
+    x: 0,
+    y: 0,
+    scaleIncrease: 0,
+  },
+  initialCellCenter: {
+    x: 0,
+    y: 0,
+  },
   hover: {
     radius: 76,
     maxInfluence: 0.22,

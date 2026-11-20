@@ -24,7 +24,7 @@ type CommitsListItemProps = {
 
 const getHoverOffset = (cellCenter: Point, pointerPosition: Point | null) => {
   if (isNullOrUndefined(pointerPosition)) {
-    return { x: 0, y: 0, scaleIncrease: 0 };
+    return { ...commitsAnimation.restOffset };
   }
 
   const { radius, maxInfluence, falloffExponent } = commitsAnimation.hover;
@@ -94,9 +94,9 @@ const CommitsListItem = ({
   pointerPosition,
   waves,
 }: CommitsListItemProps) => {
-  const cellCenterRef = useRef<Point>({ x: 0, y: 0 });
+  const cellCenterRef = useRef<Point>(commitsAnimation.initialCellCenter);
 
-  const { x, y, width, height, rx, ry } = block.props;
+  const { x, y, width, height } = block.props;
 
   const measureCellCenter = useCallback((hitArea: SVGRectElement | null) => {
     const svg = hitArea?.ownerSVGElement;
@@ -156,8 +156,6 @@ const CommitsListItem = ({
         y={y}
         width={width}
         height={height}
-        rx={rx}
-        ry={ry}
       />
     </>
   );
