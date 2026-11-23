@@ -28,13 +28,20 @@ export type Wave = {
   radius: MotionValue<number>;
 };
 
-const getSvgCoordinates = (event: MouseEvent, svg: SVGSVGElement): Point => {
-  const svgBounds = svg.getBoundingClientRect();
+export const getSvgCoordinates = (
+  svg: SVGSVGElement,
+  clientX: number,
+  clientY: number
+): Point | null => {
+  const screenTransform = svg.getScreenCTM();
 
-  return {
-    x: event.clientX - svgBounds.left,
-    y: event.clientY - svgBounds.top,
-  };
+  if (isNullOrUndefined(screenTransform)) {
+    return null;
+  }
+
+  return new DOMPoint(clientX, clientY).matrixTransform(
+    screenTransform.inverse()
+  );
 };
 
 export const useCommitWaves = (): {
@@ -54,7 +61,7 @@ export const useCommitWaves = (): {
       return;
     }
 
-    pointerPosition.set(getSvgCoordinates(event, svg));
+    pointerPosition.set(getSvgCoordinates(svg, event.clientX, event.clientY));
   };
 
   const handlePointerClear = () => {
@@ -68,7 +75,12 @@ export const useCommitWaves = (): {
       return;
     }
 
-    const origin = getSvgCoordinates(event, svg);
+    const origin = getSvgCoordinates(svg, event.clientX, event.clientY);
+
+    if (isNullOrUndefined(origin)) {
+      return;
+    }
+
     const { width, height } = svg.viewBox.baseVal;
     const horizontalReach = Math.max(origin.x, width - origin.x);
     const verticalReach = Math.max(origin.y, height - origin.y);

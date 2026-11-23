@@ -9,7 +9,11 @@ import {
   type MotionValue,
 } from "framer-motion";
 
-import type { Point, Wave } from "@/hooks/use-commit-waves";
+import {
+  type Point,
+  type Wave,
+  getSvgCoordinates,
+} from "@/hooks/use-commit-waves";
 
 import { COMMITS_CELL_CENTER_RATIO } from "@/utils/const";
 import { isNullOrUndefined } from "@/utils/helpers";
@@ -106,14 +110,17 @@ const CommitsListItem = ({
     }
 
     const cellBounds = hitArea.getBoundingClientRect();
-    const svgBounds = svg.getBoundingClientRect();
-    const halfWidth = cellBounds.width * COMMITS_CELL_CENTER_RATIO;
-    const halfHeight = cellBounds.height * COMMITS_CELL_CENTER_RATIO;
+    const center = getSvgCoordinates(
+      svg,
+      cellBounds.left + cellBounds.width * COMMITS_CELL_CENTER_RATIO,
+      cellBounds.top + cellBounds.height * COMMITS_CELL_CENTER_RATIO
+    );
 
-    cellCenterRef.current = {
-      x: cellBounds.left - svgBounds.left + halfWidth,
-      y: cellBounds.top - svgBounds.top + halfHeight,
-    };
+    if (isNullOrUndefined(center)) {
+      return;
+    }
+
+    cellCenterRef.current = center;
   }, []);
 
   const transformTarget = useTransform(() => {
