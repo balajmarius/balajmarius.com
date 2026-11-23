@@ -50,7 +50,10 @@ const Commits = () => {
   return (
     <Section spacing="small">
       <div className="space-y-3">
-        <div ref={calendarRef} className="w-fit max-w-full">
+        <div
+          ref={calendarRef}
+          className="w-full max-w-full max-sm:overflow-hidden max-sm:mask-fade-r-8 sm:w-fit [&_.react-activity-calendar\_\_scroll-container]:overflow-visible! sm:[&_.react-activity-calendar\_\_calendar]:h-auto sm:[&_.react-activity-calendar\_\_calendar]:max-w-full"
+        >
           <GithubCalendar
             hideTotalCount
             hideMonthLabels

@@ -20,6 +20,7 @@
   --color-gray-500: #6e7394;
   --color-gray-600: #34384c;
 
+  --util-full: 100%;
   --util-time-ms: 1ms;
   --util-entrance-opacity-from: 0;
   --util-entrance-opacity-to: 1;
@@ -55,6 +56,14 @@
 
 @utility animation-delay-* {
   animation-delay: calc(--value(integer) * var(--util-time-ms));
+}
+
+@utility mask-fade-r-* {
+  mask-image: linear-gradient(
+    to right,
+    black calc(var(--util-full) - --value(integer) * var(--spacing)),
+    transparent var(--util-full)
+  );
 }
 
 @utility cursor-boxing-glove {
