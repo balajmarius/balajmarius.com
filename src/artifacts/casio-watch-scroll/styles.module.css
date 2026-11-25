@@ -1,0 +1,29 @@
+.sequence {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.frame[data-visible="true"] {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame:not(:last-child) {
+    display: none;
+  }
+
+  .frame:last-child {
+    opacity: 1;
+  }
+}
