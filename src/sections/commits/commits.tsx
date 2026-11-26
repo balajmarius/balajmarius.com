@@ -39,16 +39,13 @@ const Commits = () => {
     }
 
     const { scrollLeft, clientWidth, scrollWidth } = calendarRef.current;
-    const leftFade =
-      scrollLeft > 0
-        ? "before:opacity-100 before:duration-100 before:ease-linear"
-        : "";
-    const rightFade =
-      scrollLeft + clientWidth < scrollWidth
-        ? "after:opacity-100 after:duration-100 after:ease-linear"
-        : "";
 
-    setClassName(`${leftFade} ${rightFade}`.trim() || null);
+    setClassName(
+      cn(
+        Boolean(scrollLeft) && "max-sm:before:opacity-100",
+        scrollLeft + clientWidth < scrollWidth && "max-sm:after:opacity-100"
+      )
+    );
   }, [calendarRef]);
 
   useEffect(() => {
@@ -91,10 +88,10 @@ const Commits = () => {
         <div
           className={cn(
             "max-sm:relative max-sm:isolate sm:before:hidden sm:after:hidden",
-            "before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-8",
-            "before:bg-linear-to-r before:from-white before:to-transparent before:opacity-0 before:transition-opacity before:duration-250 before:ease-in-out",
-            "after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-8",
-            "after:bg-linear-to-l after:from-white after:to-transparent after:opacity-0 after:transition-opacity after:duration-250 after:ease-in-out",
+            "before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12",
+            "before:bg-linear-to-r before:from-white before:to-transparent before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out",
+            "after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-12",
+            "after:bg-linear-to-l after:from-white after:to-transparent after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out",
             className
           )}
         >
