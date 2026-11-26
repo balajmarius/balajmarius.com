@@ -1,18 +1,20 @@
 "use client";
 
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import GithubCalendar, { type Props } from "react-github-calendar";
 
-import { accounts, links } from "@/utils/links";
 import { COMMITS_WEEKS_LIMIT, DAYS_IN_A_WEEK } from "@/utils/const";
+
+import { accounts, links } from "@/utils/links";
+import { cn, isNullOrUndefined } from "@/utils/helpers";
 
 import { useCommitWaves } from "@/hooks/use-commit-waves";
 
 import { Link } from "@/components/link";
 import { Section } from "@/components/section";
-import { SvgIconBranch } from "@/components/svg-icon";
-
 import { CommitsListItem } from "@/sections/commits";
+import { SvgIconBranch } from "@/components/svg-icon";
 
 const theme = {
   dark: [
@@ -26,8 +28,44 @@ const theme = {
 
 const Commits = () => {
   const t = useTranslations();
+  const contentRef = useRef<HTMLDivElement>(null);
 
+  const [className, setClassName] = useState<string | null>(null);
   const { calendarRef, pointerPosition, waves } = useCommitWaves();
+
+  const handleScrollClassName = useCallback(() => {
+    if (isNullOrUndefined(calendarRef.current)) {
+      return;
+    }
+
+    const { scrollLeft, clientWidth, scrollWidth } = calendarRef.current;
+    const leftFade =
+      scrollLeft > 0
+        ? "before:opacity-100 before:duration-100 before:ease-linear"
+        : "";
+    const rightFade =
+      scrollLeft + clientWidth < scrollWidth
+        ? "after:opacity-100 after:duration-100 after:ease-linear"
+        : "";
+
+    setClassName(`${leftFade} ${rightFade}`.trim() || null);
+  }, [calendarRef]);
+
+  useEffect(() => {
+    if (
+      isNullOrUndefined(calendarRef.current) ||
+      isNullOrUndefined(contentRef.current)
+    ) {
+      return;
+    }
+
+    const observer = new ResizeObserver(handleScrollClassName);
+
+    observer.observe(contentRef.current);
+    observer.observe(calendarRef.current);
+
+    return () => observer.disconnect();
+  }, [calendarRef, handleScrollClassName]);
 
   const renderers: {
     data: Props["transformData"];
@@ -51,18 +89,32 @@ const Commits = () => {
     <Section spacing="small">
       <div className="space-y-3">
         <div
-          ref={calendarRef}
-          className="w-full max-w-full max-sm:overflow-hidden max-sm:mask-fade-r-8 sm:w-fit [&_.react-activity-calendar\_\_scroll-container]:overflow-visible! sm:[&_.react-activity-calendar\_\_calendar]:h-auto sm:[&_.react-activity-calendar\_\_calendar]:max-w-full"
+          className={cn(
+            "max-sm:relative max-sm:isolate sm:before:hidden sm:after:hidden",
+            "before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-8",
+            "before:bg-linear-to-r before:from-white before:to-transparent before:opacity-0 before:transition-opacity before:duration-250 before:ease-in-out",
+            "after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-8",
+            "after:bg-linear-to-l after:from-white after:to-transparent after:opacity-0 after:transition-opacity after:duration-250 after:ease-in-out",
+            className
+          )}
         >
-          <GithubCalendar
-            hideTotalCount
-            hideMonthLabels
-            hideColorLegend
-            theme={theme}
-            username={accounts.githubUsername}
-            transformData={renderers.data}
-            renderBlock={renderers.block}
-          />
+          <div
+            ref={calendarRef}
+            onScroll={handleScrollClassName}
+            className="w-full max-w-full max-sm:overflow-x-auto max-sm:scrollbar-w-none sm:w-fit"
+          >
+            <div ref={contentRef} className="max-sm:w-max max-sm:pt-0.5">
+              <GithubCalendar
+                hideTotalCount
+                hideMonthLabels
+                hideColorLegend
+                theme={theme}
+                username={accounts.githubUsername}
+                transformData={renderers.data}
+                renderBlock={renderers.block}
+              />
+            </div>
+          </div>
         </div>
 
         <div className="flex items-start justify-end sm:justify-between sm:gap-3">
